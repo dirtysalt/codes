@@ -1,0 +1,4 @@
+*.epub
+md/
+cache/
+*.mobi

@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+chown -R redis:redis /home/redis
+chmod 700 /home/redis
+
+/usr/bin/redis-server /etc/redis/redis.conf
+
+echo "Everything is done"

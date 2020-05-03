@@ -1,0 +1,11 @@
+<div align="left">
+<style type="text/css">.asciiimage{
+color: %(color)s;
+background-color: %(bcolor)s;
+font-family: monospace;
+font-size: 10px;
+-webkit-text-size-adjust: 100%%;
+line-height: 10px;
+letter-spacing: 1px;
+}</style><span class="asciiimage">%(image)s</span>
+</div>

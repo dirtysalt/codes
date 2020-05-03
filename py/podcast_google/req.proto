@@ -1,0 +1,55 @@
+syntax="proto2";
+
+message SearchRequest {
+    message Header {
+        message A {
+            message B {
+                optional int32 a = 1 [default=6];
+                optional string b = 2 [default="2589005"];
+            };
+            optional B b = 1;
+        };
+        optional A a = 2;
+
+        message B {
+            message C {
+                optional bytes a = 12 [ default= "0x53552d6e"];
+            };
+            optional C c = 1;
+        }
+        optional B b = 4;
+
+    };
+    optional Header header = 1;
+
+    message Payload {
+        required string query = 1;
+        optional int32 a = 2 [default=36];
+        optional int32 b = 3 [default=3];
+    };
+
+    optional Payload payload = 2;
+}
+
+message SearchResponse {
+    optional string header = 1;
+
+    message Payload {
+        message Channel {
+            message Meta {
+                optional string rss_url = 7;
+            }
+            optional Meta meta = 1;
+            optional string episodes = 2;
+        }
+
+        message Wrapper {
+            optional int32 a = 1;
+            optional bytes b = 3;
+            repeated Channel channels = 2;
+        }
+        repeated Wrapper wrapper = 1;
+    }
+
+    optional Payload payload = 2;
+}

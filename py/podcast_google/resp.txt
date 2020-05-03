@@ -1,0 +1,1945 @@
+1 {
+  2 {
+    1: "Vx0GXPW6AYu58QWft6KgDg"
+  }
+}
+2 {
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Dirty John"
+        2: "L.A. Times | Wondery"
+        3: "Debra Newell is a successful interior designer. She meets John Meehan, a handsome man who seems to check all the boxes: attentive, available, just back from a year in Iraq with Doctors Without Borders. But her family doesn\342\200\231t like John, and they get entangled in an increasingly complex web of love, deception, forgiveness, denial, and ultimately, survival. Reported and hosted by Christopher Goffard from the L.A. Times."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRP_3RMoWr_yTDQtkztbaNGufobg6jjBF9myXvt7-Ht7fr9MW0"
+        6: "http://wondery.com/wondery/shows/dirtyjohn/"
+        7: "https://rss.art19.com/dirty-john"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/04e7a15cb2c5016c"
+        11: "https://rss.art19.com/dirty-john"
+        12: 0
+        13: "https://lh5.googleusercontent.com/proxy/W23iWp19cVPU3OZjEbXKF1w7rd5-FeH4l8BcgU94Uv-CE1R282N_lCVlaUzbhuwuqwOIR8aMimd35EmG3T-GkD_13CONciA2-YUa0PsuJiS-e3yj5eZI8Oq9IjY6d8ZSQC7R-q0VGlA0VE5CDcC0IRtgvp_zNzV8Mq7QfI2scsByn-w934BU2jrlizusrptxe83QlGD_WPVENpAfv8CSLgMxLnNQFguOSsPkwI2auZaw2-MUZHEH1Emau1ETZqL_ig7RH1RXaF8DBj3u4h487yRcdtkG0FK11sHSuMBM2KT1qhdZ_aVwUkOBTiWTtLM-XEYcIzFhobR2j0OsdrxvDQ=s800"
+        14: "https://content.production.cdn.art19.com/images/f5/cf/d8/37/f5cfd837-6c97-4422-a573-4ea06f2b2a13/92560badd97d72391e87a7f98ef308a82f3f8973b0ac04d558be398f1bb06c4d0b09e982e9f7d939e7a7be6f06470d4b2f015e2211d4c4a67c73378122690d54.jpeg"
+      }
+      2 {
+        1: "Bonus Episode: Inside the TV Series \342\200\234Dirty John\342\200\235  | 3"
+        2: "In the last of three special episodes, Alexandra Cunningham, showrunner of the new Bravo series, offers insight into how she approached the writing of the show and its titular psychopath. Jeffrey Reiner, who directed all eight episodes, discusses the creative team\342\200\231s ambition to transcend the conventions of a traditional thriller."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/e720bad5-384f-41d9-b6fa-2b72886ac426.mp3"
+        5: 710
+        6: "gid://art19-episode-locator/V0/0bsA1j4gwSDV_WXR_vjHqgO31n1deMFqqCFeUI51pCo"
+        7: 1542787500
+        9: 0
+        10: 11365982
+        11: "gid://art19-episode-locator/V0/0bsA1j4gwSDV_WXR_vjHqgO31n1deMFqqCFeUI51pCo"
+      }
+      2 {
+        1: "Bonus Episode: Inside the TV Series \342\200\234Dirty John\342\200\235 | 2"
+        2: "In the second of three special episodes, Connie Britton (\342\200\234Friday Night Lights,\342\200\235 \342\200\234Nashville\342\200\235) talks about playing Debra Newell in the new Bravo series, and why the story feels timely. Julia Garner and Juno Temple, who play Newell\342\200\231s daughters, discuss how they came to inhabit their roles, and the show\342\200\231s production designer and costume designer share details of how they helped create the characters\342\200\231 worlds.\n\n\342\200\234Dirty John\342\200\235 premieres on Bravo at 10 p.m. on Sunday, November 25. You can also find the original LA Times series, plus 14 other pieces of narrative journalism, in a new\302\240collection called \342\200\234Dirty John and Other True Stories of Outlaws and Outsiders,\342\200\235 by Christopher Goffard, published by Simon & Schuster."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/5eb8623c-5983-48d9-b2f7-1e22d0198720.mp3"
+        5: 912
+        6: "gid://art19-episode-locator/V0/1DUcppxMHrQVildKGQEbGtrUQaf3Oa4opxHilzHxS30"
+        7: 1542614700
+        9: 0
+        10: 14605583
+        11: "gid://art19-episode-locator/V0/1DUcppxMHrQVildKGQEbGtrUQaf3Oa4opxHilzHxS30"
+      }
+      2 {
+        1: "Bonus Episode: Inside the TV Series \"Dirty John\" | 1"
+        2: "In the first of three special episodes about the making of the Bravo limited series, Christopher Goffard talks with actor Eric Bana about his portrayal of John Meehan, and the parallels between actors and con-men.\n\n\302\240\302\240\342\200\234Dirty John\342\200\235 premieres on Bravo at 10 p.m. on Sunday, November 25. LA Times Studios is participating as a producer on the Bravo series. You can also find the original LA Times series, plus 14 other pieces of narrative journalism, in a new\302\240collection called \342\200\234Dirty John and Other True Stories of Outlaws and Outsiders,\342\200\235 by Christopher Goffard, published by Simon & Schuster.\n\nSupport us by supporting our sponsors!\n\nSquarespace - Need a professional looking website? Get started today at squarespace.com/dirtyjohn and use the offer code DirtyJohn at checkout for 10% off."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/2e4791e9-d866-4825-aaff-beea8de0d871.mp3"
+        5: 1020
+        6: "gid://art19-episode-locator/V0/PG-buuEZbRGZ1Ik7nOiAOpn07d2d9AAvQBbXL-b62u0"
+        7: 1542182700
+        9: 0
+        10: 16327575
+        11: "gid://art19-episode-locator/V0/PG-buuEZbRGZ1Ik7nOiAOpn07d2d9AAvQBbXL-b62u0"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Real Crime Profile"
+        2: "Real Crime Profile / Wondery"
+        3: "Join Jim Clemente (former FBI profiler), Laura Richards (criminal behavioral analyst, former New Scotland Yard) and Lisa Zambetti (Casting director for CBS\' Criminal Minds) as they profile behavior from real criminal cases."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtVrNzcqVyRv1FktzB8rj82wxmsNJBYSfLIUSd1AC42_BoI-Y"
+        6: "http://wondery.com/realcrimeprofile"
+        7: "https://rss.art19.com/real-crime-profile-wondery"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/a6100e65c042158a"
+        11: "https://rss.art19.com/real-crime-profile-wondery"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/p6cvkyK0nZ2cYVG--f28PA93BOk0gxUZP2uvMwB7bEW88dMcpmPPVJOxfnC-t1vuhhvH1U1Yh6kqG_AZPTHBrrClJyFtPkU4n-IL9JzIcdiY1yqvUM4MWYGNgGaDMU8-bLRnrJsCUfWOafUaIxaKO9dSKvgH4y1C90RYZhUYBp0b7mafPAEav-A0TUh0owK4fl2hTEJi1OLQVzPQxh3A1GcuAO2trAh5IHKwNHQInBKlmuOeAsVKYHNmVK6UzaPKUBFZLvEPHLEcRboYxdg2C0UUNAXWJ55FEZz6Mk1DUCQoS7J6OOr2rcq02f9a5_eiyUy4_S-F-GrbpjFRHF0iwg=s800"
+        14: "https://content.production.cdn.art19.com/images/5f/9a/f2/03/5f9af203-9d78-481f-8146-78c2227c2411/b64a26649a5ebc6b6b780932583ce94867f28a2b754b10ed71a923e0293955128dba015692c5dc3ca3d1bb3ee80ee77d00e4c5e1cccdc954b185c2bc057fac8b.jpeg"
+      }
+      2 {
+        1: "Episode 155 - Escape at Dannemora: Further Analysis of the Inspector General\342\200\231s Report"
+        2: "In this episode, the Real Crime Profile Team (Laura Richards, Jim Clemente and Lisa Zambetti) continue the conversation with real life Inspector General Catherine Leahy Scott and Deputy Inspector General Jim Davis about their work investigating the escape and developing an extensive report, with key findings including: Gene Palmer\342\200\231s involvement, Richard Matt and David Sweat\342\200\231s planning of the prison break and their relationship with Joyce Mitchell, Leahy\342\200\231s real interview with Joyce Mitchell and the criminal negligence at the prison.\n\nThis episode was done in partnership with and is sponsored by\302\240SHOWTIME and the new Limited Event Series\302\240Escape\302\240At\302\240Dannemora, directed by Ben Stiller and starring Benicio Del Toro, Patricia Arquette, Paul Dano & Bonnie Hunt.\n\nBased on bizarre but true events,\302\240Escape At Dannemora\302\240tells the story of two prisoners who broke out of a maximum-security prison in upstate New York and their twisted relationship with the female prison employee, who aided in their escape.\n\nWatch Escape At Dannemora,\302\240now streaming, only on SHOWTIME.\n\nTO TRY A FREE MONTH OF SHOWTIME, GO TO\302\240SHOWTIME.COM\302\240AND ENTER CODE RCP30. THIS OFFER IS FOR FIRST TIME SUBSCRIBERS ONLY AND EXPIRES 12/7/18.\n\nToday\'s Episode is also sponsored by\n\nQUIP\n\nGo to GetQuip.com/RealCrime to get your first refill pack for free.\n\nARTICLE\n\nGet $50 off of your first purchase of $100 or more by going to Article.com/RealCrime"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/844a6978-b6f3-4705-a15c-7489fc410cbd.mp3"
+        5: 2644
+        6: "gid://art19-episode-locator/V0/YCrmi5u5ICybJhJGzsg7BxHl7l2ozIGUO3ZHfB-QHzI"
+        7: 1543392000
+        9: 1
+        10: 42312933
+        11: "gid://art19-episode-locator/V0/YCrmi5u5ICybJhJGzsg7BxHl7l2ozIGUO3ZHfB-QHzI"
+      }
+      2 {
+        1: "Episode 154 - Escape at Dannemora: Discussing the Inspector General\'s Report"
+        2: "In this episode, the Real Crime Profile Team (Laura Richards, Jim Clemente and Lisa Zambetti) speak with real life Inspector General Catherine Leahy Scott and Deputy Inspector General Jim Davis about their work on the case that inspired the series, their report and their observations about the offenders\n\n\302\240\n\nThis episode was done in partnership with and is sponsored by\302\240SHOWTIME and the new Limited Event Series\302\240Escape\302\240At\302\240Dannemora, directed by Ben Stiller and starring Benicio Del Toro, Patricia Arquette, Paul Dano & Bonnie Hunt.\n\nBased on bizarre but true events,\302\240Escape At Dannemora\302\240tells the story of two prisoners who broke out of a maximum-security prison in upstate New York and their twisted relationship with the female prison employee, who aided in their escape.\n\nWatch Escape At Dannemora,\302\240now streaming, only on SHOWTIME.\n\nTO TRY A FREE MONTH OF SHOWTIME, GO TO\302\240SHOWTIME.COM\302\240AND ENTER CODE RCP30. THIS OFFER IS FOR FIRST TIME SUBSCRIBERS ONLY AND EXPIRES 12/7/18.\n\nAlso sponsored by ARTICLE\n\nGet $50 off your first purchase of $100 or more. Visit ARTICLE.com/RealCrime\n\nEXPRESS VPN\n\nFind out how to get 3 months free by visiting ExpressVPN.com/RealCrime\n\nKOPARI\n\nGo to KOPARI.com/REALCRIME to save $5 off your first order.\n\nMAN CRATES\n\nBuy one gift and you will get the second gift or 25% off when you go to ManCrates.com/REALCRIME"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/aa712f97-7cfa-4730-8dc9-6cf58a3b8944.mp3"
+        5: 2767
+        6: "gid://art19-episode-locator/V0/k1z1fFgD0gfQD6e7goD093utvnhuKhzPIGi-hYam6gg"
+        7: 1542787542
+        9: 1
+        10: 44281103
+        11: "gid://art19-episode-locator/V0/k1z1fFgD0gfQD6e7goD093utvnhuKhzPIGi-hYam6gg"
+      }
+      2 {
+        1: "Episode 153: Escape At Dannemora - More Discussion with Brett Johnson and Michael Tolkin"
+        2: "In this episode, the Real Crime Profile Team (Laura Richards, Jim Clemente and Lisa Zambetti) continue their conversation with\302\240Brett Johnson and Michael Tolkin,\302\240co-creators and executive producers\302\240of the upcoming SHOWTIME series Escape At Dannemora.\n\n\302\240\n\nThis episode was done in partnership with and is sponsored by\302\240SHOWTIME and the new Limited Event Series\302\240Escape\302\240At\302\240Dannemora, directed by Ben Stiller and starring Benicio Del Toro, Patricia Arquette, Paul Dano & Bonnie Hunt.\n\nBased on bizarre but true events, Escape At Dannemora tells the story of two prisoners who broke out of a maximum-security prison in upstate New York and their twisted relationship with the female prison employee, who aided in their escape.\n\nEscape At Dannemora premieres Sunday, November 18 at 10PM ET/PT, only on SHOWTIME.\n\nTO TRY A FREE MONTH OF SHOWTIME, GO TO\302\240SHOWTIME.COM\302\240AND ENTER CODE RCP30. THIS OFFER IS FOR FIRST TIME SUBSCRIBERS ONLY AND EXPIRES 12/7/18.\n\nThis Episode is also sponsored by:\n\nCUROLOGY\n\nGo to Curology.com/REALCRIME to get your first month FREE plus a free gift. Just pay $4.95 for shipping and handling.\n\nZULILY\n\nGet 20% off your first order at Zulily.com/REALCRIME\n\nQUIP\n\nGo to GETQUIP.com/RealCrime to get your first refill pack for Free."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/741d45f7-2dfe-42e6-8a4b-aa490d5ddda3.mp3"
+        5: 2349
+        6: "gid://art19-episode-locator/V0/phqdT1RI7VvBID1FR53TNiIbTISmQFyMso4HGFCDCUU"
+        7: 1542184733
+        9: 1
+        10: 37590413
+        11: "gid://art19-episode-locator/V0/phqdT1RI7VvBID1FR53TNiIbTISmQFyMso4HGFCDCUU"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Dr. Death"
+        2: "Wondery"
+        3: "We\342\200\231re at our most vulnerable when we go to our doctors. We trust the person at the other end of that scalpel. We trust the hospital. We trust the system.\n\nChristopher Duntsch was a neurosurgeon who radiated confidence. He claimed he was the best in Dallas. If you had back pain, and had tried everything else, Dr. Duntsch could give you the spine surgery that would take your pain away.\n\nBut soon his patients started to experience complications, and the system failed to protect them. Which begs the question: who - or what - is that system meant to protect?\n\nFrom Wondery, the network behind the hit podcast Dirty John, DR. DEATH is a story about a charming surgeon, 33 patients and a spineless system. Reported and hosted by Laura Beil."
+        4: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr7GGb3fMU3BjR5i5G2M6ErVkOIeUM9g0foEBuLXV9yQGxK6k"
+        6: "https://art19.com/shows/dr-death"
+        7: "https://rss.art19.com/dr-death"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/eaa955f3d11ed6c3"
+        11: "cluster_000000000092712e"
+        12: 1
+        13: "https://lh5.googleusercontent.com/proxy/B5M9UfFKGNksP7kgbHBaWJx-n1vzw8p5f7-FCAgXx6Wzo4aRPT_7sNz2eTKYa63gg1aHtHeLKwVIac6t4LFdToeRytBzs4LRsDeqaQY9Hpt1LhA4OeGwzFwGOLFIWiMwyeLlqfJrIgjCJVs_OpP3W8fv4glJKRahKdTCDJDHvYcSU7Z3F87Bo3kpGZAvLVTxnRmTLHVNPf0MqvkmixuRJvinEIbdXlI91Gdkz0MMHcS686eBkuX3TVuURP4ZVGS8SJLXurNl-_L6XRB06CWhhqkPRi9gga9cq-Hi0K-VvxPq1_W5PXBRkyy631_YoKnFxonkWuCwVlSM88ohy50GCw=s800"
+        14: "https://content.production.cdn.art19.com/images/1d/53/8f/a0/1d538fa0-4053-481a-bc95-55b0df8d4b6a/4378c3832f80118109029d8e6c07f2a7a61c2e9c9555b68fa72f197a08279b499930ec1f881a4f7993ca4c373dfad88a755abadbd8008869f85c930be1036ca0.jpeg"
+      }
+      2 {
+        1: "\342\200\234One Great Man\342\200\235  | 9"
+        2: "You may remember the woman in the infomercial about Dr. Duntsch who admiringly calls him \342\200\234one great man\342\200\235 and claims \342\200\234he\342\200\231ll fix you.\342\200\235 Laura Beil wasn\342\200\231t able to get in touch with her when she first reported the series. She guessed that the woman must have been a paid actress, or perhaps even the rare patient who had a good result with Dr. Duntsch. But then the woman in the video reached out after hearing her voice in \342\200\235Dr. Death.\342\200\235 And the real story turned out to be much stranger. In this special episode, we also hear from a juror who helped deliver the verdict in the trial of Christopher Duntsch.\302\240\n\nLooking for the best sheets, ever? Get $20 off AND free shipping on your order by going to\302\240brooklinen.com\302\240and entering promo code\302\240death at checkout. Or maybe you\'re looking for plush towels? A new throw blanket? Yeah, they have that too."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/d07117d6-2dec-4950-b457-8847984e981e.mp3"
+        5: 1691
+        6: "gid://art19-episode-locator/V0/WtlW0ZqfQi-zbpQhjBPJOFbI3p7oWfm5ialCeLt6WNU"
+        7: 1542096300
+        9: 1
+        10: 27057841
+        11: "gid://art19-episode-locator/V0/WtlW0ZqfQi-zbpQhjBPJOFbI3p7oWfm5ialCeLt6WNU"
+      }
+      2 {
+        1: "Introducing Imagined Life"
+        2: "Throughout my reporting- there was a question that kept coming up: if I\342\200\231d been in the shoes of the people around Christopher Duntsch- friends, family, mentors- what would I have done. That\342\200\231s a question at the heart of a new series from Wondery, called Imagined Life. In each episode we\342\200\231ll put you into someone else\342\200\231s shoes. The people whose lives you\342\200\231ll hear are famous- artists, musicians, politicians and others. And we\342\200\231ll immerse you into their innermost thoughts as they experience adversity, hope, trial and error - but there\342\200\231s a twist: it\342\200\231s only in the last minute of the show you will find out who YOU are. Subscribe to Imagined Life today- www.wondery.fm/imaginedlife"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/8838b51c-ffe4-4e40-9845-3f21e4f6e2ce.mp3"
+        5: 275
+        6: "gid://art19-episode-locator/V0/tlRa9EkJwK0YH2dsgz7ORS-5LWsoFpwTh713NRaHaWk"
+        7: 1541405100
+        9: 1
+        10: 4401110
+        11: "gid://art19-episode-locator/V0/tlRa9EkJwK0YH2dsgz7ORS-5LWsoFpwTh713NRaHaWk"
+      }
+      2 {
+        1 {
+          9: 0x776569767265746e
+          4: 124
+          4: 56
+        }
+        2: "This series has generated a lot of questions and comments from listeners for host and reporter Laura Beil. In this special interview episode, Laura talks with David Brown (from the podcast \342\200\234Business Wars\342\200\235) about a number of topics that have intrigued listeners, like how Duntsch could have performed less than a hundred surgeries during his medical training. She addresses speculation that Duntsch may have suffered traumatic brain injury from playing football in high school. And she teases the real story behind the \342\200\234patient\342\200\235 featured in that Best Docs infomercial.\n\nDr. Death is presented by Bad Times at the El Royale, in theaters October 12.\n\nCheck out the trailer at\302\240elroyalemovie.com\n\nOther sponsors include:\n\nZip Recruiter\302\240- Try ZipRecruiter\302\240FOR FREE\302\240at\302\240ziprecruiter.com/death\302\240\n\nBombas\302\240- Save 20% by visiting\302\240bombas.com/death\302\240and entering the offer\302\240death\302\240in the checkout code space\n\nHelix Sleep\302\240- Get up to $125 off your mattress at\302\240helixsleep.com/death.\302\240\n\nAudible\302\240- Start a 30-day trial and get your first audiobook free by going to\302\240audible.com/death\302\240or by texting\302\240DEATH\302\240to500-500\n\nBrooklinen\302\240- Get $20 off AND free shipping by going to\302\240brooklinen.com\302\240and entering promo code\302\240death\n\nSimplisafe\302\240- Visit\302\240simplisafe.com/doctor\302\240and start protecting your home today the right way"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/54c07b7b-d9e1-4ef1-84c8-4e872a69d331.mp3"
+        5: 1622
+        6: "gid://art19-episode-locator/V0/zRYSH9dG-hk5NNch_4DpX7-oOXFcS6isn0ibf8A_mP4"
+        7: 1539068700
+        9: 1
+        10: 25961116
+        11: "gid://art19-episode-locator/V0/zRYSH9dG-hk5NNch_4DpX7-oOXFcS6isn0ibf8A_mP4"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Business Wars"
+        2: "Wondery"
+        3: "Netflix vs. HBO. Nike vs. Adidas. Business is war. Sometimes the prize is your wallet, or your attention. Sometimes, it\342\200\231s just the fun of beating the other guy. The outcome of these battles shapes what we buy and how we live.\302\240\n\nBusiness Wars gives you the unauthorized, real story of what drives these companies and their leaders, inventors, investors and executives to new heights -- or to ruin. Hosted by David Brown, former anchor of Marketplace. From Wondery, the network behind Dirty John and American History Tellers."
+        4: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJHAxRZ5vxm_2QpXvurSr5OfC6yjEbHWFiTzhsoJlbh8McRRU"
+        6: "https://art19.com/shows/business-wars"
+        7: "https://rss.art19.com/business-wars"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/c53537e1cfc1a548"
+        11: "https://rss.art19.com/business-wars"
+        12: 0
+        13: "https://lh5.googleusercontent.com/proxy/GIn13kt3RuuDfaA6afqaCk1Nju_72D8jB7NpH_LdeJpvLHG0TJpzHBN8XqUkT1dNx6bCeICPZpISK5L6IyARp2e4nQCBIDwo6ZCfscKzyOSG67knOSajIA1b2H084JiVNLUA20ySufoNV6zm-hWHkD4eX_br8M-ZvIyIhg8YL9hRkYRIULMw_5Nkdmx_p-k4F4fOXYgbjrwQ_K2PWOtCmF625Nu7rj8OxGSClPstFEnSpeDEzZYeH46WCMcbW_hlyQFCwzEv675FLSsKk4R_MI9iivWp_iFimwPae6H3wiIGzEhubi6_ky1cbcGm2x-LPy9z6-gNwXsYJUA3OqxXqg=s800"
+        14: "https://content.production.cdn.art19.com/images/72/49/f7/a4/7249f7a4-163e-443e-9d0b-c4d2133eb36c/28ee9ab994e1d3017649f8beb239f7f01c4c677cd3dce26ccec4a27f8c066901c8de40be841fe20e91c8ec5b8713ae3fda343671b3dbf73b9bd537cee88d7988.jpeg"
+      }
+      2 {
+        1: "Browser Wars - The Birth of a Dot Com Giant  | 2"
+        2: "Two disgruntled tech whizzes, Jim Clark and Marc Andreessen, join forces to exact revenge on the companies that wronged them, building a browser so fast and powerful that it wipes their competitors off the face of the web. In private, they call it a \342\200\234Mosaic Killer,\342\200\235 but in public, it\342\200\231s called \342\200\234Netscape Navigator.\342\200\235\n\nThe launch of their new browser will mark the beginning of a new era in computing, the birth of a new economy based on the web, and the moment Microsoft put a target on their backs.\n\nSupport us by supporting our sponsors!\n\nArticle\302\240- Visit Article.com/BW\302\240to get $50 off your first order of $100 or more."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/782d8659-9159-45c3-abf4-3a536ca8078e.mp3"
+        5: 1334
+        6: "gid://art19-episode-locator/V0/CZ05uUE4o1i_SEyIGCRGf4Erdb5jMQsoOp085Bfrfjo"
+        7: 1543478700
+        9: 0
+        10: 21347683
+        11: "gid://art19-episode-locator/V0/CZ05uUE4o1i_SEyIGCRGf4Erdb5jMQsoOp085Bfrfjo"
+      }
+      2 {
+        1: "Legendary magazine editor Tina Brown and her new podcast | 3"
+        2: "As editor in chief at Vanity Fair and The New Yorker, Tina Brown has had opportunity to sit down with the world\342\200\231s most important people to hear their thoughts on the zeitgeist and on her new Podcast, \342\200\234TBD with Tina Brown,\342\200\235 she invites you to hear her candid conversations with writers, politicals, crime sleuths, journalist and the newsmakers of tomorrow\342\200\231s social debates. Subscribe to TBD with Tina Brown on Apple Podcasts or by visiting\302\240wondery.fm/tbd"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/455ad2dd-8812-4df3-954e-a24649f54c80.mp3"
+        5: 482
+        6: "gid://art19-episode-locator/V0/EXPiERy-qrqmF8NMqytonRKcYUUFKeVM5i2DqRG_sYI"
+        7: 1543395283
+        9: 0
+        10: 7715944
+        11: "gid://art19-episode-locator/V0/EXPiERy-qrqmF8NMqytonRKcYUUFKeVM5i2DqRG_sYI"
+      }
+      2 {
+        1: "Browser Wars - Kickstarting a Revolution  | 1"
+        2: "It\342\200\231s 1992, and in the basement of the chemistry building at the University of Illinois at Urbana-Champaign, two computer science students are working on a new web browser. Up to this point, browsing has made up less than one percent of all internet traffic, but Marc Andreessen and Eric Bina are about to change all that. Fueled by a combination of Pepperidge Farm cookies, Skittles and hubris, Andreessen and Bina emerge from the basement with Mosaic, the user-friendly web browser that will popularize the internet\342\200\224if it doesn\342\200\231t crash the school\342\200\231s server first. \302\240\n\nSupport us by supporting our sponsors!\n\nFreshbooks - Get a free trial by going to\302\240freshbooks.com/BW\302\240and tell them you heard about them from Business Wars.\n\nQuip - GetQuip.com/BW\302\240to get your first refill pack free with a Quip electric toothbrush!\n\nArticle - You can get $50 off your first order of $100 or more only at\302\240Article.com/BW"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/f3f3a2e9-1097-4814-8e70-4a562d68b264.mp3"
+        5: 1535
+        6: "gid://art19-episode-locator/V0/k8Cn9a3sUSwrdj4tGOyS4RcsnHmCOAAQAh4VvL9ftzs"
+        7: 1543305900
+        9: 0
+        10: 24575582
+        11: "gid://art19-episode-locator/V0/k8Cn9a3sUSwrdj4tGOyS4RcsnHmCOAAQAh4VvL9ftzs"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "American History Tellers"
+        2: "Wondery"
+        3: "The Cold War, Prohibition, the Gold Rush, the Space Race. Every part of your life -the words you speak, the ideas you share- can be traced to our history, but how well do you really know the stories that made America? We\342\200\231ll take you to the events, the times and the people that shaped our nation. And we\342\200\231ll show you how our history affected them, their families and affects you today. Hosted by Lindsay Graham (not the Senator). From Wondery, the network behind Tides Of History, Fall Of Rome and Dirty John."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnP-7bsbZc8hqAUYL8TO7bOWTuxV-Tww2kvvVv2O8OVRw33I0"
+        6: "https://art19.com/shows/american-history-tellers"
+        7: "https://rss.art19.com/american-history-tellers"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/98ad9e26a52a8d0b"
+        11: "https://rss.art19.com/american-history-tellers"
+        12: 0
+        13: "https://lh5.googleusercontent.com/proxy/_QzZ96BfPfoN2JlOVBzGRpfuqO7hrUp30zkSoGiq8fysgG-OvBoYtVUJifsmpn0XM7p_riOPuBKbzXxa5AYaO34y07jEOigT_buoX0iizZSH6Nol1P2_5GKiwGB1e4tCfKKe7uzYJtitZWzxxYJihWmt9ixXll6CdF6_OjFonIthJBoSdkqMldL98W281CjuTO7X29cdF-sUGoQoSZVckWVXMb5YyIvmw8XHRtZAoGJAUhXOD85-74_egjHHl1eGc0g0MvmuO8n3DoLtmFMh7xHTjmquXfimNKVdvE1Bwd47S056tEFjr5ycHgXqhRdb9mCkZeI-HOtLLPvOyOgg4Q=s800"
+        14: "https://content.production.cdn.art19.com/images/28/64/f6/de/2864f6de-3194-4381-9629-081cf744cecf/d392809bbdd2cb70122102ee273b6096314d7de7a11da60f3d6c89c424b282f30c6a61fcc4b7415ade9fca34f14b1afc06412524713c4214c0f3906bf7295dcc.jpeg"
+      }
+      2 {
+        1: "Lindsay Graham\'s Newest Podcast: 1865"
+        2: "April 15, 1865. President Lincoln is dead and the country in turmoil. Secretary of War Edwin Stanton takes control, determined to bring the assassin to justice.\n\nHeavily researched, this historical political thriller is an audio drama that explores America\342\200\231s darkest hours. The story is astonishing\342\200\224and all of it is based on true events.\n\nYou can listen to new weekly episodes of 1865 exclusively on\302\240Stitcher\302\240Premium. For a free month of\302\240Stitcher\302\240Premium, go to\302\240stitcherpremium.com/1865\302\240and use promo code \'1865\'."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/643671e6-c692-455a-9490-b6da5716fccf.mp3"
+        5: 714
+        6: "gid://art19-episode-locator/V0/oGDub2tajcUdwBtPLYizHNaDsSKZB4a29easheqnZxk"
+        7: 1543831380
+        9: 0
+        10: 11424496
+        11: "gid://art19-episode-locator/V0/oGDub2tajcUdwBtPLYizHNaDsSKZB4a29easheqnZxk"
+      }
+      2 {
+        1: "History of the Lincoln Motor Company | 9"
+        2: "Named after one of the greatest U.S. presidents, the Lincoln Motor Company has become as ingrained in American culture as the Statue of Liberty. Founded by Henry Leland to produce plane engines during World War I, Lincoln became a key driver of the early automobile industry in the United States and a pioneer of the luxury car market. But when Leland\342\200\231s vision proved too ambitious for the nascent American car market, Lincoln was purchased by the Ford Motor Company.\n\nThe Ford acquisition would prove to be a game-changer for Lincoln. It provided the young company with a jolt of capital, marketing know-how, and a secret weapon: Henry Ford\342\200\231s son, Edsel Ford, who possessed an uncanny sense of style and what customers wanted. He would lead the Lincoln to build an entirely new class of automobile: something \342\200\234strictly continental.\342\200\235 Brought to you by the 2019 Lincoln MKC."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/45868975-229d-4c68-bcb7-ccbe2f800be2.mp3"
+        5: 1466
+        6: "gid://art19-episode-locator/V0/FmerKQmftP60cYVKp3WgPOTlzZC8vZ9lk2f0HYVIakA"
+        7: 1543626038
+        9: 0
+        10: 23470080
+        11: "gid://art19-episode-locator/V0/FmerKQmftP60cYVKp3WgPOTlzZC8vZ9lk2f0HYVIakA"
+      }
+      2 {
+        1: "Political Parties - Jacksonian Democracy | 2"
+        2: "Andrew Jackson lost the 1824 presidential election to John Quincy Adams through what some called a \342\200\234corrupt bargain\342\200\235 in the House of Representatives. The maneuver was masterminded by hot-headed but politically savvy Henry Clay, who with Adams, announced their intent for far-reaching new federal programs. Fierce opposition to these policies united pro-Jackson supporters who formed a new party, the Democrats, to rally around their hero and elect him to president in 1828.\n\nBut while Adams was defeated, Henry Clay had no intention of leaving the fight. He helped lead a new party which gathered together anti-Jackson, fiscal conservatives, and pro-states rights factions. The rise of Clay\342\200\231s new Whig party seemed unstoppable\342\200\223they captured both houses of Congress and the presidency\342\200\223until, on April 4, 1841, president William Henry Harrison died in office and gave John Tyler the power of the veto.\n\nSupport this show by supporting our sponsors!\n\nThe Great Courses - Get unlimited access to courses on any topic at\302\240TheGreatCoursesPlus.com/Tellers\n\nLightstream - You can get an additional discount by visiting\302\240Lightstream.com/TELLERS\n\nThe Art of Shaving - Get 15% off your first order by using the code \"Tellers\" at checkout, online or in the store."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/e8f809aa-6fee-49ab-bf49-39d5ffc32b7d.mp3"
+        5: 3029
+        6: "gid://art19-episode-locator/V0/ioIsufFr4VHgRca37GDZ91lzqKoJov9-Ljc7DXDGQsk"
+        7: 1543392300
+        9: 0
+        10: 48468636
+        11: "gid://art19-episode-locator/V0/ioIsufFr4VHgRca37GDZ91lzqKoJov9-Ljc7DXDGQsk"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Gladiator: Aaron Hernandez and Football Inc."
+        2: "The Boston Globe | Wondery"
+        3: "Football star Aaron Hernandez went from the bright lights of the Super Bowl to a convicted murderer in a few years. The Boston Globe\342\200\231s Spotlight Team, best known for its investigation of the sexual abuse scandal inside the Catholic Church, takes a hard look at the crisis facing football through the lens of Aaron Hernandez\342\200\231s life and terrible crimes.\n\nFrom Wondery, the podcast team that brought you Dr. Death, Spotlight asks: Did a brain badly damaged by football contribute to Hernandez\342\200\231s violent behavior? Did he keep secrets about his sexuality that collided with a hyper-masculine football culture? Did elite coaches and teams look the other way as Hernandez was spiraling out of control?\n\nSpotlight uncovered new documents, audio, and interviews to go deep into the story of what happened to Aaron Hernandez, and what it means for those of us who cheer on a violent game."
+        4: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1UWNeGdEb4xNRLt0NIvERG40By8rdHNIh9dBlN2JDF9aKCy8"
+        6: "https://art19.com/shows/gladiator-aaron-hernandez-and-football-inc"
+        7: "https://rss.art19.com/gladiator-aaron-hernandez-and-football-inc"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/cd11630ee2ae0757"
+        11: "cluster_0000000001cbc58b"
+        12: 1
+        13: "https://lh6.googleusercontent.com/proxy/Sm1F8SuHzeQcgyuq1WyN9WvDEZklwk2JZI-_RQ7TNtV8Kqem9K25IDQtIJTxU6IzB2wXnXJ9duyhdO05i9gv2kHtEHDkA-7VpN5SSdNiE2BPRT2Qk8qmmWfOzoy86QClk5kQGG1qqCHvM2DpyzjUREkM6GBqKL-9-0p219Y04sw9eLk_DlUEZwSU8rE0smkNppOxEF86UgFehKoO_kHnqd2t_dpCLCNz-MzZj6wglxTRX8tBSvVv0E1wv_8r-e08e94BtqgsD1ixRtGGE7ZQnHtqAoq7L95XinAHJo0NfjBoLcJpsZ_i4qljQROSFpxggZgarP01VhfbsqXv_FiBVQ=s800"
+        14: "https://content.production.cdn.art19.com/images/3e/fe/50/12/3efe5012-abad-4566-a95f-04cc77b8dc10/f46808881118a060e456abee78443e5aba85437e727bf5475173da86cd1ac4364c3e99acd94b0315a25243b9083cd8d61b527982a7f26149646ba3ded6a2fe43.jpeg"
+      }
+      2 {
+        1 {
+          9: 0x776569767265746e
+          4: 124
+          4: 55
+        }
+        2: "Aaron Hernandez died in 2017 but his life still raises questions. On this special episode Liz Dolan, host of \342\200\234Safe For Work\342\200\235 and \342\200\234Satellite Sisters,\342\200\235 speaks with Bob Hohler of the Boston Globe\342\200\231s Spotlight Team about the making of Gladiator, and the one question he still wants answered.\n\nSupport us by supporting our sponsors!\n\nAudible\302\240- Get a 30-day free trial and a free audio book when visit them at\302\240audible.com/gladiator\n\nLending Club - Regain control of your finances today at lendingclub.com/gladiator"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/59d91c5d-824d-45ae-98d9-6ae13d577432.mp3"
+        5: 1533
+        6: "gid://art19-episode-locator/V0/MYxZW-ptQEIthRmHQ5Y5R-F9dPAgL-2MJArGEJhouKk"
+        7: 1542701100
+        9: 1
+        10: 24540473
+        11: "gid://art19-episode-locator/V0/MYxZW-ptQEIthRmHQ5Y5R-F9dPAgL-2MJArGEJhouKk"
+      }
+      2 {
+        1: "Beauty & Violence | 6"
+        2: "In life, Aaron Hernandez weighed 240 pounds. In death, the most important part of his body was just over 3 pounds. When researchers analyzed his brain they were shocked by what they found. A lifetime of football had seemingly taken a tremendous toll, but could it explain his violent crimes?\n\nSupport us by supporting our sponsors!\n\nZip Recruiter - Get a free trial and learn how to hire smarter when you visit them at ziprecruiter.com/gladiator\n\nStamps.com - Use code GLADIATOR for a 4 week trial including postage and a meter stamps.com\n\nBrooklinen - Get $20 off and free shipping when you visit Brooklinen.com and use promo code \"Gladiator\" at checkout."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/0dad3aac-2751-4ad6-866f-6c77516006d6.mp3"
+        5: 2130
+        6: "gid://art19-episode-locator/V0/5cN_DyZ-pS6bDqZeJSz6wNMhkiYiJNurdzzcWzJtoNg"
+        7: 1542096300
+        9: 1
+        10: 34081227
+        11: "gid://art19-episode-locator/V0/5cN_DyZ-pS6bDqZeJSz6wNMhkiYiJNurdzzcWzJtoNg"
+      }
+      2 {
+        1: "Erasing Aaron | 5"
+        2: "With his arrest, Hernandez traded in his jersey number for an inmate number in the Massachusetts prison system. His voice was rarely heard from again in public -- but he spent hours talking on the phone from inside jail. Spotlight obtained ninety hours of jail calls -- never before heard publicly -- that provide an intimate look at his life and mind in the period before his first murder trial.\n\nFor more information on issues raised by this series, including suicide prevention, mental health, LGBTQ+ support, and concussion and sports safety, here is a list of\302\240support groups and educational organizations\n\nSupport us by supporting our sponsors!\n\nZip Recruiter - Get a free trial and learn how to hire smarter when you visit them at ziprecruiter.com/gladiator\n\nHims - Get a trial month for just $5 when you visit them at forhims.com/gladiator"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/e0b6606d-23a9-4d6b-b324-160fa9c911be.mp3"
+        5: 2594
+        6: "gid://art19-episode-locator/V0/XiHJY51tgrnvo8kotX0yVDfWSCQj3na7ATLrrOQQtok"
+        7: 1541491500
+        9: 1
+        10: 41518393
+        11: "gid://art19-episode-locator/V0/XiHJY51tgrnvo8kotX0yVDfWSCQj3na7ATLrrOQQtok"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Tides of History"
+        2: "Wondery /  Patrick Wyman"
+        3: "Everywhere around us are echoes of the past. Those echoes define the boundaries of states and countries, how we pray and how we fight. They determine what money we spend and how we earn it at work, what language we speak and how we raise our children. From Wondery, host Patrick Wyman, PhD (\342\200\234Fall Of Rome\342\200\235) helps us understand our world and how it got to be the way it is."
+        4: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBYRh5A3MTGhktL77lV2eyHSLVKJZavw2yIO92nQ-RewkfMBU"
+        6: "http://wondery.com/shows/tides-of-history/"
+        7: "https://rss.art19.com/tides-of-history"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/599057a743bd0ccf"
+        11: "https://rss.art19.com/tides-of-history"
+        12: 0
+        13: "https://lh3.googleusercontent.com/proxy/stlGP1rAyNr0aEKwN-_t7qDoU7FzxfHA4Z63HwKvYXtBtMPy21Ydzu51hDXea8I1enKazy37WW1Mh1_Lss8DXPjWf3bs-G5pLxhGu5N2VVzahYp7j63QsMQ6hxHy-Ii4e53BCrGqIHatvnF2hoSIpFWFWdDXObH0xid_BsfpJdMX2vKRo0bgw_TpG8G0qpiMZmuUfIRX0cMGcKw4E4gLGN46wp6E96XXD8Ba9p0EkIb1F-TSPwSgEOqSKxTXITOrMu1QtUFxVF3XgYUdASob36rlpG3AKmMl_mv-ymu5GFMCUPYo8tDBgbOytNKIN9vL8jT2oj83gr8nJ941ayg1wQ=s800"
+        14: "https://content.production.cdn.art19.com/images/a4/b7/0e/b1/a4b70eb1-2ba8-4320-ba12-20939a9c0d13/cb998adf8e03a9a4048785dd9740969aafc6ecd0f0e772a4cc2a7dfbf012a300a06c2e1241bf56a46874df44349e2c4fb51a20b59ad5a41aa2696748054b9113.jpeg"
+      }
+      2 {
+        1: "George Washington and the End of the Revolution: An Interview with Author Nathaniel Philbrick"
+        2: "Nathaniel Philbrick - one of Patrick\'s favorite authors of popular history - stopped by to chat about his latest book, In the Hurricane\'s Eye: The Genius of George Washington and the Victory at Yorktown. The bestselling author filled us in on the dramatic final days of the Revolutionary War and the strategic vision of George Washington.\n\nYou can get Nat\'s book here.\n\nSupport this show by supporting our sponsors!\n\nQuip - Get your first refill pack for free by going to GetQuip.com/TIDES\n\nHair Club - Visit HairClub.com/TIDES for a free hair analysis and free kit."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/7b7f6f41-2a9f-41b9-857e-137a213eb247.mp3"
+        5: 2482
+        6: "gid://art19-episode-locator/V0/SEf6F5OoqFSRtwyQVvX-SUWqHC-mTGuMGG0exV7Iv8o"
+        7: 1543478700
+        9: 0
+        10: 39715735
+        11: "gid://art19-episode-locator/V0/SEf6F5OoqFSRtwyQVvX-SUWqHC-mTGuMGG0exV7Iv8o"
+      }
+      2 {
+        1: "Beer, Brewsters, and Women\'s Work: An Interview with Judith Bennett"
+        2: "Professor Judith Bennett joined Patrick to talk about the difference between ale and beer, and how work - and women\'s work in particular - changed over time.\n\nCheck out Judith\'s Books!\n\nA Medieval Life: Cecilia Penifader of Brigstock, c. 1295-1344\n\nSisters and Workers in the Middle Ages\n\nWomen in the Medieval English Countryside: Gender and Household in Brigstock before the Plague\n\nAle, Beer, and Brewsters in England: Women\'s Work in a Changing World\302\240\n\nAnd, the best way to support this show is by supporting our sponsors:\n\nHair Club - Visit HairClub.com/Tides for a free hair analysis and kit\n\nQuip - Visit GetQuip.com/Tides get your first refill pack for free\n\nLinkedIn - Visit LinkedIn.com/Tides to get $50 off your first job post."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/3a84aecb-885c-4e53-9b28-d1acaab6771d.mp3"
+        5: 2902
+        6: "gid://art19-episode-locator/V0/YbCZQlwAusox0lTy0x2jyzOermUU3lyNk8wsgfkq64s"
+        7: 1542269100
+        9: 0
+        10: 46442370
+        11: "gid://art19-episode-locator/V0/YbCZQlwAusox0lTy0x2jyzOermUU3lyNk8wsgfkq64s"
+      }
+      2 {
+        1: "36 | The Fall of Constantinople and the Tragic End of the Byzantines"
+        2: "In 1453, after more than 60 years of trying, the Ottomans finally besieged and captured the city of Constantinople. This marked the end of one phase of Ottoman expansion and the beginning of another as the dominant power of the region. It was also the end of the Byzantines, the last vestige of a Roman Empire that had once stretched over the entire Mediterranean and beyond.\n\nSupport our show by supporting our sponsors!\n\nBoll & Branch - Visit BollandBranch.com and use promo code \"TIDES\" to get $50 off your first order and sleep like a feckless king!\n\nAudible - Want to read what Patrick is reading? Just go to Audible.com/TIDES or text TIDES to 500-500 to start your free trial today!\n\nThe Art of Shaving - The perfect shave is here. Get 15% off your first order by using the promo code \"TIDES\" at checkout online or in the store."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/78180af1-373c-4d15-91fd-568172a7fbad.mp3"
+        5: 3721
+        6: "gid://art19-episode-locator/V0/5pt8fi-sUiS954DkGSQf26L-_wLpBLrxeEpJ5uQu7bw"
+        7: 1541664300
+        9: 0
+        10: 59541211
+        11: "gid://art19-episode-locator/V0/5pt8fi-sUiS954DkGSQf26L-_wLpBLrxeEpJ5uQu7bw"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "True Crime All The Time"
+        2: "Emash Digital / Wondery"
+        3: "Hosts Mike Ferguson and Mike Gibson guide you through the most interesting true crime stories. This is a true crime podcast that spares none of the details and delves into what makes these killers tick. Join us for a good mix of lesser known cases as well as our take on what we call the \"Big Timers\". We don\'t take ourselves too seriously but we take true crime very seriously."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcyyNE2x7Ftx8u-lxf80upFPvofUHPLiWuWl4tzW8tRGzx7aE"
+        6: "http://www.truecrimeallthetime.com/"
+        7: "https://rss.art19.com/true-crime-all-the-time"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/177080336d1486b4"
+        11: "https://rss.art19.com/true-crime-all-the-time"
+        12: 1
+        13: "https://lh4.googleusercontent.com/proxy/X4KcZbe3pQ6Eok21pDS6PdIfEOov2lKAG006pVzGeV9GcXqffBiA4I7kEeBiGRQvKrheSrCb4-A7HownDPho5ln9kU8CIFzx2vgzCmlTmSZNKIHeUg9YB1_vACq5lbsZ8IiQeeNuQqH-aPGVU2WAYrW2-bDA7QbzkAJ7DuEUB_Lpa4J4bDWN4SoWcGfSGqbshn_ItQh_-5OBg6NjikhuGOTHTCoVzqgdzjSaVzBvFYM-hv_81lVIvynY4eDjk7oZEsHYQEvYDOIM2WoFkm1ov1am2w7iWkdp6SykJQpKPUVj2buBxwnoWpIiIg_hWiGe1W7ryrzQJwGTrvLDX3vtkw=s800"
+        14: "https://content.production.cdn.art19.com/images/4b/6c/7d/74/4b6c7d74-5655-48a0-aca8-ddf0fd607ed1/f3f5a8da79f7297430b41ead8e6c5f79b13f4e98645ab073630de278f59359b2189513655cfb4412f0a21568dc04d8d1ad3695d2993961fc3267a435d1135877.jpeg"
+      }
+      2 {
+        1: "Ep107 - Anthony Kirkland"
+        2: "Anthony Kirkland is a serial killer who murdered at least 5 in and around the Cincinnati Ohio area over a 20 year period. His number of victims would have almost certainly been higher had he not spent 16 of those years in prison for his first murder.\n\nJoin Mike and Gibby as they discuss Kirkland who operated just 45 minutes south of where the hosts live. Kirkland\'s MO included strangling and burning the bodies of his victims and he never varied. And even though he spent most of his life in prison, he had so many other brushes with the law where he got off easy. This is one of those cases where you have to question whether the justice system failed to protect the public from this type of vicious predator.\n\nYou can help support the show at patreon.com/truecrimeallthetime\n\nVisit the show\'s website at truecrimeallthetime.com for contact, merchandise, and donation information\n\nHelp the show by supporting our sponsors:\n\nExpressVPN - go to expressvpn.com/tcatt to get 3 months free with a 1-year package\n\nBetterHelp - go to betterhelp.com/tcatt and use the promo code tcatt to get 10% off your first month"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/41d650a6-47f7-479a-a7f8-5ea2bcf6d6f4.mp3"
+        5: 4781
+        6: "gid://art19-episode-locator/V0/FFI-CRiFZTgxrcrff880QimPSQlr9HOiHj4AZwgoyQE"
+        7: 1543798800
+        9: 1
+        10: 76496561
+        11: "gid://art19-episode-locator/V0/FFI-CRiFZTgxrcrff880QimPSQlr9HOiHj4AZwgoyQE"
+      }
+      2 {
+        1: "Ep106 - Byron David Smith"
+        2: "On Thanksgiving Day, 2012, Byron Smith shot and killed two teenagers who broke into his house. He was a decorated veteran of the Vietnam war and a retired US State Dept employee with a spotless record. But Smith was paranoid after his house had been burglarized a number of times. Because of this, he had an audio recorder that captured the shootings.\n\nJoin Mike and Gibby as they discuss the killings of 18-year-old Hailee Kifer and 17-year-old Nicholas Brady at the hands of Byron Smith. This case became a lightening rod for the debate about where the line was between defending yourself and your property and murder. Smith\'s own audio recordings and his subsequent interviews with police became the centerpiece of the State\'s case against him.\n\nYou can help support the show by going to patreon.com/truecrimeallthetime\n\nVisit the show\'s website at truecrimeallthetime.com for contact, merchandise, and donation information\n\nPlease help support our Sponsors:\n\nSimplisafe - Go to simplisafe.com/tcatt to get a special holiday offer on fantastic home security\n\nBuffy - Get $20 off the best comforter you\'ll ever sleep with at buffy.co using our promo code tcattt\n\nBetter Help - Get 10% off your first month of online counseling at betterhelp.com/tcatt using our promo code tcatt"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/c9a13c90-4784-44b3-bb5a-e70f40303198.mp3"
+        5: 5452
+        6: "gid://art19-episode-locator/V0/Gy9btyKk2TYVPLrSiVj_DXEIQSGmq8KfkOBowkkReZE"
+        7: 1543194000
+        9: 1
+        10: 87242710
+        11: "gid://art19-episode-locator/V0/Gy9btyKk2TYVPLrSiVj_DXEIQSGmq8KfkOBowkkReZE"
+      }
+      2 {
+        1: "Ep105 - Fred and Rosemary West Part2"
+        2: "Fred and Rose West, one of England\'s most notorious serial killer couples, murdered at least 9 together during the 1970s and 1980s. But, they also killed separately. When Fred, who was already a murderer, met Rose, the union brought out the worst in each of them. Their house at 25 Cromwell Street in Gloucester, England, would become known as \"The House of Horrors\".\n\nJoin Mike and Gibby for part 2 of 2 of the Fred and Rose West story. In this finale episode we focus on the murders and sexual sadism committed by the couple. It\'s hard for anyone to imagine, but this extended to members of their own family as well. But, after they were caught all of the deep dark tragedies would come to light.\n\nYou can help support the show by going to patreon.com/truecrimeallthetime\n\nVisit the show\'s website at truecrimeallthetime.com for contact, merchandise, and donation information\n\nSponsors:\n\nBetterHelp - Visit betterhelp.com/tcatt and use the promo code TCATT to get 10% off your first month. BetterHelp offers online counseling with the convenience of a number of technology options."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/cf19a1cb-b8f2-4ce2-b7c9-195e9c7e7867.mp3"
+        5: 5034
+        6: "gid://art19-episode-locator/V0/RRtQTmqSCylzuywNu3Pi-cHRv2blNnvkUj8PSR3-Mg0"
+        7: 1542589200
+        9: 1
+        10: 80557871
+        11: "gid://art19-episode-locator/V0/RRtQTmqSCylzuywNu3Pi-cHRv2blNnvkUj8PSR3-Mg0"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Stories Podcast - A Free Children\'s Story Podcast for Bedtime, Car Rides, and Kids of All Ages!"
+        2: "Stories Podcast / Wondery"
+        3: "On the Stories Podcast, we perform a new story for your children every week. The stories range from retellings of fairy tales like Snow White to classic stories like Peter Rabbit and even completely original works. Everything is G rated and safe for all ages. The perfect kids podcast for imaginative families. Whether you\342\200\231re driving with your children or just want to limit your kids\342\200\231 screen time, Stories Podcast delivers entertainment that kids and parents alike will love."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvp1Mo7A_PPvDUCchUmL1vwctpQzKX_q_IQ_Ez20Wug8r0UqV"
+        6: "http://wondery.com/wondery/shows/storiespodcast/"
+        7: "https://rss.art19.com/stories-podcast"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/b72f725e8851965a"
+        11: "https://rss.art19.com/stories-podcast"
+        12: 0
+        13: "https://lh3.googleusercontent.com/proxy/QTUuPZFKK_7lHdUh2KCwJDPPPRlm4wyqSdJOWcjwLoz0aTA2CKip7wxfxr6TPROtqXiy347ITkEtG-k6EQ9H6qEXkE4u0QDU2GRsNmUjMfXbEQsXwpYnQvqOKOakBgy2BIA-fzcjcyMSuvyIOs1BNF4IYq030RjWznhQ74xvlFn8JC6f5Jcqy8irrfvcAlD0BHB5fzKVjmMKIjynPyqL30dVL3-JwHynGjuez0vb6OuH8fGugxg43sm-3MqfokBZ--L2LcCirdtlgv5pKMtYg-3cGo-AGZKxOMqSoXeJs0Dp-Igod8Ncyjgf4xm9TJp5YtiI26nFZsnjNAseIUxjDA=s800"
+        14: "https://content.production.cdn.art19.com/images/73/8f/95/7f/738f957f-5873-4158-a31f-2c70cbc0c972/6770bc52cb9c91e007ffb43d881d3f4694d1af96a991be09f4bdfe1ea912718e328cb05d8b6c426437064758554caae57d7c8ca2277d8592010e7749379bf17d.jpeg"
+      }
+      2 {
+        1: "The Cat Bride"
+        2: "Two Greek gods get into an argument and make a bet. Does changing the way something looks change what it truly is? Tune in and find out!\n\nIf you would like to support our podcast, you can visit patreon.com/stories and make a pledge. AND don\'t forget that you can vote for us for Best Kids and Family podcast in the iHeartRadio Podcast Awards! You can go to storiespodcast.com/vote and that will take you to the right page.\302\240\n\nThank you!!"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/b61a55df-0a02-422d-b427-3a6114b80c9f.mp3"
+        5: 685
+        6: "gid://art19-episode-locator/V0/u1xn7YnQI2v9v3tH2PaTcmDbwFm4Xspugcz9aMzyxXc"
+        7: 1543846640
+        9: 0
+        10: 10971428
+        11: "gid://art19-episode-locator/V0/u1xn7YnQI2v9v3tH2PaTcmDbwFm4Xspugcz9aMzyxXc"
+      }
+      2 {
+        1: "A Dog King Thanksgiving!"
+        2: "It\'s Thanksgiving! Dog King, King of the Dogs is throwing a festive, silly celebration in the alley, and everyone\'s coming! Pickles, Rex, Other Rex, Other OTHER Rex, and... a cat? Find out what happens when an uninvited feline guest crashes this bow wow bash!\n\nIf you would like to support our podcast, you can visit patreon.com/stories and make a pledge. AND don\'t forget that you can vote for us for Best Kids and Family podcast in the iHeartRadio Podcast Awards! You can go to storiespodcast.com/vote and that will take you to the right page.\302\240\n\nThank you!!"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/2f5e54ca-f7df-47fc-bc59-1a204053682d.mp3"
+        5: 1223
+        6: "gid://art19-episode-locator/V0/7flOne4ezLrETxYg61b1uD3D6gShD3Uh_z74iSPE6TQ"
+        7: 1542861240
+        9: 0
+        10: 19571356
+        11: "gid://art19-episode-locator/V0/7flOne4ezLrETxYg61b1uD3D6gShD3Uh_z74iSPE6TQ"
+      }
+      2 {
+        1: "The Narrow Bridge"
+        2: "This story is about two VERY stubborn goats as they battle it out to see who gets to cross a VERY narrow bridge first. Who will it be?? You\'ll have to listen to find out!!\n\nIf you\'d like to support our podcast, you can visit patreon.com/stories and make a pledge. AND don\'t forget that you can vote for us for Best Kids and Family podcast in the iHeartRadio Podcast Awards! You can go to storiespodcast.com/vote and that will take you to the right page.\n\nThank you!!!!"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/20698144-06ba-492c-800b-d56bd9b81805.mp3"
+        5: 673
+        6: "gid://art19-episode-locator/V0/5Y2J3zWVR7z9Dm3heak5H_4oP7nzSoQmtyBh1WSTri4"
+        7: 1542043537
+        9: 0
+        10: 10783764
+        11: "gid://art19-episode-locator/V0/5Y2J3zWVR7z9Dm3heak5H_4oP7nzSoQmtyBh1WSTri4"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Legal Wars"
+        2: "Wondery"
+        3: "The courtroom can be a battlefield over money, people\342\200\231s rights, and even their lives. For some cases, the consequences can affect us long after the verdict is read.\n\nBased on extensive interviews and court transcripts, Wondery\342\200\231s new podcast LEGAL WARS puts you inside the jury box of some of the most famous court cases in American history, including Hulk Hogan\342\200\231s courtroom wrestling match with Gawker, the battle for free speech on the internet, and the Rodney King trial that set off the LA Riots. Host Hill Harper, actor and Harvard Law School graduate, brings you the drama, the larger-than-life characters, and the real-world impact these cases had on our society."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq4_MQfxGsToI4svmh7axLb6gaJIJcWaUXrFQd2nC-7Hb3RfVB"
+        6: "https://art19.com/shows/legal-wars"
+        7: "https://rss.art19.com/legal-wars"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/1d9532b46ab3400c"
+        11: "cluster_0000000001275aa7"
+        13: "https://lh4.googleusercontent.com/proxy/jdIPX8ypSTZKav1xSTsO5XN9nMdERMnz9c6hF-KhmpVtdDH_mo1SjhPsDYK-h9tVj8lMfcgLuqJNWgxLSf2hxZii3ODjIZIL2tCCQVFgwrAivfCt5lmVsYW4cie4FS-mJOmB3HL5SRazPwrRkd-Ef0lOa0N6ngCysUGHYT0EtB9IuTujZZA4I-88_DPHgEZte-ZwSgRoWejkO8prf_K0oHKb2OELbYUHuGSO591JKvsHrXDqgigqbuebtaVFD9irg1p0Ux_EsJoyi8IU_82TeCVnco0076obJsUeKxaljIZcJ5VYJ-CB3D9zMEt_wXctSjKzEYLBCpYZzqjCf0BCAQ=s800"
+        14: "https://content.production.cdn.art19.com/images/1f/31/19/05/1f311905-8d47-4174-acbf-d420f18b6d78/486b0161dec418239d9385cfd804e942322522cf945d1f4844ff0e0bb367a5b5d1e7730c7b66cb38528a2c3cf02d685e63c3203c7a419a97ff82a1b7689096af.jpeg"
+      }
+      2 {
+        1: "Monkey Selfie - Monkey Business | 2"
+        2: "Judges try to determine who Naruto\342\200\231s \342\200\234next friend\342\200\235 and who can legally profit from the monkey\342\200\231s art.\n\nSupport us by supporting our sponsors!\n\nBrooklinen - Get $20 off and free shipping by going to Brooklinen.com/LegalWars\n\nHair Club - Visit HairClub.com/LegalWars for a free hair analysis and a free kit."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/7c23e560-7678-47bf-9205-2222eb30f8e5.mp3"
+        5: 1882
+        6: "gid://art19-episode-locator/V0/AP2TGVCHUAhq2ygdvynm3tZkkODY3GZA8YI-Ngn7xQY"
+        7: 1543478700
+        10: 30123154
+        11: "gid://art19-episode-locator/V0/AP2TGVCHUAhq2ygdvynm3tZkkODY3GZA8YI-Ngn7xQY"
+      }
+      2 {
+        1: "Iconic magazine editor Tina Brown and her new podcast | 1"
+        2: "As editor in chief at Vanity Fair and The New Yorker, Tina Brown has had opportunity to sit down with the world\342\200\231s most important people to hear their thoughts on the zeitgeist and on her new Podcast, \342\200\234TBD with Tina Brown,\342\200\235 she invites you to hear her candid conversations with writers, politicals, crime sleuths, journalist and the newsmakers of tomorrow\342\200\231s social debates. Subscribe to TBD with Tina Brown on Apple Podcasts or by visiting\302\240wondery.fm/tbd"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/4809d69e-f20b-4fba-bec6-9ac91d08e78e.mp3"
+        5: 482
+        6: "gid://art19-episode-locator/V0/q9S7CvV-ukVlDal6cwqJRYFo1FMRStTd3FpATWF7rPU"
+        7: 1543394884
+        10: 7721377
+        11: "gid://art19-episode-locator/V0/q9S7CvV-ukVlDal6cwqJRYFo1FMRStTd3FpATWF7rPU"
+      }
+      2 {
+        1: "Monkey Selfie - Bungle in the Jungle | 1"
+        2: "When a man leaves his camera within a monkey\342\200\231s reach, the selfie that results sets off an unusual copyright case.\n\nSupport us by supporting our sponsors!"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/346fc04e-1caa-4d40-b1c6-5a840276f616.mp3"
+        5: 1743
+        6: "gid://art19-episode-locator/V0/H85c9IeBiPtQ8vvl2tL9qC_MEO_S66uxVUDBH1li7Vo"
+        7: 1542873900
+        10: 27903373
+        11: "gid://art19-episode-locator/V0/H85c9IeBiPtQ8vvl2tL9qC_MEO_S66uxVUDBH1li7Vo"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Imagined Life"
+        2: "Wondery"
+        3: "What is it like to be famous before you\342\200\231re famous? What is it like to walk in the shoes of another person? Each episode of Imagined Life takes you on an immersive journey into the life of a world-famous person. It\342\200\231ll be someone you may think you know, even admire -- or maybe the opposite. You\342\200\231ll get clues to your identity along the way. But only in the final moments will you find out who \342\200\234you\342\200\235 really are. So sit back, let go, and -- imagine your life, with our hosts, Oscar nominated Virginia Madsen and celebrated voice actor Robbie Daymond. From Wondery, the network behind Dirty John."
+        4: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPdgf2VhxK2J0GePSQGTRmCEx795BoyI-QusIasvRW6vdCJofZ"
+        6: "https://art19.com/shows/imagined-life"
+        7: "https://rss.art19.com/imagined-life"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/0564412c3a2e2faa"
+        11: "cluster_00000000027cc847"
+        12: 0
+        13: "https://lh5.googleusercontent.com/proxy/6pVs5KYBrQU-YMzA6i41fn_KtJxWGzss5SfZo80A91oM6EhSQqxY2agutKql-kkdA4EP2DphgBuUsd00DimVyj7oWVL-KEH45Yl-h34l5j1RxVteiGBwaTVCUbpVANL5VulSFSueU3MjjkK6Au-Uo0Mae1hwIVCUnzoM3f7FKhSdKESCfcl8L8jDKn4-IyHKdc1pqMrdrZVWk0tDtDwVr6Kc-JrvbHGPtnPh-Fs7uD_3qyEprxwDdfZ0cmwk6KcIgOPffn0vELCqDbtILn48UGnyr79F0kvc_CteZJ1y3RAAS_tOYIBOnbt3kIApTlYg037iDBsiahV3SryxmQzdsQ=s800"
+        14: "https://content.production.cdn.art19.com/images/ee/af/79/a8/eeaf79a8-199e-438b-8a9c-56aeb3f6bd83/86393e465e3bc4c9490152aa8de15f4b20010494ced5ca6552b56e9722f3f1858f2cc8e05df87b78a31fe6c4b30ac63be897249fad1e906d979e6be489a294a1.jpeg"
+      }
+      2 {
+        1: "The Trailblazer"
+        2: "You\342\200\231re a successful woman in a man\342\200\231s business, and yet you\342\200\231re not sure you can do it alone. \302\240You\342\200\231ve so worked hard to get here, and your marriage is on the rocks and you\342\200\231re afraid of losing everything. Hosted by Virginia Madsen.\n\nSupport this show by supporting our sponsors!\n\nAncestry - Go to\302\240Ancestry.com/Imagined\302\240to get your kit for just $59.\n\nHair Club - Get a free hair analysis and a free take home kit when you go to\302\240hairclub.com/imagined"
+        3: "https://rss.art19.com/episodes/2b04073f-1b63-42a0-a6ae-441355529f6f.mp3"
+        5: 2883
+        6: "gid://art19-episode-locator/V0/9j2i2fj8f_smOv8ybT0VcdijWBg33exedGR_UaY135o"
+        7: 1543788000
+        9: 0
+        10: 46131409
+        11: "gid://art19-episode-locator/V0/9j2i2fj8f_smOv8ybT0VcdijWBg33exedGR_UaY135o"
+      }
+      2 {
+        1: "Meet the Hosts"
+        2: "Liz Dolan talks to co-hosts Virginia Madsen and Robbie Daymond about their experience in film, TV and animation\342\200\224 and what drew them to \342\200\234Imagined Life.\342\200\235\n\nSupport this show by supporting our sponsors!\n\nAncestry\302\240- Go to\302\240Ancestry.com/Imagined\302\240to get your kit for just $59."
+        3: "https://rss.art19.com/episodes/8d2aeaed-0eca-4bab-b8e0-84740f07bf45.mp3"
+        5: 1631
+        6: "gid://art19-episode-locator/V0/Q6uVnSxp9doQ9OffKs1kQdepS8S2pnRTVfbXdvnkqMc"
+        7: 1543392300
+        9: 0
+        10: 26106984
+        11: "gid://art19-episode-locator/V0/Q6uVnSxp9doQ9OffKs1kQdepS8S2pnRTVfbXdvnkqMc"
+      }
+      2 {
+        1: "The Warrior"
+        2: "You have to decision to make. On one side, everything you\342\200\231ve ever worked for; on the other, everything you believe in. You can\342\200\231t have both. \302\240Hosted by Robbie Daymond.\n\nSupport this show by supporting our sponsors!\n\nGobble - Get $50 off your first order by going to\302\240Gobble.com/Imagined\n\nQuip - Get your first refill pack free when you buy s toothbrush at\302\240getquip.com/imagined\n\nAncestry - Go to\302\240Ancestry.com/Imagined to get your kit for just $59."
+        3: "https://rss.art19.com/episodes/d6e0aa28-ad1e-4af6-8da6-05f7702332eb.mp3"
+        5: 2638
+        6: "gid://art19-episode-locator/V0/kT2M8PE7EBNZ5PaE_fSk3109Qbe46v7kj2RtGuwdtQ8"
+        7: 1543183200
+        9: 0
+        10: 42211787
+        11: "gid://art19-episode-locator/V0/kT2M8PE7EBNZ5PaE_fSk3109Qbe46v7kj2RtGuwdtQ8"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "American Scandal"
+        2: "Wondery"
+        3: "Every scandal begins with a lie. But the truth will come out. And then comes the fallout and the outrage.\n\nScandals have shaped America since its founding. From business and politics to sports and society, we look on aghast as corruption, deceit and ambition bring down heroes and celebrities, politicians and moguls.\302\240And when the dust finally settles, we\342\200\231re left to wonder: how did this happen? Where did they trip up, and who is to blame? From the creators of American History Tellers, Business Wars and Tides of History comes American Scandal, where we take you deep into the heart of America\342\200\231s dark side to look at what drives someone to break the rules and what happens when they\342\200\231re caught.\302\240Hosted by Lindsay Graham."
+        4: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgnYK_zIS5wsjw7YAQEaZxDNV_JUJwUN-D1eIxSbRNPzeyJaE"
+        6: "https://art19.com/shows/american-scandal"
+        7: "https://rss.art19.com/american-scandal"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/c6a5a2862e706dbf"
+        11: "cluster_0000000000dd71db"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/_5oYRNNDIG4dl0NhaRqauHbperLx0BeECv7Ro2hfPweduxOwGVo1dBfE4Rz-7AQNBfqm4ywCelug6PubcjuwQP5zNX7f1M6mWW4F0L_ns7-p1N_k3fEzQ6JZQTXg0FGuf7zHTnNVBM_MUA5X4D2OkbGcMfD9w_GMnkkxe6sACUnlK8_u0pYvYrN_8TBZ61LUfdnHG1KyLtR948ZT3GdbeUJuwpEX4kFjrHL5CQm8v1QcPa0XkJTc2NYngWpK59198yNtoc9ShqAb5VBW_uZz60wEVYrANjFkkvVdugcfyUBEkrMiA5gKg_N149zI47TSVTVyaRYPewxgyEF3PtHb9w=s800"
+        14: "https://content.production.cdn.art19.com/images/75/8c/dc/ee/758cdcee-6416-4045-910d-5a921bc9f778/1e67aab4391f2494bee3f17e19b7c906ed29042a967387165db00cd9704e0d17677043bb68894449262416cdcf44187818222149c70a92af43d06b413dc1ffdb.jpeg"
+      }
+      2 {
+        1: "Lindsay Graham\'s Newest Podcast: 1865"
+        2: "April 15, 1865. President Lincoln is dead and the country in turmoil. Secretary of War Edwin Stanton takes control, determined to bring the assassin to justice.\n\nHeavily researched, this historical political thriller is an audio drama that explores America\342\200\231s darkest hours. The story is astonishing\342\200\224and all of it is based on true events.\n\nYou can listen to new weekly episodes of 1865 exclusively on\302\240Stitcher\302\240Premium. For a free month of\302\240Stitcher\302\240Premium, go to\302\240stitcherpremium.com/1865\302\240and use promo code \'1865\'."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/a7c835b8-f9a2-4765-bbe6-08e12b38aeca.mp3"
+        5: 714
+        6: "gid://art19-episode-locator/V0/NrmORe2g_4AS1JvkIb4nt5onL_IdHU1yD5ghzYkA6fE"
+        7: 1543836600
+        9: 0
+        10: 11424496
+        11: "gid://art19-episode-locator/V0/NrmORe2g_4AS1JvkIb4nt5onL_IdHU1yD5ghzYkA6fE"
+      }
+      2 {
+        1: "Introducing TBD with Tina Brown"
+        2: "As editor in chief at Vanity Fair and The New Yorker, Tina Brown has had opportunity to sit down with the world\342\200\231s most important people to hear their thoughts on the zeitgeist and on her new Podcast, \342\200\234TBD with Tina Brown,\342\200\235 she invites you to hear her candid conversations with writers, politicals, crime sleuths, journalist and the newsmakers of tomorrow\342\200\231s social debates. Subscribe to TBD with Tina Brown on Apple Podcasts or by visiting\302\240wondery.fm/tbd"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/dd4a0090-de7f-4ad5-b868-5ce33b9c3414.mp3"
+        5: 479
+        6: "gid://art19-episode-locator/V0/KAk2xrrC6Nw6ZsQzfsQjog663m9f0ypNtKJTUuc_jhg"
+        7: 1543601818
+        9: 0
+        10: 7667879
+        11: "gid://art19-episode-locator/V0/KAk2xrrC6Nw6ZsQzfsQjog663m9f0ypNtKJTUuc_jhg"
+      }
+      2 {
+        1: "Iran Contra: Bud | 1"
+        2: "In July of 1985, the National Security Advisor to President Reagan, Robert \342\200\234Bud\342\200\235 McFarlane puts a plan in motion that could change the course of history and turn the Reagan administration upside down.\302\240\n\nSupport this show by supporting our sponsors!\n\nQuip - Get your first refill pack free when you purchase a toothbrush at\302\240getquip.com/as\n\nZipRecruiter - Get a free trial and learn how to hire smarter when you visit them at\302\240ziprecruiter.com/as\n\nArticle - Get $50 off your first purchase when you visit them at\302\240article.com/AS"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/ea1c8288-ccca-46b3-bc66-2ef0424d88d3.mp3"
+        5: 3049
+        6: "gid://art19-episode-locator/V0/hx3YHBAq7YZZnlnS0d5uOMwT1zj7VITSQDrdVNNV8Ok"
+        7: 1543305900
+        9: 0
+        10: 48792555
+        11: "gid://art19-episode-locator/V0/hx3YHBAq7YZZnlnS0d5uOMwT1zj7VITSQDrdVNNV8Ok"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "American Innovations"
+        2: "Wondery"
+        3: "DNA science. Artificial intelligence. Smartphones and 3D printers. Science and technology have transformed the world we live in. But how did we get here? It wasn\342\200\231t by accident. Well, sometimes it was. It was also the result of hard work, teamwork, and competition. And incredibly surprising moments.\n\nHosted by bestselling author Steven Johnson (\342\200\234How We Got To Now\342\200\235), American Innovations uses immersive scenes to tell the stories of the scientists, engineers, and ordinary people behind the greatest discoveries of the past century. From Wondery, the network behind Business Wars, American History Tellers, and Dirty John."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdOZo8UR14o3Xo4HvyF2HsFRdCrBzAxWaM8LFqajggkjlhqVQ"
+        6: "https://art19.com/shows/american-innovations-podcast"
+        7: "https://rss.art19.com/american-innovations-podcast"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/e105bb10deb1fdb2"
+        11: "https://rss.art19.com/american-innovations-podcast"
+        12: 0
+        13: "https://lh4.googleusercontent.com/proxy/sLTvEMLVu-SVsuNGjzzu1VsYLBD1uxkzGTCuoOThF3bsFcLQNJsIMqqsZXfSSrxp5A0bwHI0ozXATRSVK6q5nsZYMi9U3DXjbINdq2RFsiZc8oP65Pfgq2RPr32oZOSLx7Hfl_CX9anqyyG5bSLVHutOuMeqvhoQVCMv7LInyziz8-akRO45Yes23K4LLnEGaUQWLVnC9NrA69CjHVqXbLJRoxgAS-DIneyij3netKnO0G9jRXcvDXEMtaPqZywksucprWlEH0QQsIKCPyBgjYWl3uRPD0Oa77dQNad3DCrJuU8iEReJOYvGwglcZsP__bhnRU_zdlU6le13RQWyYQ=s800"
+        14: "https://content.production.cdn.art19.com/images/8d/72/58/ea/8d7258ea-970c-421f-86c3-921620c16efd/57a79bd6a8e240aec9b8d32edbea5fb8e92a60ff7eed14040218edbffe059b40035a8ebc882e9ba5cef1b8f5386239d4d131d1e4b524fc40c0fbb38469857d06.jpeg"
+      }
+      2 {
+        1: "Interview | Stuff You Should Know  | 6"
+        2: "An interview with Josh Clark, co-host of the \342\200\234Stuff You Should Know\342\200\235 podcast. Josh has a new show called \342\200\234The End of the World with Josh Clark\342\200\235 that looks at those big existential questions we humans can\342\200\231t seem to settle: Are we alone in the universe? Where did we come from? And, what\342\200\231s next for us?\n\nSupport this show by supporting our sponsors!\n\nThe Great Courses - Go to\302\240TheGreatCoursesPlus.com/AI\302\240for a special FREE TRIAL to The Great Courses Plus.\n\nThe Art of Shaving - The perfect shave is here. Get 15% off your first order by using the promo code \"AI\" at checkout online or in the store.\n\nWix - Create your very own professional website today at\302\240wix.com"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/32c0a3fa-c57e-4ec4-8070-319acc1a3a54.mp3"
+        5: 3014
+        6: "gid://art19-episode-locator/V0/A3SP0gKJiPGHCVXCsm0KNZ33fyQB_WLhl3JBdtXov3g"
+        7: 1543478700
+        9: 0
+        10: 48227892
+        11: "gid://art19-episode-locator/V0/A3SP0gKJiPGHCVXCsm0KNZ33fyQB_WLhl3JBdtXov3g"
+      }
+      2 {
+        1: "Introducing TBD with Tina Brown | 5"
+        2: "As editor in chief at Vanity Fair and The New Yorker, Tina Brown has had opportunity to sit down with the world\342\200\231s most important people to hear their thoughts on the zeitgeist and on her new Podcast, \342\200\234TBD with Tina Brown,\342\200\235 she invites you to hear her candid conversations with writers, politicals, crime sleuths, journalist and the newsmakers of tomorrow\342\200\231s social debates. Subscribe to TBD with Tina Brown on Apple Podcasts or by visiting\302\240wondery.fm/tbd"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/439d62ef-4ae6-40e9-a6e2-9d096accca53.mp3"
+        5: 487
+        6: "gid://art19-episode-locator/V0/Be512xDkLDaGxJzVeZ9m9tp0_EfjcOG06uQHAeK2wJo"
+        7: 1543394936
+        9: 0
+        10: 7793684
+        11: "gid://art19-episode-locator/V0/Be512xDkLDaGxJzVeZ9m9tp0_EfjcOG06uQHAeK2wJo"
+      }
+      2 {
+        1: "Anesthesia | Ether Dreams | 3"
+        2: "As Horace Wells\342\200\231 life went from bad to worse, William Morton was handed a golden opportunity. At stake was scientific pride and a lot of money. But who will triumph?\n\nSupport this show by supporting our sponsors!\n\nWix - Create your very own professional website today at\302\240wix.com\n\nThe Great Courses - Go to\302\240TheGreatCoursesPlus.com/AI\302\240for a special FREE TRIAL to The Great Courses Plus."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/43b960da-3296-4a5d-a201-e57e0fc486f4.mp3"
+        5: 2574
+        6: "gid://art19-episode-locator/V0/RJsSbXd0fFiEf6BB7r27MC3hGIYqkAYY72IDnD06hjc"
+        7: 1542873900
+        9: 0
+        10: 41199490
+        11: "gid://art19-episode-locator/V0/RJsSbXd0fFiEf6BB7r27MC3hGIYqkAYY72IDnD06hjc"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "The Minds of Madness - True Crime Stories"
+        2: "The Minds of Madness | Wondery"
+        3: "An investigative discovery, uncovering the series of events, circumstances, and state of mind which cause ordinary people to do unthinkable things\342\200\246."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuVhiwMhQfTFTTlPMdONQ3KRNENn2qcl5yRGXPlAm8Qsx6h8Cb"
+        6: "https://art19.com/shows/the-minds-of-madness-podcast"
+        7: "https://rss.art19.com/the-minds-of-madness-podcast"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/548a3db7904a1099"
+        11: "https://rss.art19.com/the-minds-of-madness-podcast"
+        12: 0
+        13: "https://lh5.googleusercontent.com/proxy/U1s_HxUivxrg_CAMZhpPs-HZIEoKXJSE63_S7BFL7LvzqpiNGjocnTYP-RnRQrLvWFJ5BsNAGnM7dKSGje5fyO26rxUj3mvn5QidzbU4KK5G_1ZNzqB6UyE9igm1AnIZmYsrxlIg30KnXIvHRxtU4aNPL0eO1LAMm9GeWzlJjmwYid0MdtB93TUGye0xGlOBA-CWBqgyDy-aFrABVtxmLZAx1gKnQRX-atHov3YsaIeK7qCHQnpPtBxINP7CNE_6XdqbJfVdxVDdv2eDwf0h_HCJc74I8zNblcyBImfQMZQgEf1kaCtEQtaRoNxVx7ui_WTciRbTH1kjHqwzZPVhXg=s800"
+        14: "https://content.production.cdn.art19.com/images/48/ac/02/fa/48ac02fa-108a-43c6-a612-3f31df925d2a/d516413f8368c5f072b2ff27d85a48f56214b125f2255254e7f41f8262c2360aded5dcdd76483dcaad54fb42bab71477cc5ccfc8238072bd5d153b58f729f5e9.jpeg"
+      }
+      2 {
+        1: "Introducing: Generation Why"
+        2: "The Generation Why Podcast released its first episode in 2012 and pioneered the true crime genre in the podcasting world. Sit down with two friends, Aaron and Justin, who break down theories and give their opinions on unsolved murders, controversies, mysteries and conspiracies."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/13eae599-16cd-407b-af0d-7a664020c48c.mp3"
+        5: 657
+        6: "gid://art19-episode-locator/V0/Cv1R2G_m4w8tAZj_gH_5JtjwO6Kg_clCrIIyHv8oWRU"
+        7: 1543885602
+        9: 0
+        10: 10517942
+        11: "gid://art19-episode-locator/V0/Cv1R2G_m4w8tAZj_gH_5JtjwO6Kg_clCrIIyHv8oWRU"
+      }
+      2 {
+        1: "Episode 38 \342\200\223 Marty Duram"
+        2: "Connie and Keith Ream were used to seeing their neighbors Marty and Glenna Duram puttering around their country home on a regular basis. Living in a rural area of Michigan, the Ream\342\200\231s and Duram\342\200\231s had gotten to know each other over the years and communicated daily. That\342\200\231s why when Connie and Keith hadn\342\200\231t seen or heard from their friends in several days, they became concerned.\n\nMusic Credits:\n\nThe Minds Of Madness Theme Music \342\200\223 Duncan Foster\n\nAll music is used under an Attribution License -\302\240https://creativecommons.org/licenses/\n\nMusic provided by George Cattapan -\302\240http://www.cattapanproductions.com/\n\nThe Funkoars \342\200\223 Feel The Madness\n\nUsed with Permission -\302\240http://goldenerarecords.com.au/ge/funkoars/\n\nPlease check out this episodes sponsors and help support our podcast:\n\nQuip - quip looks like a big-ticket tech gift with a stocking stuffer price, starting at just $25. And if you go to getquip.com/madness right now, you get your first refill pack for FREE with a quip electric toothbrush.\302\240\n\nSimpliSafe - Protect your home today and get a great deal on home security. Go to simplisafe.com/madness and save 25% off your SimpliSafe system. Make sure to use that URL so they know we sent you. And hurry! This deal ends November 26th 2018.\302\240\n\nBrooklinen - The only way to get $20 off AND free shipping is to use promo code MADNESS at Brooklinen.com......Brooklinen, these really are the best sheets ever!\302\240\n\nSpecial Thank You:\n\nJesse James \342\200\223 The Bird Whisperer\n\nwww.birdwhisperer.com\n\nJustin Rimmel \342\200\223 Host of Mysterious Circumstances\n\nhttp://mysteriouscircumstances.podbean.com/\n\nFeatured Podcasts:\n\nCriminology - https://criminology.libsyn.com/\n\nSwindled - http://swindledpodcast.com/\n\nResearch And Writing:\n\nMegan Halbach\n\nHead Of Research and Development:\n\nKate Morse\n\nLooking for extra content?\n\nIf you would like to support the show and get some extra perks including extra content, including early release/ad-free episodes,\302\240\n\nGo to:\302\240https://www.patreon.com/MadnessPod\n\nWebsite\302\240-\302\240https://mindsofmadnesspodcast.com/\n\nFacebook\302\240-\302\240https://www.facebook.com/themindsofmadness/\n\nTwitter\302\240- @MadnessPod\n\nInstagram\302\240-\302\240https://www.instagram.com/themindsofmadness/\n\nSnapchat\302\240- Minds of Madness\n\nDon\'t forget to Subscribe, Like, Review, and Share. Please help listeners find this show more easily, by taking the time to review on iTunes. Thank you"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/b4cea748-267c-470c-87ad-d0d980e64181.mp3"
+        5: 5347
+        6: "gid://art19-episode-locator/V0/LiXVtTFpsveicnGH9tEk80-CtaX843XrTrId-rKu6zQ"
+        7: 1543191082
+        9: 0
+        10: 85568365
+        11: "gid://art19-episode-locator/V0/LiXVtTFpsveicnGH9tEk80-CtaX843XrTrId-rKu6zQ"
+      }
+      2 {
+        1: "Episode 37 \342\200\223 The Yosemite Murders And FBI Agent Jeffrey Rinek \342\200\223 Part 2"
+        2: "PART 2 OF 2 - Previously in Part 1 of the Yosemite Murders and the FBI agent who helped solved them. In 1999, a total of 4 women had mysteriously\302\240vanished near Yosemite National Park in California. Their bodies were eventually discovered...and they had\302\240been brutally murdered.\302\240After a massive investigation, the FBI felt confident they had the perpetrators behind bars. However Special FBI agent Jeffrey Rinek felt differently.\n\nMusic Credits:\n\nKai Engel - Mist and Clouds\302\240\n\nKai Engel\302\240- The Blossom PON III\n\nKai Engel\302\240- I Am Climbing on Air\302\240\302\240\n\nKai Engel\302\240- Behind Your Window\n\nThe Minds Of Madness Theme Music \342\200\223 Duncan Foster\n\nAll music is used under an Attribution License -\302\240https://creativecommons.org/licenses/\n\nMusic provided by George Cattapan -\302\240http://www.cattapanproductions.com/\n\nThe Funkoars \342\200\223 Feel The Madness\n\nUsed with Permission -\302\240http://goldenerarecords.com.au/ge/funkoars/\n\nPlease check out this episodes sponsors and help support our podcast:\n\nQuip\302\240- An electric toothbrush designed to make brushing your teeth simple and affordable.\n\nGo to https://www.getquip.com/madness\302\240now\302\240and get your electric toothbrush\302\240starting at\302\240just $25\302\240and\302\240you\'ll get\302\240your first refill pack FREE!\n\nSpecial Thank You:\n\nJustin Evans:\302\240Host of The Peripheral & The Generation Why\n\nhttps://www.facebook.com/Theperipheralpodcast/\n\nhttps://art19.com/shows/generation-why-podcast\n\nJeffrey Rinek - Former FBI Agent\n\nhttps://www.benbellabooks.com/shop/in-the-name-of-the-children/\n\nhttps://www.nytimes.com/2018/10/26/books/review/true-crime-books-marilyn-stasio.html\n\nFeatured Podcasts:\n\nMurderish - https://www.spreaker.com/show/murderish_2\n\nPretend Radio - https://pretendradio.org/\n\nResearch And Writing:\n\nStephen B. Armstrong\n\nHead Of Research and Development:\n\nKate Morse\n\nLooking for extra content?\n\nIf you would like to support the show and get some extra perks including extra content, including early release/ad-free episodes,\302\240\n\nGo to:\302\240https://www.patreon.com/MadnessPod\n\nWebsite\302\240-\302\240https://mindsofmadnesspodcast.com/\n\nFacebook\302\240-\302\240https://www.facebook.com/themindsofmadness/\n\nTwitter\302\240- @MadnessPod\n\nInstagram\302\240-\302\240https://www.instagram.com/themindsofmadness/\n\nSnapchat\302\240- Minds of Madness\n\nDon\'t forget to Subscribe, Like, Review, and Share. Please help listeners find this show more easily, by taking the time to review on iTunes. Thank you"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/564e44b9-2bfd-4c04-8964-3fa6b340c0c2.mp3"
+        5: 2573
+        6: "gid://art19-episode-locator/V0/911OMXveqUGY5OLhX8PwbSPaU4wOu10KX3c6MNWdKAk"
+        7: 1542073258
+        9: 0
+        10: 41183190
+        11: "gid://art19-episode-locator/V0/911OMXveqUGY5OLhX8PwbSPaU4wOu10KX3c6MNWdKAk"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Drunks and Dragons - Dungeons and Dragons 5e Actual Play"
+        2: "GeeklyInc.com | Wondery"
+        3: "The Dungeons and Dragons Podcast"
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRr2GAl1_wVskAnnrKOHva1UgkFeAMtuJWzw72dpCaWrattrw"
+        6: "http://wondery.com/wondery/shows/drunksanddragons/"
+        7: "https://rss.art19.com/drunks-and-dragons"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/155d27d45f156d8a"
+        11: "https://chafingarmor.com/feed/"
+        12: 1
+        13: "https://lh5.googleusercontent.com/proxy/QY6gqNtLNUrsQIi3j6NiUEMQj6LXy81od24GPx46gkJavaXLPPKn4eKZIZHeJBA2skyyx70QttBCa2ry4Sx79xqjVFbkSWLU19JCFJqjn9chqLqojYcLFHe-IpVhcRbHJmXQfz3shl-3YASQ1_PKdY1qAOpALnGc3nT4wb1ZmwvSt1GOdSb3UEckcvvGGeopy08oyR0PxVUl8rNaB1U49qX4OclglzxADbqZbqtTeH9D1Gy_qXcC7mTeTIxdF9WuiqdehoIk99VHGccoNUbNPtgVrMczSHuGVSsF3zPu9BpwkBUkHLVvJyIVA9Cuwn0tlnE3s2yopb1BsIFEImH9PA=s800"
+        14: "https://content.production.cdn.art19.com/images/91/97/54/6b/9197546b-e854-4792-a131-4034cf46b699/599560120d997b2f4cd159692bb0bc00975d0f477cd08f55e7ae123f4e555bada780e0b80850546933dd2d45580fd7ff9cd7f53484c872ccf4d1aa413de4904f.jpeg"
+      }
+      2 {
+        1: "Episode 293 - One More Quick Thing about Corn"
+        2: "Slowly but surely the gang is getting their footing in this terrible prison. But, they need to make sure they do not botch this up since they will only have one real chance to grab the blood or the book before the guards get wise and do something about it. Maybe it is losing some of their magical abilities but it looks like our heroes are showing some restraint for the first time ever. But as we are finding out making allies in this place is just as dangerous as fighting a large Slaad. Luckily we have all these tasty and nutritious beans and corns. Well, the corn isn\'t for us...but still.\302\240\302\240\n\nThe adventure continues with\302\240Skud Derringer (Mike Bachmann), Rowan Grey(Jennifer Cheek), Lahnik \"Lahni\" Caplain (Nika Howard),\302\240Toby Treacletart (Tim Lanning)\302\240and your Dungeon Master (Michael DiMauro).\302\240Don\342\200\231t forget to follow our regular editor David Stewart (@spudcam), and also our junior editor Alan Mathews (@JAlanMathewsJr)!\302\240\302\240\n\nPodcast art by @artsy22ajl! \302\240Want the world to see your fan art? Tweet it with\302\240#DrunksAndDoodles\302\240or head on over to the\302\240forum.\n\n\302\240\n\nWant to impress your pals with your wine collection and good taste? Well head to\302\240tryfirstleaf.com/DRAGONS for three bottles for just $15!\n\nDollar Shave Club has more than great shaving tools! They have awesome tooth paste! Head to DollarShaveClub.com/dragons to get your first kit for just $5.\302\240\n\nCrowd Cow takes the mystery and fear out of buying delicious and high quality meats! Head on over to\302\240crowdcow.com/DRAGONS for $25 off your first order."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/f9b096d9-ede7-4e13-a4f1-43c36effb328.mp3"
+        5: 3894
+        6: "gid://art19-episode-locator/V0/dGa8pggH9g-IHtpI3tudKiZ1Rck8eDgSyAFVFlzmdWQ"
+        7: 1543853908
+        9: 1
+        10: 62305175
+        11: "gid://art19-episode-locator/V0/dGa8pggH9g-IHtpI3tudKiZ1Rck8eDgSyAFVFlzmdWQ"
+      }
+      2 {
+        1: "Episode 292 - The Sausage Heist"
+        2: "When you have nothing to work with in a magical super prison you have to latch onto the small victories. Maybe you get a small rock or a sharpened toothbrush. Who knows what a level 17 adventurer could do with that? Baby steps is the name of the game. Plus, you have to keep your moral up in a place like this. And nothing would make me and my buds happier than that sausage platter over there. I think that guard has a plate of 90 sausages...that is so many.\302\240\n\nThe adventure continues with\302\240Skud Derringer (Mike Bachmann), Rowan Grey(Jennifer Cheek), Lahnik \"Lahni\" Caplain (Nika Howard),\302\240Toby Treacletart (Tim Lanning)\302\240and your Dungeon Master (Michael DiMauro).\302\240Don\342\200\231t forget to follow our regular editor David Stewart (@spudcam), and also our junior editor Alan Mathews (@JAlanMathewsJr)!\302\240\302\240\n\nPodcast art by @the_checha! \302\240Want the world to see your fan art? Tweet it with\302\240#DrunksAndDoodles\302\240or head on over to the\302\240forum.\n\n\302\240\n\nWant to impress your pals with your wine collection and good taste? Well head to\302\240tryfirstleaf.com/DRAGONS for three bottles for just $15!\n\nDollar Shave Club has more than great shaving tools! They have awesome tooth paste! Head to DollarShaveClub.com/dragons to get your first kit for just $5.\302\240\n\nCrowd Cow takes the mystery and fear out of buying delicious and high quality meats! Head on over to\302\240crowdcow.com/DRAGONS for $25 off your first order."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/003eb0f8-1830-4e74-af4e-3fb97a5eb73d.mp3"
+        5: 3827
+        6: "gid://art19-episode-locator/V0/UzwzyfKnzQtgk-SL68LmKu9RiPXgfFxauVb-WqjDSGY"
+        7: 1543268552
+        9: 1
+        10: 61241469
+        11: "gid://art19-episode-locator/V0/UzwzyfKnzQtgk-SL68LmKu9RiPXgfFxauVb-WqjDSGY"
+      }
+      2 {
+        1: "Episode 291 - First Days on the Job"
+        2: "Having gotten their work assignments, our heroes now actually have to go to them and perform adequately enough to not get fired or murdered. Things are very strict in this prison city so naturally our jobs are not that great. But, there are some great secrets and even greater joys to be found for those that look for them. Plus, everyone gets to eat some nice beans, which is great for the soul.\302\240\n\nThe adventure continues with\302\240Skud Derringer (Mike Bachmann), Rowan Grey(Jennifer Cheek), Lahnik \"Lahni\" Caplain (Nika Howard),\302\240Toby Treacletart (Tim Lanning)\302\240and your Dungeon Master (Michael DiMauro).\302\240Don\342\200\231t forget to follow our regular editor David Stewart (@spudcam), and also our junior editor Alan Mathews (@JAlanMathewsJr)!\302\240\302\240\n\nPodcast art by @killurmonkey! \302\240Want the world to see your fan art? Tweet it with\302\240#DrunksAndDoodles\302\240or head on over to the\302\240forum.\n\n\302\240\n\nWant to impress your pals with your wine collection and good taste? Well head to\302\240tryfirstleaf.com/DRAGONS for three bottles for just $15!\n\nDollar Shave Club has more than great shaving tools! They have awesome tooth paste! Head to DollarShaveClub.com/dragons to get your first kit for just $5.\302\240\n\nWant to eat good meals without all that figuring out which good meals to make? Well head on over to blueapron.com/dragons to get your first three meals for free!"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/30175163-6ef4-469d-a501-864ed5f346ad.mp3"
+        5: 3975
+        6: "gid://art19-episode-locator/V0/yDHNvMmT7qkYjprwonWJQX8XgCgMpTRJXspVgluz3Lc"
+        7: 1542649673
+        9: 1
+        10: 63611297
+        11: "gid://art19-episode-locator/V0/yDHNvMmT7qkYjprwonWJQX8XgCgMpTRJXspVgluz3Lc"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "The City"
+        2: "USA TODAY | Wondery"
+        3: "The City tells true stories of how power works in urban America. Season 1 begins in Chicago, 1990.\n\nWinter is turning into spring, and in Chicago, that means construction season. After years of disinvestment, highways are rebuilt, old buildings demolished, new skyscrapers erected. All that rubble has to go somewhere, and its destination isn\342\200\231t a landfill\342\200\224it\342\200\231s a pair of vacant lots in a black, working-class neighborhood called North Lawndale. The man behind this operation is a white guy sporting a Cosby sweater and underworld connections. What follows is a tour de force through Chicago\342\200\231s underbelly: Aldermen get indicted. An FBI investigation goes awry. A community\342\200\231s resilience is tested\342\200\224all unfolding under the spectre of racism in America.\n\nLearn more and explore the dumps in North Lawndale via augmented reality at thecitypodcast.com"
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThhZCpoNvebn12OA49b8n8RmzHLBKV_kKJTHvZqFc4qCmZgsD2"
+        6: "https://www.thecitypodcast.com/"
+        7: "https://rss.art19.com/the-city"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/49b37701b2c01da2"
+        11: "cluster_0000000000f8a828"
+        13: "https://lh5.googleusercontent.com/proxy/gID5htCQdYRlKkmKnPE6hTCyQMxKVIyNutvKh6GE2_zSxQifQL-QGc2cRnHahN_la_KfGDMZ9NMo3RXNCorQOS8wz0bcLX88r8MdsKQa_obfLL8WA4AtETAOAsjnuXEqO8ca_pjcsZP8UesqEFfswnmWJSIpb2MczGNBUjR0sBrrEivXUupzMkvupQ4XzMyMlN2NGUOBmG3GlHZLc3XFf8v44R-eVGOaIItGBgMK_4fMHVP7DfJ4rtTfj6PpFDnLaBt7op9u0VZ4B29WTrn8r05r2T1c2pqbMpddkODK9kNRBOKngOGJl0XOXrwtrAO-JwzNTEPA-se-4UK-944q3Q=s800"
+        14: "https://content.production.cdn.art19.com/images/eb/62/c7/0e/eb62c70e-b8e6-42cd-9736-a501fb535f9c/18791660688edf8a0b06653581c80f0b56ea779fe89a7906ee965568a4c173edf98e00c91c60e773dd9233c25ecf5f18be7594927b10a0cea83f4bf3e3f60fdb.jpeg"
+      }
+      2 {
+        1: "The City Season 2: Reno"
+        2: "Next season on The City, we head west\342\200\224to Reno."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/cdab9a89-d5bf-4233-ace5-47373918410b.mp3"
+        5: 72
+        6: "gid://art19-episode-locator/V0/D8zL142-0wwd9lEzYdk2onmmS1LmEB0ofkjdZPWosDg"
+        7: 1543263628
+        9: 0
+        10: 1167777
+        11: "gid://art19-episode-locator/V0/D8zL142-0wwd9lEzYdk2onmmS1LmEB0ofkjdZPWosDg"
+      }
+      2 {
+        1: "The Present, The Future  | S1 E10"
+        2: "The uncertain fate of the lots in North Lawndale, and what that says about a city like Chicago.\302\240To learn more, visit thecitypodcast.com\n\nSupport us by supporting our sponsors!\n\nSimplisafe\302\240- Start protecting your home the right way, visit them at\302\240simplisafe.com/thecity\n\nLinkedIn Talent- Get $50 off your first job post when you visit them atlinkedin.com/thecity"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/c324efd2-884d-4972-90e6-998f9b0f0b62.mp3"
+        5: 2767
+        6: "gid://art19-episode-locator/V0/KzMUgdm0irgm8CGRO3vQVNnCAzro0FMp0ymrm1-NVzs"
+        7: 1542614700
+        9: 0
+        10: 44277342
+        11: "gid://art19-episode-locator/V0/KzMUgdm0irgm8CGRO3vQVNnCAzro0FMp0ymrm1-NVzs"
+      }
+      2 {
+        1: "The Cleanup | S1 E9"
+        2: "The illegal dump is finally eradicated\342\200\224but at whose expense?\n\nTo learn more, visit thecitypodcast.com\n\nSupport us by supporting our sponsors!\n\nLinkedIn Talent- Get $50 off your first job post when you visit them atlinkedin.com/thecity"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/9df4031a-44f7-4432-8495-2a63c87d3206.mp3"
+        5: 2729
+        6: "gid://art19-episode-locator/V0/3T_IokcUJSr6IBwM4AXaovlZwD2vM0AJxLb6m52kayM"
+        7: 1542009900
+        9: 1
+        10: 43667121
+        11: "gid://art19-episode-locator/V0/3T_IokcUJSr6IBwM4AXaovlZwD2vM0AJxLb6m52kayM"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Sword and Scale Rewind"
+        2: "Wondery | Incongruity"
+        3: "Sword and Scale Rewind, hosted by Matt Fondiler and Stefanie Wilder-Taylor, is the aftershow for the popular true-crime podcast Sword and Scale."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpfuSLLc5CQXmgrrFAVIyXNmsTR4MKzFdTRVuNoBuOR7yaJ82w"
+        6: "http://ssrewind.com/"
+        7: "https://rss.art19.com/sword-and-scale-rewind"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/53368b22301e02a0"
+        11: "https://rss.art19.com/sword-and-scale-rewind"
+        12: 0
+        13: "https://lh4.googleusercontent.com/proxy/caCGvBX6GzsN7Nm2dpupgxsfeRaWya2xTa411Nktg-08q8zAw81hpTL74TIMLtFIzWuLUVTFaETA343TjU1p7rtcwp_3pWBgumVOzGbrh-lhCJZQKXdrapXVXCIcAsiqe9Um6BYzLk1ABmQ9CLzDI9lMsx6wLCXGxpQwB43DkA_loSm_-KNvane89CdL2X4jPKxdETXM5s0KUDW-QItkpdN3VgQXJN97A4KTlIn82Dm3gNZOHDZHX_nVBKUjsU8lVu7ayqOAMQiOA44aV8A1RlTWeVhFibHRx46OzQK6gajCfHFVyjXOxCDEJZ3T9dzwbItbHkwd2wY1moUjiKNyhw=s800"
+        14: "https://content.production.cdn.art19.com/images/49/12/ab/4c/4912ab4c-055d-4ea7-90e7-2f9790c368a9/9c2478bcb6cb23029b4c31722a2f43372a50aca370dca165bc7392c8f92186a7fab65405409e029f9ee51f83625c412be01cc55208d4683282a5441e47700288.jpeg"
+      }
+      2 {
+        1: "Episode 90"
+        2: "What happens when a journalist gets too close to their subject? Stefanie and Matt discuss this sometimes complicated relationship of mutual manipulation, as well as the killing spree of Kendall Francois."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/036042ba-1bcb-403e-98cf-0786137436e4.mp3"
+        5: 1823
+        6: "gid://art19-episode-locator/V0/Ki2_3aLDzswlc2oR2tPtk2LSExiiDK5Wke9qmPL2VNQ"
+        7: 1543564860
+        9: 0
+        10: 29171461
+        11: "gid://art19-episode-locator/V0/Ki2_3aLDzswlc2oR2tPtk2LSExiiDK5Wke9qmPL2VNQ"
+      }
+      2 {
+        1: "Episode 89"
+        2: "Matthew Hahn calls in to answer more questions about putting his own life on the line to bring a child molester to justice."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/22c38e05-7e76-4560-91c0-c7236659258d.mp3"
+        5: 2461
+        6: "gid://art19-episode-locator/V0/xX0jEmV6QWQucnkD26PxuCGgx9jezZ1EztyynE0jhg4"
+        7: 1543305660
+        9: 0
+        10: 39390145
+        11: "gid://art19-episode-locator/V0/xX0jEmV6QWQucnkD26PxuCGgx9jezZ1EztyynE0jhg4"
+      }
+      2 {
+        1: "Episode 88"
+        2: "Philip Chism, Part 2. Stefanie and Matt learn even more about the tragic death of a teacher by one of her students. PLUS- Stefanie reveals the latest chilling updates since the original Sword & Scale episodes aired."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/b2197cb9-390c-45af-9f23-5273d441321d.mp3"
+        5: 2004
+        6: "gid://art19-episode-locator/V0/tJ_ddbZraZjoXICn0agQNz0zCp1vIySTcOGakUKjdpU"
+        7: 1542960060
+        9: 0
+        10: 32076695
+        11: "gid://art19-episode-locator/V0/tJ_ddbZraZjoXICn0agQNz0zCp1vIySTcOGakUKjdpU"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Felonious Florida"
+        2: "Wondery | Sun Sentinel"
+        3: "Beyond the beaches, the theme parks, the palm trees and the warm breezes lies the dark side of the Sunshine State. Wondery and the South Florida Sun Sentinel present a true-crime podcast that bring you stories of some of Florida\342\200\231s most notorious and stunning crimes. Hosted by EmmaKate Austin, Season 2 will take you through some of the darkest corners we\342\200\231ve explored yet. New episodes are coming Oct. 2 and will be released every Tuesday. Visit FeloniousFlorida.com."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2YG2BIYbaLnkbYeO_cRf1PeN5ua6QxIlEcturRzRFrWhSs7RQ"
+        6: "https://art19.com/shows/felonious-florida"
+        7: "https://rss.art19.com/felonious-florida"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/79bcc164784f3c57"
+        11: "https://rss.art19.com/felonious-florida"
+        12: 1
+        13: "https://lh6.googleusercontent.com/proxy/n77w9qGCt9a3K1DOpISJFqe7A2M1xI2KFjko_UPZNHFjSvBP0h2LbP-AKJTnPDS4A8rlpAOGfs8W1a6BYaAv03dvlnAWVKPT7A-9e0o0_uqk6OwspfdIXe61k1CBD9Pg82yqBoaVLSpKK2R7g40AEM-ORnbaie6X0QTHryCnoTvou7pebsjQYqfDIdjqAwNErI23xRMsstMapvYWotS7yZZ9PXBLQKQZ68rW1sFKetIJFF6pCm8CZ0jdAHkEvulUsL2FPlhYBXT9rjsch5gL928TSrMgShYHWq8ERHSds-U3-L_CC3M5CBrBNAkSVglQTIvP582TEGwY1850_zVvTQ=s800"
+        14: "https://content.production.cdn.art19.com/images/15/88/a1/71/1588a171-e383-4500-bc00-a540c3efa1bd/4d626719df5b2f3d0faff15b21516ddc8e8462e8e35151112ce058164649b025589902ef288b870765a4f152d6bf58aad73b5f7c63bf7319d025478364505524.jpeg"
+      }
+      2 {
+        1: "Felonious Florida Update & What to Listen to Next"
+        2: "In 2000, Pablo Ibar was convicted and sentenced to death for the murder of Butch Casey, Sharon Anderson and Marie Rogers. Years later, he won an appeal and is now facing a new jury, hoping to win his freedom 24 years after his arrest. Felonious Florida will be there every day of this new trial. Look for updates on social media and in an upcoming special bonus episode.\n\nGeneration Why: The Generation Why Podcast released its first episode in 2012 and pioneered the true crime genre in the podcasting world. Sit down with two friends, Aaron and Justin, who break down theories and give their opinions on unsolved murders, controversies, mysteries and conspiracies. Find the episodes at wondery.fm/genwhy"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/44c6a327-b7e3-424f-b4df-57dbca9c01a8.mp3"
+        5: 729
+        6: "gid://art19-episode-locator/V0/i2hvNrj7QjWymurnMwE8leM6oUprho4sNfusOCwDpSU"
+        7: 1543833780
+        9: 1
+        10: 11673182
+        11: "gid://art19-episode-locator/V0/i2hvNrj7QjWymurnMwE8leM6oUprho4sNfusOCwDpSU"
+      }
+      2 {
+        1: "The Killer Clown of Wellington, Part 2 | 7"
+        2: "The early days of the search for the killer clown focus on Marlene Warren\'s husband, Michael, and the repo woman who worked on his used car lot, Sheila Keen. There appeared to be motive: An insurance payout, investment properties, a lavish home and an affair. But there\'s little or no hard evidence. As Michael goes to prison for illegal activities on his lot, the investigation into his wife\'s murder goes ice cold. Until 27 years later, when the secret lives of a married Virginia couple are exposed, and the alleged killer clown is finally unmasked.\n\nSee photos, video and read more about the Encino Murders at FeloniousFlorida.com\n\nThank you to our sponsors:\n\nAudible\302\240\342\200\224 Get a 30-day trial and a free audiobook when you visit them at www.audible.com/florida\n\nSimpliSafe \342\200\224 Get your home security system with no hidden fees or contracts at www.SimpliSafe.com/florida"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/73c5fb95-8ef7-4d16-84d1-6fc3a46f1239.mp3"
+        5: 3245
+        6: "gid://art19-episode-locator/V0/ywArT2K0e3DLpRMax30pnHZ6teVQJqnlmopfYySZP1M"
+        7: 1541480400
+        9: 1
+        10: 51925577
+        11: "gid://art19-episode-locator/V0/ywArT2K0e3DLpRMax30pnHZ6teVQJqnlmopfYySZP1M"
+      }
+      2 {
+        1: "The Killer Clown of Wellington, Part 1 | 6"
+        2: "When\302\240Marlene Warren answered a morning knock on her front door on Memorial Day weekend in 1990, a clown delivering flowers and balloons was smiling back at her. But her delight instantly turned to horror when the clown pulled a gun and put a bullet in her face.\302\240Police jumped on the trail of the killer clown almost immediately, and our reporters found that the investigation led them into the darkest corners of the Sunshine State \342\200\224 from loansharking and drug smuggling to prostitution and seedy affairs. But as a mountain of circumstantial evidence piled up and two possible suspects emerged, the case went ice cold.\n\nSee photos, video and read more about the Encino Murders at FeloniousFlorida.com\n\nThank you to our sponsors:\n\nAudible\302\240\342\200\224 Get a 30-day trial and a free audiobook when you visit them at www.audible.com/florida\n\nSimpliSafe \342\200\224 Get your home security system with no hidden fees or contracts at www.SimpliSafe.com/florida"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/9b952f0f-815a-4034-b7f7-cd995a599996.mp3"
+        5: 2404
+        6: "gid://art19-episode-locator/V0/gkyCuHbn0Jxa7NTvMRVyoGqb9SB2wdF3cY5yxNPhWBI"
+        7: 1540872000
+        9: 1
+        10: 38469799
+        11: "gid://art19-episode-locator/V0/gkyCuHbn0Jxa7NTvMRVyoGqb9SB2wdF3cY5yxNPhWBI"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Safe For Work"
+        2: "Wondery"
+        3: "Life at work can be funny, challenging, ridiculous, and -- yes, even satisfying. Here at Safe For Work, we\'re all about helping you find balance and happiness in your career. After all, many of us spend more time with our co-workers and clients than with our friends and family. Hosts Liz Dolan and Rico Gagliano give advice on everything from how to avoid burnout on the job to how to fake an illness when you\'re calling in sick. We also talk to experts about those moments at the office that can challenge the best of us: negotiating raises, knowing when it\342\200\231s time to move on...or dealing with that annoying office mate with no boundaries. From Wondery, the network behind Business Wars, Safe For Work is helpful career advice that\'s lively and fun, just like your work life should be. In every episode, Liz and Rico talks with callers, business leaders and noted know-it-alls who share their hard-earned wisdom from the trenches. Liz Dolan is the former head of marketing at Nike, The Oprah Winfrey Network and National Geographic and host of the podcast Satellite Sisters.\302\240Rico Gagliano is a contributor to The Wall Street Journal, former host of podcast Dinner Party Download, reporter on the public radio show Marketplace, and co-author of BRUNCH IS HELL."
+        4: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkYAVti3x6mbe1KS28RxbIjPTzcmuQvaYb6k0658cSZCT6Btyg"
+        6: "https://art19.com/shows/safe-for-work"
+        7: "https://rss.art19.com/safe-for-work"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/018ca5e9816240d9"
+        11: "https://rss.art19.com/safe-for-work"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/JPn5eNMZ2U6ttUcDHP5wX3eLrzXbQ91aJsJZcpZTQhzvliP6ZmXhofvuFgE2jIksyXWvtWtiDl5TWkv-FnaMhlq7Tw_FknlPDLh-rGpl7s9iAiahjbY7vc2ZjDQIKV7e05ciArG8bW5EDxiEA9lJUEuf-rhraw7y3e60AdB01z6c0CDCupVRc1HXiUqO2BeMDUpFgIE-nNVqXcww3Ct-fSb1K2CMu7WpubzZKeVEf1q_RH8H_EYg2P1o42IiouvCZJK2IOhV2NT8Qa2HoQViIuHyBci2YENZK_M4C3qekx-JlobXDshVPlRMSNfOxSTktaRwXaFXx1CDw8wekyojeQ=s800"
+        14: "https://content.production.cdn.art19.com/images/e1/9f/a9/9b/e19fa99b-39ea-4443-be36-33b9b81cc957/c9011892f1755321c7a6e4023ce0cbd5ad394311c3218f9a7649fda3baec6c25fecbaa57e753650255805608a9239e0cfcd713477434329ce4cf8ce6da121926.jpeg"
+      }
+      2 {
+        1: "Surviving The Holidays At Work"
+        2: "There are lots of things to love about the holidays \342\200\224 so much food! Sweater weather! A valid excuse to listen to \342\200\234All I Want For Christmas Is You\342\200\235 for hours on end! However, navigating holiday etiquette at work is not one of those wonderful things. So on today\342\200\231s show, etiquette experts Lizzie Post and Daniel Post Senning are back to talk all things holiday office parties, Secret Santa, and out-of-office emails. Then, we help listeners Bill, who loves his job but might jump ship while it\342\200\231s being restructured, and Ann, who\342\200\231s dealing with lingering anxiety after being suddenly let go from her old gig. And we see what we can learn about office Christmas parties from the aptly-titled movie, \342\200\234Office Christmas Party.\342\200\235\n\nYou can find out more about Lizzie and Dan\342\200\231s etiquette expertise at their website, where you can also find their Awesome Etiquette Podcast.\n\nAnd don\342\200\231t forget! If you\'ve got a burning workplace question and need some advice, don\'t hesitate to send us an email. You can reach us at Safe@Wondery.com. You can also find us on Twitter \342\200\224 we\342\200\231re @SafeFor Work \342\200\224 and don\'t forget to follow our sage hosts on Twitter, too; they\'re @SSLiz and @RicoGagliano.\n\nSupport this show by supporting our sponsors!\n\nNectar Sleep - Get $125 off and two free pillows at NectarSleep.com/Safe\n\nSalsa Basket -\302\240Get10% off your first order and free shipping when you use code safe at\302\240salsa-basket.com"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/2c2134a5-45ac-4551-b87e-4d7420b40d78.mp3"
+        5: 2356
+        6: "gid://art19-episode-locator/V0/gSTo06LfBL5C-YQ5_ub3HnVOZfhaRVVqrhEIdnK6I34"
+        7: 1543824300
+        9: 0
+        10: 37708277
+        11: "gid://art19-episode-locator/V0/gSTo06LfBL5C-YQ5_ub3HnVOZfhaRVVqrhEIdnK6I34"
+      }
+      2 {
+        1: "Grammar Girl\342\200\231s Quick And Dirty Tips For Language At The Office"
+        2: "Mignon Fogarty, also known as Grammar Girl, joins us today to answer your questions about language in the workplace: like, \342\200\234Is it one space or two after a period,\342\200\235 or \342\200\234Can I use \342\200\230asap\342\200\231 in a work email,\342\200\235 or the classic, \342\200\234Why do we love verbing our nouns?\342\200\235 Then, Liz and Rico go over your passive-aggressive email techniques and touch on some more Lingo Bingo oddities (bonus points if y\342\200\231all can make \342\200\234frippery\342\200\235 catch on at your office). And we help listeners Lisa, whose talent evaluation took a weird turn with questions like, \342\200\234Do you feel your parents sacrificed for you, why or why not,\342\200\235 and Tom, who\342\200\231s leaving his first job but doesn\342\200\231t know how or when to break the news to his boss.\n\nYou can find Grammar Girl\342\200\231s podcast, \342\200\234Quick and Dirty Tips for Better Writing,\342\200\235 here on Apple Podcasts, and you can read more on her website, https://www.quickanddirtytips.com/\n\nDon\342\200\231t forget! We\342\200\231re working on a bunch of special episodes (Liz & Rico AMAs, your ultimate office, and a very NOT Safe For Work episode), so if you have a question, don\'t hesitate to send us an email. You can reach us at Safe@Wondery.com, or you can leave us a voicemail at 424-224-5711. You can also find us on Twitter \342\200\224 we\342\200\231re @SafeFor Work \342\200\224 and don\'t forget to follow our sage hosts on Twitter, too; they\'re @SSLiz and @RicoGagliano.\n\nSupport this show by supporting our sponsors!\n\nZipRecruiter - \302\240Get a free trial and learn how to hire smarter when you visit them at ziprecruiter.com/safe\n\nSalsa Basket - Get10% off your first order and free shipping when you use code safe at\302\240salsa-basket.com"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/9c6d8530-6638-4b99-a954-4cb0371351c0.mp3"
+        5: 2316
+        6: "gid://art19-episode-locator/V0/hJYDt5ubEDoSp7vQUovhbNh1ftw5ZoUSBar07KOJzxw"
+        7: 1543219500
+        9: 0
+        10: 37065456
+        11: "gid://art19-episode-locator/V0/hJYDt5ubEDoSp7vQUovhbNh1ftw5ZoUSBar07KOJzxw"
+      }
+      2 {
+        1: "How To Network Like A Pro"
+        2: "Karen Wickre, former Google executive and editorial director at Twitter, joins us to explain how social media has made networking way easier, particularly for introverts. Then, Liz and Rico help Ryan, who wants to know if she should put her entry-level job on her business cards, and Emma, whose VP is not being particularly understanding while Emma\342\200\231s trying to care for her ailing grandmother. And we tackle some all-too-common Bad Advice, like, \342\200\234Don\342\200\231t leave before the boss leaves.\342\200\235\n\nRead more about Karen Wickre\342\200\231s book, \342\200\234Taking the Work out of Networking: An Introvert\342\200\231s Guide to Making Connections that Count, here on Amazon.\n\nDon\342\200\231t forget! We\342\200\231re working on a bunch of special episodes (Liz & Rico AMAs, your ultimate office, and a very NOT Safe For Work episode), so if you have a question, don\'t hesitate to send us an email. You can reach us at Safe@Wondery.com, or you can leave us a voicemail at 424-224-5711. You can also find us on Twitter \342\200\224 we\342\200\231re @SafeFor Work \342\200\224 and don\'t forget to follow our sage hosts on Twitter, too; they\'re @SSLiz and @RicoGagliano.\n\nSupport us by supporting our sponsors!\n\nTalkSpace- Get $40 off your first month by visiting TalkSpace.com/safe and using code \"Safe\"\n\nThe New Yorker Magazine - Subscribe at NewYorker.com/safe and save 50% by using code Safe at checkout.\n\nSubscribe to The Growth Show by Hubspot wherever you listen to Safe For Work"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/3229da41-8a09-4321-916b-0541d76316c5.mp3"
+        5: 2227
+        6: "gid://art19-episode-locator/V0/kEDmHUVh1UBkrhlg49xQARM6kChGkpxoMnHfZwsXaOA"
+        7: 1542614700
+        9: 0
+        10: 35643559
+        11: "gid://art19-episode-locator/V0/kEDmHUVh1UBkrhlg49xQARM6kChGkpxoMnHfZwsXaOA"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "What Should I Read Next?"
+        2: "Anne Bogel | Wondery"
+        3: "What Should I Read Next? is the show for every reader who has ever finished a book and faced the problem of not knowing what to read next. Each week, Anne Bogel, of the blog Modern Mrs Darcy, interviews a reader about the books they love, the books they hate, and the books they\'re reading now. Then, she makes recommendations about what to read next. The real purpose of the show is to help YOU find your next read."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWoJ-nEmFZ_QfZ1OLKqOwEU96whMrI3EqoANSXKITykPydDPTe"
+        6: "http://whatshouldireadnextpodcast.com/"
+        7: "https://rss.art19.com/what-should-i-read-next"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/ae1de6bc7ce42fa8"
+        11: "http://whatshouldireadnext.libsyn.com/rss"
+        12: 0
+        13: "https://lh3.googleusercontent.com/proxy/qEmBPmkslXJY9cn2QLYDVj5zMbzlx2mP1VkMlMy8NsH0Z6yG-qRAuFPdxNvHZJvHaIoaY0xxYG1AE4KJI-OXeQ_NzqWRNKYY5hqnlDxXFZNwIl5Qy9sFwiz5SMAlrYaAwpSs44MywhyeNgsoAv5K2DLhOBhKkjf5GRTsDQbymvpbLlGyNFVR6p8gfbl_iSaPXSzx3kdssoy1BpdS7m0DymNqCawzl3f1XiTwO1di8Tx86627G5On9MbJq3M-HmWfO8nuJhUe8w25sf5jr79M2lbQZyRPjebpouH-P25AEJc0mAthyL4CMvAuhlvlsiuOX6jZ4skoH962cXJWeEkXAw=s800"
+        14: "https://content.production.cdn.art19.com/images/30/4c/f1/f0/304cf1f0-9ceb-4af4-a467-46be222980c0/530e24f2e03ee30de64eacaa4a2e6ab2fceec463cdeace9cce89668c26c481db88f749b2f49ac775326f34199698ccc84a417e3ad8f67001f09ce7f72f1636db.jpeg"
+      }
+      2 {
+        1: "Ep 161: Books on the Nightstand and on your wishlist"
+        2: "Literary podcast nerds rejoice\342\200\223Ann Kingman of Books On The Nightstand fame is behind the mic once more! We asked you to call and write in about the people you want to give the gift of a good read this year\342\200\246 and WOW, you all delivered! Ann and Anne are dishing out rapid-fire recommendations for young AND old readers with highly varied literary interests.\302\240You\342\200\231ll also get to hear what Ann\342\200\231s been up to since Books on the Nightstand shut its doors, and both their favorite bookish-but-NOT-book gifts for the holiday or any other season.\n\nClick over to the podcast website for a list of books mentioned in this episode, and tell us in the comments what bookish gifts YOU are giving this year:\302\240http://whatshouldireadnextpodcast.com/161\n\nListen to archived episodes of Books on the Nightstand at https://itunes.apple.com/us/podcast/books-on-the-nightstand/id278076085?mt=2\n\nApply to be a guest on WSIRN:\302\240http://whatshouldireadnextpodcast.com/guest\n\n_Thanks to today\'s sponsors:_\n\n\342\200\242 Brooklinen works directly with manufacturers and directly with you, the customer, with no middlemen\342\200\224which means they can give you 5-star hotel quality sheets that are affordable and easy to order. Get $20 off AND free shipping when you use promo code READNEXT at Brooklinen.com.\n\n\342\200\242 The Great Courses has a long history of gathering the best lecturers\302\240to create courses specifically for you\342\200\224the life-long learner. For a limited time, WSIRN listeners get a special free month of access to\302\240The Great Courses Plus!\302\240Sign up now at TheGreatCoursesPLUS.com/READNEXT.\n\n\342\200\242 Blinkist is the only app that takes thousands of best-selling nonfiction books and distills them down to their most impactful elements, so you can read or listen to them in under 15 minutes, all on your phone! WSIRN listeners can go to Blinkist.com/READNEXT to start a free 7 day trial."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/91b6cd5d-de0e-44c3-a62d-4fdcd6fbca70.mp3"
+        5: 4361
+        6: "gid://art19-episode-locator/V0/o8sZXjpHpQQMrHak1HDqZ7JM8vxnbbZQzSdqZ-dH8jo"
+        7: 1543316400
+        9: 0
+        10: 69792078
+        11: "gid://art19-episode-locator/V0/o8sZXjpHpQQMrHak1HDqZ7JM8vxnbbZQzSdqZ-dH8jo"
+      }
+      2 {
+        1: "Ep 160: Books that capture the magic of everyday life"
+        2: "Have you ever read a book that made the world around you feel just a little bit\342\200\246 magical? Today Anne welcomes author Jon Cohen on the show to chat about the magic of the mundane life in fiction, his unorthodox path to writing, the mighty bookworm women in his life, and what it was like to live with the school librarian as a child. Plus, Anne recommends three books guaranteed to make Jon\'s everyday just a little bit more... magical.\n\nClick over to the podcast website for a list of books mentioned in this episode, and leave a comment telling us what YOU think Jon should read next:\302\240http://whatshouldireadnextpodcast.com/160\n\nJon\'s website: http://joncohenbooks.com\n\nJon\'s Goodreads: https://www.goodreads.com/author/show/17138344.Jon_Cohen\n\nApply to be a guest on WSIRN:\302\240http://whatshouldireadnextpodcast.com/guest\n\n_Thanks to today\'s sponsors:_"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/d4b44c45-0327-464b-8151-7e246a92002d.mp3"
+        5: 2398
+        6: "gid://art19-episode-locator/V0/OThUZnPNcq903EZjmCLMuCZvR9aMsJ6-hSY3iwvrw74"
+        7: 1542711600
+        9: 0
+        10: 38371996
+        11: "gid://art19-episode-locator/V0/OThUZnPNcq903EZjmCLMuCZvR9aMsJ6-hSY3iwvrw74"
+      }
+      2 {
+        1: "Ep 159 : How to cope with the longest book hangover ever"
+        2: "Shawntaye Hopkins discovered Jane Austen\342\200\231s books for the first time as an adult - and after that initial discovery, she dove in DEEP. Today, Anne and Shawntaye chat about the magic of immersive literary events that celebrate the classics (not just Jane!) and how they\342\200\231ve changed the way Shawntaye reads her most beloved books.\n\nThey also explore TEN YEARS of book journaling, the book Shawntaye is still hungover from, the things readers do for fear of missing a good book, and Anne\'s recommendation for her includes a book you probably have never heard of.\n\nClick over to the podcast website for a list of books mentioned in this episode, and leave a comment telling us what YOU think Shawntaye should read next:\302\240http://whatshouldireadnextpodcast.com/159\n\nVisit Shawntaye on Instagram: @shawntaye1\n\nApply to be a guest on WSIRN:\302\240http://whatshouldireadnextpodcast.com/guest\n\n_Thanks to today\'s sponsors:_\n\n  * Sunbasket makes eating right easy! Go to SunBasket.com/READNEXT today to learn more and get $35 off your first order.\n\n  * For every pair of super comfortable socks you buy, Bombas sends one pair to a homeless shelter. Save 20% by visiting bombas.com/readnext and entering the offer READNEXT in the checkout code space."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/5317716a-ab30-4e19-bfdb-e8e8e3408fca.mp3"
+        5: 2890
+        6: "gid://art19-episode-locator/V0/JjvW6XqIknWk-Cn_-5t6W_yTcrhA_A8mo4S9i2xzRJ4"
+        7: 1542106800
+        9: 0
+        10: 46253871
+        11: "gid://art19-episode-locator/V0/JjvW6XqIknWk-Cn_-5t6W_yTcrhA_A8mo4S9i2xzRJ4"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "This Is Actually Happening"
+        2: "Whit Missildine/Wondery"
+        3: "The uncanny, extraordinary, true stories of events that have dramatically altered the lives of ordinary people; a son is shot by his own father, a woman\'s sister develops multiple personalities, a man wakes up in the morgue. These are riveting, moving and often haunting stories that will stick with you long after you listen."
+        4: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyakOHR71ee6r3nTIV-uqGAuEnIwb7y_tsUPEs7jLf0j4t9mg"
+        6: "https://art19.com/shows/this-is-actually-happening-podcast"
+        7: "https://rss.art19.com/this-is-actually-happening-podcast"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/8b0c93aeaa08c015"
+        11: "http://feeds.misfitrad.io/happening"
+        12: 1
+        13: "https://lh5.googleusercontent.com/proxy/IvweeYexpl7ZdlpLTVfW4OG0BiMWSK46JFPayOL7nOXXDaNipWlJ7MRuZEeFs88D2HNzez-c-N2h8dDzIWWsjGntTALZLU_sQelrMWzIvi5tM0O6I56aey1_2nG7sIJa78rBANMBatwqTCtyw5GoejUDtBaQ3FdWAL-8wfXVLBY_rGNw9Pf5-CoAt-xKoGfn7wcWGQvjsouUMXx29Uv3apa4-m_Ce-odSERLPu7f--v0kTVpcumFRaTi_8MAGlImpDWfG8ORuVZXUzBz8-86u2rvR6PzflWm-xWBVO_mIHdam3Ni3YV1SCAhyzEdk28maqbSNwDJFBkJOim3v7KruA=s800"
+        14: "https://content.production.cdn.art19.com/images/bd/7b/af/37/bd7baf37-0ea6-4c33-acc6-e55fc0b366d4/11fdf2616b62ff0f2344b22f447601aab3b4c875a717b5ed7dc71c29e89a754d7231bd7b8538f770ee71d46d2dd01d31f178918d11c2cce005183344302c78d4.jpeg"
+      }
+      2 {
+        1: "121: What if your favorite celebrity had a crush on you?"
+        2: "\342\200\234I\342\200\231ve lived long enough existing in that gray area of not really knowing that maybe I will live the rest of my life not really knowing.\342\200\235\n\nEpisode Producer, Editor: Nigel Coutinho www.nigelc.info\n\nShow Producer: Whit Missildine\n\nthisisactuallyhappening.com\n\nInstagram: @actuallyhappening\n\nEpisode Sponsors:\n\nQuip www.getquip.com/happening;\n\nCare/Of www.takecareof.com/happening\n\nIntro Music: \"Illabye\" - Tipper\n\nMusic Bed: Nigel Coutinho\n\nOutro Music: \"The Moon is Down\" - El Diablo & Adam Schraft (Rojo y Negro) @eldiablosf\302\240@rojo-y-negro _www.eldiablobass.com/_"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/0c790222-abd0-420d-9e64-a9cf1c2c927c.mp3"
+        5: 2298
+        6: "gid://art19-episode-locator/V0/4_29aNzvoXOMlRgnI1Valt1WFMgftUBGkPTb5jKq6E0"
+        7: 1543309200
+        9: 1
+        10: 36779990
+        11: "gid://art19-episode-locator/V0/4_29aNzvoXOMlRgnI1Valt1WFMgftUBGkPTb5jKq6E0"
+      }
+      2 {
+        1: "120: What if you had Dissociative Identity Disorder?"
+        2: "\342\200\234I don\342\200\231t really remember not having different parts\342\200\246I just thought that everybody had different quote unquote people inside them.\342\200\235\n\nProducer: Whit Missildine\n\nthisisactuallyhappening.com\n\nInstagram: @actuallyhappening\n\nEpisode Sponsors: Quip www.getquip.com\n\nIntro Music: \"Illabye\" - Tipper\n\nMusic Bed: \342\200\234Water\342\200\235 \342\200\223 Johannes Welsch\n\nOutro Music: \"The Moon is Down\" - El Diablo & Adam Schraft (Rojo y Negro) \302\240@eldiablosf\302\240@rojo-y-negro\302\240www.eldiablobass.com/"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/1ec0b281-0bc8-4c51-ac5d-083b7573b56a.mp3"
+        5: 4051
+        6: "gid://art19-episode-locator/V0/GCUkrBaJ2FsnrD_W_a9QCZTweAoGpYXVrsTsw4lKXEw"
+        7: 1542110400
+        9: 1
+        10: 64817110
+        11: "gid://art19-episode-locator/V0/GCUkrBaJ2FsnrD_W_a9QCZTweAoGpYXVrsTsw4lKXEw"
+      }
+      2 {
+        1: "119: What if you suddenly felt like a werewolf?"
+        2: ""
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/a0b485f1-d804-4219-9f3a-834f72bf4d08.mp3"
+        5: 3050
+        6: "gid://art19-episode-locator/V0/KGSAIf97D09ZzQrZAmHV_H4BkjyC4iDjyieh4Ci9U1c"
+        7: 1540897200
+        9: 1
+        10: 48803004
+        11: "gid://art19-episode-locator/V0/KGSAIf97D09ZzQrZAmHV_H4BkjyC4iDjyieh4Ci9U1c"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Good Life Project"
+        2: "Jonathan Fields / Wondery"
+        3: "Inspirational, intimate and disarmingly-unfiltered conversations about living a fully-engaged, fiercely-connected and meaning-drenched life. From iconic world-shakers like Elizabeth Gilbert, Brene Brown, Sir Ken Robinson, Seth Godin and Gretchen Rubin to everyday guests, every story matters."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsc_KE8Emx0xim00DPcYaUB7LYngXq9AfW2fbonxu02B4gdV5C"
+        6: "http://wondery.com/wondery/shows/goodlife/"
+        7: "https://rss.art19.com/good-life-project"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/9f5c486f425aecfe"
+        11: "http://www.goodlifeproject.com/feed/podcast/"
+        12: 0
+        13: "https://lh4.googleusercontent.com/proxy/mEZ7o0KfgfU-UPAJpMQP64SEUBIYsZ7VbDqbmV7nL2eO9lgbfLFreGTBZsnqS1I-nX9-WIqEPl0zWI4d5PqTkDCK7yonvGCLcznhbxlTX4F3dfHg7YBk98-rGrOIE9EQxPhP7wIiY-vJiik-Gj_vNaf9LN3ZsOUDtM2WasnhaT2vZyHc3s8HolPAhp0yMvqesxYi_gTyBaUIDFHTumJJeCDTZ6hRqGGrsTLxi36rTE_sUIfem2dNmP0eyMl-SiuwPm_FaGvF0SC96_sTOHPBmUD8Hb5qkUwWhY5uVCf2TRK5eVdXp1093VUcvjyTf_xSkSS7Dcc2EvLvM2uNHxgvJA=s800"
+        14: "https://content.production.cdn.art19.com/images/f5/b6/ef/d5/f5b6efd5-28bc-4475-88a0-2fa14800bd6d/ae9e7678c1b4453046509d7947e170220a046b7bfa9796f5d44795641da37506292cce9d67b0f38fa45da3f2642950651a5efb37d1f8079c1bc18e8acef5d5ff.jpeg"
+      }
+      2 {
+        1: "Rebecca Minkoff: Building a Global Brand and a Good Life."
+        2: "Ever wonder if it\342\200\231s possible to build a flourishing career and global brand, without going to college?\n\nGrowing up in San Diego and Tampa, Rebecca Minkoff (http://www.rebeccaminkoff.com/) learned at a young age, if she wanted something, she\342\200\231d have to work for it, or make it herself. That work ethic led her to begin making her own clothes in her early teens, then designing and creating costumes for theater in high-school.\n\nDesperate to leave Tampa behind as soon as she could, but not feeling college, she headed to New York at 18 years old and began to work in the world of fashion and design, learning everything from design to all aspects of business. She began making her own designs and, working tirelessly, created a single t-shirt that would seed the launch of a business that would grow to produce an iconic line of handbags, apparel, accessories, footwear, jewelry and build a global brand.\n\nAnd, more recently, she\342\200\231s headed into entirely new territory with the launch of her own podcast, Superwomen (https://www.rebeccaminkoff.com/pages/superwomen) which celebrates the multidimensionality of women, from CEOs to chefs, entrepreneurs to instructors who shape culture, change the world, and lift each other up along the way.\n\nWe talk about all of this and much more in today\342\200\231s Good Life Project episode.\n\nCheck out our offerings & partners:\302\240\n\n  * 23andMe: Order your 23andMe Health + Ancestry Service kit at 23andme.com/goodlife\n  * Quip:\302\240QUIP starts at just $25 and, if you go to GetQuip.com/GoodLife right now, you\342\200\231ll get your first refill pack FREE with a QUIP electric toothbrush.\n  * Kneipp: Get 15% off your first order by going to Kneipp.com and use promo code GOODLIFE at checkout."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/87792925-dd96-4752-8b68-c00532aa34b8.mp3"
+        5: 3607
+        6: "gid://art19-episode-locator/V0/y4wd_e8nOsvZBDPJmw5ejmHtH2ktOJZCKemc3pe9jdM"
+        7: 1543899660
+        9: 0
+        10: 57720581
+        11: "gid://art19-episode-locator/V0/y4wd_e8nOsvZBDPJmw5ejmHtH2ktOJZCKemc3pe9jdM"
+      }
+      2 {
+        1: "Mark Nepo: More Together Than Alone."
+        2: "Mark\302\240Nepo\302\240(http://marknepo.com/) has been immersed in a path of spiritual inquiry for more than forty years. He is the author of twenty books, including the #1 New York Times bestseller The Book of Awakening and his newest book, More Together Than Alone (https://amzn.to/2AFBGgm).\n\nHis books have been translated into more than twenty languages. In 2014, Mark traveled the country with Oprah Winfrey on her sold-out The Life You Want Tour and has appeared several times on her Super Soul Sunday program.\n\nIn this conversation we catch up with Mark (he\'s been a guest twice before) and dive into his decades-long inquiry around how we are wired to live in community, what happens when the bonds that connect us fail and how to rediscover community at a time when we seem more divided than ever.\n\nWant more of Mark Nepo? You can listen here to our 2015 conversation (https://www.goodlifeproject.com/podcast/mark-nepo/) and our 2016 conversation (https://www.goodlifeproject.com/podcast/mark-nepo-2/).\n\nCheck out our offerings & partners:\302\240\n\n  * ShipStation: Manage and ship your orders. FREE for 30 days, plus a bonus. Visit ShipStation.com, click on the microphone at the top of the homepage and type in GOODLIFE.\n  * Everlane: Check out our personalized collection at Everlane.com/GOODLIFE plus, you\342\200\231ll get free shipping on your first order.\n  * Ring:\302\240Get up to $150 off a Ring of Security Kit when you go to ring.com/GOODLIFE.\n  * Robinhood: A commission-free investing app is giving listeners a FREE stock like Apple, Ford, or Sprint to help build your portfolio! Sign up at GOODLIFE.robinhood.com"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/98389e6e-7348-40f6-a09a-7729543b3719.mp3"
+        5: 4156
+        6: "gid://art19-episode-locator/V0/wW5DKAF_57XAa_fysywd7sl0qwTEy-TeVWaMO7A7S7c"
+        7: 1543294860
+        9: 0
+        10: 66509426
+        11: "gid://art19-episode-locator/V0/wW5DKAF_57XAa_fysywd7sl0qwTEy-TeVWaMO7A7S7c"
+      }
+      2 {
+        1: "Jennifer Marshall: Mental Illness and the Power of Story."
+        2: "Jennifer Marshall\'s (https://www.jennifermarshall.me/) life was going exactly as planned. Then, she turned 26 and everything changed.\n\nMarshall found herself unable to control her thoughts, spinning and struggling with reality.\302\240She was hospitalized and sent home to take some time and get some sleep. But, it would take yet a second hospitalization shortly after to reveal the fact that this was not about being overtired. It was about mental illness and how it would redefine Marshall\'s world in a profound way, from that moment forward.\n\nShe was soon after diagnosed with bipolar. It was a lot for her and her family to take in, but instead of burying the conversation, she embraced it and even began to share her experiences publicly, first anonymously, then under her own name at\302\240Jennifermarshall.me (http://jennifermarshall.me/),\302\240and then widely on the front page of The Washington Post, Oprah Magazine, national TV and from the TEDx stage.\n\nRealizing the power of sharing her story, she co-founded and is now\302\240Executive Director of This Is My Brave, Inc., (http://thisismybrave.org/) a global storytelling initiative for people to share their stories of overcoming mental illness through creative expression at live events around the world, and online.\n\nWe explore this powerful journey, along with how she and her husband explored the decision to become parents, build a family and work to remove the stigma from mental illness in this week\'s episode.\n\nCheck out our offerings & partners:\302\240\n\n  * ThirdLove:\302\240Go to ThirdLove.com/GOODLIFE now to find your perfect fitting bra... and get 15% off your first purchase.\n  * Kopari: Go to _KopariBeauty.com/GOODLIFE_\302\240and save $5 off your first order.\n  * You Turns:\302\240Find\302\240You\302\240Turns\302\240on Apple podcasts or wherever\302\240you\302\240get your podcasts."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/b8572217-a060-4538-8517-b51873d7886e.mp3"
+        5: 3498
+        6: "gid://art19-episode-locator/V0/TB2PkcS-r_UEStAWnYLmkKc2T__aIWV7ipES4B7tZbg"
+        7: 1542690060
+        9: 0
+        10: 55969332
+        11: "gid://art19-episode-locator/V0/TB2PkcS-r_UEStAWnYLmkKc2T__aIWV7ipES4B7tZbg"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "This is War"
+        2: "Wondery | Incongruity"
+        3: "A raw look at the combat and homecoming experience from American veterans who have been deployed in Iraq and Afghanistan. \342\200\234This Is War\342\200\235 chronicles the trials of combat vets both abroad and at home."
+        4: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNWk-cXAzCboaop-1C5W4zvESme9Ao9BnDQn3ZiCVcMnKSKfc"
+        6: "https://art19.com/shows/this-is-war"
+        7: "https://rss.art19.com/this-is-war"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/b7401a6b3619be0a"
+        11: "https://rss.art19.com/this-is-war"
+        13: "https://lh4.googleusercontent.com/proxy/F5ohWeNyiH8fzRG87hosau_LRcL-_QQDpWLMeLPfYFw1K4eCCSOdEyAY1VP59UXxz9UXCtDFk1TIlCaV4NGSzDv9gbBqkU5kYrDH6Oj9ZcGVFZWUpz6l_o2P0JrRGHFgk_m0IQBZWhwUHudboVPUzSUO9ReR2sWJmyU0MDDDYlES0bQAuH4yWA5AIgtXaziC6WD9YS8A6tL_lmXo8P_JpKD9VE80bB-gPseCunvA3V184EIhqL75kbjyi9qM-hOszZN3m55H6MqwhUNCNmB3tVNvAb1Fu6k8C_dacM1mSYd4xh8rkASKe1jpPx-pAsnhBBunAvD-Vr6ig8HnFaV6ag=s800"
+        14: "https://content.production.cdn.art19.com/images/3d/2c/ed/f4/3d2cedf4-a562-4cef-88a9-1c8dd6cd2f53/c6f037d97ddb75ae818f06a58b94322be7a3fb7cb3024484539327fb1f4fb65b368993c2d45a4121e75652bce444024368957c02d3d9fea02641ea227fc7babc.jpeg"
+      }
+      2 {
+        1: "21 | McPadden"
+        2: "Ray McPadden, a newly minted officer, takes command of an infantry platoon for deployment to Afghanistan\342\200\231s Korengal Valley, where he discovers just how deeply your first deployment can influence the rest of your career, what he can endure and, most of all, what it takes to be a leader."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/827e054f-9796-44de-b976-7ba452a6bd00.mp3"
+        5: 2247
+        6: "gid://art19-episode-locator/V0/KOPqpRkKCwbFqezLQF-C0SimwAcCdRY9Fjn5nEeHBFs"
+        7: 1543391940
+        10: 35959536
+        11: "gid://art19-episode-locator/V0/KOPqpRkKCwbFqezLQF-C0SimwAcCdRY9Fjn5nEeHBFs"
+      }
+      2 {
+        1: "20 | Buzard"
+        2: "Daniel \342\200\234Doc\342\200\235 Buzard had been a working paramedic long before he deployed in his late 20s, but his first taste of combat medicine opened his eyes to the possibilities and meaning that providing aid has in a war zone."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/7c6c0e15-5c7b-4268-97c9-7adabc6f5ebc.mp3"
+        5: 2539
+        6: "gid://art19-episode-locator/V0/iUjrwXpF-EFwNIwHN0b4hL2o07uwWyRFn58ouBrdWwk"
+        7: 1542182340
+        10: 40636081
+        11: "gid://art19-episode-locator/V0/iUjrwXpF-EFwNIwHN0b4hL2o07uwWyRFn58ouBrdWwk"
+      }
+      2 {
+        1: "19 | Avalos"
+        2: "When you enlist and take the oath of service, you take the oath by yourself, but not on your own. The oath implicates not only your family and friends, but also your future spouse and children, it implicates people you haven\342\200\231t yet met and, in the case of a distant enemy, people you may never meet."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/d78ce4d9-0977-4b30-bdc7-67a809e01c7c.mp3"
+        5: 2178
+        6: "gid://art19-episode-locator/V0/bqfv7lUcHpcH8qMHT0kLBrIRGiJO3KUWZlkiJMTsZhc"
+        7: 1540969140
+        10: 34850690
+        11: "gid://art19-episode-locator/V0/bqfv7lUcHpcH8qMHT0kLBrIRGiJO3KUWZlkiJMTsZhc"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "The Wonderland Murders by Hollywood & Crime"
+        2: "Wondery"
+        3: "Journey back to 1981, when four people were brutally murdered in their home in the Hollywood Hills. The Wonderland Murders is the tale of a violent home invasion robbery and the revenge rampage that followed. It involves a drug-fueled gang of criminals, a crazed crime kingpin -- and the world\342\200\231s most famous porn star on a downward and deadly spiral. Join Young Charlie host Tracy Pattin and writer/director Larry Brand and they take you back to Wonderland Ave."
+        4: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4x0yroj0xauHfJmohOvBLjPAvpoShOjLgK9lv9KH8Ul7P74g"
+        6: "https://art19.com/shows/the-wonderland-murders"
+        7: "https://rss.art19.com/the-wonderland-murders"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/8331d4c0b401a6a8"
+        11: "https://rss.art19.com/the-wonderland-murders"
+        12: 1
+        13: "https://lh6.googleusercontent.com/proxy/SUIf9xOrbSqfaDqgj0L-UKJlXxMo0JsKjRJ8G8anoVB6whTX-8H_qfIhu-6fORTbaGpNfjMNTGMYQWsBj1UNe8xVgRaNSUJx1zHyuUkhOnsFwlmljoyEmSc1elgx_kbtY_X98zcZ1X_eVfCJivv2Wn2p9ffgiqVJd7RUwIDOh6_wyNYAH2YGBboUsasNKI5tjrAtAr1QCAZenR_smJ6uGyfPPUp8k8_oPbIxm1z37whsrafOaAcrTweZ6oQBOP9rPMP5_c9o5CLHYPhImzOokw9_KqDW0FNX1g1GhMG6vGRiHW6T61Y6--rKVoKQ1fFqW12HOO62JzaUYxsN11hvvg=s800"
+        14: "https://content.production.cdn.art19.com/images/3f/15/6e/27/3f156e27-cc3e-4b59-bee3-54354137999b/c1e28ed030a1d0c31b87cab28b116fa40a4b4483668b118f396a33c949221c766a8a55e88db99aa2e8694a9344a6ac0c6ba4889636c8aeed3c2ad82c101ac88d.jpeg"
+      }
+      2 {
+        1: "Experience The Generation Why Podcast"
+        2: "The Generation Why Podcast released its first episode in 2012 and pioneered the true crime genre in the podcasting world. Sit down with two friends, Aaron and Justin, who break down theories and give their opinions on unsolved murders, controversies, mysteries and conspiracies. Listen now at\302\240wondery.fm/genwhy"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/5374251e-3df7-4f5b-9b18-cb8c5a752493.mp3"
+        5: 644
+        6: "gid://art19-episode-locator/V0/j5yrjVZOjGbQIFKDo71gFeE61IO6SCybEYSCpdnqNkc"
+        7: 1543834440
+        9: 1
+        10: 10310635
+        11: "gid://art19-episode-locator/V0/j5yrjVZOjGbQIFKDo71gFeE61IO6SCybEYSCpdnqNkc"
+      }
+      2 {
+        1: "Iconic magazine editor Tina Brown and her new podcast | 12"
+        2: "As editor in chief at Vanity Fair and The New Yorker, Tina Brown has had opportunity to sit down with the world\342\200\231s most important people to hear their thoughts on the zeitgeist and on her new Podcast, \342\200\234TBD with Tina Brown,\342\200\235 she invites you to hear her candid conversations with writers, politicals, crime sleuths, journalist and the newsmakers of tomorrow\342\200\231s social debates. Subscribe to TBD with Tina Brown on Apple Podcasts or by visiting wondery.fm/tbd"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/ed769b3d-16e8-4acb-8db0-c87a6a0fd1ef.mp3"
+        5: 599
+        6: "gid://art19-episode-locator/V0/p-FflmrpI5rprA2bCWsBaUiJS4xiai5W6q-Kbx1BDcM"
+        7: 1543326111
+        9: 1
+        10: 9595924
+        11: "gid://art19-episode-locator/V0/p-FflmrpI5rprA2bCWsBaUiJS4xiai5W6q-Kbx1BDcM"
+      }
+      2 {
+        1: "Malice in Wonderland: Interview with Dets. Tom Lange and Robert Souza | 7"
+        2: "Detectives Tom Lange and Robert Souza discuss the Wonderland murders and give you an inside look into the investigation as it actually happened.\n\nSupport us by supporting our sponsors!\n\nQuip - Get your first refill pack free when you buy a toothbrush at GetQuip.com/LACRIME\n\nDaily Harvest\302\240- Go to daily-harvest.com and enter promo code LACRIME to get three items FREE in your first box"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/6bc1c8a8-33d5-4cd1-b538-f5401b8a6d5d.mp3"
+        5: 3087
+        6: "gid://art19-episode-locator/V0/tSyJ2JtSUruNu8TMnFrslpa6ACsJ_cZPqWJUvv3GWig"
+        7: 1529564700
+        9: 1
+        10: 49400267
+        11: "gid://art19-episode-locator/V0/tSyJ2JtSUruNu8TMnFrslpa6ACsJ_cZPqWJUvv3GWig"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Ellen on the Go"
+        2: "WAD Productions | Wondery"
+        3: "Ellen on the Go is the place to hear what they\342\200\231re talking about on the Ellen Degeneres Show! Hosted by the show\342\200\231s Executive Producers, Ed, Mary, Andy and Kevin, this is your audio catch-up of this week\342\200\231s Ellen Show, with a never-before-experienced glimpse at how the talk show comes together every day from the very minds that make it happen."
+        4: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3v_jwgNRSHFKN9t3KFtikOUFIyVtzyX9lnG6g8rlSGfDYUXo"
+        6: "https://art19.com/shows/ellen-on-the-go"
+        7: "https://rss.art19.com/ellen-on-the-go"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/89b3362a540d1a0a"
+        11: "cluster_0000000000bf446b"
+        12: 0
+        13: "https://lh4.googleusercontent.com/proxy/qFoxJn3DiVypfcmXFvKUlXoedRqkou-Z_0zrFrFFolOhsKUX5c55tKynJ5YojLsYvkMITerX9woFGS1KVuGYdclFaB5njJRh7wpr2MLKS0PvsV-L-AFwj37zm6yG50f2xfxo5_GDTE5UMzVHJa0sSfKVr4Tb59_FlPY2VPpDdh9EQUwM-6gz2L7-hJVIpViBFAkdYIzRZ-F-y5CJ1nF_iSvSrKm_BL5q_PORg4dFm-aJZnwKzym4jDScxtlj7pm3sILVClHGHu5zihtCiDwfDAkYkUfjgp-rKAiF1nmncZL5CpkOYfEiWZkCV5nEeiLqiTCXk0jMElIKb2gvCZ2eQQ=s800"
+        14: "https://content.production.cdn.art19.com/images/04/3a/fd/ae/043afdae-cf15-4bc5-8522-e0dc522f4cfc/963aa368b45f9a92f3d8f7bdb0d8714529489019190cb59a133ca03f48093c8d220fa4811eba960bcf21cc6af5e46fbb27dc1e1eec36663510cf67917e54a6df.jpeg"
+      }
+      2 {
+        1: "Chrissy Teigen, Michael B. Jordan, Kim Kardashian, Howie Mandel, Ashley Graham"
+        2: "Special celebrity co-host Chrissy Teigen joins Ellen, Michael B. Jordan admits he has slipped into his fans\342\200\231 DM\342\200\231s, Kim Kardashian keeps us updated on the latest family gossip, Howie Mandel is of course Howie Mandel, and Ashley Graham discusses her amazing new Ellen Tube series FEARLESS.\n\nWatch The Ellen DeGeneres Show weekdays! Check your local listings.\n\nSupport us by supporting our sponsors!\n\nQuip -\302\240Get your first refill pack free with the purchase of a toothbrush... visit them atgetquip.com/ellen\n\n23AndMe\302\240- Get your health and ancestry kit at\302\24023andme.com/ellen\n\nZip\302\240Recruiter\302\240- Get a free trial and learn how to hire smarter at\302\240ziprecruiter.com/ellen"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/380a4505-8ae4-47e3-a32e-51008021af3d.mp3"
+        5: 2192
+        6: "gid://art19-episode-locator/V0/q5HDuz8mSDRsgQK5XA8LGhb7pQUagq3zAJSx1g1Mq2w"
+        7: 1543478700
+        9: 0
+        10: 35077224
+        11: "gid://art19-episode-locator/V0/q5HDuz8mSDRsgQK5XA8LGhb7pQUagq3zAJSx1g1Mq2w"
+      }
+      2 {
+        1: "Average Andy, Lin-Manuel Miranda, Emily Blunt, Backstreet Boys, Adam Levine"
+        2: "Average Andy takes on Dwayne \342\200\230The Rock\342\200\231 Johnson\342\200\231s Titan Games, Lin-Manuel Miranda shares his Cher experience, Emily Blunt sings lead for the Backstreet Boys, Adam Levine gets scared by a giant rat, and we announce how you can win all 12 Days of Giveaways!\n\nWatch The Ellen DeGeneres Show weekdays! Check your local listings.\n\nSupport us by supporting our sponsors!\n\nBombas\302\240- Save 20% off your first order when you visit them at\302\240bombas.com/ellen\n\nGobble\302\240- Get $50 off your first box of fresh meals when you visit them at gobble.com/ellen\n\nKopari\302\240- Save $5 off your first order when you visit them at\302\240koparibeauty.com/ellen"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/70f46037-d245-4f6e-b8fc-0175fb98bd10.mp3"
+        5: 1849
+        6: "gid://art19-episode-locator/V0/pUfAb6TKAz8repK_3nsWanq_VSUD9WJa-F-qxC0h-dI"
+        7: 1543305900
+        9: 0
+        10: 29585240
+        11: "gid://art19-episode-locator/V0/pUfAb6TKAz8repK_3nsWanq_VSUD9WJa-F-qxC0h-dI"
+      }
+      2 {
+        1: "A Special Thanksgiving Episode, Michelle Obama"
+        2: "The one, the only Michelle Obama is here, plus Kevin pays a loving Thanksgiving tribute to Mary, Ed and Andy.\n\nWatch The Ellen DeGeneres Show weekdays! Check your local listings.\n\nSupport us by supporting our sponsors!\n\nBombas\302\240- Save 20% off your first order when you visit them at\302\240bombas.com/ellen\n\nArticle -\302\240Get $50 off your first order of incredible furniture when you visit them at article.com/ellen\n\nBrooklinen- Get $20 off and free shipping when you use code ellen at brooklinen.com"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/a363a52c-b982-4932-986a-0f5b9b6642fe.mp3"
+        5: 2736
+        6: "gid://art19-episode-locator/V0/qdNS2ahMZeoaMUgLEt7xEgJMaFkQgNF9rAQSTlViwp8"
+        7: 1542873900
+        9: 0
+        10: 43789583
+        11: "gid://art19-episode-locator/V0/qdNS2ahMZeoaMUgLEt7xEgJMaFkQgNF9rAQSTlViwp8"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "5 Things"
+        2: "USA TODAY / Wondery"
+        3: "The news you need to know to start your day. Five stories. Less than five minutes. Every weekday, plus Saturdays. Powered by the USA TODAY Network and hosted by Taylor Wilson."
+        4: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUDeE6NHVaB3DRYcphG-bfXXtGImCAkEWeoELZx6hYlXx7DFaa"
+        6: "https://art19.com/shows/5-things"
+        7: "https://rss.art19.com/5-things"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/2c72aadf104596db"
+        11: "https://rss.art19.com/5-things"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/MzYVNoper8-no1klLbX6NLiKpHipoy57nt7rZzIl8CkjCIhcbv58Oh7L_fe7uza23OhEtsPMpM-ZCCQ2ghD_59cg3tRjHKdVxQc3S2x7UgnPbNqwhegNDfBL_gW0RIk6MF7y4BbOSzU8-jcN8CiLLoppSGrTIiW_FYhQr07cs3VqC7gpcnO2wOXe5MDJPXGL2Ens2RS1OXckb0aWwnBQrhVv8__tSF5FW6CGTFztIGkotOYQXO-J5lJ7mU10L1jHuJhY_5pAYrOkDV3WzGB_x6xHxZ_uwF8lDZ-d6C1V_Msqc2x44PJ9mCWgPGMSdAGatf9Gru6euhDQzsSfVfPuyQ=s800"
+        14: "https://content.production.cdn.art19.com/images/b6/24/ab/12/b624ab12-25b0-48f1-b794-4d805af51fc1/5a95b6d849e5762b21587056283735d12257428d91a0ace86b589b3c8e460dda3378ce72fd81db5f6bf34b43f482e9c097694100bb4365c4700fba6c24d2224a.jpeg"
+      }
+      2 {
+        1: "December 3, 2018: Bush lies in state at the Capitol"
+        2: "Plus, Alaska feels effects of a 7.0 earthquake, lawmakers want to investigate the labor secretary for a past plea deal given to a pedophile, James Comey will testify in private and Cher\'s biopic musical debuts."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/cd7f60c6-80ec-4a22-b297-106e6c226769.mp3"
+        5: 190
+        6: "gid://art19-episode-locator/V0/_WTVgkRNknQ2iAu95leAZ-amaVhws4Ja3KHTs5_fLSg"
+        7: 1543839480
+        9: 0
+        10: 3053609
+        11: "gid://art19-episode-locator/V0/_WTVgkRNknQ2iAu95leAZ-amaVhws4Ja3KHTs5_fLSg"
+      }
+      2 {
+        1: "December 1, 2018: Tributes pour in for George H.W. Bush"
+        2: "Plus, Alaska recovers from a massive earthquake, Hanukkah is set to begin, Mexico has a new president and it\'s college football championship Saturday."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/21a2ccd3-6f51-4486-ab77-107e2a24327d.mp3"
+        5: 353
+        6: "gid://art19-episode-locator/V0/99MCNEbOQKMvkpXxqclfD3xIZNgkjaN4TajlH261VjU"
+        7: 1543670760
+        9: 0
+        10: 5652897
+        11: "gid://art19-episode-locator/V0/99MCNEbOQKMvkpXxqclfD3xIZNgkjaN4TajlH261VjU"
+      }
+      2 {
+        1: "November 30, 2018: U.S., Canada and Mexico sign new trade deal"
+        2: "Plus, hurricane season is coming to an end, Manafort\'s attorneys are due in court, there\'s another blizzard in the forecast and a court hearing is set in a New Jersey quadruple murder case."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/a9ee42bc-f360-4068-9565-40fa1d5d18f1.mp3"
+        5: 236
+        6: "gid://art19-episode-locator/V0/wqDUoyJi4ed4lk6eyTFK8s8kCNEqpIwk5_5IfuMBrUE"
+        7: 1543581120
+        9: 0
+        10: 3782112
+        11: "gid://art19-episode-locator/V0/wqDUoyJi4ed4lk6eyTFK8s8kCNEqpIwk5_5IfuMBrUE"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Blackwood"
+        2: "Skylark | Wondery"
+        3: "Five years ago, Molly Weaver, Bryan Anderson, and Nathan Howell started a podcast focused on the local legend of a monster called The Blackwood Bugman. Quickly, the investigation grows out of their control, as they discover that, not only are the legends seemingly true, many people in Blackwood have turned up dead or disappeared without a trace. Worse, there may be a reason why no one has ever uncovered the truth before. Someone is watching them, willing to do whatever it takes to keep the secret. Their recordings have finally been released."
+        4: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTXdjZPkAgXLDcj_D8hvcvElDtVgP7FEEo9RSOQc-CquGv8rA"
+        6: "https://art19.com/shows/blackwood"
+        7: "https://rss.art19.com/blackwood"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/6f9e010cd72f3b87"
+        11: "cluster_0000000001ca5bc1"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/Lij1dQgrh3sqC_WSkINEuAjSqAdFmXuyvStvyOe0bm0bpF6zhaRefE-RaA-1GQKfkDVhKuX8mOmGvYqkCsZ7jmrdHU-veiKPuM-Uopiyu3oW0EQuovRqNRTKyzwuHMRtuz_fvb3F6YOtqUXABgCJg2o674gm3hMDErq_yO6IZdKPGkReY0fobJrzuoXdP26Was-iBgfgyngboTALHGkzasM0FGHQa55_3zhumVP0UGPUHovI7hQseifC_v9NWPEf3ps6MM4e_hNDGW4z1OvUObpCLyPMQIZM-Rwt-UiHlGQvxa92dhvwX89regNGZy7AD5tb8reXAGW5_ELAEtWYqA=s800"
+        14: "https://content.production.cdn.art19.com/images/06/c1/b3/8f/06c1b38f-c0c1-4ed9-b7e1-2c4422f0a15a/16bd20b8870ff89df07ff4802eabea4c2866d378820468be157f4c97a0628ffee5ca5f944898411ebc42c82b2ecdca6d6a1f205b40adb5ab3de576bd0aa6717a.jpeg"
+      }
+      2 {
+        1: "The Questions | 6"
+        2: "Nathan is missing. Bryan is\342\200\246 gone. Molly Weaver has spent five years running from her past and the investigation, but it seems Blackwood isn\342\200\231t done with her.\n\nSubscribe to Blackwood on\302\240Apple Podcasts,\302\240Spotify,\302\240Stitcher, or wherever you listen to podcasts.\n\nFor more information, and to view bonus content from this episode, visit\302\240SkylarkMedia.com\n\nSupport us by supporting our sponsors!\n\nHunt A Killer - Get10% off your first box when you visit them at huntakiller.com/blackwood\n\nStamps.com - For a 4-week trial plus postage and a digital scale go to stamps.com and enter code blackwood after you hit the microphone at the top of the page\n\nQuip - Get your first refill pack free when you buy a toothbrush at getquip.com/blackwood"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/2246cfd9-4550-47d2-a7e0-a13f68639c92.mp3"
+        5: 1734
+        6: "gid://art19-episode-locator/V0/rzkyZHZRjKui4TkbqsWb089ee3czpV2TkeoHXTYcZcY"
+        7: 1542787500
+        9: 0
+        10: 27749564
+        11: "gid://art19-episode-locator/V0/rzkyZHZRjKui4TkbqsWb089ee3czpV2TkeoHXTYcZcY"
+      }
+      2 {
+        1: "The Answers | 5"
+        2: "Nathan is shaken by recent events and discovers his own grandfather\342\200\231s possible involvement in Blackwood\342\200\231s secret group. Molly and Nathan decide to check in on Bryan, and quickly discover their friend is behaving very strangely\342\200\246\n\nSubscribe to Blackwood on\302\240Apple Podcasts,\302\240Spotify,\302\240Stitcher, or wherever you listen to podcasts.\n\nFor more information, and to view bonus content from this episode, visit\302\240SkylarkMedia.com\n\nSupport us by supporting our sponsors!\n\nHunt A Killer - Get10% off your first box when you visit them at huntakiller.com/blackwood\n\nStamps.com - For a 4-week trial plus postage and a digital scale go to stamps.com and enter code blackwood after you hit the microphone at the top of the page\n\nQuip - Get your first refill pack free when you buy a toothbrush at getquip.com/blackwood"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/c0f8624d-b90c-4ca3-92c5-257a60598f51.mp3"
+        5: 1178
+        6: "gid://art19-episode-locator/V0/AgLCxggSZPcNZL93ipaQCLYssJn-SLryX6qUgp_whuM"
+        7: 1542182700
+        9: 0
+        10: 18856228
+        11: "gid://art19-episode-locator/V0/AgLCxggSZPcNZL93ipaQCLYssJn-SLryX6qUgp_whuM"
+      }
+      2 {
+        1: "Introducing American Hysteria"
+        2: "American Hysteria is a podcast exploring our moral panics, urban legends, and conspiracy theories, how they shape our psychology and culture, and why we end up believing them. Host Chelsey Weber-Smith explores the sometimes hilarious, sometimes distressing stories of modern and historical American freak-outs, why we fear the wrong things, and what these bizarre panics might be covering up.\n\nSubscribe today at SkylarkMedia.com, on Apple Podcasts, or wherever you get your podcasts."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/38827ccb-75b5-4b0e-850b-17946e2acc0e.mp3"
+        5: 123
+        6: "gid://art19-episode-locator/V0/89-Na-g6y09HnKgiTN8stQa-mQCqQYfc67sx0Ve010o"
+        7: 1542099600
+        9: 0
+        10: 1974857
+        11: "gid://art19-episode-locator/V0/89-Na-g6y09HnKgiTN8stQa-mQCqQYfc67sx0Ve010o"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "I, Survivor"
+        2: "Wondery"
+        3: "Women get assaulted. Women get attacked. Women get harassed, manipulated, intimidated, but women are survivors. Time and time again, she persists, even against all odds. Hosts Jenna Brister and Wagatwe Wanjuki share their stories, and those of the men and women who fought back, who won, and who live rising above the trauma of their experiences."
+        4: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXmS_S2ciJlGp7L37tAN4ws82RuJzAxXcwJS054xH_Ruwv51Y"
+        6: "https://art19.com/shows/i-survivor"
+        7: "https://rss.art19.com/i-survivor"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/64ad75d102c4cc9d"
+        11: "cluster_00000000002abc4e"
+        13: "https://lh6.googleusercontent.com/proxy/_EZ1vSxm9t90kDmaQjU2bbn0lqbN3neoQ8Gw6O6fy7OdZyHBif-ui6K_bk1e3gL2swF0FtyrABs1E1FE-i1vw0fIV-5EZoS8RC91PhHm4u0HqNe5UuQHBLVq_cIR16ApbJvkHE_SFEgtbLtNkKQQO89XPutfFyN-of67I5r1qVlEUzGiurcT_T_Ve13rnLhPrOZQQCxLw8oqMa8kC24u7WuhuaRMTwKgL7GC_F4gfpw7ec5Fo1bGJkeCCWabOZ7H_Sne2dUNHqSj29_dHNBnrQKyRmQicM1SkG2zTtfzHE25w149m1dtcXJ2WdaBW6bmXQKnr7m3wemiCY9ysTOeTw=s800"
+        14: "https://content.production.cdn.art19.com/images/96/b2/fb/1e/96b2fb1e-3239-4a0f-a11d-6dc26eb247e8/6f0e450fc51924f5882cfdf674a8f66828a51ba82059eda84de3bd21aadf2805c5ca41500b4e0a6f9e5a571a7ec74f9e17660fd0af9275423fdf84c3e0895445.jpeg"
+      }
+      2 {
+        1: "Lacey Is Your Friend"
+        2: "Lacey Henderson survived a childhood cancer that had no survival rate, but losing a leg didn\342\200\231t slow her down. Inspired by the classic film bring it on, she became a competitive cheerleader. Then, over a casual family game of beer pong her Dad bet her she could never pole vault as an amputee. Not only did she fly, she became an Olympian! Ok, so there was a lot of training and other hard stuff that happened in between but it kinda feels like she was born for this.\n\nLinks from Today\342\200\231s Episode!\n\nFind Lacey Online\n\nWatch Lacey\342\200\231s Ted Talk\n\nLearn more about Athletes for Hope\n\nSupport this show by supporting our sponsors!\n\nBrooklinen - Get $20 off and free shipping at Brooklinen.com, and use code SURVIVOR at checkout.\n\nAncestry - Go to Ancestry.com/survivor and order your kit for just $59.\n\nQuip - Go to GetQuip.com/survivor to get your first refill pack free with your order of an electric toothbrush."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/3f7f2807-2031-40c6-b13f-96361cd54f28.mp3"
+        5: 2821
+        6: "gid://art19-episode-locator/V0/rOekU4hLKJoNeMzA8gl5sQAMtsyfp8tF3zJSeHlV19o"
+        7: 1543305900
+        9: 1
+        10: 45139173
+        11: "gid://art19-episode-locator/V0/rOekU4hLKJoNeMzA8gl5sQAMtsyfp8tF3zJSeHlV19o"
+      }
+      2 {
+        1: "Fly-Fight-Win"
+        2: "When Rachel was in the Air Force, she was assaulted by a fellow airman. While initially praised for her bravery, she was punished when she spoke out. But Rachel left the skies for the seas, and found healing on her boat, Coconut, where she now lives. Isn\'t it annoying that the Air Force refuses to call members anything other than \"airman\" even when they\'re air women? And to all those who have served our country, we salute you.\n\nLinks from Today\'s Episode!\n\nSave A Warrior\n\nRachel tried CBT, and loved it. It may be right for you.\n\nWe spent a LOT of time Googling Tiny Houses and Boat Houses after this.\n\nSupport this show by supporting our sponsors!\n\nLiving Proof - Go to livingproof.com/Survivor and use promo code \"survivor\" for a free sample of dry shampoo.\n\nAncestry - Get your kit for just $59 at Ancestry.com/Survivor\n\nBlinkist - Start your free 7-day trial of Blinkist at\302\240blinkist.com/survivor\302\240."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/4ea9629c-34e4-4067-a4f2-9b07362423fe.mp3"
+        5: 2915
+        6: "gid://art19-episode-locator/V0/RrVYgGTmZEhLdnPAGS7Qv8oZY1XSVrlh0Galu3Emhco"
+        7: 1542701100
+        10: 46654275
+        11: "gid://art19-episode-locator/V0/RrVYgGTmZEhLdnPAGS7Qv8oZY1XSVrlh0Galu3Emhco"
+      }
+      2 {
+        1: "Tested to the Limit"
+        2: "When Consolee Nishimwe was 14, the Rwandan Genocide ripped her country and family apart. She hid out in bushes, attics, and she survived. She shared her story with us and inspired the hell out of us. The Rwandan Genocide is a big and terrible topic that we couldn\342\200\231t fully explore in this episode, so do ya homework and learn more about it to fully appreciate Consolee\342\200\231s journey.\n\nLinks from Today\342\200\231s Episode!\n\nRead Consolee\342\200\231s book!\n\nYou can also follow her on Twitter for more.\n\nIf you want more info about the Rwandan Genocide, visit Genocide Research Hub.\n\nSupport this show by supporting our sponsors!\n\nThirdLove - Go to 15% off by going to ThirdLove.com/Survivor\n\nQuip - Get your first refill pack for free by visiting GetQuip.com/survivor\n\nZipRecruiter - Try ZipRecruiter.com/survivor and find your next great hire."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/4cfd213a-e1e4-4991-8e23-f327bbece2db.mp3"
+        5: 2308
+        6: "gid://art19-episode-locator/V0/U9ve_CkrVYvgXMx3JS_hjmG6f6azStdgXiSlkurhA4c"
+        7: 1542096300
+        9: 1
+        10: 36938814
+        11: "gid://art19-episode-locator/V0/U9ve_CkrVYvgXMx3JS_hjmG6f6azStdgXiSlkurhA4c"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "The Popcast With Knox and Jamie"
+        2: "Knox and Jamie / Wondery"
+        3: "A weekly pop culture podcast seeking to educate on things that entertain, but do not matter."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4mY84JQ46GohHrMtC3eSrwdQovXoYjBe_PgRN0p_g13oZjaU"
+        6: "http://wondery.com/wondery/shows/popcast/"
+        7: "http://feeds.wondery.com/thepopcast"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/7c95288c804d86d0"
+        11: "https://rss.art19.com/the-popcast-with-knox-and-jamie"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/0Rtd4wVivHQNRY_-ipH0zL3eo1H6TdJXZgIwfuCcdScGYdYg__x0PKxWfMnhw0F-qvmawO6OTO5tQOl4dAs_7d2oedMTH8LIAlDJs5nAa1Uj6iD33Us-5XSVykAdAzAIqpQ2-VLmn0Z8mdfRuuRNX5o7CfgePYhSiu9mRkhS6SJNUDLwjiQjRA60D1hRb-4xtNSXRaShTN2izqv4RDhXz7OrmZHGmZfJqhpONd16fLAtub-yEBwtRzcdrjlCeKY9cPnDrdNvJYG4le_LvVD-Q6m_Ge5MwRVsHALmQ-oXtE39gk7AKRH_-Bsz38uEGrUT8EidJltU1aBLRj0rs8969A=s800"
+        14: "https://content.production.cdn.art19.com/images/79/26/96/30/79269630-0f4e-44e3-8195-3b4bc8f92795/f9d46e9cd8e08cddf3d010162711fcedcb692e96d1ee91cecb9b4d3ede8a33e687fdb66153319c45a2116156e161eec913f16656594d5904cede0d7618339a2e.jpeg"
+      }
+      2 {
+        1: "274: The More You Know"
+        2: "In this episode, we discuss The More You Know new segment with recent pop culture news.\n\nMENTIONS\n\n  * The 50-page Binge Watch Like You Mean It Guide is available and free to all newsletter subscribers. Get it here!\n  * Join Knox at The Bookshelf in Thomasville, GA on December 1. Get your ticket here.\n  * Sarah Michelle Gellar\n  * Highest Paid Women In Music\n  * Michigan\302\240and\302\240LSU\n  * Cinema Sidepiece\n  * Box Office Report\n  * The Lion King Trailer\n  * Detective Pikachu trailer\n  * Toy Story 4\n  * Back To The Future\n\nBONUS SEGMENT\n\nOur Patreon supporters can get full access to this month\342\200\231s Cinema Sidepiece on Twilight. Become a partner.\n\nGREEN LIGHTS\n\n  * Jamie \342\200\223 TV Show: Patriot Act\n  * Knox \342\200\223 TV Show: Dark\n\nSHOW SPONSORS\n\n  * ThirdLove: To get 15% off your first order, go to thirdlove.com/POP.\n  * Stamps.com:\302\240To get a 4-week trial plus postage and a digital scale, go to Stamps.com and use promo code POPCAST.\n  * Candid: To save 25% off your modeling kit, go to CandidCo.com/POP.\n\nSubscribe to Episodes: iTunes | Android\n\nSubscribe to our Weekly newsletter: http://www.knoxandjamie.com/newsletter\n\nFollow Us: Instagram | Twitter | Facebook\n\nSupport Us: Monthly Donation | One-Time Donation | Swag"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/5f5b271b-75e8-484d-9641-5f63bf4fb297.mp3"
+        5: 3557
+        6: "gid://art19-episode-locator/V0/GqTMQsEevGl88KtDKUjqiCMohkrxcdC_7OUlahgTFIo"
+        7: 1543395600
+        9: 0
+        10: 56923951
+        11: "gid://art19-episode-locator/V0/GqTMQsEevGl88KtDKUjqiCMohkrxcdC_7OUlahgTFIo"
+      }
+      2 {
+        1: "273: Money in Pop Culture"
+        2: "In this episode, we discuss money in pop culture, the confessionals of our listeners\342\200\231 worst purchases, and the Pantheon of things in pop culture that are worth the money.\n\nMENTIONS\n\n  * Check out the brand new shirts and hoodies in the Popcast shop! And don\342\200\231t miss the Black Friday sale.\n  * Support The Popcast on Patreon for extra content each week, including The More You Know, Cinema Deep Dives, monthly Ask Us Anything, Bachelor recaps starting in January, and more.\n\nBONUS SEGMENT\n\nOur Patreon supporters can get full access to this week\342\200\231s The More You Know news segment. Become a partner.\n\nTHE MORE YOU KNOW\n\n  * Box Office Recap\n  * Breaking Bad Movie\n  * Arie and Lauren B pregnant\n  * Apple and A24\n  * Holiday Snack Food Guide\n  * Steve Carell SNL\n\nGREEN LIGHTS\n\n  * Jamie \342\200\223 Podcast: Bear Brook\n  * Knox \342\200\223 Movie: The Ballad of Buster Scruggs\n\nSHOW SPONSORS\n\n  * Rothys: To get free shipping and free returns, go to Rothys.com and use code POP.\n  * FabFitfun: To get $10 off your first FabFitFun box, go to fabfitfun.com and use code POPCAST.\n  * Page One Books: Visit knoxandjamie.com/PageOne to gift yourself or someone you love with a subscription.\n\nSubscribe to Episodes: iTunes | Android\n\nSubscribe to our Weekly newsletter: http://www.knoxandjamie.com/newsletter\n\nFollow Us: Instagram | Twitter | Facebook\n\nSupport Us: Monthly Donation | One-Time Donation | Swag"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/eebb1d4c-d8fc-415b-b1be-4292e11c0a26.mp3"
+        5: 3802
+        6: "gid://art19-episode-locator/V0/f_PEkypyD7jODoGne9takfm2iZOwqqFs7L79i_60EXc"
+        7: 1542787200
+        9: 0
+        10: 60847333
+        11: "gid://art19-episode-locator/V0/f_PEkypyD7jODoGne9takfm2iZOwqqFs7L79i_60EXc"
+      }
+      2 {
+        1: "272: Christianity and Pop Culture"
+        2: "In this episode, we discuss the complicated ways Christians interact with pop culture.\n\nMENTIONS\n\n  * Knox\342\200\231s book is now available! Order it today.\n\nBONUS SEGMENT\n\nOur Patreon supporters can get full access to this week\342\200\231s The More You Know news segment. Become a partner.\n\nTHE MORE YOU KNOW\n\n  * Box Office Round-Up\n  * Chip and Joanna Gaines\n  * Nikki Bella and Peter\n  * Toy Story 4\n  * Holiday Snack Food Guide\n  * Liev Schrieber and Pete Davidson\n\nGREEN LIGHTS\n\n  * Jamie \342\200\223 Book: The Wondering Years by Knox McCoy, Podcast: Uncover\n  * Knox \342\200\223 Movie: First Man\n\nSHOW SPONSORS\n\n  * Stamps.com: For a special offer that includes a 4-week trial plus postage and a digital scale, go to Stamps.comand use the code POPCAST.\n  * Casper: For $50 toward select mattresses, go to casper.com/greenlight and use promo code GREENLIGHT at checkout.\n  * Beach Body: For a special free trial membership including the new 14-day results plan, text POPCAST to 303030.\n\nSubscribe to Episodes: iTunes | Android\n\nSubscribe to our Weekly newsletter: http://www.knoxandjamie.com/newsletter\n\nFollow Us: Instagram | Twitter | Facebook\n\nSupport Us: Monthly Donation | One-Time Donation | Swag"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/32026f6c-0658-468b-938f-01aac11567c5.mp3"
+        5: 3407
+        6: "gid://art19-episode-locator/V0/cSuq9ZbjqmHu9Nco18j3rp0x12gnHhDFULfqd0w4LuI"
+        7: 1542186000
+        9: 0
+        10: 54522775
+        11: "gid://art19-episode-locator/V0/cSuq9ZbjqmHu9Nco18j3rp0x12gnHhDFULfqd0w4LuI"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Accused"
+        2: "Cincinnati Enquirer | Wondery"
+        3: "Season 2: A soft-hearted prison minister was found killed in her Kentucky apartment, and Newport police zeroed in on an ex-convict she\342\200\231d counseled. Thirty years later, the conviction is overturned and the case is once again unsolved. The Cincinnati Enquirer investigates:\302\240Was William Virgil wrongly convicted for murder?\n\nSeason 1: When Elizabeth Andes was found murdered in her Ohio apartment in 1978, police and prosecutors decided within hours it was an open-and-shut case. Two juries disagreed. The Cincinnati Enquirer investigates: Was the right guy charged, or did a killer walk free?"
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4jINZLQB7MZyidILRnpO5x_7al60kJPGdnZFri_EcjsgiU6Q"
+        6: "http://wondery.com/wondery/shows/accused/"
+        7: "https://rss.art19.com/accused"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/3f064f868baa635e"
+        11: "https://rss.art19.com/accused"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/U4463nfRBfr5zmnnyj7jVragi3GN35kGCs0e-pqZiqYwDI5CcNnYcYrTNtiU0rz3N5w-_BH6nB9slF1R1jyR3MkvUPwEiPLHQ7mREBRQI4IVoTdBKfO2ZTGEA81YqFu6eel1yFVgP9iiAyLB-Egy5185hpCheszMRSq6N-fqZ3J34RAaiq2zZwPePIeLJOGTsPInHf-jQ75Zw_KKuwb8R-2vpbP_mcO9wSYjI-LKRj-RroDw2PYsxGEgpcYYXaknq5E9Die-tabpbI_wfgu-NgwjCuTfCJ5RTCQXD1pwsdd2Wlnicg6AOfvpmIjWd3bTVcWGAV_r_zy8-ZZgw7JS4g=s800"
+        14: "https://content.production.cdn.art19.com/images/b3/37/52/bb/b33752bb-585a-47dc-a431-3aef17aacd66/4e93f0ce52355ffe7ffdfd6f0a6b79b0957aab9ba24e4d8b2563241ffdc52728fc9c88767711915218eec7aa2e742df8665563a87faeda8b91962059c03ad4f9.jpeg"
+      }
+      2 {
+        1: "Introducing The City"
+        2: "The City\302\240tells true stories of how power works in urban America. Season 1 begins in Chicago, 1990.\302\240\n\nAfter years of disinvestment, highways are rebuilt, old buildings demolished, new skyscrapers erected. All that rubble has to go somewhere, and its destination isn\342\200\231t a landfill\342\200\224it\342\200\231s a pair of vacant lots in a black, working-class neighborhood called North Lawndale. The man behind this operation is a white guy sporting a Cosby sweater and underworld connections. What follows is a tour de force through Chicago\342\200\231s underbelly: Aldermen get indicted. An FBI investigation goes awry. A community\342\200\231s resilience is tested\342\200\224all unfolding under the spectre of racism in America.\n\nLook for The City on Apple Podcasts and subscribe to USA TODAY\'s new investigative podcast series: https://apple.co/2Ot21Tu"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/1722fab7-ccbe-4624-a024-f2cfc820f875.mp3"
+        5: 323
+        6: "gid://art19-episode-locator/V0/aaJ1R6L20xu0PKlOM09IH8cHZHdsCxayTcL1_4n3j-4"
+        7: 1537772820
+        9: 0
+        10: 5183111
+        11: "gid://art19-episode-locator/V0/aaJ1R6L20xu0PKlOM09IH8cHZHdsCxayTcL1_4n3j-4"
+      }
+      2 {
+        1: "Aftermath: I wasn\'t going to leave her"
+        2: "Best friends Carmen Alegria and Angelica Soto did everything together \342\200\224 and that includes saving each other from a gunman on a rampage.\n\nTo hear more stories subscribe to Aftermath wherever you listen to podcasts:\302\240APPLE,STITCHER, orWONDERY.COM"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/bc742ed2-c40c-49ec-a48e-23b8ff6c6a92.mp3"
+        5: 2318
+        6: "gid://art19-episode-locator/V0/6ANlhtMmtTWjcT9bV-usRvD4F5xoZqqJQ_ANfSfqZrE"
+        7: 1529391900
+        9: 0
+        10: 37102236
+        11: "gid://art19-episode-locator/V0/6ANlhtMmtTWjcT9bV-usRvD4F5xoZqqJQ_ANfSfqZrE"
+      }
+      2 {
+        1: "Aftermath: Some people have a spirit of resilience"
+        2: "From the Accused podcast team, Aftermath is an episodic look at survivors of gun violence. Episodd 1 focuses on neglectful parents and neighbors who looked the other way and set the stage for Clai Lasher-Sommers\342\200\231 stepfather to shoot her in the back when she was 13 years old.\n\nTo hear more stories subscribe to Aftermath wherever you listen to podcasts: APPLE, STITCHER, or WONDERY.COM"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/21c4b6bb-a7c0-4cad-ace9-36535c81a574.mp3"
+        5: 2621
+        6: "gid://art19-episode-locator/V0/VOiv-lEFw9fbW0CK4qCNFozYkodZSj4isqqhYQ6IPME"
+        7: 1528787100
+        9: 0
+        10: 41948055
+        11: "gid://art19-episode-locator/V0/VOiv-lEFw9fbW0CK4qCNFozYkodZSj4isqqhYQ6IPME"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Best Case Worst Case"
+        2: "Wondery | X-G Productions"
+        3: "We take you behind police lines. Former FBI profiler Jim Clemente & former federal prosecutor Francey Hakes get unparalleled access to law enforcement officers, looking back at their most memorable cases \342\200\223 for better or for worse."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNRL2NgTcxQPnt5cYx45xztXC8TJ2iQlGtYWu3xZY7m-sCmbWX"
+        6: "http://www.wondery.com/shows/bestcaseworstcase"
+        7: "https://rss.art19.com/best-case-worst-case"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/dd5e7badc34cf6e5"
+        11: "https://rss.art19.com/best-case-worst-case"
+        12: 0
+        13: "https://lh5.googleusercontent.com/proxy/IS2C6UeqI_Twlo54dpq0aLEHUctAHVdCIDjiF5twyD4QSg1NxAl_yRv91Y_PUvPQnSakCvFoaKSswEt-2Z-QbX28YBMEV_C2-3CqkfaviNgonBOwunWsTX71eNtIXB4jquuH6jLzUwN6IzKqGfmHtBqUuYAXgscOPW4Bcnm_o2rf06WIUUkV0ltuC2P8mZDz_Bw9Kf52OMOukS5KN9vd6LdDBiNm3AUismAMf3DIh1vGeL2UAIwCR722bHqp5hQuQqf36ZvaXHYSvf-k0X_Nvw3b4QqO5AOxLcnsW7ud2U6J2V7c9XIH-52iVsJR5oxYCQ6vM_nk2H3Rsj_byVYf0w=s800"
+        14: "https://content.production.cdn.art19.com/images/dc/a9/88/fc/dca988fc-0c3f-4d28-82ee-5809bf483dd8/55125ebb9523ba3bbdebbf574acf16c840b52e5ecb860cfb6581ffb828e33083deda991d61703901e372395f85300d5552c8663c23baeb6c42a2467547dc1aaf.jpeg"
+      }
+      2 {
+        1: "101 | A Pack of Smokes and a Shoelace Tied to Murder"
+        2: "Rookie homicide detective finds a horrible scene awaiting him when he arrives at an apartment where police were called because of a suspicious smell.\n\nThanks to our sponsor this week:\302\240Quip and StoryWorth!\n\n  * Go to\302\240http://getquip.com/bestcase\302\240to get your first refill pack\302\240FREE\302\240with a Quip electric toothbrush.\n  * Visit http://storyworth.com/bestcase for $20 off when you subscribe to StoryWorth!"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/7e15c24e-18f2-4914-8f06-f488e3a68aee.mp3"
+        5: 2635
+        6: "gid://art19-episode-locator/V0/6JJc4Fh3qzSjPE6l7iPI9CHy1mDEphHSGPRV9HdX5dw"
+        7: 1543564860
+        9: 0
+        10: 42171663
+        11: "gid://art19-episode-locator/V0/6JJc4Fh3qzSjPE6l7iPI9CHy1mDEphHSGPRV9HdX5dw"
+      }
+      2 {
+        1: "100 | Dropped Into A Warzone"
+        2: "To celebrate Thanksgiving and our 100th episode, Bobby Chacon returns to discuss another one of his cases. Bobby Chacon\342\200\231s dive team gets dropped into Iraq to hunt for evidence of a brutal crime.\n\nThanks to our sponsor this week:\302\240Quip!\n\n  * Go to\302\240http://getquip.com/bestcase\302\240to get your first refill pack\302\240FREE\302\240with a Quip electric toothbrush."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/08624f1c-87a8-4a21-8136-6b4ce16af6ce.mp3"
+        5: 2599
+        6: "gid://art19-episode-locator/V0/IHtCtSQDKAhckW37alw7Mrv_ApBfaHf6EZV8Kprl9V0"
+        7: 1542910461
+        9: 0
+        10: 41591118
+        11: "gid://art19-episode-locator/V0/IHtCtSQDKAhckW37alw7Mrv_ApBfaHf6EZV8Kprl9V0"
+      }
+      2 {
+        1: "99 | The Warrior\342\200\231s Code"
+        2: "Navy SEALs live a warrior\342\200\231s code even in a war zone & even when it comes to compassion toward the enemy.\n\nThanks to our sponsor this week:\302\240ThirdLove!\n\n  * Go to\302\240http://thirdlove.com/bestcase\302\240now to find your perfect-fitting bra and get\302\24015% off\302\240your first purchase!"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/82ed9188-776f-4acd-992b-003759d42e81.mp3"
+        5: 2426
+        6: "gid://art19-episode-locator/V0/MFKphjsMD0XTdAllRUT5aBH0jUeJcjs03mKuSRHckPk"
+        7: 1542355260
+        9: 0
+        10: 38817123
+        11: "gid://art19-episode-locator/V0/MFKphjsMD0XTdAllRUT5aBH0jUeJcjs03mKuSRHckPk"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Talking Tech with Jefferson Graham"
+        2: "USA TODAY / Wondery"
+        3: "Your daily consumer tech news update, plus the latest gadget\302\240reviews and straight talk about how\302\240the latest tech innovations affect you, with USA TODAY\'s Jefferson Graham."
+        4: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW31OnGl9Mc7rFYBIp2FxfkNrtvA3sAsR_zYLEUc9rOTvbAhM0"
+        6: "http://usatoday.com/tech"
+        7: "https://rss.art19.com/talking-tech"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/e024e1b508cb7f9d"
+        11: "https://rss.art19.com/talking-tech"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/sNFWI2blr8qutWXGi0CFSlJfOkfom9CN49Anqq0YLrw3gCLLn-TMbNZs4TXZ2LhaDF4bVi53EL93hqxVnt4V_KyqtKXabBnsp6lS6iynbS56eCrMGh_4tXWXLuVl02Hhl4UI-RlZb0etZfOjsBodkyde5Pxu6Sx7SAwdnzt5nkP5YJxwsobvnls8MoGagtv7tE2lThN1yUOFwUPo0fyQEO0iApgWMnzD5ocKRk0X60JKunFmQgR3KCns1pmJafjeqbcgFhsXAaoxiIjKbSblPPWHqCiXrv44SCEYijameptZKerGub-34gzsxxZPlUZcrvxt8oeIVG-XneywQvp_Ag=s800"
+        14: "https://content.production.cdn.art19.com/images/a3/c0/e1/7b/a3c0e17b-0205-49ce-b9fa-cb66b6c6a550/4a416dd38bed2817281501e310efd3d2787a91de38042da09148591b5fc346bea4016066a5d57940c9a1ca63b7f5070a874f3d0f1ac07ccc2d7e234fd8eb8623.jpeg"
+      }
+      2 {
+        1: "YouTubeTV vs. DirecTV Now & Vue: cable TV alternative smackdown"
+        2: "Jefferson Graham compares the pros and cons of the five major cable TV streaming alternatives, YouTubeTV, Sony Playstation Vue, Hulu with Live TV, DirecTV Now and Sling TV on #TalkingTech. Which one is best for you?"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/8933ca43-ed05-452b-9a6c-8dde1e30d3ac.mp3"
+        5: 291
+        6: "gid://art19-episode-locator/V0/ROBwi-XMKFCnGaqdHQyDNoo2g94XYZ7qs3uHxoG7Mkw"
+        7: 1543824120
+        9: 0
+        10: 4663170
+        11: "gid://art19-episode-locator/V0/ROBwi-XMKFCnGaqdHQyDNoo2g94XYZ7qs3uHxoG7Mkw"
+      }
+      2 {
+        1: "ICYMI: The high costs of repairing an I-device"
+        2: "ICYMI: Jefferson Graham reports on the high costs of repairing an Apple i-device, on Talking Tech. Dropped an Apple Watch lately?"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/40c50819-e9b5-48d9-a8b7-97fecddcbc7c.mp3"
+        5: 280
+        6: "gid://art19-episode-locator/V0/nTOOLf-z_pI4dAnjeioWCnNBw7Q0NHXT1IrohyFNGo0"
+        7: 1543761570
+        9: 0
+        10: 4485955
+        11: "gid://art19-episode-locator/V0/nTOOLf-z_pI4dAnjeioWCnNBw7Q0NHXT1IrohyFNGo0"
+      }
+      2 {
+        1: "If it\'s Sunday, it\'s time for Golden Game Night on pop.in"
+        2: "Weekends are when smartphone users can make big bucks with pop.in\'s Liar\'s Dice game. Jefferson Graham explains the pop.in transition from TV chat to pop culture discussions to finding success at last as a gaming platform. #TalkingTech"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/983dc16f-165d-42b0-a314-fe74fe39d2cc.mp3"
+        5: 219
+        6: "gid://art19-episode-locator/V0/9a2QnXdduLAdAPFJ2CEccQYyCV5m_likoCijQjyuiWE"
+        7: 1543651740
+        9: 0
+        10: 3518380
+        11: "gid://art19-episode-locator/V0/9a2QnXdduLAdAPFJ2CEccQYyCV5m_likoCijQjyuiWE"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "Sword and Scale"
+        2: "Wondery | Incongruity True Crime"
+        3: "The Sword and Scale true-crime podcast is an immersive audio experience covering the dark side of humanity and human nature. Our stories delve into the worst of the worst and include murder, rape, dismemberment and cannibalism. No crime is too brutal and no victim is too pure. The worst monsters are real."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShEXvN1zmZdQ5dTxKjRwi1cZ98GXEqfgyUiEC9Zr7sbxdcOjMN"
+        6: "http://swordandscale.com/"
+        7: "http://swordandscale.com/feed/podcast"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/1b795903176e4c8e"
+        11: "http://audioboom.com/channels/4685671.rss"
+        13: "https://lh6.googleusercontent.com/proxy/SNB3iS7yJbkEVr4u38yHfW_sSiNZswPwRf_rsaVYec8_6w5ACMoQvj5ga43EI3BucjobN3BQvoen1CDqudc7u1I0USFVVAQ8lVb-C9M15yUvhh5xIK7iJpnlgq2zs2EkTK-fQCQk7_YKe482wV3wtOaqqEMcsAAHYb_FIaSfTC1vgqL-grDI6TEbUMm-O_Z58J1geQUYvpDCBotL7lUlwZ-JaM2ThCtB4FocDIJI8xj85mJBr2_lYoah_kajAq0awHwBXqHH17i2YPn2NA91bW-gvDjlcRoBmexqMVft1z86ShiZGimN_ngkg8m9qgRCDNRjYOa7WcnLN_x9oS4_9g=s800"
+        14: "https://content.production.cdn.art19.com/images/cd/86/78/c3/cd8678c3-d7bd-465c-babd-56a2ec9d63a3/afc0d7e6538b6417b47308805615ffb39fea0aba32450d7b222b84cb3462d9aaa300fb160ace2e58c15857c1fc1e29cb5478721f49e7e4cf0bea4d140a629ef4.jpeg"
+      }
+      2 {
+        1: "Episode 127"
+        2: "In 2008, Adam Baker and his daughter, Zahra, moved to the United States from Queensland, Australia with the hopes of having the perfect new life. Adam had just married his new bride, Elisa, whom Zahra was quite fond of. What they soon began to learn was that the so-called \342\200\234Evil Stepmother\342\200\235 was no fairytale, and what existed was a real life monster\342\200\246"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/1b2f8bc7-85e4-4d42-b4c8-154b00353756.mp3"
+        5: 3376
+        6: "gid://art19-episode-locator/V0/dnLbEQGJcHdyR-f4i4TOCXZEA87p5ATASikMdKGHqzs"
+        7: 1543168800
+        10: 54020806
+        11: "gid://art19-episode-locator/V0/dnLbEQGJcHdyR-f4i4TOCXZEA87p5ATASikMdKGHqzs"
+      }
+      2 {
+        1: "Episode 126"
+        2: "On Tuesday September 13th, 2016 a 911 call police responded to 363 Covert Court Ashland, Ohio, an abandoned house near a laundromat. \302\240Minutes earlier, a frantic 911 call had been placed, from this location, by a woman who claimed she was being held captive and forced to perform sex acts with her captor. \302\240The story that would emerge from this strange series of events would lead to the eventual conviction of a serial killer by the name of Shawn M. Grate."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/b8fb1100-eee5-4f5c-abb4-c022e1f2fa9b.mp3"
+        5: 2820
+        6: "gid://art19-episode-locator/V0/aRtiBQBiSmRzEEpaEGsv8zAAnx--bElTkFfqjpojZb0"
+        7: 1541955600
+        10: 45134576
+        11: "gid://art19-episode-locator/V0/aRtiBQBiSmRzEEpaEGsv8zAAnx--bElTkFfqjpojZb0"
+      }
+      2 {
+        1: "Secret Project Preview"
+        2: "You may have already heard of the secret \"unnamed\" project by Mike Boudet (Sword and Scale), Jack Luna (Dark Topic), and Tyler Bell (The Westside Fairytales). \302\240Here is an extended behind the scenes preview of what it will be all about. \302\240We hope you enjoy it and join us on January 9th for its debut."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/6183f6aa-c725-43e8-9d43-f02676488a70.mp3"
+        5: 1885
+        6: "gid://art19-episode-locator/V0/J4xtCX2xAU7V5j8li918dgVqVgvASjO44j4PXQfPsV0"
+        7: 1540958400
+        9: 1
+        10: 30166204
+        11: "gid://art19-episode-locator/V0/J4xtCX2xAU7V5j8li918dgVqVgvASjO44j4PXQfPsV0"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "The Vanished Podcast"
+        2: "Wondery"
+        3: "The Vanished is a true crime podcast that explores the stories of those who have gone missing. Join host, Marissa Jones, as she explores each case often interviewing the loved ones who are still searching for answers."
+        4: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxqx9ZDRwUOA0Zo4OgB7i3U-xdeygMiL4zNScBVpOWjggW1TQ"
+        6: "http://thevanishedpodcast.com/"
+        7: "https://rss.art19.com/the-vanished-podcast-wondery"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/8bcd77a1ec6ec22b"
+        11: "https://rss.art19.com/the-vanished-podcast"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/ai0TE__5sDgRb5BXwKMsNWu2ucKbh_hVx4Xmr3zY18p_DOJ7Pz1JvW_4APcdj4zYmjNmM2XFvre2o4RIHzA9NRBe6WtwtPApxCx13hqeGsEzpEdJYxjk-kmkHD24cmpfpgC5pNSIVcz2_0spY1HIhcPoA3jwioepjXoBfDMp2W3jj8AMOLVtdg4gxbBRBJfSfYQJrFZ1iqmiDn3HgD9waNJo7cYutOgPlMxSL0vrF8GO_gRjQUK-7LBcJ10Z5wMmtnpf9EiXKTmb6zgMJYR5lZ8Ug0FLHiU0KVpY56EXDL5UHlHwxe3bGVAVR7YPzM5UFgmXcet6npY2OOqERfpOGA=s800"
+        14: "https://content.production.cdn.art19.com/images/64/bd/f7/4a/64bdf74a-07c8-455e-927c-6861a6ae2f45/be378c4e18f158a9de96c1091444245530052dce28c9fa901e7386d778d141d18fa6e5ddec30a59a53871b56eccb449dbdec2fe4161cd3d426349fa635493f70.jpeg"
+      }
+      2 {
+        1: "Nathaniel Holmes"
+        2: "On December 19, 2017, Nathaniel Holmes, who had just turned seventeen, went missing after being dropped off at his new school. \302\240Nathaniel had been attending an online high school program but just five weeks before his disappearance, he had transferred Hidden Lake High School in Westminster, Colorado. On the morning of his disappearance, Nathaniel went to the principal\342\200\231s office and said he needed to speak with with his friend, Anthony. The principal refused to take Anthony out of class. After that, Nathaniel walked out of the school and no one has seen him since. \302\240\n\nIf you have any information regarding the disappearance of Nathaniel Holmes, please call the Westminster police at 303-658-4360.\n\nThere is currently a $10,000 reward being offered. \302\240\n\nYou can follow Nathaniel\342\200\231s case on Facebook by joining the Bring Nathaniel Home group.\n\nThe episode was co-researched and written by Marissa Jones and\302\240Anna Priestland.\n\nThis episode was sponsored by:\n\nLiquid I.V.\302\240- Use the code VANISHED to get 20% off your order at\302\240https://liquid-iv.com\302\240\n\nThirdLove- Go toThirdLove.com/Vanished\302\240now to find your perfect-fitting bra AND get 15% off your first purchase!"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/f82b2272-b351-4ebf-b5b6-aaa26b4f8c89.mp3"
+        5: 2444
+        6: "gid://art19-episode-locator/V0/AxQhPyL9ppIV8OHlukaNNypw3Pk2fKI3_hosdsIBSx0"
+        7: 1543795224
+        9: 0
+        10: 39116800
+        11: "gid://art19-episode-locator/V0/AxQhPyL9ppIV8OHlukaNNypw3Pk2fKI3_hosdsIBSx0"
+      }
+      2 {
+        1: "Gabriel Cordova Tejada"
+        2: "On February 22, 2018, 20-year-old Gabriel Cordova Tejada disappeared from his home in St. Petersburg, Florida.\302\240Gabriel was a mechanical engineering major at the University of South Florida and had a mid-term exam that day. His mother, Angela, and brother, Carlos, came home around lunch time and realized that something was wrong. Gabriel was gone but all of his belongings were there, including the car he was supposed to drive to USF. They found a note on his phone that caused them to become alarmed and contact the police department. Gabriel has been missing for 9 months and no trace of him has been found.\n\nIf you have any information about Gabriel Cordova Tejada\342\200\231s disappearance, please contact the Saint Petersburg Police Department at 727-893-7780.\n\nYou can follow Gabriel\342\200\231s case on Facebook at Help Find Gabriel Cordova Tejada.\n\nThis episode was sponsored by:\n\nQuip- If you go to\302\240Getquip.com/vanished\302\240right now, you\'ll get your first refill pack FREE with a QUIP electric toothbrush.\n\nLiquid I.V.\302\240- Use the code VANISHED to get 20% off your order at\302\240https://liquid-iv.com"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/963c2b8f-cd44-4abe-893d-e6d5861583fd.mp3"
+        5: 3557
+        6: "gid://art19-episode-locator/V0/WS5OPo26KCMzCo2xdB7zZWlB9xKYyD6XaG7C_78DxGI"
+        7: 1543190434
+        9: 0
+        10: 56921443
+        11: "gid://art19-episode-locator/V0/WS5OPo26KCMzCo2xdB7zZWlB9xKYyD6XaG7C_78DxGI"
+      }
+      2 {
+        1: "Jacob Boyd"
+        2: "36-year-old Jake Boyd disappeared from his Columbus, Ohio apartment in January of 2017. The last time he spoke to family was on January 5th but his roommate claims to have seen Jake leave on the 11th. According to his roommate, Jake left with two unknown people in a car to move to another town. Jake left behind his own car, his phone, tablet and various other items. Jake was never seen or heard from again.\n\nJake\'s sister, Jamie, is desperately searching for answers but there aren\'t many leads to go on.\n\nIf you have any information regarding the whereabouts of Jake Boyd please contact Crime Stoppers at 614-461-TIPS (8477) or go to their website at www.stopcrime.org and submit your tip. You can also call the Columbus Police Department at 614-645-4545.\n\nIf you would like to follow Jake\342\200\231s case on social media, Jamie has set up a facebook page called Where is my brother, Jake Boyd?\n\nThis episode was co-researched and written by Marissa Jones and Erika Gwynn. To find more of Erika\'s work, please check out her podcast at\302\240https://www.apexandabyss.com.\n\nThis episode was sponsored by:\n\nBetabrand-Get 20% off Betabrand\'s dress pant yoga pants by visiting\302\240betabrand.com\302\240and using code VANISHED.\n\nMan Crates - Buy one gift and you will get the second gift 25% off at ManCrates.com/VANISHED."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/34b4c92b-d38b-4176-9ff2-d17929190c2b.mp3"
+        5: 2206
+        6: "gid://art19-episode-locator/V0/IVR1tLMeIzS81_nTWo222WQe11u8Nf4HoKWTpOGNKYE"
+        7: 1542585631
+        9: 0
+        10: 35309609
+        11: "gid://art19-episode-locator/V0/IVR1tLMeIzS81_nTWo222WQe11u8Nf4HoKWTpOGNKYE"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "The Generation Why Podcast"
+        2: "The Generation Why Podcast | Wondery"
+        3: "The Generation Why Podcast released its first episode in 2012 and pioneered the true crime genre in the podcasting world. Two friends, Aaron & Justin, break down theories and give their opinions on unsolved murders, controversies, mysteries and conspiracies."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbicGkpF1LF2uXUPT0ZiUGt-5hLdUkTPE2YUJCqhxd-ZC8uMg"
+        6: "https://art19.com/shows/generation-why-podcast"
+        7: "https://rss.art19.com/generation-why-podcast"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/600a4fb14d9efdf8"
+        11: "http://thegenerationwhypodcast.com/feed"
+        13: "https://lh5.googleusercontent.com/proxy/FIGQVZmHjHqVu61Ied3KoFVJ1F5j1Ne0qC7-UB6fe3AeozIEORHqeYv0R4rbCeY4nqobrOf4D4_ldD0lLifCB04LmowdThKI9zv21_QjJpgU6n50sm6kmp1YJyrbexg3uJ6VfVOJy86RdvKu-klfStRU8p6caDOZnWNFDyhXsBvHH8t3gG_WZvhZQq1DNZOTnKQveq9dLoEwRMVqHifw9TAdAL5EfqwW6Sy0IM_e7a_0gxX5QUQhaU9IpFL3jFiuxv9s9Cor_ABhuPlGt6ecGNLx-Fk6USfbV7ciShu37-5rDt4U5n1ZHL7UFbzrlxoPVWNR9DrRrOM08s9i_7vYww=s800"
+        14: "https://content.production.cdn.art19.com/images/d0/39/73/10/d0397310-cbcd-437c-823c-e6ae02d051c8/2e81a83e9b12100ddf19db5872f242098c75a135aef240561e9bd07ac5608f20b4c2286f11b9452f7f4a77a81eb3cf32102f1cf4a53e53fd9665d4e6a99ba444.jpeg"
+      }
+      2 {
+        1: "The Menendez Brothers - 307"
+        2: "August 20, 1989. Beverly Hills, California. Jose and Kitty Menendez were eating ice cream and watching a movie at home when they were shot to death. Their two sons, Lyle (21) and Erik (18) said that they were not home at the time but their behavior following the murders of their parents as well as the investigation into it began to reveal a different story. The two sons had burned through a lot of money buying cars, trips and even a restaurant. After Erik told his psychiatrist, Dr. Jerome Oziel, that he and his brother had killed their parents, Oziel\'s mistress then told police. Investigators then knew who committed the murders but not why. When the case went to trial, Erik\'s defense attorney, Leslie Abramson, alleged that Lyle and Erik had endured years of sexual abuse at the hands of their father. It was said that they feared that they would be killed and that was why they shot their parents. Were the murders done out of fear? Or did Lyle and Erik just want their parents\' money?"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/e44f7e63-b1e0-42bd-a9c8-9c1a7ac1a10b.mp3"
+        5: 3968
+        6: "gid://art19-episode-locator/V0/tyWs2dXvJvYszRVtsYQf2MDeP0e1-mY_VU8nDnJ8eBM"
+        7: 1543775940
+        10: 63494269
+        11: "gid://art19-episode-locator/V0/tyWs2dXvJvYszRVtsYQf2MDeP0e1-mY_VU8nDnJ8eBM"
+      }
+      2 {
+        1 {
+          8: 0x4720796e6f68746e
+          12: 0x33202d2061696372
+          6: 54
+        }
+        2: "May 14, 2013. Omaha, Nebraska. For five years the brutal murders of Thomas Hunter, 11, and Shirlee Sherman, 57, were a mystery. Then, in 2013, Roger and Mary Brumback, both 65, were murdered and the similarities between the two led the police to Anthony Garcia, a former employee of Roger Brumback and Thomas\342\200\231 father, William Hunter, who appeared to have a grudge against those who fired him from Creighton University Medical Center. But with very little evidence found at the crime scenes, how could it be proven that Garcia committed the crimes?"
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/b6beaac4-459f-487d-a8fb-7a6c0494ee40.mp3"
+        5: 3220
+        6: "gid://art19-episode-locator/V0/qKXOXduKQoX7gC_8hC8MDnFUBpXNz9Xo0h1JlLvni2A"
+        7: 1542561908
+        10: 51533113
+        11: "gid://art19-episode-locator/V0/qKXOXduKQoX7gC_8hC8MDnFUBpXNz9Xo0h1JlLvni2A"
+      }
+      2 {
+        1: "Janet Abaroa - 305"
+        2: "April 26, 2005. Durham, North Carolina. 30 year old Raven Abaroa returns home after a soccer game to find his wife slumped over on the floor in their home. At first he was not alarmed as she would often do this when she had cramps. But when he got close to her, he could see that his wife, 25 year old Janet Abaroa, was covered in blood and appeared to be deceased. The couple\'s 6 month old son was found unharmed in his room. Investigators did not suspect that robbery was a motive in the crime so they began to look at the people in her life. It took nearly five years for authorities to arrest their suspect: Raven Abaroa. The investigation had turned up a number of troubling red flags about him, but would they have enough evidence to bring Janet\'s killer to justice? Raven claimed to have an alibi for the time of the murder and said that he had witnesses to prove it."
+        3: "https://dts.podtrac.com/redirect.mp3/rss.art19.com/episodes/4f983001-4311-4d60-95a3-da99a85343a6.mp3"
+        5: 3041
+        6: "gid://art19-episode-locator/V0/EeXZLllaQUNIV1MVREsSBNnRBD67xtC1KC_YUopaN8Q"
+        7: 1541959260
+        10: 48664241
+        11: "gid://art19-episode-locator/V0/EeXZLllaQUNIV1MVREsSBNnRBD67xtC1KC_YUopaN8Q"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+  1 {
+    1: 1
+    2 {
+      1 {
+        1: "The Jillian Michaels Show"
+        2: "Jillian Michaels | Wondery"
+        3: "Jillian Michaels, America\'s Health and Wellness guru, brings you the Jillian Michaels Show. An entertaining, inspirational, informative show that gives you tools to find health and happiness in all areas of your life."
+        4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuitouJLVCkyHiCvfk0ycpl7_6JdMHlfRCQvC8bRX5xPgChc5"
+        6: "https://art19.com/shows/jillian-michaels"
+        7: "http://jillianmichaelspod.libsyn.com/rss"
+        9: 3
+        10: "https://gstatic.com/wernicke/a/738542bb30dcdfe3"
+        11: "https://rss.art19.com/jillian-michaels"
+        12: 0
+        13: "https://lh6.googleusercontent.com/proxy/NMzNzVT7KjLmGGjFGn3TaF6cONQheNUMRkGRdNh-YuxgKte-bC7LcsvthI465rkuQ7d7SisNgbwrxTkQrJqCaaS0QLHZBurF79dmjEzqVf6sNQ7fyfsF-u-kw71V-ltNugbpX_iS2kQwnYBJpXu7RglYEO6_3o1D0tAIOT05JJKz1BCtZV5yHaU6BeQlnwngCrzXGTkvak6GowqLHo81WoQ1rc9n2RvEMvo9k1EpcN2VBahXW72fE1uF9ju1qWihHkdyFKcUzwY2zX6LOMvY_cTMB1L1BnGtv4pO8BbNAsE3m3n-trmwuq-qWp3g9clj-FWwRp5nzTsPRFXEHxZQew=s800"
+        14: "https://content.production.cdn.art19.com/images/a8/3d/b8/ed/a83db8ed-0ecb-4699-b729-57bbf1750e89/d66ff998a3c6c133f2798424c605034f573e3fff8dbfb9ed792bf66a57c778945f348208868185dbd2417e7181ded100f9e60e37d140f5779dfb66c8e2c57263.jpeg"
+      }
+      2 {
+        1: "The Fountain of Youth"
+        2: "Jillian and posse discuss one of the top keys to fight aging and reverse the clock.\302\240\302\240Plus, what your blood can tell you about your workouts, the most dangerous word in the english language that threatens health and happiness, and G\342\200\231s theory on true love."
+        3: "https://rss.art19.com/episodes/f9aa5fa0-2ef5-496a-a807-52252c39f456.mp3"
+        5: 2297
+        6: "gid://art19-episode-locator/V0/3CnHBVNFSXs_ZPY9aLcozXB_rm_Rhp0Tume8hjdUAH0"
+        7: 1543824360
+        9: 0
+        10: 36758256
+        11: "gid://art19-episode-locator/V0/3CnHBVNFSXs_ZPY9aLcozXB_rm_Rhp0Tume8hjdUAH0"
+      }
+      2 {
+        1: "The Science behind unleashing greatness"
+        2: "Circumventing fear to achieve intimacy and achieve your life goals.\302\240Plus, the pros and cons of kombucha, caffeine, whey, and salt caves exposed."
+        3: "https://rss.art19.com/episodes/33d8deab-3aba-4f31-b7f8-e2e3b4e85a8b.mp3"
+        5: 2186
+        6: "gid://art19-episode-locator/V0/zTlfHGppbMifX-C4TrkwwMC41GfprUResZwQFWGGaM4"
+        7: 1543219260
+        9: 0
+        10: 34988617
+        11: "gid://art19-episode-locator/V0/zTlfHGppbMifX-C4TrkwwMC41GfprUResZwQFWGGaM4"
+      }
+      2 {
+        1: "Hard to Kill"
+        2: "Top fitness strategies to build an invincible body inside and out! Plus the crew confronts their demons regarding fear of change and how to progress towards your goals effectively."
+        3: "https://rss.art19.com/episodes/1affa260-dceb-40ac-8ecb-20361d5fe54c.mp3"
+        5: 2092
+        6: "gid://art19-episode-locator/V0/Rn2bYgfYnKyLv6KvZth4FqyRCYxJkQioXEiIvV9uU-M"
+        7: 1542614460
+        9: 0
+        10: 33488561
+        11: "gid://art19-episode-locator/V0/Rn2bYgfYnKyLv6KvZth4FqyRCYxJkQioXEiIvV9uU-M"
+      }
+      7: 1543904599
+    }
+    3: 0x00000000
+  }
+}

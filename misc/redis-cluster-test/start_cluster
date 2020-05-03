@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Copyright (C) dirlt
+
+for x in 7002 7003 7004
+do
+    mkdir -p $x
+    cp redis.conf $x/redis.conf
+    cd $x
+    if [ -f redis.pid  ]; then
+        echo "kill redis-server at port $x"
+        kill `cat redis.pid`
+        sleep 1
+    fi
+    if [ $1"X" != "stopX" ]; then
+        ../../src/redis-server redis.conf --port $x
+        echo "start redis-server at port $x"
+    fi
+    cd -
+done
+ps aux | grep redis-server

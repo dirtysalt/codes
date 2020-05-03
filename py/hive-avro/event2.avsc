@@ -1,0 +1,13 @@
+{
+    "type":"record",
+    "name":"Event2",
+    "fields": [
+        {"type":"string", "name":"date"},
+        {"type":"string", "name":"tag1"},
+        {"type":"string", "name":"tag2"},
+        {"type":"string", "name":"tag3"},
+        {"type":"string", "name":"tag4"},
+        {"type":"string", "name":"cookie"},
+        {"type":"int", "name":"count"}
+    ]
+}

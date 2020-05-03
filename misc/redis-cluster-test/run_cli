@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Copyright (C) dirlt
+
+../src/redis-cli -c -p 7003

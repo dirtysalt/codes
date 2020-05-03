@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Copyright (C) dirlt
+
+options=""
+for x in 7002 7003 7004
+do
+    mkdir -p $x
+    options="$options 127.0.0.1:$x"
+done
+
+../src/redis-trib.rb create --replicas 0 $options

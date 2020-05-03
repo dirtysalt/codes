@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#Copyright (C) dirlt
+
+hadoop fs -mkdir /user/dirlt/hive/schema/
+hadoop fs -rmr /user/dirlt/hive/schema/event1.avsc
+
+hadoop fs -rmr /user/dirlt/hive/tables/event1
+hadoop fs -mkdir /user/dirlt/hive/tables/event1
+
+hadoop fs -rmr /user/dirlt/hive/data/event1
+hadoop fs -mkdir /user/dirlt/hive/data/event1
+
+hadoop fs -put event1.avsc /user/dirlt/hive/schema/
+hadoop fs -put events1.avro /user/dirlt/hive/data/event1
+
+cat event1-schema.hql | hive  # create table
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event1/' OVERWRITE INTO TABLE event1 PARTITION(day=20150902);" | hive # load data
+# echo "SELECT * FROM event1;" | hive # query
