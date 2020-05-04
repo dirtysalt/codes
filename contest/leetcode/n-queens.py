@@ -19,8 +19,7 @@ class Solution(object):
                 r[idx] = i
                 ok = True
                 for j in range(0, idx):
-                    if r[j] == i or \
-                                    abs(r[j] - r[idx]) == abs(idx - j):
+                    if r[j] == i or abs(r[j] - r[idx]) == abs(idx - j):
                         ok = False
                         break
 
