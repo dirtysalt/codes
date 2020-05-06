@@ -2,23 +2,19 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
+from typing import List
+
+
 class Solution:
-    def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-
-        n = len(nums)
-        value = nums[0]
-        count = 1
-        for i in range(1, n):
-            if count == 0:
-                value = nums[i]
-                count = 1
-            elif value == nums[i]:
-                count += 1
+    def majorityElement(self, nums: List[int]) -> int:
+        p = None  # any value.
+        c = 0
+        for x in nums:
+            if c == 0:
+                p = x
+                c = 1
+            elif x == p:
+                c += 1
             else:
-                count -= 1
-        return value
-
+                c -= 1
+        return p
