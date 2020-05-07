@@ -2,6 +2,8 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
+from typing import List
+
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
         ans = []
