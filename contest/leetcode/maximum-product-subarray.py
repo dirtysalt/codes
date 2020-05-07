@@ -22,8 +22,13 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
-    s = Solution()
-    print((s.maxProduct([2, 3, -2, 4])))
-    print((s.maxProduct([-2, 0, -1])))
-    print((s.maxProduct([3, -1, 4])))
+cases = [
+    ([2, 3, -2, 4], 6),
+    ([-2, 0, -1], 0),
+    ([3, -1, 4], 4),
+    ([-4, -3, -2], 12)
+]
+
+import aatest_helper
+
+aatest_helper.run_test_cases(Solution().maxProduct, cases)
