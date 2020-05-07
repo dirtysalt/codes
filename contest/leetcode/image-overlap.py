@@ -45,14 +45,3 @@ class Solution:
                 ans = max(ans, res)
 
         return ans
-
-
-if __name__ == '__main__':
-    sol = Solution()
-    A = [[1, 1, 0],
-         [0, 1, 0],
-         [0, 1, 0]]
-    B = [[0, 0, 0],
-         [0, 1, 1],
-         [0, 0, 1]]
-    print(sol.largestOverlap(A, B))
