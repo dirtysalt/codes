@@ -55,3 +55,5 @@ venv/
 .vscode
 __pycache__
 *.dSYM/
+.gradle/
+.mvn/
