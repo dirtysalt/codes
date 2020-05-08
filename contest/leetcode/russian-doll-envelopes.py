@@ -1,85 +1,38 @@
 #!/usr/bin/env python
 # coding:utf-8
 # Copyright (C) dirlt
-
-import functools
 from typing import List
-
-from leetcode import aatest_helper
 
 
 class Solution:
     def maxEnvelopes(self, envelopes: List[List[int]]) -> int:
-        n = len(envelopes)
-        if n == 0: return 0
-
         def cmp_fn(x, y):
-            if x[0] != y[0]:
-                return x[0] - y[0]
-            return -(x[1] - y[1])
+            w0, h0 = x
+            w1, h1 = y
+            if w0 == w1:
+                return h1 - h0
+            return w0 - w1
 
+        import functools
         envelopes.sort(key=functools.cmp_to_key(cmp_fn))
 
-        def can_cover(p, q):
-            if p[0] > q[0] and p[1] > q[1]:
-                return True
-            return False
-
-        res = []
-
-        def bs(p, s, e):
+        # print(envelopes)
+        dp = []
+        for w, h in envelopes:
+            s, e = 0, len(dp) - 1
             while s <= e:
                 m = (s + e) // 2
-                q = res[m]
-                if can_cover(p, q):
-                    s = m + 1
-                else:
+                if dp[m] >= h:
                     e = m - 1
-            return s
-
-        for i in range(n):
-            p = envelopes[i]
-            pos = bs(p, 0, len(res) - 1)
-            if pos == len(res):
-                res.append(p)
+                else:
+                    s = m + 1
+            if s == len(dp):
+                dp.append(h)
             else:
-                res[pos] = p
-        return len(res)
-
-
-# class Solution:
-#     def maxEnvelopes(self, envelopes: List[List[int]]) -> int:
-#         n = len(envelopes)
-#         if n == 0: return 0
-#
-#         def cmp_fn(x, y):
-#             if x[0] != y[0]:
-#                 return x[0] - y[0]
-#             return x[1] - y[1]
-#
-#         envelopes.sort(key=functools.cmp_to_key(cmp_fn))
-#
-#         def can_cover(p, q):
-#             if p[0] > q[0] and p[1] > q[1]:
-#                 return True
-#             return False
-#
-#         dp = [0] * n
-#         dp[0] = 1
-#         max_dp = 1
-#         for i in range(1, n):
-#             q = envelopes[i]
-#             max_v = 0
-#             for j in range(i - 1, -1, -1):
-#                 p = envelopes[j]
-#                 if can_cover(q, p):
-#                     if dp[j] > max_v:
-#                         max_v = dp[j]
-#                         if max_v == max_dp:
-#                             break
-#             dp[i] = max_v + 1
-#             max_dp = max(max_dp, dp[i])
-#         return max(dp)
+                dp[s] = min(dp[s], h)
+            # print(dp)
+        ans = len(dp)
+        return ans
 
 
 cases = [
@@ -136,5 +89,8 @@ cases = [
       [321, 64], [598, 627], [302, 222], [465, 455], [681, 994], [824, 975], [277, 310], [268, 121], [498, 622],
       [800, 657], [90, 715], [804, 34], [106, 3], [711, 960], [810, 16], [703, 499], [972, 271], [762, 992]], 40),
 ]
+
+import aatest_helper
+
 sol = Solution()
 aatest_helper.run_test_cases(sol.maxEnvelopes, cases)
