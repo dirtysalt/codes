@@ -7,51 +7,61 @@ from typing import List
 
 class Solution:
     def sampleStats(self, count: List[int]) -> List[float]:
+        n = len(count)
+        _max = max(count)
+
         ans = []
-        arr = [(idx, value) for (idx, value) in enumerate(count) if value != 0]
-        ans.append(arr[0][0])
-        ans.append(arr[-1][0])
-
-        tt = sum((idx * value) for (idx, value) in arr)
-        cnt = sum(value for (idx, value) in arr)
-        ans.append(tt / cnt)
-
-        # median is little anonying
-        if cnt % 2 == 1:
-            a = b = (cnt + 1) // 2
-        else:
-            a = cnt // 2
-            b = a + 1
-
-        print(a, b)
-        res = 0
-        tmp = []
-        for (idx, value) in arr:
-            c, d = res + 1, res + value
-            # print(c, d, idx)
-            res += value
-
-            if c > b:
+        # min, max
+        for i in range(n):
+            if count[i] != 0:
+                ans.append(i)
                 break
-            if d < a:
-                continue
-            # overlapped
-            tmp.append(idx)
-        if len(tmp) == 1:
-            ans.append(tmp[0])
-        else:
-            ans.append((tmp[0] + tmp[1]) / 2)
+        for i in reversed(range(n)):
+            if count[i] != 0:
+                ans.append(i)
+                break
 
-        # mode.
-        mode_idx = 0
-        mode_value = 0
-        for (idx, value) in arr:
-            if value > mode_value:
-                mode_idx = idx
-                mode_value = value
-        ans.append(float(mode_idx))
+        # avg
+        ss = 0
+        s = 0
+        for i in range(n):
+            ss += count[i] * i
+            s += count[i]
+        ans.append(ss / s)
 
-        ans = [round(x * 1.0, 5) for x in ans]
+        # median
+        exp_rank = [(s + 1) // 2]
+        if s % 2 == 0:
+            exp_rank.append(exp_rank[-1] + 1)
+            # print(exp_rank)
+
+        p = 1
+        st = []
+        for i in range(n):
+            # ranked as [x, y]
+            x, y = p, p + count[i] - 1
+            p += count[i]
+            if x > exp_rank[-1]:
+                break
+
+            ok = False
+            for exp in exp_rank:
+                if x <= exp <= y:
+                    ok = True
+                    break
+            if ok:
+                st.append(i)
+        med = sum(st) / len(st)
+        ans.append(med)
+
+        # most
+        for i in range(n):
+            if count[i] == _max:
+                ans.append(i)
+                break
+
+        # ok.
+        ans = [round(x, 5) for x in ans]
         return ans
 
 
