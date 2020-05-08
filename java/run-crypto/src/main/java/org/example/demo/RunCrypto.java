@@ -1,4 +1,4 @@
-package com.dirlt.java.run_crypto;
+package org.example.demo;
 
 import org.apache.commons.codec.binary.Base64;
 
