@@ -52,8 +52,8 @@ Pods
 *.csv
 *.xlsx
 venv/
-.vscode
-__pycache__
+.vscode/
+__pycache__/
 *.dSYM/
 .gradle/
 .mvn/
