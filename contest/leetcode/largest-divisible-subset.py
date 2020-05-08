@@ -10,33 +10,25 @@ class Solution:
         n = len(nums)
         if n == 0:
             return []
+
         nums.sort()
-
-        back = [0] * n
-        size = [0] * n
-
-        # 好像没有更好的办法来减少扫描次数
+        dp = [1] * n
+        back = [-1] * n
+        max_idx = 0
         for i in range(n):
-            k = i
-            for j in range(i):
-                if nums[i] % nums[j] == 0:
-                    if size[j] > size[k]:
-                        k = j
-
-            size[i] = size[k] + 1
-            back[i] = k
-
-        k = 0
-        for i in range(n):
-            if size[i] > size[k]:
-                k = i
+            for j in range(i + 1, n):
+                if nums[j] % nums[i] == 0:
+                    if dp[j] < (dp[i] + 1):
+                        dp[j] = dp[i] + 1
+                        back[j] = i
+                        if dp[j] > dp[max_idx]:
+                            max_idx = j
 
         ans = []
-        while back[k] != k:
-            ans.append(nums[k])
-            k = back[k]
-        ans.append(nums[k])
-        ans = ans[::-1]
+        while max_idx != -1:
+            ans.append(nums[max_idx])
+            max_idx = back[max_idx]
+        ans.sort()
         return ans
 
 
