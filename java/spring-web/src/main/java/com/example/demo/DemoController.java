@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class DemoController {
     final AtomicLong counter = new AtomicLong();
 
-    @GetMapping("/hello")`
+    @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
         return String.format("Hello %s!", name);
     }
