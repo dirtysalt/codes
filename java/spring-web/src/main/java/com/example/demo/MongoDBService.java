@@ -16,7 +16,7 @@ public class MongoDBService {
     private String uri;
 
     private MongoClient client;
-    protected static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
+    protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @PostConstruct
     public void init() {
