@@ -8,16 +8,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
 @EnableDiscoveryClient
-public class DemoApplication {
+public class DemoApplication implements CommandLineRunner {
     @Autowired
     Environment env;
+    @Autowired
+    ApplicationContext ctx;
+
     @Autowired
     MongoDBService mongodb;
 
@@ -27,10 +29,10 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @Bean
-    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-        return args -> {
-            System.out.printf("[env]running on port %s\n", env.getProperty("local.server.port"));
+    public void run(String[] args) {
+        System.out.printf("[env]running on port %s\n", env.getProperty("server.port"));
+        System.out.printf("[env]dynconf.name = %s, dynconf.age = %d\n", env.getProperty("dynconf.name"),
+                Integer.parseInt(env.getProperty("dynconf.age")));
 
 //            MongoDatabase testdb = mongodb.getDatabase("test");
 //            MongoCollection<Document> coll = testdb.getCollection("spring", Document.class);
@@ -46,7 +48,5 @@ public class DemoApplication {
 //            for (String beanName : beanNames) {
 //                System.out.println(beanName);
 //            }
-
-        };
     }
 }
