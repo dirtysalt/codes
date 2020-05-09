@@ -57,3 +57,4 @@ __pycache__/
 *.dSYM/
 .gradle/
 .mvn/
+log/

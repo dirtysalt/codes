@@ -12,15 +12,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
 public class DemoApplication {
     @Autowired
     Environment env;
     @Autowired
     MongoDBService mongodb;
 
-    protected static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
+    protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
