@@ -2,73 +2,63 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
-class Solution(object):
-    def solveSudoku(self, board):
+from typing import List
+
+
+class Solution:
+    def solveSudoku(self, board: List[List[str]]) -> None:
         """
-        :type board: List[List[str]]
-        :rtype: void Do not return anything, modify board in-place instead.
+        Do not return anything, modify board in-place instead.
         """
-
-        if isinstance(board[0], str):
-            board = [list(x) for x in board]
-
-        row_st = []
-        col_st = []
-        sq_st = []
-        for i in range(0, 9):
-            row_st.append(set())
-            col_st.append(set())
-            sq_st.append(set())
-
-        empty_pos = []
-
-        for i in range(0, 9):
-            for j in range(0, 9):
+        row = [0] * 9
+        col = [0] * 9
+        sqr = [0] * 9
+        ps = []
+        for i in range(9):
+            for j in range(9):
                 c = board[i][j]
-                if c == '.': empty_pos.append((i, j))
+                if c == '.':
+                    ps.append((i, j))
+                    continue
+                v = int(c)
+                v1 = (1 << v)
+                row[i] = row[i] | v1
+                col[j] = col[j] | v1
+                s = (i // 3) * 3 + (j // 3)
+                sqr[s] = sqr[s] | v1
 
-                if c != '.':
-                    sq_idx = i / 3 * 3 + j / 3
-                    sq_st[sq_idx].add(c)
+        place = []
 
-                if c != '.':
-                    row_st[i].add(c)
-
-                c = board[j][i]
-                if c != '.':
-                    col_st[i].add(c)
-
-        def try_it(pos_idx):
-            if pos_idx == len(empty_pos):
+        def dfs(k):
+            if k == len(ps):
                 return True
-            (x, y) = empty_pos[pos_idx]
-            for i in range(1, 10):
-                c = str(i)
-                # print 'try (%d, %d) with %s' % (x, y, c)
-                # print row_st[x], col_st[y], sq_st[x/3*3 + y /3]
-                # if it works.
-                if c not in row_st[x] and \
-                                c not in col_st[y] and \
-                                c not in sq_st[x / 3 * 3 + y / 3]:
-                    # put on it.
-                    row_st[x].add(c)
-                    col_st[y].add(c)
-                    sq_st[x / 3 * 3 + y / 3].add(c)
-                    board[x][y] = c
-                    if try_it(pos_idx + 1):
-                        return True
-                    # resume it.
-                    row_st[x].remove(c)
-                    col_st[y].remove(c)
-                    sq_st[x / 3 * 3 + y / 3].remove(c)
+            i, j = ps[k]
+            for v in range(1, 1 + 9):
+                v1 = (1 << v)
+                if row[i] & v1: continue
+                if col[j] & v1: continue
+                s = (i // 3) * 3 + (j // 3)
+                if sqr[s] & v1: continue
 
-        try_it(0)
-        # for x in board:
-        #    print x
+                row[i] |= v1
+                col[j] |= v1
+                sqr[s] |= v1
+                place.append(v)
+                if dfs(k + 1):
+                    return True
+                place.pop()
+                v2 = ~v1
+                row[i] &= v2
+                col[j] &= v2
+                sqr[s] &= v2
 
-
-if __name__ == '__main__':
-    s = Solution()
-    s.solveSudoku(
-        ["..9748...", "7........", ".2.1.9...", "..7...24.", ".64.1.59.", ".98...3..", "...8.3.2.", "........6",
-         "...2759.."])
+        dfs(0)
+        # print(ps, place)
+        k = 0
+        for i in range(9):
+            s = board[i]
+            for j in range(9):
+                if s[j] == '.':
+                    s[j] = str(place[k])
+                    k += 1
+            board[i] = s
