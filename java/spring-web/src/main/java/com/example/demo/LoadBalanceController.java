@@ -35,6 +35,5 @@ public class LoadBalanceController {
         String url = String.format("http://%s:%s/hello?name=%s", inst.getHost(), inst.getPort(), string);
         System.err.println("request url:" + url);
         return restTemplate.getForObject(url, String.class);
-
     }
 }
