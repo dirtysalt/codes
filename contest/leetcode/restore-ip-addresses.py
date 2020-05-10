@@ -2,43 +2,33 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
-class Solution(object):
-    def restoreIpAddresses(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
+from typing import List
 
-        res = []
 
-        def fx(s, off, p, r):
-            if p == 4 or off == len(s):
-                if p == 4 and off == len(s):
-                    res.append('.'.join([str(x) for x in r]))
+class Solution:
+    def restoreIpAddresses(self, s: str) -> List[str]:
+        ans = []
+        path = []
+        n = len(s)
+
+        def dfs(i, k):
+            if i == n:
+                if k == 0:
+                    ans.append('.'.join(path))
                 return
 
-            if s[off] == '0':
-                r.append(0)
-                fx(s, off + 1, p + 1, r)
-                r.pop()
-                return
-
+            if k == 0: return
             v = 0
-            for i in range(off, len(s)):
-                v = v * 10 + int(s[i])
-                if v < 256:
-                    r.append(v)
-                    fx(s, i + 1, p + 1, r)
-                    r.pop()
+            for j in range(i, n):
+                v = v * 10 + ord(s[j]) - ord('0')
+                if v > 255:
+                    break
+                if s[i] == '0' and (j - i + 1) >= 2:
+                    break
+                path.append(s[i:j + 1])
+                dfs(j + 1, k - 1)
+                path.pop()
+            return
 
-        r = []
-        fx(s, 0, 0, r)
-        return res
-
-
-if __name__ == '__main__':
-    s = Solution()
-    print(s.restoreIpAddresses('25525511135'))
-    print(s.restoreIpAddresses('1111'))
-    print(s.restoreIpAddresses('0000'))
-    print(s.restoreIpAddresses('00000'))
+        dfs(0, 4)
+        return ans
