@@ -1,4 +1,4 @@
-package com.dirlt.java.playground;
+package com.dirlt.java.trash;
 
 /**
  * Created with IntelliJ IDEA.

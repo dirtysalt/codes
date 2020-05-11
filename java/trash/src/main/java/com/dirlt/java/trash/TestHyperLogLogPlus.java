@@ -1,4 +1,4 @@
-package com.dirlt.java.playground;
+package com.dirlt.java.trash;
 
 import com.clearspring.analytics.stream.cardinality.HyperLogLogPlus;
 

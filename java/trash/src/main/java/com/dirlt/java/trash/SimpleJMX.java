@@ -1,4 +1,4 @@
-package com.dirlt.java.playground;
+package com.dirlt.java.trash;
 
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
@@ -26,7 +26,7 @@ public class SimpleJMX implements SimpleJMXMBean {
 
     public static void main(String[] args) throws Exception {
         MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
-        ObjectName name = new ObjectName("com.dirlt.java.playground:type=SimpleJMX");
+        ObjectName name = new ObjectName("com.dirlt.java.trash:type=SimpleJMX");
         SimpleJMXMBean mbean = new SimpleJMX();
         mbs.registerMBean(mbean, name);
         System.out.println("Waiting forever...");
