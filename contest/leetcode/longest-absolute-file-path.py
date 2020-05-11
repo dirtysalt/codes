@@ -1,38 +1,47 @@
+#!/usr/bin/env python
+# coding:utf-8
+# Copyright (C) dirlt
+
 class Solution:
-    """
-    @param input: an abstract file system
-    @return: return the length of the longest absolute path to file
-    """
-    def lengthLongestPath(self, input):
-        # write your code here
+    def lengthLongestPath(self, input: str) -> int:
         st = []
-        total = 0
-        p = 0
-        max_length = 0
-        # print(len(input))
-        while p < len(input):
-            depth = 0
-            while p < len(input) and input[p] == "\t":
-                depth += 1
-                p += 1
-            while depth < len(st):
-                total -= st[-1]
-                st.pop(-1)
+        sz = 0
 
-            s, e = p, p
-            is_file = False
-            while e < len(input) and input[e] != "\n":
-                if input[e] == '.':
-                    is_file = True
-                e += 1
+        i = 0
+        t = 0
+        ans = 0
+        dot = False
+        while i < len(input):
+            c = input[i]
+            i += 1
+            if c == '\n':
+                st.append(t + 1)
+                sz += st[-1]
 
-            length = (e - s)
-            # print(length, is_file)
-            if is_file:
-                if (length + total) > max_length:
-                    max_length = length + total
+                t = 0
+                tabs = 0
+                dot = False
+                while i < len(input) and input[i] == '\t':
+                    tabs += 1
+                    i += 1
+
+                while len(st) > tabs:
+                    sz -= st[-1]
+                    st.pop()
             else:
-                st.append(length + 1) # '\n as /'
-                total += length + 1
-            p = e + 1
-        return max_length
+                t += 1
+                if c == '.':
+                    dot = True
+                if dot:
+                    ans = max(ans, sz + t)
+        return ans
+
+
+cases = [
+    ('dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext', 20),
+    ('a', 0)
+]
+
+import aatest_helper
+
+aatest_helper.run_test_cases(Solution().lengthLongestPath, cases)

@@ -7,29 +7,28 @@ from typing import List
 
 class Solution:
     def orderOfLargestPlusSign(self, N: int, mines: List[List[int]]) -> int:
-        dp = [[[-1] * 4 for _ in range(N)] for _ in range(N)]
+        MS = set()
         for x, y in mines:
-            for d in range(4):
-                dp[x][y][d] = 0
+            MS.add((x, y))
 
-        def fun(i, j, d, dx, dy):
-            if i < 0 or i >= N or j < 0 or j >= N:
+        import functools
+        @functools.lru_cache(None)
+        def arms(i, j, dx, dy):
+            if not (0 <= i < N and 0 <= j < N):
                 return 0
-
-            if dp[i][j][d] != -1:
-                return dp[i][j][d]
-
-            ii, jj = i + dx, j + dy
-            ans = 1 + fun(ii, jj, d, dx, dy)
-            dp[i][j][d] = ans
-            return ans
+            if (i, j) in MS:
+                return 0
+            return 1 + arms(i + dx, j + dy, dx, dy)
 
         ans = 0
         for i in range(N):
             for j in range(N):
-                order = N
-                for d, (dx, dy) in enumerate([(-1, 0), (1, 0), (0, -1), (0, 1)]):
-                    t = fun(i, j, d, dx, dy)
-                    order = min(order, t)
-                ans = max(ans, order)
+                if (i, j) in MS:
+                    continue
+                a = arms(i, j, -1, 0)
+                b = arms(i, j, 1, 0)
+                c = arms(i, j, 0, -1)
+                d = arms(i, j, 0, 1)
+                res = min(a, b, c, d)
+                ans = max(ans, res)
         return ans
