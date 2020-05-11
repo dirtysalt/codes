@@ -24,23 +24,18 @@ class Solution:
 
             ans.append([nums1[i], nums2[j]])
 
-            todo = []
+            tmp = []
             if (i + 1) < len(nums1) and (i + 1, j) not in visited:
                 visited.add((i + 1, j))
-                todo.append((i + 1, j))
+                tmp.append((i + 1, j))
 
             if (j + 1) < len(nums2) and (i, j + 1) not in visited:
                 visited.add((i, j + 1))
-                todo.append((i, j + 1))
+                tmp.append((i, j + 1))
 
-            if todo:
-                # print('todo = {}'.format(todo))
-                (i, j) = todo[0]
-                heapq.heappushpop(hp, (nums1[i] + nums2[j], i, j))
-                for (i, j) in todo[1:]:
-                    heapq.heappush(hp, (nums1[i] + nums2[j], i, j))
-            else:
-                heapq.heappop(hp)
+            heapq.heappop(hp)
+            for (i, j) in tmp:
+                heapq.heappush(hp, (nums1[i] + nums2[j], i, j))
 
         return ans
 

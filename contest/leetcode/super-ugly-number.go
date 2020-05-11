@@ -44,19 +44,19 @@ func max(a, b int) int {
 }
 
 func nthSuperUglyNumber(n int, primes []int) int {
-	todo := &IntHeap{Item{value: 1, way: 0}}
-	heap.Init(todo)
+	hp := &IntHeap{Item{value: 1, way: 0}}
+	heap.Init(hp)
 	var x Item
 	max_value := 0
 	for i := 0; i < n; i++ {
-		x = heap.Pop(todo).(Item)
+		x = heap.Pop(hp).(Item)
 		// fmt.Printf("pop = %v\n", x)
 		exp := (n - i)
 		for idx, c := range primes[x.way:] {
-			if todo.Len() > exp && x.value*c > max_value {
+			if hp.Len() > exp && x.value*c > max_value {
 				break
 			}
-			heap.Push(todo, Item{value: x.value * c, way: idx + x.way})
+			heap.Push(hp, Item{value: x.value * c, way: idx + x.way})
 			max_value = max(max_value, x.value*c)
 			// fmt.Printf("push = %v\n", x*c)
 		}
