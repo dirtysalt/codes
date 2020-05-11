@@ -10,7 +10,7 @@
               class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>log/base.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>log/audio-process.log.%d.%i</fileNamePattern>
+            <fileNamePattern>log/demo-app.log.%d.%i</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 64 MB -->
                 <maxFileSize>64 MB</maxFileSize>
