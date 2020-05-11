@@ -58,3 +58,4 @@ __pycache__/
 .gradle/
 .mvn/
 log/
+local/
