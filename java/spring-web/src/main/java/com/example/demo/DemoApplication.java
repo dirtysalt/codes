@@ -34,13 +34,6 @@ public class DemoApplication implements CommandLineRunner {
         System.out.printf("[env]dynconf.name = %s, dynconf.age = %d\n", env.getProperty("dynconf.name"),
                 Integer.parseInt(env.getProperty("dynconf.age")));
 
-//            MongoDatabase testdb = mongodb.getDatabase("test");
-//            MongoCollection<Document> coll = testdb.getCollection("spring", Document.class);
-//            Document doc = new Document();
-//            doc.append("name", "yan");
-//            doc.append("age", 10);
-//            coll.insertOne(doc);
-
 //            System.out.println("Let's inspect the beans provided by Spring Boot:");
 //
 //            String[] beanNames = ctx.getBeanDefinitionNames();
