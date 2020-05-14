@@ -7,37 +7,37 @@ from typing import List
 
 class Solution:
     def longestStrChain(self, words: List[str]) -> int:
+        index = {}
+        for i, w in enumerate(words):
+            index[w] = i
+
         n = len(words)
-        graph = [set() for _ in range(n)]
+        adj = [[] for _ in range(n)]
 
-        indices = {}
-        for idx, w in enumerate(words):
-            indices[w] = idx
+        for i, w in enumerate(words):
+            for j in range(len(w) + 1):
+                for x in range(26):
+                    w2 = w[:j] + chr(x + ord('a')) + w[j:]
+                    if w2 in index:
+                        k = index[w2]
+                        adj[i].append(k)
 
-        for idx, w in enumerate(words):
-            for p in range(len(w)):
-                t = w[:p] + w[p + 1:]
-                idx2 = indices.get(t)
-                if idx2 is not None:
-                    graph[idx].add(idx2)
+        depth = [0] * n
 
-        cache = [0] * n
+        def dfs(u):
+            if depth[u] != 0:
+                return depth[u]
 
-        def f(v):
-            if cache[v] != 0:
-                return cache[v]
-
-            res = 0
-            for v2 in graph[v]:
-                res = max(res, f(v2))
-
-            res += 1
-            cache[v] = res
-            return res
+            d = 0
+            for v in adj[u]:
+                d = max(d, dfs(v))
+            depth[u] = d + 1
+            return d + 1
 
         ans = 0
         for i in range(n):
-            ans = max(ans, f(i))
+            d = dfs(i)
+            ans = max(ans, d)
         return ans
 
 
