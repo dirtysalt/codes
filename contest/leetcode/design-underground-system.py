@@ -5,26 +5,27 @@
 class UndergroundSystem:
 
     def __init__(self):
-        from collections import Counter
-        self.custom = {}
-        self.path_sum = Counter()
-        self.path_count = Counter()
+        from collections import defaultdict
+        self.st = defaultdict(lambda: [0, 0])
+        self.user = {}
 
     def checkIn(self, id: int, stationName: str, t: int) -> None:
-        self.custom[id] = (stationName, t)
+        self.user[id] = (stationName, t)
 
     def checkOut(self, id: int, stationName: str, t: int) -> None:
-        st0, t0 = self.custom[id]
-        key = '{}.{}'.format(st0, stationName)
-        value = t - t0
-        self.path_sum[key] += value
-        self.path_count[key] += 1
+        assert id in self.user
+        (name, t0) = self.user[id]
+        key = name + '.' + stationName
+        value = self.st[key]
+        value[0] += 1
+        value[1] += (t - t0)
+        self.st[key] = value
+        # del self.user[id]
 
     def getAverageTime(self, startStation: str, endStation: str) -> float:
-        key = '{}.{}'.format(startStation, endStation)
-        sum = self.path_sum[key]
-        count = self.path_count[key]
-        return sum * 1.0 / count
+        key = startStation + '.' + endStation
+        value = self.st[key]
+        return round(value[1] / value[0], 5)
 
 # Your UndergroundSystem object will be instantiated and called as such:
 # obj = UndergroundSystem()
