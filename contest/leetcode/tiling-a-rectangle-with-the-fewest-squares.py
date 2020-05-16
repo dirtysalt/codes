@@ -32,6 +32,8 @@ class Solution:
                 if ok:
                     res = 1 + fun(tuple(new_st))
                     ans = min(ans, res)
+                else:
+                    break
 
             # print(st, ans)
             return ans
@@ -39,3 +41,14 @@ class Solution:
         st = [0] * n
         ans = fun(tuple(st))
         return ans
+
+
+cases = [
+    (13, 13, 1),
+    (13, 11, 6),
+    (11, 13, 6)
+]
+
+import aatest_helper
+
+aatest_helper.run_test_cases(Solution().tilingRectangle, cases)
