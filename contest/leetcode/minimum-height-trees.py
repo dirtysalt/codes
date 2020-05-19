@@ -2,44 +2,44 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
+from typing import List
+
+
 class Solution:
-    """
-    @param n: n nodes labeled from 0 to n - 1
-    @param edges: a undirected graph
-    @return:  a list of all the MHTs root labels
-    """
+    def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:
+        adj = [[] for _ in range(n)]
+        ind = [0] * n
+        for (x, y) in edges:
+            adj[x].append(y)
+            adj[y].append(x)
+            ind[x] += 1
+            ind[y] += 1
 
-    def findMinHeightTrees(self, n, edges):
-        # Wirte your code here
+        opts = []
+        for i in range(n):
+            if ind[i] in (0, 1):
+                opts.append(i)
+        left = n - len(opts)
 
-        if n == 1: return [0]
-        adj = [[] for x in range(n)]
-        deg = [0] * n
-        for (u, v) in edges:
-            adj[u].append(v)
-            adj[v].append(u)
-            deg[u] += 1
-            deg[v] += 1
+        while left != 0:
+            new_opts = []
+            for x in opts:
+                for y in adj[x]:
+                    ind[y] -= 1
+                    if ind[y] == 1:
+                        new_opts.append(y)
+                        left -= 1
+            opts = new_opts
+        ans = opts
+        return ans
 
-        leaves = [v for v in range(n) if deg[v] == 1]
-        depths = [0] * n
-        to_visits = []
-        for leaf in leaves:
-            to_visits.append((leaf, 1))
-            depths[leaf] = 1
 
-        nodes = n
-        while nodes > 2:
-            next_visits = []
-            for (v, d) in to_visits:
-                d2 = d + 1
-                for v2 in adj[v]:
-                    deg[v2] -= 1
-                    if deg[v2] in (0, 1) and not depths[v2]:
-                        depths[v2] = d2
-                        next_visits.append((v2, d2))
-            nodes -= len(to_visits)
-            to_visits = next_visits
+cases = [
+    (6, [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]], [3, 4]),
+    (4, [[1, 0], [1, 2], [1, 3]], [1]),
+    (1, [], [0]),
+]
 
-        res = [x[0] for x in to_visits]
-        return res
+import aatest_helper
+
+aatest_helper.run_test_cases(Solution().findMinHeightTrees, cases)
