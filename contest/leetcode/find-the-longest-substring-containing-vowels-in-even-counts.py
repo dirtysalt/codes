@@ -4,23 +4,23 @@
 
 class Solution:
     def findTheLongestSubstring(self, s: str) -> int:
-        map = {'a': 0, 'e': 1, 'i': 2, 'o': 3, 'u': 4}
+        n = len(s)
+        mapping = {'a': 0, 'e': 1, 'i': 2, 'o': 3, 'u': 4}
+        inf = 1 << 30
+        dp = [inf] * 32
+        dp[0] = -1
 
-        st = 0
-        pos = {st: -1}
+        res = 0
         ans = 0
-
-        for i, c in enumerate(s):
-            if c in map:
-                v = map[c]
-                # print(st, v, st ^ (1 << v))
-                st ^= (1 << v)
-
-            if st in pos:
-                j = pos[st]
-                ans = max(ans, i - j)
+        for i in range(n):
+            c = s[i]
+            v = mapping.get(c)
+            if v is not None:
+                res ^= (1 << v)
+            if dp[res] != inf:
+                ans = max(ans, i - dp[res])
             else:
-                pos[st] = i
+                dp[res] = i
         return ans
 
 
