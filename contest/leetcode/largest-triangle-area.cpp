@@ -1,5 +1,5 @@
 class Solution {
-   public:
+  public:
     double area(int x1, int y1, int x2, int y2, int x3, int y3) {
         int dx1 = x1 - x2;
         int dy1 = y1 - y2;
