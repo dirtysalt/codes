@@ -2,7 +2,7 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
-N = 1000000
+N = 100000
 factor = [0] * (N + 1)
 for i in range(2, N + 1):
     if factor[i] != 0: continue

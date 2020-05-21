@@ -85,12 +85,15 @@ def test_tree_list():
 ANYTHING = '!!!anything!!!'
 
 
-def run_test_cases(fn, cases):
+def run_test_cases(fn, cases, eqfn=None):
     ok = True
+    if eqfn is None:
+        eqfn = lambda x, y: x == y
+
     for c in cases:
         args, exp = c[:-1], c[-1]
         res = fn(*args)
-        if exp != ANYTHING and res != exp:
+        if exp is not ANYTHING and not eqfn(res, exp):
             print('case failed. {}, out = {}'.format(c, res))
             ok = False
         else:
@@ -99,8 +102,11 @@ def run_test_cases(fn, cases):
         print('all cases passed!!!')
 
 
-def run_simulation_cases(cls, cases):
+def run_simulation_cases(cls, cases, eqfn=None):
     ok = True
+    if eqfn is None:
+        eqfn = lambda x, y: x == y
+
     for c in cases:
         cmds, args, exp = c
         obj = cls(*args[0])
@@ -112,7 +118,7 @@ def run_simulation_cases(cls, cases):
             if v != exp[i]:
                 print('!DIFF. fn = {}, args = {}, v = {}, exp[{}] = {}'.format(fn, args[i], v, i, exp[i]))
             res.append(v)
-        if exp != ANYTHING and res != exp:
+        if exp is not ANYTHING and not eqfn(res, exp):
             print('case failed. {}, out = {}'.format(c, res))
             ok = False
     if ok:
