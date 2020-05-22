@@ -22,7 +22,7 @@ class Solution {
             while (x > 1) {
                 int f = factors[x];
                 dp[f] = Math.min(dp[f], ans);
-                res = Math.min(dp[f] + 1, res);
+                res = Math.min(dp[f] + 1, res
                 while ((x % f) == 0) {
                     x = x / f;
                 }
