@@ -6,40 +6,44 @@
 class SnapshotArray:
 
     def __init__(self, length: int):
-        self.n = length
         from collections import defaultdict
-        self.array = defaultdict(int)
-        self.snap_id = 0
-        self.index_vsn = defaultdict(list)
+        self.data = defaultdict(list)
+        self.version = 0
 
     def set(self, index: int, val: int) -> None:
-        snap_id = self.snap_id
-        key = '{}.{}'.format(index, snap_id)
-        self.array[key] = val
-        vsn = self.index_vsn[index]
-        if vsn and vsn[-1] == snap_id:
-            pass
+        version = self.version
+        xs = self.data[index]
+        if xs and xs[-1][0] == version:
+            xs[-1] = (version, val)
         else:
-            vsn.append(snap_id)
+            xs.append((version, val))
 
     def snap(self) -> int:
-        self.snap_id += 1
-        return self.snap_id - 1
+        self.version += 1
+        return self.version - 1
 
     def get(self, index: int, snap_id: int) -> int:
-        vsn = self.index_vsn[index]
-        if not vsn:
-            return 0
-        # 这个二分法特别容易出错，还需要考虑没有比snap_id小的情况
-        import bisect
-        idx = bisect.bisect(vsn, snap_id)
-        # print(vsn, snap_id, idx)
-        if idx == 0:
-            return 0
-        assert vsn[idx-1] <= snap_id
-        snap_id = vsn[idx-1]
-        key = '{}.{}'.format(index, snap_id)
-        return self.array[key]
+        xs = self.data[index]
+        s, e = 0, len(xs) - 1
+        while s <= e:
+            m = (s + e) // 2
+            if xs[m][0] > snap_id:
+                e = m - 1
+            else:
+                s = m + 1
+
+        if 0 <= e < len(xs):
+            v = xs[e]
+            assert (v[0] <= snap_id)
+            return v[1]
+        return 0
+
+
+# Your SnapshotArray object will be instantiated and called as such:
+# obj = SnapshotArray(length)
+# obj.set(index,val)
+# param_2 = obj.snap()
+# param_3 = obj.get(index,snap_id)
 
 
 # Your SnapshotArray object will be instantiated and called as such:
@@ -52,7 +56,7 @@ null = None
 
 cases = [
     (["SnapshotArray", "set", "snap", "set", "get"], [
-     [3], [0, 5], [], [0, 6], [0, 0]], [null, null, 0, null, 5]),
+        [3], [0, 5], [], [0, 6], [0, 0]], [null, null, 0, null, 5]),
     (["SnapshotArray", "set", "snap", "set", "get"],
      [[3], [0, 5], [], [0, 6], [0, 0]], [null, null, 0, null, 5]),
 ]
