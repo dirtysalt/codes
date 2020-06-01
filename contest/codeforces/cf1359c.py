@@ -5,30 +5,20 @@
 from sys import stdin
 
 
-# FIXME: WA
 def run(h, c, t):
+    if (h + c - 2 * t) >= 0:
+        return 2
+
     a = h - t
-    b = t - c
-    if a == 0 or b == 0:
-        return 1
-    # print(a, b)
-
-    if a % b == 0:
-        return 1 + a // b
-    if b % a == 0:
-        return 1 + b // a
-
-    # ax + by = gcd(x, y)
-
-    def ext_gcd(a, b):
-        if b == 0:
-            return a, 1, 0
-        d, x2, y2 = ext_gcd(b, a % b)
-        x1, y1 = y2, x2 - (a // b) * y2
-        return d, x1, y1
-
-    d, x, y = ext_gcd(a, b)
-    ans = abs(x) + abs(y)
+    b = 2 * t - h - c
+    k = int(a / b)
+    val1 = abs((k + 1) * h + k * c - (2 * k + 1) * t)
+    val2 = abs((k + 2) * h + (k + 1) * c - (2 * k + 3) * t)
+    # val1 / (2k+1) <= val2 / (2k+3), return 2k+1
+    if val1 * (2 * k + 3) <= val2 * (2 * k + 1):
+        ans = 2 * k + 1
+    else:
+        ans = 2 * k + 3
     return ans
 
 
