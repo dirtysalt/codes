@@ -20,4 +20,8 @@ def main():
 
 
 if __name__ == '__main__':
+    import os
+
+    if os.path.exists('tmp.in'):
+        stdin = open('tmp.in')
     main()
