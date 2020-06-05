@@ -3,27 +3,15 @@
 # Copyright (C) dirlt
 
 class Solution:
-    """
-    @param s: a string
-    @return: reverse only the vowels of a string
-    """
-
-    def reverseVowels(self, s):
-        # write your code here
-
-        s = list(s)
-        x, y = 0, len(s) - 1
-        vowels = 'aeiouAEIOU'
-        while x < y:
-            while x < y and s[x] not in vowels:
-                x += 1
-            if x >= y:
-                break
-            while x < y and s[y] not in vowels:
-                y -= 1
-            if x >= y:
-                break
-            s[x], s[y] = s[y], s[x]
-            x += 1
-            y -= 1
-        return ''.join(s)
+    def reverseVowels(self, s: str) -> str:
+        ss = list(s)
+        n = len(ss)
+        pos = [i for i in range(n) if ss[i] in 'aeoiuAEIOU']
+        i, j = 0, len(pos) - 1
+        while i <= j:
+            x, y = pos[i], pos[j]
+            ss[x], ss[y] = ss[y], ss[x]
+            i += 1
+            j -= 1
+        ans = ''.join(ss)
+        return ans
