@@ -18,7 +18,6 @@ class Solution:
 
         def visit(root):
             nonlocal ans
-            c = Counter()
             if root is None:
                 return Counter()
 
