@@ -10,6 +10,7 @@ class Solution:
         if not A or not B:
             return []
 
+        K = 2
         xs = []
         xs += [(A[i][0], 0) for i in range(len(A))]
         xs += [(A[i][1], 1) for i in range(len(A))]
@@ -23,12 +24,13 @@ class Solution:
         for p, d in xs:
             if d == 0:
                 depth += 1
-                if depth == 2:
+                if depth == K:
                     last = p
             else:
                 depth -= 1
                 if last is None:
                     continue
+                assert depth == K - 1
                 ans.append([last, p])
                 last = None
         return ans
