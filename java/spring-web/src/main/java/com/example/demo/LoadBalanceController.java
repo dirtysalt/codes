@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-@RestController
+//@RestController
 public class LoadBalanceController {
     @Autowired
     private RestTemplate restTemplate;
