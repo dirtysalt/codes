@@ -1,35 +1,29 @@
 #!/usr/bin/env python
 # coding:utf-8
 # Copyright (C) dirlt
-from collections import defaultdict
-from typing import List
 
-from leetcode import aatest_helper
+from typing import List
 
 
 class Solution:
     def minAreaRect(self, points: List[List[int]]) -> int:
-        xindex = defaultdict(set)
-        for (x, y) in points:
-            xindex[x].add(y)
+        pts = set()
+        for x, y in points:
+            pts.add((x, y))
 
-        xs = list(xindex.keys())
-        xs.sort()
-        init_ans = 1 << 30
-        ans = init_ans
-        for i in range(len(xs)):
-            ys0 = xindex[xs[i]]
-            for j in range(i + 1, len(xs)):
-                spx = xs[j] - xs[i]
-                ys1 = xindex[xs[j]]
-                ys = list(ys0 & ys1)
-                ys.sort()
-                for u in range(len(ys)):
-                    for v in range(u + 1, len(ys)):
-                        spy = ys[v] - ys[u]
-                        area = spy * spx
-                        ans = min(ans, area)
-        if ans == init_ans:
+        n = len(points)
+        inf = 1 << 30
+        ans = inf
+        for i in range(n):
+            x0, y0 = points[i]
+            for j in range(i + 1, n):
+                x1, y1 = points[j]
+                if x1 == x0 or y1 == y0: continue
+                if (x1, y0) in pts and (x0, y1) in pts:
+                    area = (x1 - x0) * (y1 - y0)
+                    area = abs(area)
+                    ans = min(ans, area)
+        if ans == inf:
             ans = 0
         return ans
 
@@ -38,5 +32,7 @@ cases = [
     ([[1, 1], [1, 3], [3, 1], [3, 3], [2, 2]], 4),
     ([[1, 1], [1, 3], [3, 1], [3, 3], [4, 1], [4, 3]], 2)
 ]
-sol = Solution()
-aatest_helper.run_test_cases(sol.minAreaRect, cases)
+
+import aatest_helper
+
+aatest_helper.run_test_cases(Solution().minAreaRect, cases)
