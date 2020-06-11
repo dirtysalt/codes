@@ -14,3 +14,4 @@ for _ in range(t):
     n = int(input())
     xs = [int(x) for x in input().rstrip().split()]
     print(solve(xs))
+
