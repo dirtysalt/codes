@@ -3,17 +3,18 @@
 # Copyright (C) dirlt
 
 def run(n):
-    k = int((10 ** (n - 1)) ** 0.5)
+    least = 10 ** (n - 1)
+    k = int(least ** 0.5)
+    if k * k < least:
+        k = k + 1
     from collections import Counter
     cnt = Counter()
 
-    def get_ft(x, n):
+    def get_ft(x):
         bits = [0] * 10
         while x:
             bits[x % 10] += 1
             x = x // 10
-        if sum(bits) != n:
-            return None
         return tuple(bits)
 
     ans = 0
@@ -22,9 +23,7 @@ def run(n):
         k2 = i * i
         if k2 > 10 ** n:
             break
-        ft = get_ft(k2, n)
-        if not ft:
-            continue
+        ft = get_ft(k2)
         cnt[ft] += 1
         if cnt[ft] >= max_cnt:
             ans = i * i
@@ -41,6 +40,8 @@ def precompute():
         print(n, x)
     print(res)
 
+
+# precompute()
 
 def run2(n):
     d = {1: 9, 2: 81, 3: 961, 4: 9216, 5: 96100, 6: 501264, 7: 9610000, 8: 73462041, 9: 923187456, 10: 9814072356,
