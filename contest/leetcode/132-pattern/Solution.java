@@ -25,9 +25,9 @@ class Solution {
         return false;
     }
 
-    // public static void main(String[] args) {
-    //     Solution sol = new Solution();
-    //     int []nums = {3,1,4,2};
-    //     System.out.println(sol.find132pattern(nums));
-    // }
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int []nums = {3,1,4,2};
+        System.out.println(sol.find132pattern(nums));
+    }
 }
