@@ -7,29 +7,21 @@ from typing import List
 
 class Solution:
     def peopleIndexes(self, favoriteCompanies: List[List[str]]) -> List[int]:
-        index = {}
-        for xs in favoriteCompanies:
-            for x in xs:
-                if x not in index:
-                    index[x] = len(index)
+        from collections import defaultdict
+        groups = defaultdict(set)
 
-        fcs = []
-        for xs in favoriteCompanies:
-            tmp = []
-            for x in xs:
-                tmp.append(index[x])
-            fcs.append(set(tmp))
+        for p, cs in enumerate(favoriteCompanies):
+            for c in cs:
+                groups[c].add(p)
 
         ans = []
-        for i in range(len(fcs)):
-            ok = True
-            for j in range(len(fcs)):
-                if i == j: continue
-                # print(fcs[i], fcs[j])
-                if len(fcs[i]) > len(fcs[j]): continue
-                if fcs[i].issubset(fcs[j]):
-                    ok = False
+        n = len(favoriteCompanies)
+        for p, cs in enumerate(favoriteCompanies):
+            common = set(range(n))
+            for c in cs:
+                common = common & groups[c]
+                if len(common) == 1:
                     break
-            if ok:
-                ans.append(i)
+            if len(common) == 1:
+                ans.append(p)
         return ans
