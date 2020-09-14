@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Copyright (C) dirlt
+
+# http://dailymotion.github.io/hls.js/demo/?src=http%3A%2F%2Flocalhost%3A8888%2Fhls%2Fmovie.m3u8&enableStreaming=true&autoRecoverError=true&enableWorker=true&levelCapping=-1&defaultAudioCodec=undefined
+
+ffmpeg -loglevel verbose -re -probesize 500k -i $1 -c:v libx264 -vprofile baseline -c:a libfdk_aac -ar 44100 -ab 128k -f flv rtmp://localhost:1935/hls/movie
+# -acodec libmp3lame

@@ -1,0 +1,17 @@
+{
+    "name": "Event",
+    "type": "record",
+    "fields": [
+        { "type": "string", "name": "event" },
+        { "type": "string", "name": "id" },
+        { "type": "string", "name": "timestamp" },
+        { "type": [
+            {"type": "array",
+             "items": {"type": "record",
+                       "fields": [ {"type": "string", "name": "f1"},
+                                   {"type": "string", "name" : "f2"} ],
+                       "name" : "Detail"}}, "null"],
+          "name" : "details"
+        }
+    ]
+}

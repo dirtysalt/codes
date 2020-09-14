@@ -1,0 +1,7 @@
+*.mp4
+*.mov
+*.html
+*.jpg
+*.png
+!sample.jpg
+!sample.png

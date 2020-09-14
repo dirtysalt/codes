@@ -1,0 +1,4 @@
+需要预先在本地启动zookeeper以及kafka. 使用的topic叫做test-ws.
+- 本地启动可以使用mvn compile exec:java -Dstorm.topology=com.dirlt.scala.storm.DemoTopology
+- 远程启动需要mvn package, 然后storm jar <jar> com.dirlt.scala.storm.DemoTopology remote
+

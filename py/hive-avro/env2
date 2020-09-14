@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+#Copyright (C) dirlt
+
+hadoop fs -mkdir /user/dirlt/hive/schema/
+hadoop fs -rmr /user/dirlt/hive/schema/event2.avsc
+
+hadoop fs -rmr /user/dirlt/hive/tables/event2
+hadoop fs -mkdir /user/dirlt/hive/tables/event2
+
+hadoop fs -rmr /user/dirlt/hive/data/event2
+hadoop fs -mkdir /user/dirlt/hive/data/event2
+
+hadoop fs -put event2.avsc /user/dirlt/hive/schema/
+hadoop fs -put events2*.avro /user/dirlt/hive/data/event2
+
+cat event2-schema.hql | hive  # create table
+load_events2() {
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150900.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150900);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150901.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150901);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150902.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150902);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150903.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150903);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150904.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150904);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150905.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150905);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150906.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150906);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150907.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150907);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150908.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150908);" | hive
+echo "LOAD DATA INPATH 'hdfs://localhost:8020/user/dirlt/hive/data/event2/events2-20150909.avro' OVERWRITE INTO TABLE event2 PARTITION(day=20150909);" | hive
+}
+load_events2 # load data
+# echo "SELECT COUNT(*) FROM event2;" | hive # query.
+
+# df = sqlContext.sql("select * fromd event2 where day = 20150906"); # 选出粗粒度数据
+# df.filter("tag1='t1').filter("tag2='t2').groupBy("tag1", "tag2").agg(approxCountDistinct(cookie)) # 然后在df上做筛选
+# df.saveAsTable # 将数据写出.

@@ -1,0 +1,281 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Screen.jack
+
+/**
+ * A library of functions for displaying graphics on the screen.
+ * The Hack physical screen consists of 512 rows (indexed 0..511, top to bottom)
+ * of 256 pixels each (indexed 0..255, left to right). The top left pixel on
+ * the screen is indexed (0,0).
+ */
+class Screen {
+    static Array screen;
+    static boolean color;
+    static Array tt;
+    /** Initializes the Screen. */
+    function void init() {
+        let color = true;
+        let screen = 16384;
+        let tt = Array.new(16);
+        let tt[0] = 1;
+        let tt[1] = 2;
+        let tt[2] = 4;
+        let tt[3] = 8;
+        let tt[4] = 16;
+        let tt[5] = 32;
+        let tt[6] = 64;
+        let tt[7] = 128;
+        let tt[8] = 256;
+        let tt[9] = 512;
+        let tt[10] = 1024;
+        let tt[11] = 2048;
+        let tt[12] = 4096;
+        let tt[13] = 8192;
+        let tt[14] = 16384;
+        let tt[15] = 32767 + 1;
+        return;
+    }
+    /** Erases the entire screen. */
+    function void clearScreen() {
+        var int i;
+        while(i<8192){
+            let screen[i] = 0;
+            let i = i + 1;
+        }
+        return;
+    }
+
+    /** Sets the current color, to be used for all subsequent drawXXX commands.
+     *  Black is represented by true, white by false. */
+    function void setColor(boolean b) {
+        let color = b;
+        return;
+    }
+
+    function int mul16(int x) {
+        let x = x + x; // 2x
+        let x = x + x; // 4x
+        let x = x + x; // 8x
+        let x = x + x; // 16x
+        return x;
+    }
+
+    function int mul32(int x) {
+        let x = x + x; // 2x
+        let x = x + x; // 4x
+        let x = x + x; // 8x
+        let x = x + x; // 16x
+        let x = x + x; // 32x
+        return x;
+    }
+
+    function int div16(int x) {
+        var int sum, i;
+        // while (i < 12) {
+        //     if (x & tt[i+4]) {
+        //         let sum = sum + tt[i];
+        //     }
+        //     let i = i + 1;
+        // }
+
+        if (x & tt[4]) { let sum = sum + tt[0]; }
+        if (x & tt[5]) { let sum = sum + tt[1]; }
+        if (x & tt[6]) { let sum = sum + tt[2]; }
+        if (x & tt[7]) { let sum = sum + tt[3]; }
+        if (x & tt[8]) { let sum = sum + tt[4]; }
+        if (x & tt[9]) { let sum = sum + tt[5]; }
+        if (x & tt[10]) { let sum = sum + tt[6]; }
+        if (x & tt[11]) { let sum = sum + tt[7]; }
+        if (x & tt[12]) { let sum = sum + tt[8]; }
+        if (x & tt[13]) { let sum = sum + tt[9]; }
+        if (x & tt[14]) { let sum = sum + tt[10]; }
+        if (x & tt[15]) { let sum = sum + tt[11]; }
+        return sum;
+    }
+
+    /** Draws the (x,y) pixel, using the current color. */
+    function void drawPixel(int x, int y) {
+        var int c, sft, off;
+        let c = Screen.div16(x);
+        // let sft = x - Screen.mul16(c);
+        let sft = (x & 15);
+        let off = Screen.mul32(y) + c;
+        if (color) {
+            let screen[off] = (screen[off] | tt[sft]);
+        } else {
+            let screen[off] = (screen[off] & (~ tt[sft]));
+        }
+        return;
+    }
+
+
+    function void drawPixelsIn16Bits(int x1, int x2, int y) {
+        var int off, c, sft, x;
+        let c = Screen.div16(x1);
+        let off = Screen.mul32(y) + c;
+        let sft = x1 & 15;
+        // let sft = x1 - Screen.mul16(c);
+        let x = x1;
+        if (color) {
+            while(~(x > x2)) {
+                let screen[off] = (screen[off] | tt[sft]);
+                let sft = sft + 1;
+                let x = x + 1;
+            }
+        } else {
+            while(~(x > x2)) {
+                let screen[off] = (screen[off] & (~ tt[sft]));
+                let sft = sft + 1;
+                let x = x + 1;
+            }
+        }
+        return;
+    }
+
+    /** Draws a line from pixel (x1,y1) to pixel (x2,y2), using the current color. */
+    function void drawLine(int x1, int y1, int x2, int y2) {
+        var int tmp, dx, dy, adymbdx, a, b, c, step;
+        if  (x1 = x2) {
+            if (y2 < y1) {
+                let tmp = y2;
+                let y2 = y1;
+                let y1 = tmp;
+            }
+            do Screen.drawRectangle(x1, y1, x2, y2);
+            return;
+        }
+        if  (y1 = y2) {
+            if (x2 < x1) {
+                let tmp = x2;
+                let x2 = x1;
+                let x1 = tmp;
+            }
+            do Screen.drawRectangle(x1, y1, x2, y2);
+            return;
+        }
+
+        if (x1 > x2) {
+            let tmp = x2;
+            let x2 = x1;
+            let x1 = tmp;
+            let tmp = y2;
+            let y2 = y1;
+            let y1 = tmp;
+        }
+        let dx = x2 - x1;
+        let dy = y2 - y1;
+        let a = 0;
+        let b = 0;
+        let c = 0;
+        let step = 1;
+        if (dy < 0) {
+            let dy = -dy;
+            let step = -1;
+        }
+        while ((~(a > dx)) & (~(b > dy))) {
+            do Screen.drawPixel(x1 + a, y1 + c);
+            if (adymbdx < 0) {
+                let a = a + 1;
+                let adymbdx = adymbdx + dy;
+            } else{
+                let b = b + 1;
+                let c = c + step;
+                let adymbdx = adymbdx - dx;
+            }
+        }
+        return;
+    }
+
+    /** Draws a filled rectangle whose top left corner is (x1, y1)
+     * and bottom right corner is (x2,y2), using the current color. */
+    function void drawRectangle2(int x1, int y1, int x2, int y2) {
+        var int x,y;
+        // do Output.printInt(x1);
+        // do Output.printChar(32);
+        // do Output.printInt(y1);
+        // do Output.printChar(32);
+        // do Output.printInt(x2);
+        // do Output.printChar(32);
+        // do Output.printInt(y2);
+        // do Output.println();
+
+        // naive way.
+        let y = y1;
+        while(~(y > y2)) {
+            let x = x1;
+            while(~(x > x2)) {
+                do Screen.drawPixel(x, y);
+                let x = x + 1;
+            }
+            let y = y + 1;
+        }
+        return;
+    }
+
+     function void drawRectangle(int x1, int y1, int x2, int y2) {
+         var int x,y,fill,c,off,off2,sft;
+         var int c1, c2, x1e, x2e;
+
+        // do Output.printInt(x1);
+        // do Output.printChar(32);
+        // do Output.printInt(y1);
+        // do Output.printChar(32);
+        // do Output.printInt(x2);
+        // do Output.printChar(32);
+        // do Output.printInt(y2);
+        // do Output.println();
+
+         let c1 = Screen.div16((x1 + 15));
+         let c2 = Screen.div16(x2);
+         let x1e = Screen.mul16(c1);
+         let x2e = Screen.mul16(c2);
+
+         if (c1 > c2) {
+             let y = y1;
+             while (~(y > y2)) {
+                 do Screen.drawPixelsIn16Bits(x1, x2, y);
+                 let y = y + 1;
+             }
+             return;
+         }
+
+         let fill = 0;
+         if (color) {
+            let fill = ~fill;
+         }
+         let y = y1;
+         let off = Screen.mul32(y) + c1;
+         while (~(y > y2)) {
+             // edge
+             // c1 (x1 to x1e-1) low bits
+             // c2 (x2e to x2) high bits
+             do Screen.drawPixelsIn16Bits(x1, x1e-1, y);
+             do Screen.drawPixelsIn16Bits(x2e, x2, y);
+
+             // block.
+             let off2 = off;
+             let c = c1;
+             while(c < c2) {
+                 let screen[off2] = fill;
+                 let c = c + 1;
+                 let off2 = off2 + 1;
+             }
+             let off = off + 32;
+             let y = y + 1;
+         }
+         return;
+     }
+
+    /** Draws a filled circle of radius r<=181 around (x,y), using the current color. */
+    function void drawCircle(int x, int y, int r) {
+       var int dy, dx;
+       while (~(dy > r)) {
+            let dx = Math.sqrt((r * r) - (dy * dy));
+            do Screen.drawRectangle(x - dx, y - dy, x + dx, y - dy);
+            do Screen.drawRectangle(x - dx, y + dy, x + dx, y + dy);
+            let dy = dy + 1;
+       }
+       return;
+    }
+}

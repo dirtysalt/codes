@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#Copyright (C) dirlt
+
+PORT=6379
+DATA_DIR=/tmp/redis-data
+NAME=redis
+while test $# -gt 0
+do
+    case $1 in
+        --port)
+            shift 1
+            PORT=$1
+            ;;
+        --name)
+            shift 1
+            NAME=$1
+            ;;
+        --data-dir)
+            shift 1
+            DATA_DIR=$1
+            ;;
+        *)
+            ;;
+    esac
+    shift 1
+done
+
+docker run -d --name $NAME -v $DATA_DIR:/home/redis -p $PORT:6379 tomb/ubuntu:redis
