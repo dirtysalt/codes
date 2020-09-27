@@ -41,6 +41,32 @@ class Solution:
         return ans
 
 
+class Solution2:
+    def connectTwoGroups(self, cost: List[List[int]]) -> int:
+        n, m = len(cost), len(cost[0])
+        inf = 1 << 30
+        dp = [[inf] * (1 << m) for _ in range(n + 1)]
+        C = [min(cost[j][i] for j in range(n)) for i in range(m)]
+        dp[0][0] = 0
+
+        for i in range(n):
+            for st in range(1 << m):
+                val = dp[i][st]
+                # 选择至少一个元素, 确保i匹配上
+                for j in range(m):
+                    st2 = st | (1 << j)
+                    dp[i + 1][st2] = min(dp[i + 1][st2], val + cost[i][j])
+
+        ans = inf
+        for st in range(1 << m):
+            c = 0
+            for i in range(m):
+                if (st >> i) & 0x1: continue
+                c += C[i]
+            ans = min(ans, dp[n][st] + c)
+        return ans
+
+
 cases = [
     ([[15, 96], [36, 2]], 17),
     ([[1, 3, 5], [4, 1, 1], [1, 5, 3]], 4),
@@ -58,3 +84,4 @@ cases = [
 import aatest_helper
 
 aatest_helper.run_test_cases(Solution().connectTwoGroups, cases)
+aatest_helper.run_test_cases(Solution2().connectTwoGroups, cases)
