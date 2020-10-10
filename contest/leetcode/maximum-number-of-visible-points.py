@@ -14,12 +14,6 @@ class Solution:
         def computeAngle(x, y, ox, oy):
             dy = y - oy
             dx = x - ox
-            if dx == 0:
-                if dy > 0:
-                    return 90
-                else:
-                    return -90
-
             v = math.atan2(dy, dx)
             v = v / (2 * pi) * 360
             return v
