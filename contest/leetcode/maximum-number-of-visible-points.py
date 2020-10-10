@@ -18,11 +18,9 @@ class Solution:
                 if dy > 0:
                     return 90
                 else:
-                    return 270
+                    return -90
 
             v = math.atan2(dy, dx)
-            if v < -pi / 2:
-                v += 2 * pi
             v = v / (2 * pi) * 360
             return v
 
