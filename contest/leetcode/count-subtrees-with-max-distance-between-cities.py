@@ -5,6 +5,58 @@
 from typing import List
 
 
+class Solution2:
+    def countSubgraphsForEachDiameter(self, n: int, edges: List[List[int]]) -> List[int]:
+        inf = 1 << 30
+        D = [[inf] * n for _ in range(n)]
+        for x, y in edges:
+            D[x - 1][y - 1] = 1
+            D[y - 1][x - 1] = 1
+        for x in range(n):
+            D[x][x] = 0
+
+        for k in range(n):
+            for i in range(n):
+                for j in range(n):
+                    D[i][j] = min(D[i][j], D[i][k] + D[k][j])
+
+        def maxDist(cs):
+            # make sure graph are connected by direct links.
+            visited = [0] * n
+
+            def dfs(x):
+                visited[x] = 1
+                for y in cs:
+                    if D[x][y] == 1 and visited[y] == 0:
+                        dfs(y)
+
+            dfs(cs[0])
+            if sum(visited) != len(cs):
+                return 0
+
+            mx = 0
+            for x in cs:
+                for y in cs:
+                    mx = max(mx, D[x][y])
+
+            return mx
+
+        ans = [0] * (n - 1)
+        for st in range(1, 1 << n):
+            cs = []
+            for j in range(n):
+                if (st >> j) & 0x1:
+                    cs.append(j)
+
+            if len(cs) < 2:
+                continue
+            v = maxDist(cs)
+            # print(v)
+            if v >= 1:
+                ans[v - 1] += 1
+        return ans
+
+
 class Solution:
     def countSubgraphsForEachDiameter(self, n: int, edges: List[List[int]]) -> List[int]:
         ans = [0] * (n - 1)
@@ -63,4 +115,4 @@ cases = [
 
 import aatest_helper
 
-aatest_helper.run_test_cases(Solution().countSubgraphsForEachDiameter, cases)
+aatest_helper.run_test_cases(Solution2().countSubgraphsForEachDiameter, cases)
