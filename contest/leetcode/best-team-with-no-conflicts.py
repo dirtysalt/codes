@@ -21,6 +21,22 @@ class Solution:
         ans = max(dp)
         return ans
 
+class Solution2:
+    def bestTeamScore(self, scores: List[int], ages: List[int]) -> int:
+        n = len(scores)
+        xs = list(zip(scores, ages))
+        xs.append((0, 0))
+        xs.sort()
+
+        dp = [0] * (n + 1)
+        dp[0] = 0
+        for i in range(n + 1):
+            for j in range(i + 1, n + 1):
+                if xs[j][0] == xs[i][0] or xs[j][1] >= xs[i][1]:
+                    dp[j] = max(dp[j], dp[i] + xs[j][0])
+        ans = max(dp)
+        return ans
+
 
 cases = [
     ([1, 3, 5, 10, 15], [1, 2, 3, 4, 5], 34),
@@ -31,4 +47,4 @@ cases = [
 
 import aatest_helper
 
-aatest_helper.run_test_cases(Solution().bestTeamScore, cases)
+aatest_helper.run_test_cases(Solution2().bestTeamScore, cases)
