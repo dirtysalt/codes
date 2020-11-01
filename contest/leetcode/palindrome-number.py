@@ -16,3 +16,16 @@ class Solution(object):
             x = x / 10
             v = v * 10 + r
         return v == y
+
+
+class Solution2:
+    def isPalindrome(self, x: int) -> bool:
+        x = str(x)
+        n = len(x)
+        i, j = 0, n - 1
+        while i <= j:
+            if x[i] != x[j]:
+                return False
+            i += 1
+            j -= 1
+        return True
