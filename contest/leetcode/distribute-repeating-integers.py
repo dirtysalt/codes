@@ -37,6 +37,49 @@ class Solution:
         return ans
 
 
+class Solution2:
+    def canDistribute(self, nums: List[int], quantity: List[int]) -> bool:
+        from collections import Counter
+        cnt = Counter(nums)
+        values = list(cnt.values())
+        values.sort()
+        quantity.sort()
+
+        values = [x for x in values if x >= quantity[0]]
+        if not values:
+            return False
+        if values[-1] < quantity[-1]:
+            return False
+        n, m = len(values), len(quantity)
+
+        SUM = [0] * (1 << m)
+        for i in range(1 << m):
+            acc = 0
+            for j in range(m):
+                if (i >> j) & 0x1:
+                    acc += quantity[j]
+            SUM[i] = acc
+
+        DP = [[0] * (1 << m) for _ in range(n + 1)]
+        DP[0][0] = 1
+        for i in range(n):
+            for j in range(1 << m):
+                st = j
+                ok = 0
+                if DP[i][j]:
+                    DP[i + 1][j] = 1
+                    continue
+
+                while st > 0:
+                    if SUM[st] <= values[i] and DP[i][j - st]:
+                        ok = 1
+                        break
+                    st = (st - 1) & j
+                DP[i + 1][j] = ok
+        ans = DP[n][-1]
+        return bool(ans)
+
+
 cases = [
     ([1, 2, 3, 4], [2], False),
     ([1, 2, 3, 3], [2], True),
@@ -51,4 +94,4 @@ cases = [
 
 import aatest_helper
 
-aatest_helper.run_test_cases(Solution().canDistribute, cases)
+aatest_helper.run_test_cases(Solution2().canDistribute, cases)
