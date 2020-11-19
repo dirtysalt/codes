@@ -5,60 +5,101 @@
 from typing import List
 
 
+class Heap:
+    def __init__(self, max_size, cmpfn):
+        base = 1
+        while base < max_size:
+            base *= 2
+        self.items = [None] * (2 * base)
+        self.base = base
+        self.cmpfn = cmpfn
+
+    def fix(self, idx):
+        data = self.items
+        while idx > 1:
+            p = idx // 2
+            l, r = 2 * p, 2 * p + 1
+            if data[l] is None and data[r] is None:
+                data[p] = None
+            elif data[l] is None or data[r] is None:
+                data[p] = data[l] or data[r]
+            else:
+                if self.cmpfn(data[l], data[r]):
+                    data[p] = data[l]
+                else:
+                    data[p] = data[r]
+            idx = p
+
+    def set_index(self, index, v):
+        self.items[self.base + index] = v
+        self.fix(self.base + index)
+
+    def top(self):
+        return self.items[1]
+
+
 class Solution:
     def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
-
         tmp = [(x, idx) for (idx, x) in enumerate(nums[:k])]
+        lhp = Heap(k, cmpfn=lambda x, y: x[0] > y[0])
+        rhp = Heap(k, cmpfn=lambda x, y: x[0] < y[0])
+
         tmp.sort()
         indices = {}
-        for pos, (x, idx) in enumerate(tmp):
-            indices[idx] = pos
+        lsz, rsz = 0, 0
 
-        def median(xs):
-            n = len(xs)
-            if n % 2 == 0:
-                return (xs[n // 2 - 1][0] + xs[n // 2][0]) * 0.5
-            return xs[n // 2][0]
+        for i in range(0, (k + 1) // 2):
+            lhp.set_index(i, tmp[i])
+            indices[tmp[i][1]] = (0, i)
+        for i in range((k + 1) // 2, k):
+            rhp.set_index(i, tmp[i])
+            indices[tmp[i][1]] = (1, i)
 
-        def swap(a, b):
-            x, i = tmp[a]
-            y, j = tmp[b]
-            tmp[a] = y, j
-            indices[j] = a
-            tmp[b] = x, i
-            indices[i] = b
+        def median():
+            # print(lhp.top(), rhp.top())
+            if k % 2 == 0:
+                return (lhp.top()[0] + rhp.top()[0]) * 0.5
+            return lhp.top()[0]
 
         ans = []
-        ans.append(median(tmp))
+        ans.append(median())
 
-        # O(n^2)
+        # print(indices)
         for i in range(k, len(nums)):
-            # add nums[i] and remove nums[i-k]
-            tp = indices[i - k]
-            tmp[tp] = (nums[i], i)
-            indices[i] = tp
-            # print('>>>>', tmp, indices)
+            # remove i-k and add i
+            (lr, hidx) = indices[i - k]
+            if lr == 0:
+                lhp.set_index(hidx, (nums[i], i))
+                indices[i] = (0, hidx)
+            else:
+                rhp.set_index(hidx, (nums[i], i))
+                indices[i] = (1, hidx)
 
-            # run bubble sort, fix tmp and indices
-            j = tp
-            while (j + 1) < len(tmp) and tmp[j][0] > tmp[j + 1][0]:
-                swap(j, j + 1)
-                j = j + 1
-            j = tp
-            while (j - 1) >= 0 and tmp[j][0] < tmp[j - 1][0]:
-                swap(j, j - 1)
-                j = j - 1
+            # 但是此时 lhp.top() 可能会 > rhp.top()
+            # 如果是这种情况的话，需要交换顶层两个元素
+            if rhp.top() and lhp.top()[0] > rhp.top()[0]:
+                (rv, ridx) = rhp.top()
+                assert indices[ridx][0] == 1
+                hridx = indices[ridx][1]
+                (lv, lidx) = lhp.top()
+                assert indices[lidx][0] == 0
+                hlidx = indices[lidx][1]
 
-            # print('<<<<<', tmp, indices)
+                lhp.set_index(hlidx, (rv, ridx))
+                indices[ridx] = (0, hlidx)
+                rhp.set_index(hridx, (lv, lidx))
+                indices[lidx] = (1, hridx)
 
-            ans.append(median(tmp))
-
+            # print(indices)
+            # print(i, median())
+            ans.append(median())
         return ans
 
 
-
 cases = [
-    ([1, 3, -1, -3, 5, 3, 6, 7], 3, [1, -1, -1, 3, 5, 6])
+    ([1, 2], 1, [1, 2]),
+    ([1, 3, -1, -3, 5, 3, 6, 7], 3, [1, -1, -1, 3, 5, 6]),
+    ([-1, -3, 5, 3], 3, [-1, 3]),
 ]
 
 import aatest_helper
