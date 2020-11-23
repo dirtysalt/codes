@@ -13,14 +13,16 @@ class Solution:
 
         def keyFn(x):
             a, m = x
-            return m - a
+            return -(m - a)
 
         tmp.sort(key=keyFn)
         # print(tmp)
 
         ans = 0
+        acc = 0
         for a, m in tmp:
-            ans = max(ans, m - a) + a
+            ans = max(ans, acc + m)
+            acc += a
         return ans
 
 
