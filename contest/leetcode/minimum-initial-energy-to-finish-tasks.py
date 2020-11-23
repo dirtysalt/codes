@@ -9,10 +9,17 @@ class Solution:
     def minimumEffort(self, tasks: List[List[int]]) -> int:
         tmp = []
         for a, m in tasks:
-            tmp.append((m - a, m, a))
-        tmp.sort()
+            tmp.append((a, m))
+
+        def keyFn(x):
+            a, m = x
+            return m - a
+
+        tmp.sort(key=keyFn)
+        # print(tmp)
+
         ans = 0
-        for _, m, a in tmp:
+        for a, m in tmp:
             ans = max(ans, m - a) + a
         return ans
 
