@@ -31,6 +31,39 @@ class Solution:
         return self.ans
 
 
+class Solution2:
+    def reversePairs(self, nums: List[int]) -> int:
+        ans = 0
+
+        def merge(a, b):
+            a = sorted(a)
+            b = sorted(b)
+            nonlocal ans
+            j = len(b) - 1
+            for i in reversed(range(len(a))):
+                while j >= 0 and a[i] <= 2 * b[j]:
+                    j -= 1
+                ans += j + 1
+
+            return a + b
+
+        def test(nums):
+            sz = len(nums)
+            if sz == 0 or sz == 1:
+                return nums
+
+            a = nums[:sz // 2]
+            b = nums[sz // 2:]
+            a = test(a)
+            b = test(b)
+            c = merge(a, b)
+            return c
+
+        test(nums)
+        return ans
+
+
+
 cases = [
     ([1, 3, 2, 3, 1], 2),
     ([2, 4, 3, 5, 1], 3),
@@ -70,4 +103,4 @@ cases = [
 ]
 import aatest_helper
 
-aatest_helper.run_test_cases(Solution().reversePairs, cases)
+aatest_helper.run_test_cases(Solution2().reversePairs, cases)
