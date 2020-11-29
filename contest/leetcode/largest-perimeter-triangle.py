@@ -7,10 +7,9 @@ from typing import List
 
 class Solution:
     def largestPerimeter(self, A: List[int]) -> int:
-        A.sort(reverse=True)
-        ans = 0
-        for i in range(len(A) - 2):
-            if A[i] < (A[i + 1] + A[i + 2]):
-                ans = A[i] + A[i + 1] + A[i + 2]
-                break
-        return ans
+        A.sort()
+        for i in reversed(range(2, len(A))):
+            a, b, c = A[i], A[i - 1], A[i - 2]
+            if b + c > a:
+                return a + b + c
+        return 0
