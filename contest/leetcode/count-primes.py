@@ -3,29 +3,30 @@
 # Copyright (C) dirlt
 
 class Solution:
-    def countPrimes(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+    def countPrimes(self, n: int) -> int:
+        if n <= 2: return 0
 
-        if n == 0: return 0
-        n -= 1
-        if n <= 1: return 0
-        if n == 2: return 1
+        ps = [0] * n
+        for i in range(2, n):
+            if i * i >= n: break
+            if ps[i] == 1: continue
+            for j in range(i, (n - 1) // i + 1):
+                ps[i * j] = 1
 
-        primes = [1] * (n + 1)
-        for i in range(2, int(round(n ** 0.5)) + 2):
-            for j in range(i, n // i + 1):
-                primes[i * j] = 0
-
-        count = 1
-        for i in range(3, n + 1):
-            if primes[i] == 1:
-                count += 1
-        return count
+        ans = 0
+        for i in range(2, n):
+            if ps[i] == 0:
+                ans += 1
+        return ans
 
 
-if __name__ == '__main__':
-    sol = Solution()
-    print(sol.countPrimes(1500000))
+cases = [
+    (10, 4),
+    (0, 0),
+    (1, 0),
+    (2, 0),
+]
+
+import aatest_helper
+
+aatest_helper.run_test_cases(Solution().countPrimes, cases)
