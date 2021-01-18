@@ -1,4 +1,4 @@
-# codes
+# tomb
 
 python code to compute fibonacci number
 
