@@ -14,8 +14,8 @@ YAN007 :: ~/shared/MatrixTranspose ‹master*› » ./a.out
 
 如果cache size = 64KB, ways = 4, line size = 64, 矩阵是1024 * 1024的话，那么：
 1. 相邻两个row, 地址差距是 1024 * 4 = 4kB
-2. cache size = 64KB, line size = 64, 那么一共有1KB个lines
-3. 所以理论上两个row都会落在一个line上，但是因为ways=4, 所以可以忍受4个冲突。
+2. cache size = 64KB, line size = 64, ways = 4, 那么一共有1KB个slots
+3. 所以理论上两个row都会落在一个slot上，但是因为ways=4, 所以可以忍受4个冲突。
 
 不过如果是使用SLOW的方法，cache是没有办法忍受冲突的，因此是按照行扫描下来的，然后继续从0行开始扫描，而此时缓存已经全部被换出了。
 
