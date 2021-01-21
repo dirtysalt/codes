@@ -1,3 +1,4 @@
+mkdir -p audio
 
         if [ ! -f "audio/预测风暴的水母（小知识）- 十万个为什么【宝宝巴士百科故事】.m4a" ]; then
             wget "https://aod.cos.tx.xmcdn.com/storages/a177-audiofreehighqps/FC/A1/CMCoOSQDloqnABR3nwBrXce5.m4a" -O temp.m4a
