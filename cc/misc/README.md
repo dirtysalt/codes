@@ -1,5 +1,3 @@
-# files
-
 - `ob_math_pic.cc` 生成分形 [图形](./ob_math_pic.jpg)
 - `runable_so.cc` 生成可执行.so文件
 - `test_pye.cc` 用boost编写python extension
