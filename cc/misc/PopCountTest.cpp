@@ -74,6 +74,15 @@ uint32_t popcount11(uint32_t x) {
     return ans;
 }
 
+uint32_t popcount21(uint32_t x) {
+    x = (x & 0x55555555) + ((x >> 1) & 0x55555555);
+    x = (x & 0x33333333) + ((x >> 2) & 0x33333333);
+    x = (x & 0x0f0f0f0f) + ((x >> 4) & 0x0f0f0f0f);
+    x = (x & 0x00ff00ff) + ((x >> 8) & 0x00ff00ff);
+    x = (x & 0x0000ffff) + ((x >> 16) & 0x0000ffff);
+    return x;
+}
+
 uint32_t _popcount21(uint32_t x) {
     x = (x & 0x55555555) + ((x & 0xaaaaaaaa) >> 1);
     x = (x & 0x33333333) + ((x & 0xcccccccc) >> 2);
@@ -83,7 +92,7 @@ uint32_t _popcount21(uint32_t x) {
     return x;
 }
 
-uint32_t popcount21(uint32_t x) {
+uint32_t __popcount21(uint32_t x) {
     // 这里可以假设分别是0，1的情况
     // 如果是11的话，那么11-01 = 10 = 2
     // 10 - 01 = 01 = 1
