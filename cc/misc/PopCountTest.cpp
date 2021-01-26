@@ -42,11 +42,12 @@ class Timer {
     }
 
     double elapsedSeconds() { return elapsedMilliseconds() / 1000.0; }
+    Timer() { m_bRunning = false; }
 
    private:
     std::chrono::time_point<std::chrono::system_clock> m_StartTime;
     std::chrono::time_point<std::chrono::system_clock> m_EndTime;
-    bool m_bRunning = false;
+    bool m_bRunning;
 };
 
 typedef unsigned int uint32_t;
@@ -73,13 +74,29 @@ uint32_t popcount11(uint32_t x) {
     return ans;
 }
 
-uint32_t popcount21(uint32_t x) {
+uint32_t _popcount21(uint32_t x) {
     x = (x & 0x55555555) + ((x & 0xaaaaaaaa) >> 1);
     x = (x & 0x33333333) + ((x & 0xcccccccc) >> 2);
     x = (x & 0x0f0f0f0f) + ((x & 0xf0f0f0f0) >> 4);
     x = (x & 0x00ff00ff) + ((x & 0xff00ff00) >> 8);
     x = (x & 0x0000ffff) + ((x & 0xffff0000) >> 16);
     return x;
+}
+
+uint32_t popcount21(uint32_t x) {
+    // 这里可以假设分别是0，1的情况
+    // 如果是11的话，那么11-01 = 10 = 2
+    // 10 - 01 = 01 = 1
+    // 0x 这个就是 x
+    x = x - ((x >> 1) & 0x55555555);
+    x = (x & 0x33333333) + ((x & 0xcccccccc) >> 2);
+    x = (x + (x >> 4)) & 0x0f0f0f0f;
+    x = x + (x >> 8);
+    x = x + (x >> 16);
+    // 最后一次 low bits 最多 16, 就是 10000
+    // high bits 最多 16，也是 10000
+    // 所以最多就是 100000
+    return x & 0x3f;
 }
 
 uint32_t popcount22(uint32_t x, uint32_t y) {
@@ -94,6 +111,35 @@ uint32_t popcount22(uint32_t x, uint32_t y) {
     x = (x & 0x00ff00ff) + ((x & 0xff00ff00) >> 8);
     x = (x & 0x0000ffff) + ((x & 0xffff0000) >> 16);
     return x;
+}
+
+// pop(x) - pop(y) = pop(x) - (32 - pop(~y)) = pop(x) + pop(y) - 32
+int popDiff(uint32_t x, uint32_t y) {
+    x = x - ((x >> 1) & 0x55555555);
+    x = (x & 0x33333333) + ((x >> 2) & 0x33333333);
+    y = ~y;
+    y = y - ((y >> 1) & 0x55555555);
+    y = (y & 0x33333333) + ((y >> 2) & 0x33333333);
+
+    x += y;
+    x = (x + (x >> 4)) & 0x0f0f0f0f;
+    x = (x + (x >> 8));
+    x = (x + (x >> 16));
+    return x & 0x0000007f - 32;
+}
+
+int popCompare(uint32_t xp, uint32_t yp) {
+    unsigned x, y;
+    x = xp & ~yp;
+    y = yp & ~xp;
+    while (1) {
+        // if y == 0 then 0
+        // else < 0
+        if (x == 0) return y | -y;
+        if (y == 0) return 1;
+        x = x & (x - 1);  // clear lsb
+        y = y & (y - 1);
+    }
 }
 
 uint32_t popcount24(uint32_t x, uint32_t y, uint32_t a, uint32_t b) {
@@ -168,7 +214,7 @@ uint32_t avx512_vpopcnt(const uint32_t* data, size_t size) {
 #endif
 
 void Bench(std::vector<uint32_t> values, int level) {
-    auto t = Timer();
+    Timer t = Timer();
     const int times = 30001;
     const uint32_t N = values.size();
     assert(N % 4 == 0);
@@ -207,16 +253,15 @@ void Bench(std::vector<uint32_t> values, int level) {
             }
         }
     }
-
-    #ifdef USE_AVX512_POPCNT
+#ifdef USE_AVX512_POPCNT
     else if (level == 8) {
         const uint32_t* data = values.data();
         FORI(k, times) { ans += avx512_vpopcnt(data, values.size()); }
     }
-    #endif
+#endif
 
     t.stop();
-    auto total = t.elapsedMilliseconds();
+    double total = t.elapsedMilliseconds();
     std::cout << "[" << name << "] N = " << N << ", took: " << total
               << "ms, avg " << (total * 1e3) / N << "ns/N, ans = " << ans
               << "\n";
