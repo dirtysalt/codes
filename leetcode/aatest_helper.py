@@ -83,7 +83,7 @@ def test_tree_list():
 
 
 ANYTHING = '!!!anything!!!'
-
+EXP = None
 
 def run_test_cases(fn, cases, eqfn=None):
     ok = True
@@ -94,6 +94,8 @@ def run_test_cases(fn, cases, eqfn=None):
         if isinstance(c, OrderedDict):
             c = tuple(c.values())
         args, exp = c[:-1], c[-1]
+        global EXP
+        EXP = exp
         res = fn(*args)
         if exp is not ANYTHING and not eqfn(res, exp):
             print('case failed. {}, out = {}'.format(c, res))
