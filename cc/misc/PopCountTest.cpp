@@ -55,23 +55,52 @@ typedef unsigned int uint32_t;
 std::vector<uint32_t> GenRandomInts(int N) {
     srand(time(NULL));  // Initialization, should only be called once.
     std::vector<uint32_t> ans(N);
+    int MOD = 1 << 30;
     for (int i = 0; i < N; i++) {
-        int r =
-            rand() %
-            (1
-             << 30);  // Returns a pseudo-random integer between 0 and RAND_MAX.
+        int r = rand() % MOD; // Returns a pseudo-random integer between 0 and RAND_MAX.
         ans[i] = (uint32_t)r;
     }
     return ans;
 }
 
+/*
+data = []
+for i in range(0,256,8):
+    value = 0
+    for j in reversed(range(8)):
+        value = (value << 4) | popcount(i+j)
+    data.append(value)
+*/
+
+uint32_t TABLE[] = {841031952,  1127363105, 1127363105, 1413694258, 1127363105,
+                    1413694258, 1413694258, 1700025411, 1127363105, 1413694258,
+                    1413694258, 1700025411, 1413694258, 1700025411, 1700025411,
+                    1986356564, 1127363105, 1413694258, 1413694258, 1700025411,
+                    1413694258, 1700025411, 1700025411, 1986356564, 1413694258,
+                    1700025411, 1700025411, 1986356564, 1700025411, 1986356564,
+                    1986356564, 2272687717};
+
+inline uint32_t GET8(unsigned char x) {
+    return (TABLE[x >> 3] >> ((x & 0x7) << 2)) & 0xf;
+}
+
+uint32_t popcount01(uint32_t x) {
+    return GET8(x & 0xff) + GET8((x >> 8) & 0xff) + GET8((x >> 16) & 0xff) +
+           GET8((x >> 24) & 0xff);
+}
+
 uint32_t popcount11(uint32_t x) {
     uint32_t ans = 0;
-    while (x) {
-        ans += x & 0x1;
-        x = x >> 1;
+    // while (x) {
+    //     ans += x & 0x1;
+    //     x = x >> 1;
+    // }
+    while(x) {
+        ans += 1;
+        x = x & (x - 1);
     }
     return ans;
+
 }
 
 uint32_t popcount21(uint32_t x) {
@@ -232,7 +261,14 @@ void Bench(std::vector<uint32_t> values, int level) {
 
     t.start();
     uint32_t ans = 0;
-    if (level == 0) {
+    if (level == -1) {
+        FORI(k, times) {
+            FORV(i, values, 1) {
+                uint32_t t = popcount01(values[i]);
+                ans += t;
+            }
+        }
+    } else if (level == 0) {
         FORI(k, times) {
             FORV(i, values, 1) {
                 uint32_t t = popcount11(values[i]);
@@ -312,7 +348,7 @@ int main() {
     // Test();
     const int N = 1000;
     std::vector<uint32_t> values = GenRandomInts(N);
-    const int levels[] = {0, 1, 2, 4};
+    const int levels[] = {-1, 0, 1, 2, 4};
     const int nums = sizeof(levels) / sizeof(levels[0]);
     for (int i = 0; i < nums; i++) {
         Bench(values, levels[i]);
