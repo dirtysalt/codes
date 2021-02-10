@@ -261,7 +261,14 @@ void Bench(std::vector<uint32_t> values, int level) {
 
     t.start();
     uint32_t ans = 0;
-    if (level == -1) {
+    if (level == -2) {
+        FORI(k, times) {
+            FORV(i, values, 1) {
+                uint32_t t = __builtin_popcount(values[i]);
+                ans += t;
+            }
+        }
+    } else if (level == -1) {
         FORI(k, times) {
             FORV(i, values, 1) {
                 uint32_t t = popcount01(values[i]);
@@ -348,7 +355,7 @@ int main() {
     // Test();
     const int N = 1000;
     std::vector<uint32_t> values = GenRandomInts(N);
-    const int levels[] = {-1, 0, 1, 2, 4};
+    const int levels[] = {-2, -1, 0, 1, 2, 4};
     const int nums = sizeof(levels) / sizeof(levels[0]);
     for (int i = 0; i < nums; i++) {
         Bench(values, levels[i]);
