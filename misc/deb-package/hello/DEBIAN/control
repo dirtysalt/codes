@@ -1,8 +1,0 @@
-Package: hello
-Version: 1.0.0
-Section: base
-Priority: optional
-Architecture: amd64
-Depends: python
-Maintainer: dirtysalt1987@gmail.com
-Description: sample deb package.
