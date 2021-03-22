@@ -21,10 +21,10 @@ def mosaic_effect(im, box, scale=0.2):
 
 
 def test_image_effect():
-    for f in ('sample.jpg', 'sample.png'):
+    for f in ('sample0.jpg', 'sample1.png'):
         rim = Image.open(f).convert('RGB')
         sz = rim.size
-        im3 = mosaic_effect(rim, (sz[0] / 4, sz[1] / 4, sz[1] * 3 / 4, sz[1] * 3 / 4), 0.05)
+        im3 = mosaic_effect(rim, (sz[0] // 4, sz[1] // 4, sz[1] * 3 // 4, sz[1] * 3 // 4), 0.05)
         im3.save('mosaic-%s' % (f))
 
 
