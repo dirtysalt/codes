@@ -17,6 +17,6 @@ Set-Cookie3: __cfduid=d7bb55765059ed2a8ab8d57eabe0bc3dc1469109976; path="/"; dom
 Set-Cookie3: BAIDUID=B05F139B39EA36674DC53A15CFDE2A67:FG=1; path="/"; domain=.baidu.com; path_spec; expires="3609196457.617117"; version=0
 ```
 
-运行`./crawler.py` 会输出output.html. 这个html文件是一个single file.
+运行`./run.py` 会输出output.html. 这个html文件是一个single file.
 
 如果想修改样式的话，可以修改里面的`generate_single_html`函数
