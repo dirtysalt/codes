@@ -1,40 +1,79 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding:utf-8
 # Copyright (C) dirlt
 
+from typing import List
+from collections import Counter, defaultdict, deque
+from functools import lru_cache
+import heapq
+
 class Solution:
     def fractionAddition(self, expression: str) -> str:
+        ops = []
+
+        d = 0
+        sign = 1
+        for c in expression:
+            if c in '+/-':
+                ops.append(d*sign)
+                d = 0
+                sign = 1
+                if c == '-':
+                    sign = -1
+                    c = '+'
+                ops.append(c)
+            else:
+                d = d * 10 + ord(c) - ord('0')
+        ops.append(d * sign)
+        # print(ops)
+
+        st = []
+        i = 0
+        while i < len(ops):
+            if ops[i] == '/':
+                st[-1] = (st[-1], ops[i+1])
+                i += 2
+            elif ops[i] == '+':
+                i += 1
+            else:
+                st.append(ops[i])
+                i += 1
+        if st[0] == 0:
+            st[0] = (0, 1)
+        # print(st)
+
+        def reduce(x, y):
+            if x == 0: return (0, 1)
+            sign = 1
+            if x < 0:
+                sign = -1 * sign
+                x = -x
+            if y < 0:
+                sign = -1 * sign
+                y = -y
+            g = gcd(x, y)
+            return (sign * x // g, y // g)
 
         def gcd(x, y):
             while y != 0:
                 x, y = y, x % y
             return x
 
-        def add(x, y, a, b):
-            xx = b * x + a * y
-            yy = y * b
-            _gcd = gcd(xx, yy)
-            return xx // _gcd, yy // _gcd
+        (a, b) = (0, 1)
+        for (c, d) in st:
+            a, b = reduce(a * d + b * c, b * d)
+        return '{}/{}'.format(a, b)
 
-        def parse_int(expr, i):
-            v = 0
-            while i < len(expr) and expr[i].isdigit():
-                v = v * 10 + int(expr[i])
-                i += 1
-            return v, i
+cases = [
+    ('-1/2+1/2', '0/1'),
+    ('-1/2+1/2+1/3','1/3'),
+    ('1/3-1/2','-1/6'),
+    ('5/3+1/3','2/1'),
+]
 
-        i = 0
-        x, y = 0, 1
+import aatest_helper
+aatest_helper.run_test_cases(Solution().fractionAddition, cases)
 
-        while i < len(expression):
-            sign = 1
-            if expression[i] in '+-':
-                if expression[i] == '-':
-                    sign = -1
-                i += 1
 
-            a, i = parse_int(expression, i)
-            b, i = parse_int(expression, i + 1)
-            a = a * sign
-            x, y = add(x, y, a, b)
-        return "{}/{}".format(x, y)
+if __name__ == '__main__':
+    pass
