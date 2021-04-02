@@ -7,7 +7,12 @@ target_include_directories(MathLib
   PRIVATE ${CMAKE_CURRENT_BINARY_DIR}
   )
 
-install(TARGETS MathLib DESTINATION lib)
+# 如果按照shared libs来编译的话，编译开关就会打开-fPIC
+set_target_properties(MathLib PROPERTIES
+  POSITION_INDEPENDENT_CODE ${BUILD_SHARED_LIBS}
+  )
+
+install(TARGETS MathLib  DESTINATION lib)
 install(FILES mathlib.h DESTINATION include)
 
 include(CheckSymbolExists)
@@ -34,3 +39,5 @@ add_custom_command(
   COMMAND python3 ${CMAKE_CURRENT_SOURCE_DIR}/../tools/genprimes.py ${CMAKE_CURRENT_BINARY_DIR}/primes.h
   # DEPENDS <target>
   )
+
+target_compile_options(MathLib PRIVATE -W -Wall)

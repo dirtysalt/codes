@@ -4,11 +4,21 @@ cmake_minimum_required(VERSION 3.10)
 project(Tutorial VERSION 1.0)
 
 # specify the C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # 把make详细命令打印出来
 set(CMAKE_VERBOSE_MAKEFILE ON)
+
+option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
+
+if (CMAKE_BUILD_TYPE STREQUAL "Release")
+  add_compile_options(-W -Wall -O2)
+elseif (CMAKE_BUILD_TYPE STREQUAL "Debug")
+  add_compile_options(-W -Wall -O0 -g)
+else()
+  add_compile_options(-W -Wall -O1 -g)
+endif()
 
 # 设置各种配置选项
 option(USE_MATHLIB "Use MathLib" ON)
@@ -26,6 +36,9 @@ configure_file(include/config.h.in include/config.h)
 
 # add the executable
 add_executable(Tutorial src/tutorial.cpp)
+
+target_compile_options(
+  Tutorial PRIVATE -W -Wall)
 
 target_include_directories(
   Tutorial PUBLIC
