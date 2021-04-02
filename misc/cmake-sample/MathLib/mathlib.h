@@ -6,7 +6,9 @@
 extern "C" {
 #endif
 
-int add(int x, int y);
+    int add(int x, int y);
+    double mylog(double x);
+    double myexp(double x);
 
 #ifdef __cplusplus
 }

@@ -8,3 +8,22 @@ target_include_directories(MathLib
 
 install(TARGETS MathLib DESTINATION lib)
 install(FILES mathlib.h DESTINATION include)
+
+include(CheckSymbolExists)
+check_symbol_exists(log "math.h" HAVE_LOG)
+check_symbol_exists(exp "math.h" HAVE_EXP)
+if(NOT (HAVE_LOG AND HAVE_EXP))
+  unset(HAVE_LOG CACHE)
+  unset(HAVE_EXP CACHE)
+  set(CMAKE_REQUIRED_LIBRARIES "m")
+  check_symbol_exists(log "math.h" HAVE_LOG)
+  check_symbol_exists(exp "math.h" HAVE_EXP)
+  if(HAVE_LOG AND HAVE_EXP)
+    target_link_libraries(MathLib PRIVATE m)
+  endif()
+endif()
+
+if(HAVE_LOG AND HAVE_EXP)
+  target_compile_definitions(MathLib
+    PRIVATE "HAVE_LOG" "HAVE_EXP")
+endif()

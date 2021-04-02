@@ -31,11 +31,11 @@ target_include_directories(
   Tutorial PUBLIC
   # build目录下面的include/config.h
   "${PROJECT_BINARY_DIR}/include"
-  # {PROJECT_SOURCE_DIR} # 顶层目录
+  "${PROJECT_SOURCE_DIR}/include" # 顶层目录
   # ${EXTRA_INCLUDES} # 其他配置
 
 )
 target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
 
 install(TARGETS Tutorial DESTINATION bin)
-install(FILES "${PROJECT_BINARY_DIR}/include/config.h" DESTINATION include)
+install(FILES "${PROJECT_BINARY_DIR}/include/config.h" "${PROJECT_SOURCE_DIR}/include/tutorial.h" DESTINATION include)
