@@ -1,3 +1,7 @@
 // the configured options and settings for Tutorial
+
 #define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
 #define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+// 外部可以使用cmake来配置
+// cmake .. -DUSE_MATHLIB=ON/OFF
+#cmakedefine USE_MATHLIB
