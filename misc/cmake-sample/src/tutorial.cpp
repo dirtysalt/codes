@@ -23,15 +23,6 @@ int add(int x, int y) {
     printf("use native add\n");
     return x + y;
 }
-double myexp(double x) {
-    printf("use native myexp\n");
-    return -1;
-}
-double mylog(double x) {
-    printf("use native mylog\n");
-    return -1;
-}
-
 #endif
 
 using namespace std;
@@ -43,10 +34,11 @@ int main(int argc, const char**argv) {
               << Tutorial_VERSION_MINOR << std::endl;
     int z = add(10, 20);
     std::cout << "add(10, 20) = " << z <<std::endl;
-    double a = myexp(10.0);
-    std::cout << "exp(10.0) = " << a << std::endl;
-    double b = mylog(10.0);
-    std::cout << "log(10.0) = " << b << std::endl;
 
+#ifdef USE_MATHLIB
+    std::cout << "exp(10.0) = " << myexp(10.0) << std::endl;
+    std::cout << "log(10.0) = " << myexp(10.0) << std::endl;
+    std:: cout << "isPrime(87793) = " << isPrime(87793) << std::endl;
+#endif
     return 0;
 }

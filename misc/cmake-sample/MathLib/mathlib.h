@@ -9,6 +9,7 @@ extern "C" {
     int add(int x, int y);
     double mylog(double x);
     double myexp(double x);
+    int isPrime(int x);
 
 #ifdef __cplusplus
 }
