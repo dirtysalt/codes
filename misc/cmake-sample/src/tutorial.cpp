@@ -15,7 +15,7 @@
 #include "config.h"
 
 #ifdef USE_MATHLIB
-#include "MathLib/mathlib.h"
+#include "mathlib.h"
 #else
 int add(int x, int y) {
     printf("use native add\n");
