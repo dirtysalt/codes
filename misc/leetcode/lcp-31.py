@@ -101,7 +101,7 @@ class SolutionB:
 
 # 尝试做些改进，其中test是判断从哪个位置开始出现block, 那么将这个位置记录下来，下个阶段从这个地方开始遍历，并且认为这个位置是可以被免除的
 # 感觉还有某些计算是可以减少的，但是暂时想不出来
-class Solution:
+class SolutionC:
     def escapeMaze(self, maze: List[List[str]]) -> bool:
         n, m = len(maze[0]), len(maze[0][0])
 
@@ -172,6 +172,52 @@ class Solution:
         return False
 
 # 看了这题的动态规划解法，其中有个观察就是，如果某次使用了永久卷轴的话，那么可以在这里多次等待，效果其实类似可以跳到之后的+d时刻，而不是仅仅+1时刻。
+import numpy as np
+class Solution:
+    def escapeMaze(self, maze: List[List[str]]) -> bool:
+        T, N, M = len(maze), len(maze[0]), len(maze[0][0])
+        dp = np.zeros((T, N, M, 4), dtype=np.int8)
+        maxhis = np.zeros((T, N, M, 4), dtype=np.int8)
+
+        dp[0][0][0][0] = 1
+
+        for t in range(T-1):
+            # update forward
+            for i in range(N):
+                for j in range(M):
+                    for st in range(4):
+                        value = dp[t][i][j][st]
+                        if (st & 0x2):
+                            value |= maxhis[t][i][j][st]
+                        if value == 0: continue
+
+                        for dx, dy in ((0, 0), (-1, 0), (1, 0), (0, -1), (0, 1)):
+                            x, y = i + dx ,j + dy
+                            if not (0 <= x < N and 0 <= y < M): continue
+                            if maze[t+1][x][y] == '.':
+                                dp[t+1][x][y][st] = 1
+                                continue
+
+                            # 没有使用临时卷轴
+                            if (st & 0x1) == 0:
+                                dp[t+1][x][y][st | 0x1] = 1
+
+                            # 没有使用永久卷轴
+                            if (st & 0x2) == 0:
+                                # 那么可以跳转到任意位置下面
+                                # dp[t+x][x][y][u | 0x3]
+                                # for t2 in range(t+1, T):
+                                #     dp[t2][x][y][st | 0x2] = 1
+                                maxhis[t+1][x][y][st | 0x2] = 1
+            # update maxhis
+            for x in range(N):
+                for y in range(M):
+                    for st in range(4):
+                        if (st & 0x2):
+                            maxhis[t+1][x][y][st] |= maxhis[t][x][y][st]
+
+        return bool(max(dp[T-1][N-1][M-1]) == 1)
+
 
 cases = [
     ([[".#.","#.."],["...",".#."],[".##",".#."],["..#",".#."]], True),
@@ -181,11 +227,12 @@ cases = [
     ([[".##..####",".#######."],["..######.","########."],[".#####.##",".#######."],[".#..###.#","########."],[".########","########."],[".######.#","####.###."],[".#####.##","#####.#.."],[".##.####.","##.#####."],[".########","#####.##."],[".#.######","#.##.###."],[".########","###.#.#.."],[".########","########."],[".####.##.","##.##...."],[".#######.","###.#.##."],[".####.###","###.####."],[".######.#","##.####.."],[".##.#####","##.###.#."],[".####.###","##.#####."],[".##.##..#",".#.#####."],[".###.####","##.#..##."],[".####.#.#","##.#####."],[".####.###","####.###."],[".########","#######.."],[".#####.##","#.######."],[".########","###..#.#."],[".####.#.#","###..##.."],[".######.#","########."],[".########","##.#####."],[".########","..######."],[".#####..#","#######.."],[".#.######",".#######."],[".###.#.#.",".##..#.#."],[".#.##.###","####.##.."]], True),
 ]
 
-debug = False
+debug = True
 if debug:
-    with open('input.txt', encoding = 'utf-8') as fh:
-        maze = eval(fh.read())
-        cases.append((maze, False))
+    for f, exp in (('input.txt',False), ('input2.txt', True)):
+        with open(f, encoding = 'utf-8') as fh:
+            maze = eval(fh.read())
+            cases.append((maze, exp))
 
 import aatest_helper
 aatest_helper.run_test_cases(Solution().escapeMaze, cases)
