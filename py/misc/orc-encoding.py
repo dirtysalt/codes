@@ -45,6 +45,76 @@ def decode_varint(bs):
     return value
 
 
+def widthInBits(value):
+    if value == 0: return 1
+    ans = 0
+    while value:
+        value = value >> 1
+        ans += 1
+    return ans
+
+
+def widthInBytes(value):
+    bits = widthInBits(value)
+    return (bits + 7) // 8
+
+
+class OutputByteStream:
+    def __init__(self):
+        self.buf = []
+
+    def append(self, value):
+        self.buf.append(value)
+
+    def extend(self, values):
+        self.buf.extend(values)
+
+    def asBytes(self):
+        return bytes(self.buf)
+
+    def encodeVarint(self, value):
+        _encode_varint(value, self.buf)
+
+    def writeInt(self, value, w):
+        for i in reversed(range(w)):
+            self.buf.append((value >> (i * 8)) & 0xff)
+
+    def clear(self):
+        self.buf.clear()
+
+
+class InputByteStream:
+    def __init__(self, bs):
+        self.bs = bs
+        self.pos = 0
+        self.size = len(bs)
+
+    def read(self, n=1, single=True):
+        self.pos += n
+        ret = self.bs[self.pos - n: self.pos]
+        if n == 1 and single:
+            return ret[0]
+        return ret
+
+    def backup(self, n=1):
+        self.pos -= n
+
+    def empty(self):
+        return self.pos == self.size
+
+    def decodeVarint(self):
+        ret, end = _decode_varint(self.bs, self.pos)
+        self.pos = end
+        return ret
+
+    def readInt(self, w):
+        value = 0
+        for i in range(w):
+            value = (value << 8) | self.bs[self.pos + i]
+        self.pos += w
+        return value
+
+
 # ==================== RLEv1 ==========
 
 class ByteRLE:
@@ -52,7 +122,7 @@ class ByteRLE:
         self.maxsize = 128
         self.leastRepeat = leastRepeat
         self.buf = [None] * self.maxsize
-        self.bs = []
+        self.bs = OutputByteStream()
         self.pos = 0
         self.tail = 0
         self.repeat = False
@@ -112,7 +182,7 @@ class ByteRLE:
         self.bs.extend([number - 3, value])
 
     def getBytes(self):
-        return bytes(self.bs)
+        return self.bs.asBytes()
 
     def reset(self):
         self.bs.clear()
@@ -130,20 +200,17 @@ class ByteRLEDecoder:
         pass
 
     def decode(self, bs):
-        p = 0
+        if isinstance(bs, bytes):
+            bs = InputByteStream(bs)
         buf = []
-        while p < len(bs):
-            b = bs[p]
+        while not bs.empty():
+            b = bs.read()
             if b >= 128:
                 b = ~(b - 1) & 0xff
-                p += 1
-                buf.extend(bs[p: p + b])
-                p += b
+                buf.extend(bs.read(b, single=False))
             else:
                 b += 3
-                p += 1
-                buf.extend([bs[p]] * b)
-                p += 1
+                buf.extend([bs.read()] * b)
         return buf
 
 
@@ -153,13 +220,13 @@ class BitRLEDecoder(ByteRLEDecoder):
         parent.__init__()
         self.parent = parent
 
-    def decode(self, bs, number):
+    def decode(self, bs, bits):
         buf = self.parent.decode(bs)
         buf2 = []
         for b in buf:
             for i in reversed(range(8)):
                 buf2.append((b >> i) & 0x1)
-        buf2 = buf2[:number]
+        buf2 = buf2[:bits]
         return buf2
 
 
@@ -192,7 +259,7 @@ class RLEv1:
         self.maxsize = 128
         self.leastRepeat = leastRepeat
         self.buf = [None] * self.maxsize
-        self.bs = []
+        self.bs = OutputByteStream()
         self.pos = 0
         self.tail = 0
         self.repeat = False
@@ -271,7 +338,7 @@ class RLEv1:
         _encode_varint(value, self.bs)
 
     def getBytes(self):
-        return bytes(self.bs)
+        return self.bs.asBytes()
 
     def reset(self):
         self.bs.clear()
@@ -360,53 +427,6 @@ class StringDecoder:
 
 # ==================== RLEv2 ====================
 
-class InputByteStream:
-    def __init__(self, bs):
-        self.bs = bs
-        self.pos = 0
-
-    def read(self, n=1):
-        self.pos += n
-        ret = self.bs[self.pos - n: self.pos]
-        if n == 1:
-            return ret[0]
-        return ret
-
-    def backup(self, n=1):
-        self.pos -= n
-
-    def decodeVarint(self):
-        ret, end = _decode_varint(self.bs, self.pos)
-        self.pos = end
-        return ret
-
-    def readInt(self, w):
-        value = 0
-        for i in range(w):
-            value = (value << 8) | self.bs[self.pos + i]
-        self.pos += w
-        return value
-
-
-def widthInBits(value):
-    if value == 0: return 1
-    ans = 0
-    while value:
-        value = value >> 1
-        ans += 1
-    return ans
-
-
-def widthInBytes(value):
-    bits = widthInBits(value)
-    return (bits + 7) // 8
-
-
-def writeInt(value, w, bs):
-    for i in reversed(range(w)):
-        bs.append((value >> (i * 8)) & 0xff)
-
-
 class Options:
     def __init__(self):
         self.signed = False
@@ -420,9 +440,8 @@ class ShortRepeatRLE:
     def __init__(self):
         pass
 
-    def write(self, rep, value, opt=None):
+    def write(self, bs, rep, value, opt=None):
         opt = opt or _defaultOptions
-        bs = []
         if opt.signed:
             value = zigzag(value)
         w = widthInBytes(value)
@@ -430,8 +449,7 @@ class ShortRepeatRLE:
         assert (rep >= 3 and rep <= 10)
         h = (0x0 << 6) | ((w - 1) << 3) | (rep - 3)
         bs.append(h)
-        writeInt(value, w, bs)
-        return bytes(bs)
+        bs.writeInt(value, w)
 
     def read(self, bs, opt=None):
         opt = opt or _defaultOptions
@@ -492,12 +510,12 @@ def encodeValueToWidthBits(ev):
     return _ev2wb[ev]
 
 
-_align = [0, 1, 2, 4, 4, 8, 8, 8, 8]
+_alignedBits = [0, 1, 2, 4, 4, 8, 8, 8, 8]
 
 
 def alignedBits(b):
     if b < 8:
-        return _align[b]
+        return _alignedBits[b]
     return (b + 7) // 8 * 8
 
 
@@ -583,7 +601,7 @@ class DirectRLE:
     def __init__(self):
         pass
 
-    def write(self, values, opt=None):
+    def write(self, bs, values, opt=None):
         opt = opt or _defaultOptions
         wb = 0
         if opt.signed:
@@ -598,9 +616,8 @@ class DirectRLE:
         sz = len(values)
         h0 = (0x1 << 6) | (ev << 1) | (((sz - 1) >> 8) & 0x1)
         h1 = (sz - 1) & 0xff
-        bs = [h0, h1]
+        bs.extend([h0, h1])
         encodeValuesWithFixedBits(wb, values, bs)
-        return bytes(bs)
 
     def read(self, bs, opt=None):
         opt = opt or _defaultOptions
@@ -619,7 +636,7 @@ class DeltaRLE:
     def __init__(self):
         pass
 
-    def _write(self, baseValue, baseDelta, deltas, opt):
+    def _write(self, bs, baseValue, baseDelta, deltas, opt):
         assert baseDelta != 0
         opt = opt or _defaultOptions
         wb = 0
@@ -636,16 +653,15 @@ class DeltaRLE:
 
         h0 = (0x3 << 6) | (ev << 1) | (((sz - 1) >> 8) & 0x1)
         h1 = (sz - 1) & 0xff
-        bs = [h0, h1]
+        bs.extend([h0, h1])
 
         if opt.signed:
             baseValue = zigzag(baseValue)
         _encode_varint(baseValue, bs)
         _encode_varint(zigzag(baseDelta), bs)
         encodeValuesWithFixedBits(wb, deltas, bs)
-        return bytes(bs)
 
-    def write(self, values, opt=None):
+    def write(self, bs, values, opt=None):
         baseValue = values[0]
         baseDelta = values[1] - values[0]
         deltas = []
@@ -653,7 +669,7 @@ class DeltaRLE:
             d = values[i] - values[i - 1]
             assert d * baseDelta >= 0
             deltas.append(abs(d))
-        return self._write(baseValue, baseDelta, deltas, opt)
+        return self._write(bs, baseValue, baseDelta, deltas, opt)
 
     def read(self, bs, opt=None):
         b0, b1 = bs.read(2)
@@ -711,7 +727,7 @@ class PatchBasedRLE:
     def __init__(self):
         pass
 
-    def write(self, values, opt=None):
+    def write(self, bs, values, opt=None):
         opt = opt or _defaultOptions
         base, w, pw = selectBaseAndGapWidth(values)
         # pack pgw and pw into at most 64 bits and aligned with bytes.
@@ -769,15 +785,14 @@ class PatchBasedRLE:
         h2 = ((bw - 1) << 5) | (pw - 1)
         h3 = ((pgw - 1) << 5) | pll
 
-        bs = [h0, h1, h2, h3]
-        writeInt(base, bw, bs)
+        bs.extend([h0, h1, h2, h3])
+        bs.writeInt(base, bw)
         encodeValuesWithFixedBits(w, deltas, bs)
 
         wb = (pgw + pw)
         if opt.aligned:
             wb = alignedBits(wb)
         encodeValuesWithFixedBits(wb, tmp, bs)
-        return bytes(bs)
 
     def read(self, bs, opt=None):
         opt = opt or _defaultOptions
@@ -987,7 +1002,9 @@ class TestAll(unittest.TestCase):
 
     def test_shortrepeatrle(self):
         rle = ShortRepeatRLE()
-        self.assertEqual(rle.write(5, 10000), b'\x0a\x27\x10')
+        bs = OutputByteStream()
+        rle.write(bs, 5, 10000)
+        self.assertEqual(bs.asBytes(), b'\x0a\x27\x10')
         bs = InputByteStream(b'\x0a\x27\x10')
         self.assertEqual(rle.read(bs), [10000] * 5)
 
@@ -997,7 +1014,9 @@ class TestAll(unittest.TestCase):
         rle = DirectRLE()
         values = [23713, 43806, 57005, 48879]
         exp = b'\x5e\x03\x5c\xa1\xab\x1e\xde\xad\xbe\xef'
-        self.assertEqual(rle.write(values, opt), exp)
+        bs = OutputByteStream()
+        rle.write(bs, values, opt)
+        self.assertEqual(bs.asBytes(), exp)
         bs = InputByteStream(exp)
         self.assertEqual(rle.read(bs, opt), values)
 
@@ -1007,7 +1026,9 @@ class TestAll(unittest.TestCase):
         rle = DeltaRLE()
         values = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
         exp = b'\xc6\x09\x02\x02\x22\x42\x42\x46'
-        self.assertEqual(rle.write(values, opt), exp)
+        bs = OutputByteStream()
+        rle.write(bs, values, opt)
+        self.assertEqual(bs.asBytes(), exp)
         bs = InputByteStream(exp)
         self.assertEqual(rle.read(bs, opt), values)
 
@@ -1020,7 +1041,9 @@ class TestAll(unittest.TestCase):
         exp = bytes(
             [0x8e, 0x13, 0x2b, 0x21, 0x07, 0xd0, 0x1e, 0x00, 0x14, 0x70, 0x28, 0x32, 0x3c, 0x46, 0x50, 0x5a, 0x64, 0x6e,
              0x78, 0x82, 0x8c, 0x96, 0xa0, 0xaa, 0xb4, 0xbe, 0xfc, 0xe8])
-        self.assertEqual(rle.write(values, opt), exp)
+        bs = OutputByteStream()
+        rle.write(bs, values, opt)
+        self.assertEqual(bs.asBytes(), exp)
         bs = InputByteStream(exp)
         self.assertEqual(rle.read(bs, opt), values)
 
