@@ -12,7 +12,7 @@ def makeprimes(n):
     sz = len(p)
     for i in range(2, sz):
         if i * i >= sz: break
-        if p[i] == 1: break
+        if p[i] == 1: continue
         for j in range(i, sz):
             if i * j >= sz: break
             p[i*j]=1
@@ -81,6 +81,32 @@ class Solution:
 
         return ans
 
+class Solution2:
+    def countDifferentSubsequenceGCDs(self, nums: List[int]) -> int:
+        maxn = max(nums)
+        nums = set(nums)
+
+        ans = 0
+        for x in range(1, maxn + 1):
+            if x in nums:
+                # print(x)
+                ans += 1
+                continue
+
+            g = None
+            for y in range(x, maxn + 1, x):
+                if y not in nums: continue
+                if g is None:
+                    g = y // x
+                else:
+                    g = gcd(g, y // x)
+                if g == 1:
+                    # print(x)
+                    ans += 1
+                    break
+
+        return ans
+
 cases = [
     ([6,10,3], 5),
     ([5,15,40,5,6], 7),
@@ -88,6 +114,7 @@ cases = [
 
 import aatest_helper
 aatest_helper.run_test_cases(Solution().countDifferentSubsequenceGCDs, cases)
+aatest_helper.run_test_cases(Solution2().countDifferentSubsequenceGCDs, cases)
 
 
 

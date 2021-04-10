@@ -12,7 +12,7 @@ def makeprimes(n):
     sz = len(p)
     for i in range(2, sz):
         if i * i >= sz: break
-        if p[i] == 1: break
+        if p[i] == 1: continue
         for j in range(i, sz):
             if i * j >= sz: break
             p[i*j]=1
