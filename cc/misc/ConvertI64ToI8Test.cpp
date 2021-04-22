@@ -189,20 +189,20 @@ void convert_i64toi8_pack(int64_t* src, int8_t *dst, size_t size) {
 }
 
 // 编译命令 g++ test.cpp -std=c++17 -mavx512vl -mavx512bw -mavx512vbmi
-const int N = 30;
+const int N = 256;
 int64_t *src = nullptr;
 int8_t *dst = nullptr;
 
 void make() {
     for(int i=0;i<N;i++) {
-        src[i] = i;
+        src[i] = i - 128;
         dst[i] = 0xff;
     }
 }
 bool check(string name) {
     bool ok = true;
     for(int i=0;i<N;i++) {
-        if(dst[i] != i) {
+        if(dst[i] != (i - 128)) {
             ok = false;
             break;
         }
