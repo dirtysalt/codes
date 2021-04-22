@@ -13,3 +13,4 @@
   - `PopCountTest.cpp` 计算popcount的几种方法
   - `opt_linear_search.cc` 循环展开对搜索线性搜索的影响
   - `primes.go` 使用CSP的方式来过滤素数
+  - `ConvertI64ToI8.cpp` 把int64数组批量转为int8的性能测试
