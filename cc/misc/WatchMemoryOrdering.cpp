@@ -35,8 +35,11 @@ const int waiting = 20;
         }                                             \
     } while (0)
 
+#ifdef USE_FENCE
 #define FENCE() atomic_thread_fence(memory_order_seq_cst)
-// #define FENCE()
+#else
+#define FENCE()
+#endif
 
 void thread0() {
     for (;;) {
