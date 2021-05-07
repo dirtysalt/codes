@@ -15,6 +15,7 @@
 #include <string>
 #include <thread>
 #include <vector>
+#include <xmmintrin.h>
 
 // https://preshing.com/20120515/memory-reordering-caught-in-the-act/
 
@@ -36,7 +37,8 @@ const int waiting = 20;
     } while (0)
 
 #ifdef USE_FENCE
-#define FENCE() atomic_thread_fence(memory_order_seq_cst)
+// #define FENCE() atomic_thread_fence(memory_order_seq_cst)
+#define FENCE() _mm_mfence()
 #else
 #define FENCE()
 #endif
