@@ -81,6 +81,11 @@ class Timer {
 void test(int fb, const uint8_t* input, int64_t* output, int num) {
     Timer t;
     const int T = 100;
+
+    // warmup cache?
+    bit_unpack(input, fb, output, num);
+    bit_unpack_tail(input, fb, output, num);
+
     t.start();
     for(int i = 0; i < T; i++) {
         bit_unpack(input, fb, output, num);
