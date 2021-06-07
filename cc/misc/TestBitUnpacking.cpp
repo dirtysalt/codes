@@ -2,21 +2,19 @@
  * Copyright (C) dirlt
  */
 
+#include <condition_variable>
 #include <cstdio>
 #include <cstring>
+#include <functional>
 #include <iostream>
-#include <string>
 #include <map>
 #include <memory>
-#include <vector>
-#include <functional>
-#include <thread>
 #include <mutex>
-#include <condition_variable>
+#include <string>
+#include <thread>
+#include <vector>
 
 using namespace std;
-
-
 
 void bit_unpack_tail(const uint8_t* in, int fb, int64_t* data, int nums) {
     if (nums == 0) return;
@@ -42,7 +40,6 @@ void bit_unpack_tail(const uint8_t* in, int fb, int64_t* data, int nums) {
 }
 
 #include "bit_packing_gen.inc"
-
 
 class Timer {
    public:
@@ -82,27 +79,34 @@ void test(int fb, const uint8_t* input, int64_t* output, int num) {
     Timer t;
     const int T = 100;
 
+    int64_t* temp = new int64_t[num];
     // warmup cache?
     bit_unpack(input, fb, output, num);
-    bit_unpack_tail(input, fb, output, num);
+    bit_unpack_tail(input, fb, temp, num);
+    for (int i = 0; i < num; i++) {
+        assert(output[i] == temp[i]);
+    }
+    delete[] temp;
 
     t.start();
-    for(int i = 0; i < T; i++) {
+    for (int i = 0; i < T; i++) {
         bit_unpack(input, fb, output, num);
     }
     t.stop();
     double ms1 = t.elapsedMilliseconds();
 
     t.start();
-    for(int i = 0; i < T; i++) {
+    for (int i = 0; i < T; i++) {
         bit_unpack_tail(input, fb, output, num);
     }
     t.stop();
     double ms2 = t.elapsedMilliseconds();
 
     // 处理单个元素的平均时间
-    cout << "unpack fb: " << fb << ". fast = " << ms1 << " ms, avg = " << (ms1 * 1000000) / (T *  num)<< " ns. "
-         << "tail = " << ms2 << " ms, avg = " << (ms2 * 1000000) / (T * num) << " ns. speedup = " << ms2 * 1.0 / ms1 << endl;
+    cout << "unpack fb: " << fb << ". fast = " << ms1
+         << " ms, avg = " << (ms1 * 1000000) / (T * num) << " ns. "
+         << "tail = " << ms2 << " ms, avg = " << (ms2 * 1000000) / (T * num)
+         << " ns. speedup = " << ms2 * 1.0 / ms1 << endl;
 }
 
 int main() {
@@ -114,11 +118,13 @@ int main() {
     int64_t* output = new int64_t[N * 64];
     memset(input, 0x73, N * 64);
 
-    vector<int> fbs = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+    vector<int> fbs = {1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11,
                        12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
                        23, 24, 26, 28, 30, 32, 40, 48, 56, 64};
-    for(int fb: fbs) {
+    for (int fb : fbs) {
         test(fb, input, output, N);
     }
+    delete[] input;
+    delete[] output;
     return 0;
 }
