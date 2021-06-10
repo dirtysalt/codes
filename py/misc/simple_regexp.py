@@ -334,7 +334,9 @@ def test_match():
 
 def test_match2():
     State.reset()
+    import sys
     n = 1000
+    sys.setrecursionlimit(min(n, 1000) * 4)
     postfix_seq = 'a?' * n + '.' * (n - 1) + 'a' * n + '.' * n
     s = build_nfa(postfix_seq)
     p = Processor(s)
@@ -348,7 +350,7 @@ def test_match2():
         print('round #{} takes {} ms'.format(x + 1, (e - s) * 1000))
 
 
-test_match2()
+# test_match2()
 
 
 def test_match3():
