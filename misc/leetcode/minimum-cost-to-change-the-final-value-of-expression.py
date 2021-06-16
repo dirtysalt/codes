@@ -78,16 +78,16 @@ class Solution:
                     st.append(Tree(op='', val=int(expr[i])))
                 i += 1
 
-            # use right eval order.
-            st = st[::-1]
-            right = st.pop()
-            while st:
-                op = st.pop()
-                left = st.pop()
-                op.left = left
+            # eval order matters.
+            # and left most node should be in the lowest level.
+            top = st[0]
+            for i in range(1, len(st), 2):
+                op = st[i]
+                right = st[i+1]
+                op.left = top
                 op.right = right
-                right = op
-            return end, right
+                top = op
+            return end, top
 
         end, right = buildTree(0, expression)
         assert end == len(expression)
