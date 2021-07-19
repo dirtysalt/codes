@@ -43,12 +43,21 @@ class Solution:
 
         res = 0
         for (idx, v) in enumerate(nums):
-            v1, idx1 = t.query(v)
-            # print('#{} = {}, #{} = {}'.format(idx, v, idx1, v1))
-            res = max(res, v ^ v1)
+            v2,_ = t.query(v)
+            res = max(res, v ^ v2)
         return res
 
 
+true, false, null = True, False, None
+cases = [
+    ([3, 10, 5, 25, 2, 8], 28),
+    ([14, 70, 53, 83, 49, 91, 36, 80, 92, 51, 66, 70], 127),
+    ([8, 10, 2], 10)
+]
+
+import aatest_helper
+
+aatest_helper.run_test_cases(Solution().findMaximumXOR, cases)
+
 if __name__ == '__main__':
-    s = Solution()
-    print((s.findMaximumXOR([3, 10, 5, 25, 2, 8])))
+    pass
