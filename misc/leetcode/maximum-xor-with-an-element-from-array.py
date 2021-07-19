@@ -4,67 +4,7 @@
 
 from typing import List
 
-
 class Solution:
-    def maximizeXor(self, nums: List[int], queries: List[List[int]]) -> List[int]:
-        class Node:
-            def __init__(self):
-                self.left = self.right = None
-                self.minNum = -1
-
-        root = None
-        maxBits = 32
-
-        def build(root, x, bit):
-            if root is None:
-                n = Node()
-                n.minNum = x
-                root = n
-
-            if bit == -1:
-                return root
-
-            b = (x >> bit) & 0x1
-            if b == 0:
-                root.left = build(root.left, x, bit - 1)
-                root.minNum = min(root.minNum, root.left.minNum)
-            else:
-                root.right = build(root.right, x, bit - 1)
-                root.minNum = min(root.minNum, root.right.minNum)
-            return root
-
-        for x in nums:
-            root = build(root, x, maxBits - 1)
-
-        # print(root.minNum)
-        ans = []
-
-        def test(root, x, m):
-            if root.minNum > m: return -1
-            res = 0
-            for i in reversed(range(maxBits)):
-                b = (x >> i) & 0x1
-                if b == 0:
-                    if root.right and root.right.minNum <= m:
-                        res |= (1 << i)
-                        root = root.right
-                    else:
-                        root = root.left
-                else:
-                    if root.left and root.left.minNum <= m:
-                        res |= (1 << i)
-                        root = root.left
-                    else:
-                        root = root.right
-            return res
-
-        for x, m in queries:
-            res = test(root, x, m)
-            ans.append(res)
-        return ans
-
-
-class Solution2:
     def maximizeXor(self, nums: List[int], queries: List[List[int]]) -> List[int]:
 
         class Node:
@@ -73,7 +13,12 @@ class Solution2:
                 self.minNum = -1
 
         root = None
-        maxBits = 32
+        maxValue = max(nums)
+        for x, _ in queries:
+            maxValue = max(maxValue, x)
+        maxBits = 1
+        while (1 << maxBits) < maxValue:
+            maxBits += 1
 
         def build(root, x, bit):
             if root is None:
@@ -116,10 +61,10 @@ class Solution2:
 cases = [
     ([0, 1, 2, 3, 4], [[3, 1], [1, 3], [5, 6]], [3, 3, 7]),
     ([5, 2, 4, 6, 6, 3], [[12, 4], [8, 1], [6, 3]], [15, -1, 5]),
-    # ([5, 2, 4, 6, 6, 3], [[6,3]], [5]),
+    ([5, 2, 4, 6, 6, 3], [[6,3]], [5]),
 
 ]
 
 import aatest_helper
 
-aatest_helper.run_test_cases(Solution2().maximizeXor, cases)
+aatest_helper.run_test_cases(Solution().maximizeXor, cases)
