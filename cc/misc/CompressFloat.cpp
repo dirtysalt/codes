@@ -20,7 +20,7 @@ using namespace std;
 // 1bit(A) + 8bit(B) + 23bit(C)
 // 6bit(B) + 11bit(C) + 1bit(A) = 18bit < 256K
 
-inline uint32_t zigzag(uint32_t value) {
+inline int32_t zigzag(int32_t value) {
     return (value << 1) ^ (value >> 31);
 }
 
@@ -39,7 +39,7 @@ uint32_t float_to_int(float f) {
     static const int lsb = 12;
     static const int lsb_mask = (1 << lsb) - 1;
     static const int exp_base = (1 << 7) - 1;
-    uint32_t exp = zigzag(u.exp - exp_base);
+    int32_t exp = zigzag(u.exp - exp_base);
     if (exp < 64 && (u.fact & lsb_mask) == 0) {
         return (exp << (23 - lsb + 1)) | ((u.fact >> lsb) << 1) | u.sign;
     }
@@ -65,7 +65,7 @@ uint32_t double_to_int(double f) {
     static const int lsb = 41;
     static const uint64_t lsb_mask = (1ULL << lsb) - 1;
     static const int exp_base = (1 << 10) - 1;
-    uint32_t exp = zigzag(u.exp - exp_base);
+    int32_t exp = zigzag(u.exp - exp_base);
     if (exp < 64 && (u.fact & lsb_mask) == 0) {
         return (exp << (52 - lsb + 1)) | ((u.fact >> lsb) << 1) | u.sign;
     }
