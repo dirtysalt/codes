@@ -4,7 +4,6 @@
 
 from typing import List
 
-
 class Solution:
     def validArrangement(self, pairs: List[List[int]]) -> List[List[int]]:
         from collections import defaultdict, Counter
@@ -15,21 +14,6 @@ class Solution:
             seg[pairs[i][0]].append(i)
             sc[s] += 1
             ec[e] += 1
-        used = set()
-
-        def find_path(node):
-            path = []
-            while True:
-                ps = seg[node]
-                while ps and ps[-1] in used:
-                    ps.pop()
-                if not ps:
-                    break
-                index = ps.pop()
-                used.add(index)
-                path.append(index)
-                node = pairs[index][1]
-            return path
 
         head = pairs[0][0]
         for x in sc.keys():
@@ -37,9 +21,20 @@ class Solution:
                 head = x
                 break
 
+        def find_path(node):
+            path = []
+            while True:
+                ps = seg[node]
+                if not ps:
+                    break
+                index = ps.pop()
+                path.append(index)
+                node = pairs[index][1]
+            return path
+
         ans = find_path(head)
 
-        while len(used) != len(pairs):
+        while len(ans) != len(pairs):
             for i in range(len(ans)):
                 node = pairs[ans[i]][0]
                 ext = find_path(node)
