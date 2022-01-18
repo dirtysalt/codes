@@ -1,15 +1,15 @@
-package org.example.demo;
+package com.dirlt.java.trash;
 
 import org.apache.commons.codec.binary.Base64;
 
-import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.SecretKeySpec;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.security.SecureRandom;
 import java.util.Arrays;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
 
 // http://bcllemon.github.io/2015/10/29/2015/python-java-aes/
 public class RunCrypto {
@@ -63,7 +63,6 @@ public class RunCrypto {
         System.arraycopy(length_bytes, 0, final_bytes, offset, length_bytes.length);
         offset += length_bytes.length;
         System.arraycopy(encrypted, 0, final_bytes, offset, encrypted.length);
-
 
         byte[] value = Base64.encodeBase64(final_bytes);
         String s = new String(value);
