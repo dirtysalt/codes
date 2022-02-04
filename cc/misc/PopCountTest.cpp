@@ -16,7 +16,7 @@
 #define min(a, b) ((a) < (b) ? (a) : (b))
 
 class Timer {
-   public:
+public:
     void start() {
         m_StartTime = std::chrono::system_clock::now();
         m_bRunning = true;
@@ -36,15 +36,13 @@ class Timer {
             endTime = m_EndTime;
         }
 
-        return std::chrono::duration_cast<std::chrono::milliseconds>(
-                   endTime - m_StartTime)
-            .count();
+        return std::chrono::duration_cast<std::chrono::milliseconds>(endTime - m_StartTime).count();
     }
 
     double elapsedSeconds() { return elapsedMilliseconds() / 1000.0; }
     Timer() { m_bRunning = false; }
 
-   private:
+private:
     std::chrono::time_point<std::chrono::system_clock> m_StartTime;
     std::chrono::time_point<std::chrono::system_clock> m_EndTime;
     bool m_bRunning;
@@ -53,7 +51,7 @@ class Timer {
 typedef unsigned int uint32_t;
 
 std::vector<uint32_t> GenRandomInts(int N) {
-    srand(time(NULL));  // Initialization, should only be called once.
+    srand(time(NULL)); // Initialization, should only be called once.
     std::vector<uint32_t> ans(N);
     int MOD = 1 << 30;
     for (int i = 0; i < N; i++) {
@@ -72,21 +70,17 @@ for i in range(0,256,8):
     data.append(value)
 */
 
-uint32_t TABLE[] = {841031952,  1127363105, 1127363105, 1413694258, 1127363105,
-                    1413694258, 1413694258, 1700025411, 1127363105, 1413694258,
-                    1413694258, 1700025411, 1413694258, 1700025411, 1700025411,
-                    1986356564, 1127363105, 1413694258, 1413694258, 1700025411,
-                    1413694258, 1700025411, 1700025411, 1986356564, 1413694258,
-                    1700025411, 1700025411, 1986356564, 1700025411, 1986356564,
-                    1986356564, 2272687717};
+uint32_t TABLE[] = {841031952,  1127363105, 1127363105, 1413694258, 1127363105, 1413694258, 1413694258, 1700025411,
+                    1127363105, 1413694258, 1413694258, 1700025411, 1413694258, 1700025411, 1700025411, 1986356564,
+                    1127363105, 1413694258, 1413694258, 1700025411, 1413694258, 1700025411, 1700025411, 1986356564,
+                    1413694258, 1700025411, 1700025411, 1986356564, 1700025411, 1986356564, 1986356564, 2272687717};
 
 inline uint32_t GET8(unsigned char x) {
     return (TABLE[x >> 3] >> ((x & 0x7) << 2)) & 0xf;
 }
 
 uint32_t popcount01(uint32_t x) {
-    return GET8(x & 0xff) + GET8((x >> 8) & 0xff) + GET8((x >> 16) & 0xff) +
-           GET8((x >> 24) & 0xff);
+    return GET8(x & 0xff) + GET8((x >> 8) & 0xff) + GET8((x >> 16) & 0xff) + GET8((x >> 24) & 0xff);
 }
 
 uint32_t popcount11(uint32_t x) {
@@ -95,12 +89,11 @@ uint32_t popcount11(uint32_t x) {
     //     ans += x & 0x1;
     //     x = x >> 1;
     // }
-    while(x) {
+    while (x) {
         ans += 1;
         x = x & (x - 1);
     }
     return ans;
-
 }
 
 uint32_t popcount21(uint32_t x) {
@@ -175,7 +168,7 @@ int popCompare(uint32_t xp, uint32_t yp) {
         // else < 0
         if (x == 0) return y | -y;
         if (y == 0) return 1;
-        x = x & (x - 1);  // clear lsb
+        x = x & (x - 1); // clear lsb
         y = y & (y - 1);
     }
 }
@@ -299,8 +292,7 @@ void Bench(std::vector<uint32_t> values, int level) {
     } else if (level == 4) {
         FORI(k, times) {
             FORV(i, values, 4) {
-                uint32_t t = popcount24(values[i], values[i + 1], values[i + 2],
-                                        values[i + 3]);
+                uint32_t t = popcount24(values[i], values[i + 1], values[i + 2], values[i + 3]);
                 ans += t;
             }
         }
@@ -314,9 +306,8 @@ void Bench(std::vector<uint32_t> values, int level) {
 
     t.stop();
     double total = t.elapsedMilliseconds();
-    std::cout << "[" << name << "] N = " << N << ", took: " << total
-              << "ms, avg " << (total * 1e3) / N << "ns/N, ans = " << ans
-              << "\n";
+    std::cout << "[" << name << "] N = " << N << ", took: " << total << "ms, avg " << (total * 1e3) / N
+              << "ns/N, ans = " << ans << "\n";
 }
 
 void Test() {
@@ -341,8 +332,7 @@ void Test() {
             ttb += b;
         }
         for (size_t i = 0; i < values.size(); i += 4) {
-            uint32_t c = popcount24(values[i], values[i + 1], values[i + 2],
-                                    values[i + 3]);
+            uint32_t c = popcount24(values[i], values[i + 1], values[i + 2], values[i + 3]);
             ttc += c;
         }
         printf("tta = %u, ttb = %u, ttc = %u\n", tta, ttb, ttc);
