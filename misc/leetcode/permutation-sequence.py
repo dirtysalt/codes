@@ -17,7 +17,7 @@ class Solution(object):
 
         res = []
         for i in range(n - 2, -1, -1):
-            idx = k / bases[i]
+            idx = k // bases[i]
             k = k % bases[i]
             res.append(seqs[idx])
             seqs.remove(seqs[idx])

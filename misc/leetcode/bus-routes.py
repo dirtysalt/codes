@@ -5,7 +5,7 @@ from collections import deque
 
 from typing import List
 
-from leetcode import aatest_helper
+import aatest_helper
 
 
 class Solution:

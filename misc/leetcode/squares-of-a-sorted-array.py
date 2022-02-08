@@ -2,6 +2,8 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
+from typing import List
+
 class Solution:
     def sortedSquares(self, A: List[int]) -> List[int]:
         ans = [0] * len(A)
@@ -9,7 +11,7 @@ class Solution:
         k = len(A) - 1
         x = A[i] * A[i]
         y = A[j] * A[j]
-        while i <= j:   
+        while i <= j:
             if x > y:
                 ans[k] = x
                 k -= 1

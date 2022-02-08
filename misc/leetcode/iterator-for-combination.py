@@ -36,35 +36,3 @@ class CombinationIterator:
 
         for i in range(idx + 1, len(self.pts)):
             self.pts[i] = self.pts[i - 1] + 1
-
-
-# Your CombinationIterator object will be instantiated and called as such:
-# obj = CombinationIterator(characters, combinationLength)
-# param_1 = obj.next()
-# param_2 = obj.hasNext()
-
-# it = CombinationIterator('fiklnuy', 3)
-# for i in range(100):
-#     print(it.hasNext())
-#     if it.hasNext():
-#         print(it.next())
-import aatest_helper
-
-cases = [
-    (["CombinationIterator", "hasNext", "next", "hasNext", "next", "hasNext", "next", "next", "next", "hasNext",
-      "hasNext", "next", "hasNext", "hasNext", "next", "hasNext", "next", "hasNext", "hasNext", "hasNext", "next",
-      "next", "hasNext", "next", "hasNext", "next", "next", "hasNext", "hasNext", "next", "next", "hasNext", "hasNext",
-      "next", "hasNext", "next", "next", "next", "next", "hasNext", "hasNext", "next", "next", "hasNext", "hasNext",
-      "next", "next", "hasNext", "next", "hasNext", "hasNext", "hasNext", "next", "next", "hasNext", "hasNext",
-      "hasNext", "hasNext", "next", "hasNext", "next", "hasNext", "next", "next", "next", "next", "next", "next",
-      "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext",
-      "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext",
-      "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext", "hasNext",
-      "hasNext", "hasNext", "hasNext"],
-     [["fiklnuy", 3], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [],
-      [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [],
-      [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [],
-      [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], aatest_helper.ANYTHING),
-]
-
-aatest_helper.run_simulation_cases(CombinationIterator, cases)

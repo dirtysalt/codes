@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # coding:utf-8
 # Copyright (C) dirlt
-from leetcode.aatest_helper import run_simulation_cases
+
+from aatest_helper import run_simulation_cases
 
 
 class StockSpanner:

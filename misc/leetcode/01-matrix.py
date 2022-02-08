@@ -4,7 +4,7 @@
 
 from queue import Queue
 
-from leetcode import aatest_helper
+import aatest_helper
 
 
 class Solution:

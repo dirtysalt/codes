@@ -40,18 +40,3 @@ class Solution:
         # print(rnd, idx)
         (last, to) = self.intervals[idx]
         return to + 1 - (sizes[idx] - rnd)
-
-# Your Solution object will be instantiated and called as such:
-# obj = Solution(N, blacklist)
-# param_1 = obj.pick()
-
-
-import aatest_helper
-
-cases = [
-    (["Solution", "pick", "pick", "pick"], [[1, []], [], [], []], []),
-    (["Solution", "pick", "pick", "pick"], [[3, [1]], [], [], []], []),
-
-]
-
-aatest_helper.run_simulation_cases(Solution, cases)

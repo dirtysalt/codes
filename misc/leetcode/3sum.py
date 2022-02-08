@@ -30,7 +30,7 @@
 #                 else:
 #                     j += 1
 #         return ans
-from leetcode import aatest_helper
+import aatest_helper
 
 
 class Solution(object):

@@ -20,7 +20,7 @@ class Solution(object):
         cnt = 0
         while n:
             v = n % 10
-            n = n / 10
+            n = n // 10
             if v != prev:
                 if prev is not None:
                     ints.append((prev, cnt))

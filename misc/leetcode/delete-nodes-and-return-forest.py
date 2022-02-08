@@ -2,6 +2,8 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
+from typing import List
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding:utf-8
 # Copyright (C) dirlt
-from leetcode import aatest_helper
+import aatest_helper
 
 
 class Solution:

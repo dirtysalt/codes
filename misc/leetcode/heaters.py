@@ -3,7 +3,7 @@
 # Copyright (C) dirlt
 from typing import List
 
-from leetcode.aatest_helper import run_test_cases
+from aatest_helper import run_test_cases
 
 
 class Solution:

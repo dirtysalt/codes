@@ -17,7 +17,7 @@ class Solution(object):
     def bs(self, nums, target, eqf='forward'):
         (s, e) = (0, len(nums) - 1)
         while s <= e:
-            m = (s + e) / 2
+            m = (s + e) // 2
             if nums[m] == target:
                 if eqf == 'forward' and (m + 1) < len(nums) and nums[m + 1] == target:
                     s = m + 1

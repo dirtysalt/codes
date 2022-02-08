@@ -2,6 +2,8 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
+from typing import List
+
 class Solution:
     def spellchecker(self, wordlist: List[str], queries: List[str]) -> List[str]:
         def to_norm(w):

@@ -3,7 +3,7 @@
 # Copyright (C) dirlt
 
 # Definition for a binary tree node.
-from leetcode import aatest_helper
+import aatest_helper
 
 
 class TreeNode:

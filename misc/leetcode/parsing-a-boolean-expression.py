@@ -38,7 +38,7 @@ class Solution:
                     assert expr[end] == ','
                 return ret, i
             else:
-                assert(False, 'unknown char: ' + c)
+                assert False, 'unknown char: ' + c
 
         ret, end = parse(expression, 0)
         assert end == len(expression)
