@@ -1,14 +1,41 @@
-all:
-	@echo "make {program}.exe"
 
-PYTHON=/usr/include/python2.7/
-CXXFLAGS=-std=c++11 -fPIC -g -O2
+all: \
+	BenchHashFunc.exe \
+	BenchHashFuncOnInt.exe \
+	BenchRSqrt.exe \
+	CheckAllZero.exe \
+	CompressFloat.exe \
+	ConvertI64ToI8Bench.exe \
+	ConvertI64ToI8Test.exe \
+	FloatTest.exe \
+	MatrixTranspose.exe \
+	MemcopyTest.exe \
+	PopCountTest.exe \
+	PrintSIMDConstants.exe \
+	StringLowerTest.exe \
+	StringReplaceTest.exe \
+	TestBitUnpacking.exe \
+	TestTCCCodeGen.exe \
+	UInt8MaxTest.exe \
+	WatchMemoryOrdering.exe \
+	ob_math_pic.exe \
+	opt_linear_search.exe \
+	xorll.exe
+
+INC_PYTHON=/usr/include/python2.7/
+INC_FLAGS=-I$(HOME)/utils/tcc-0.9.27/
+LD_FLAGS=-L$(HOME)/utils/tcc-0.9.27/
+CXX_FLAGS=-std=c++17 -g -O3 -mavx2 -mavx512f -mavx512bw -mavx512vbmi
+LIB_FLAGS=-ltcc -lbenchmark -lbenchmark_main -lpthread
 
 runnable_so.exe:runnable_so.cc
-	g++ -o $@ $(CXXFLAGS)  -shared -e so_main $^
+	$(CXX) -o $@ -fPIC $(CXX_FLAGS)  -shared -e so_main $^
 
 test_pye.so: test_pye.cc
-	g++ -o $@ $(CXXFLAGS) -I$(PYTHON)-shared -lboost_python $^
+	$(CXX) -o $@ -fPIC $(CXX_FLAGS) -I$(INC_PYTHON)-shared -lboost_python $^
+
+%.exe:%.cpp
+	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS}
 
 clean:
 	rm -rf *.exe *.o *.so *.dSYM
