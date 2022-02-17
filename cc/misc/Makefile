@@ -20,7 +20,14 @@ all: \
 	WatchMemoryOrdering.exe \
 	ob_math_pic.exe \
 	opt_linear_search.exe \
-	xorll.exe
+	xorll.exe \
+	bench_rsqrt.exe \
+	bench_select_if.exe \
+	test_select_if.exe \
+	bench_restrict_sum.exe \
+	bench_template_pow.exe \
+	test_memory_align.exe \
+	test_relaxed_memory.exe
 
 INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/tcc-0.9.27/
