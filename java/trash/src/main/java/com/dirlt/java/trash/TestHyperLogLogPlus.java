@@ -15,7 +15,8 @@ import java.io.InputStreamReader;
 public class TestHyperLogLogPlus {
     public static void main(String[] args) throws Exception {
         // read lines from stdin.
-        HyperLogLogPlus hyperLogLogPlus = new HyperLogLogPlus(14, 20);
+        com.clearspring.analytics.stream.cardinality.HyperLogLogPlus
+                hyperLogLogPlus = new com.clearspring.analytics.stream.cardinality.HyperLogLogPlus(14, 20);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             String s = reader.readLine();

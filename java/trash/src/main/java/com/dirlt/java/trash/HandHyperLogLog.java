@@ -10,14 +10,14 @@ import java.io.InputStreamReader;
  * Time: 11:10 AM
  * To change this template use File | Settings | File Templates.
  */
-public class HyperLogLog {
+public class HandHyperLogLog {
     private int[] max_zeroes;
 
-    public HyperLogLog(int bucket) {
+    public HandHyperLogLog(int bucket) {
         max_zeroes = new int[1 << bucket];
     }
 
-    public HyperLogLog() {
+    public HandHyperLogLog() {
         this(8);
     }
 
@@ -103,29 +103,29 @@ public class HyperLogLog {
 
     public double getCardinality() {
         int sum = 0;
-        for(int v:max_zeroes) {
+        for (int v : max_zeroes) {
             sum += v;
         }
         double exp = sum * 1.0 / max_zeroes.length;
-        return Math.pow(2.0,exp) * max_zeroes.length * 0.79402;
+        return Math.pow(2.0, exp) * max_zeroes.length * 0.79402;
     }
 
     public static void main(String[] args) throws Exception {
         // read lines from stdin.
-        HyperLogLog hyperLogLog = new HyperLogLog();
+        HandHyperLogLog hyperLogLog = new HandHyperLogLog();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        while(true) {
+        while (true) {
             String s = reader.readLine();
-            if(s==null) {
+            if (s == null) {
                 break;
             }
             hyperLogLog.sinkId(s);
         }
         int[] vector = hyperLogLog.getVector();
-        for(int v:vector) {
+        for (int v : vector) {
             System.out.print(v + " ");
         }
         System.out.println("");
-        System.out.printf("%.3f\n",hyperLogLog.getCardinality());
+        System.out.printf("%.3f\n", hyperLogLog.getCardinality());
     }
 }
