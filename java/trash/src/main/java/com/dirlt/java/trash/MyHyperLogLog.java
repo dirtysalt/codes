@@ -10,14 +10,14 @@ import java.io.InputStreamReader;
  * Time: 11:10 AM
  * To change this template use File | Settings | File Templates.
  */
-public class HandHyperLogLog {
+public class MyHyperLogLog {
     private int[] max_zeroes;
 
-    public HandHyperLogLog(int bucket) {
+    public MyHyperLogLog(int bucket) {
         max_zeroes = new int[1 << bucket];
     }
 
-    public HandHyperLogLog() {
+    public MyHyperLogLog() {
         this(8);
     }
 
@@ -112,7 +112,7 @@ public class HandHyperLogLog {
 
     public static void main(String[] args) throws Exception {
         // read lines from stdin.
-        HandHyperLogLog hyperLogLog = new HandHyperLogLog();
+        MyHyperLogLog hyperLogLog = new MyHyperLogLog();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             String s = reader.readLine();
