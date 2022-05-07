@@ -5,17 +5,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dirlt
- * Date: 3/18/13
- * Time: 11:43 AM
- * To change this template use File | Settings | File Templates.
- */
-public class Main {
+public class RunNativeLibrary {
     public static native void hello();
 
-    public static void LoadLibraryInJAR(Class cls, String pathInJAR, int bufferSize, boolean deleteOnSuccess) throws UnsatisfiedLinkError {
+    public static void LoadLibraryInJAR(Class cls, String pathInJAR, int bufferSize, boolean deleteOnSuccess)
+            throws UnsatisfiedLinkError {
         try {
             InputStream is = cls.getResourceAsStream(pathInJAR);
             File f = File.createTempFile(cls.getCanonicalName() + ".jni-", ".so");
@@ -46,7 +40,7 @@ public class Main {
     }
 
     static {
-        LoadLibraryInJAR(Main.class, "/libnative.so");
+        LoadLibraryInJAR(RunNativeLibrary.class, "/libnative.so");
     }
 
     public static void main(String[] args) {

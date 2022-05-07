@@ -5,6 +5,6 @@
 #include <cstdio>
 #include "native.h"
 
-JNIEXPORT void JNICALL Java_com_dirlt_java_jni_Main_hello (JNIEnv *, jclass) {
+JNIEXPORT void JNICALL Java_com_dirlt_java_jni_RunNativeLibrary_hello (JNIEnv *, jclass) {
   printf("hello,world\n");
 }
