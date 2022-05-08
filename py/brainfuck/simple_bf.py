@@ -262,8 +262,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--optimize', action='store_true')
     parser.add_argument('--bytecode', action='store_true')
-    args = parser.parse_args(sys.argv[1:-1])
-    file_path = sys.argv[-1]
+    parser.add_argument('--filepath', action='store')
+
+    args = parser.parse_args()
+    file_path = args.filepath
+    if not file_path:
+        return
+
     with open(file_path) as fh:
         data = fh.read()
 
