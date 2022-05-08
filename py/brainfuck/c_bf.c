@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <memory.h>
+void sys_write(unsigned char c, int rep);
+unsigned char sys_read(int rep);
 char mem[1024000];
 char* ptr=mem;
 void __f() {
@@ -3955,7 +3955,7 @@ L892:;
 ptr += 4;
 *ptr = (*ptr + -1);
 ptr += -6;
-fprintf(stderr, "%c", *ptr);
+sys_write(*ptr, 1);
 ptr += 2;
 if (*ptr !=0) goto L892;
 L893:;
@@ -3964,7 +3964,7 @@ if(*ptr == 0) goto L895;
 L894:;
 *ptr = (*ptr + -1);
 ptr += -7;
-fprintf(stderr, "%c", *ptr);
+sys_write(*ptr, 1);
 ptr += 7;
 if (*ptr !=0) goto L894;
 L895:;
@@ -4497,7 +4497,7 @@ ptr += 3;
 if (*ptr !=0) goto L34;
 L35:;
 ptr += -4;
-fprintf(stderr, "%c", *ptr);
+sys_write(*ptr, 1);
 ptr += 10;
 if(*ptr == 0) goto L1013;
 L1012:;
