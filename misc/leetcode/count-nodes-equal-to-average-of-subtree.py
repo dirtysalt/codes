@@ -2,12 +2,15 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
+from typing import Optional
+
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 class Solution:
     def averageOfSubtree(self, root: Optional[TreeNode]) -> int:
 
