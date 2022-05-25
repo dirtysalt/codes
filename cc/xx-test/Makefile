@@ -47,9 +47,11 @@ test_pye.so: test_pye.cc
 test_cpp_feature.exe:test_cpp_feature.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -std=c++20 -latomic
 
+# https://bellard.org/tcc/
 test_tcc_codegen.exe:test_tcc_codegen.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -ltcc -lpthread -ldl
 
+# https://github.com/BitFunnel/NativeJIT
 test_native_jit.exe:test_native_jit.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -I${HOME}/repo/NativeJIT/inc \
 		-L${HOME}/repo/NativeJIT/build-make/src/NativeJIT -L${HOME}/repo/NativeJIT/build-make/src/CodeGen \
