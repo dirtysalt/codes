@@ -2,17 +2,17 @@
  * Copyright (C) dirlt
  */
 
+#include <condition_variable>
 #include <cstdio>
 #include <cstring>
+#include <functional>
 #include <iostream>
-#include <string>
 #include <map>
 #include <memory>
-#include <vector>
-#include <functional>
-#include <thread>
 #include <mutex>
-#include <condition_variable>
+#include <string>
+#include <thread>
+#include <vector>
 
 using namespace std;
 
@@ -26,10 +26,10 @@ inline int32_t zigzag(int32_t value) {
 
 uint32_t float_to_int(float f) {
     union {
-        struct{
-            uint32_t fact: 23;
-            uint32_t exp: 8;
-            uint32_t sign: 1;
+        struct {
+            uint32_t fact : 23;
+            uint32_t exp : 8;
+            uint32_t sign : 1;
         };
         float f;
     } u;
@@ -46,17 +46,16 @@ uint32_t float_to_int(float f) {
     return (uint32_t)(-1);
 }
 
-
 // double
 // 1bit(A) + 11bit(B) + 52bit(C)
 // 6bit(B) + 11bit(C) + 1bit(A) = 18bit < 256K
 
 uint32_t double_to_int(double f) {
     union {
-        struct{
-            uint64_t fact: 52;
-            uint32_t exp: 11;
-            uint32_t sign: 1;
+        struct {
+            uint64_t fact : 52;
+            uint32_t exp : 11;
+            uint32_t sign : 1;
         };
         double f;
     } u;
@@ -76,7 +75,7 @@ int main() {
     std::vector<float> fs = {1.125, 1.25, 0.25, 0.2, 0.32};
     uint32_t failed = (uint32_t)(-1);
 
-    for(float f: fs) {
+    for (float f : fs) {
         uint32_t v = float_to_int(f);
         if (v == failed) continue;
         cout << f << " => " << v << endl;
