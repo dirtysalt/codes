@@ -34,7 +34,7 @@ INC_FLAGS=-I$(HOME)/utils/installed/include
 LD_FLAGS=-L$(HOME)/utils/installed/lib
 CXX_FLAGS=-std=c++17 -O3 -march=native # -mavx2 -mavx512f -mavx512bw -mavx512vbmi
 ALL_FLAGS=${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS}
-LIB_FLAGS=-lpthread -ldl
+LIB_FLAGS=-lpthread
 
 runnable_so.so:runnable_so.cc
 	$(CXX) -o $@ $< -fPIC -O0 -g -shared -e so_main

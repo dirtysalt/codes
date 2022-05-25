@@ -38,7 +38,7 @@ void bit_unpack_tail(const uint8_t* in, int fb, int64_t* data, int nums) {
     }
 }
 
-#include "bit_packing_gen.inc"
+#include "bit_unpack_gen.inc"
 
 class Timer {
 public:
