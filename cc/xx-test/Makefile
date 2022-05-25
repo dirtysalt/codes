@@ -44,15 +44,6 @@ runnable_so.so:runnable_so.cc
 test_pye.so: test_pye.cc
 	$(CXX) -o $@ $< -fPIC -O0 -g -I$(INC_PYTHON)-shared -lboost_python
 
-%.exe:%.cpp
-	$(CXX) -o $@ $< ${ALL_FLAGS}
-
-bench_%.exe:bench_%.cpp
-	$(CXX) -o $@ $< ${ALL_FLAGS} -lbenchmark -lbenchmark_main
-
-gtest_%.exe:gtest_%.cpp
-	$(CXX) -o $@ $< ${ALL_FLAGS} -lgtest -lgtest_main
-
 test_cpp_feature.exe:test_cpp_feature.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -std=c++20 -latomic
 
@@ -63,6 +54,15 @@ test_native_jit.exe:test_native_jit.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -I${HOME}/repo/NativeJIT/inc \
 		-L${HOME}/repo/NativeJIT/build-make/src/NativeJIT -L${HOME}/repo/NativeJIT/build-make/src/CodeGen \
 		-lNativeJIT -lCodeGen -lpthread -ldl
+
+bench_%.exe:bench_%.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS} -lbenchmark -lbenchmark_main
+
+gtest_%.exe:gtest_%.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS} -lgtest -lgtest_main
+
+%.exe:%.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS}
 
 clean:
 	rm -rf *.exe *.o *.so *.dSYM
