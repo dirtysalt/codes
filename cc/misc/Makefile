@@ -27,7 +27,9 @@ all: \
 	bench_restrict_sum.exe \
 	bench_template_pow.exe \
 	test_memory_align.exe \
-	test_relaxed_memory.exe
+	test_relaxed_memory.exe \
+	test_cpp_feature.exe \
+	test_gtest_function.exe
 
 INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/installed/include
@@ -35,7 +37,7 @@ LD_FLAGS=-L$(HOME)/utils/installed/lib
 CXX_FLAGS=-std=c++17 -O3 -march=native # -mavx2 -mavx512f -mavx512bw -mavx512vbmi
 
 # tcc -> tiny c compiler
-LIB_FLAGS=-ltcc -lbenchmark -lbenchmark_main -lpthread -ldl
+LIB_FLAGS=-ltcc -lbenchmark -lbenchmark_main -lgtest -lgtest_main -latomic -lpthread -ldl
 
 runnable_so.exe:runnable_so.cc
 	$(CXX) -o $@ -fPIC $(CXX_FLAGS)  -shared -e so_main $^

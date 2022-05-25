@@ -9,6 +9,10 @@
 #include <immintrin.h>
 #include <chrono>
 
+#if __cplusplus > 201703L
+#define CXX20
+#endif
+
 void p128_hex_u8(__m128i in) {
     alignas(16) uint8_t v[16];
     _mm_store_si128((__m128i*)v, in);
