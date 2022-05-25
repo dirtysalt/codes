@@ -24,10 +24,10 @@ all: \
 	test_select_if.exe \
 	bench_restrict_sum.exe \
 	bench_template_pow.exe \
-	test_memory_align.exe \
-	test_relaxed_memory.exe \
+	MemoryAlignTest.exe \
+	FaultyRelaxedMemory.exe \
 	test_cpp_feature.exe \
-	test_gtest_function.exe
+	gtest_feature.exe
 
 INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/installed/include
@@ -48,7 +48,7 @@ test_pye.so: test_pye.cc
 bench_%.exe:bench_%.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -lbenchmark -lbenchmark_main
 
-test_%.exe:test_%.cpp
+gtest_%.exe:gtest_%.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -lgtest -lgtest_main
 
 test_cpp_feature.exe:test_cpp_feature.cpp

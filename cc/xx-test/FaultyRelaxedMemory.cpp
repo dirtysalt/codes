@@ -21,7 +21,7 @@ void watch() {
             fprintf(stderr, "*** ");
             tick--;
         }
-        fprintf(stderr, "%d\n", value);
+        fprintf(stderr, "[%s] %d\n", value == 0 ? "F" : "", value);
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
     }
 }
