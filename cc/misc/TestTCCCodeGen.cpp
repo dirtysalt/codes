@@ -104,6 +104,7 @@ int main() {
         ptrs.clear();
         for (int i = 0; i < 10; i++) {
             add_function_t f = run();
+            if (f == nullptr) return 0;
             ptrs.push_back(f);
         }
         if (j == (N - 1)) {

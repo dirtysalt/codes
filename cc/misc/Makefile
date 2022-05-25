@@ -16,7 +16,7 @@ all: \
 	StringReplaceTest.exe \
 	TestBitUnpacking.exe \
 	TestTCCCodeGen.exe \
-	UInt8MaxTest.exe \
+	Uint8MaxTest.exe \
 	WatchMemoryOrdering.exe \
 	ob_math_pic.exe \
 	opt_linear_search.exe \
