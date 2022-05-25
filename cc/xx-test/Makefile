@@ -28,7 +28,8 @@ all: \
 	FaultyRelaxedMemory.exe \
 	test_cpp_feature.exe \
 	gtest_feature.exe \
-	test_native_jit.exe
+	test_native_jit.exe \
+	bench_codegen_simd.exe
 
 INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/installed/include
