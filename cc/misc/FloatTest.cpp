@@ -40,8 +40,7 @@ void testSyn(float f) {
     union Value value;
     value.f = f;
     printf("=============testSyn==============\n");
-    printf("float = %.6f, int = %d, parts = (%d,%d,%d)\n", value.f, value.i,
-           value.p.sign, value.p.exp, value.p.base);
+    printf("float = %.6f, int = %d, parts = (%d,%d,%d)\n", value.f, value.i, value.p.sign, value.p.exp, value.p.base);
     float res = 0.0f;
     if (!(value.p.exp == 0 && value.p.base == 0)) {
         float base = 1 + value.p.base * 1.0f / (1 << 23);
