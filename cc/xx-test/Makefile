@@ -35,21 +35,22 @@ INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/installed/include
 LD_FLAGS=-L$(HOME)/utils/installed/lib
 CXX_FLAGS=-std=c++17 -O3 -march=native # -mavx2 -mavx512f -mavx512bw -mavx512vbmi
+ALL_FLAGS=${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS}
 
 # tcc -> tiny c compiler
 LIB_FLAGS=-ltcc -lgtest_main -lbenchmark_main -lbenchmark -lgtest -lpthread -ldl
 
 runnable_so.exe:runnable_so.cc
-	$(CXX) -o $@ -fPIC $(CXX_FLAGS)  -shared -e so_main $^
+	$(CXX) -o $@ $< -fPIC -O0 -g -shared -e so_main
 
 test_pye.so: test_pye.cc
-	$(CXX) -o $@ -fPIC $(CXX_FLAGS) -I$(INC_PYTHON)-shared -lboost_python $^
+	$(CXX) -o $@ $< -fPIC -O0 -g -I$(INC_PYTHON)-shared -lboost_python
 
 %.exe:%.cpp
-	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS}
+	$(CXX) -o $@ $< ${ALL_FLAGS}
 
 test_cpp_feature.exe:test_cpp_feature.cpp
-	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS} -std=c++20 -latomic
+	$(CXX) -o $@ $< ${ALL_FLAGS} -std=c++20 -latomic
 
 clean:
 	rm -rf *.exe *.o *.so *.dSYM
