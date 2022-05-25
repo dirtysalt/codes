@@ -1,8 +1,6 @@
 
 #include <benchmark/benchmark.h>
-#include <emmintrin.h>
 #include <immintrin.h>
-#include <pmmintrin.h>
 
 std::vector<uint8_t> ConstructRandomSet(int64_t size) {
     std::vector<uint8_t> a;

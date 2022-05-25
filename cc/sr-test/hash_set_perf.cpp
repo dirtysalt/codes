@@ -30,14 +30,16 @@ class LogBuffer {
 public:
     std::ostringstream& buf() { return oss; }
     ~LogBuffer() { std::cerr << oss.str(); }
+
 private:
     std::ostringstream oss;
 };
 
 LogBuffer _log_buffer;
 
-#define HSINFO(name) \
-    _log_buffer.buf() << name << ": hash set size = " << hs.size() << ", load factor = " << hs.load_factor() << std::endl
+#define HSINFO(name)                                                                                         \
+    _log_buffer.buf() << name << ": hash set size = " << hs.size() << ", load factor = " << hs.load_factor() \
+                      << std::endl
 
 static void run_insert_random(benchmark::State& state) {
     // Code inside this loop is measured repeatedly

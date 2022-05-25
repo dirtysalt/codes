@@ -3,19 +3,9 @@
  */
 
 #include <atomic>
-#include <condition_variable>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <functional>
-#include <iostream>
-#include <map>
-#include <memory>
-#include <mutex>
-#include <string>
 #include <thread>
-#include <vector>
-#include <xmmintrin.h>
+
+#include "Common.h"
 
 // https://preshing.com/20120515/memory-reordering-caught-in-the-act/
 
@@ -85,8 +75,7 @@ void control() {
         WAIT_AND_SET(ctl, 2, 0);
         if (r1 == 0 && r0 == 0) {
             detected++;
-            printf("%d reorders detected after %d iterations\n", detected,
-                   iterations);
+            printf("%d reorders detected after %d iterations\n", detected, iterations);
         }
     }
 }

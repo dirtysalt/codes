@@ -4,53 +4,8 @@
 
 #include <immintrin.h>
 
-#include <condition_variable>
-#include <cstdio>
-#include <cstring>
-#include <functional>
-#include <iostream>
-#include <map>
-#include <memory>
-#include <mutex>
-#include <string>
-#include <thread>
-#include <vector>
-
+#include "Common.h"
 using namespace std;
-
-class Timer {
-   public:
-    void start() {
-        m_StartTime = std::chrono::system_clock::now();
-        m_bRunning = true;
-    }
-
-    void stop() {
-        m_EndTime = std::chrono::system_clock::now();
-        m_bRunning = false;
-    }
-
-    long long elapsedMilliseconds() {
-        std::chrono::time_point<std::chrono::system_clock> endTime;
-
-        if (m_bRunning) {
-            endTime = std::chrono::system_clock::now();
-        } else {
-            endTime = m_EndTime;
-        }
-
-        return std::chrono::duration_cast<std::chrono::milliseconds>(
-                   endTime - m_StartTime)
-            .count();
-    }
-
-    double elapsedSeconds() { return elapsedMilliseconds() / 1000.0; }
-
-   private:
-    std::chrono::time_point<std::chrono::system_clock> m_StartTime;
-    std::chrono::time_point<std::chrono::system_clock> m_EndTime;
-    bool m_bRunning = false;
-};
 
 static bool all_zero_128b(const char* data, size_t size) {
     // assume 128bits.
@@ -59,12 +14,9 @@ static bool all_zero_128b(const char* data, size_t size) {
     const char* ee = data + size;
     for (; i < ee; i += 128) {
         __m256i x0 = _mm256_lddqu_si256(reinterpret_cast<const __m256i*>(i));
-        __m256i x1 =
-            _mm256_lddqu_si256(reinterpret_cast<const __m256i*>(i + 32));
-        __m256i x2 =
-            _mm256_lddqu_si256(reinterpret_cast<const __m256i*>(i + 64));
-        __m256i x3 =
-            _mm256_lddqu_si256(reinterpret_cast<const __m256i*>(i + 96));
+        __m256i x1 = _mm256_lddqu_si256(reinterpret_cast<const __m256i*>(i + 32));
+        __m256i x2 = _mm256_lddqu_si256(reinterpret_cast<const __m256i*>(i + 64));
+        __m256i x3 = _mm256_lddqu_si256(reinterpret_cast<const __m256i*>(i + 96));
 
         __m256i y0 = _mm256_cmpeq_epi8(x0, q);
         __m256i y1 = _mm256_cmpeq_epi8(x1, q);
@@ -162,8 +114,7 @@ void test(char* data, size_t size) {
         mem += res;
     }
     timer.stop();
-    cout << "all_zero: time = " << timer.elapsedMilliseconds()
-         << "ms, mem = " << mem << endl;
+    cout << "all_zero: time = " << timer.elapsedMilliseconds() << "ms, mem = " << mem << endl;
 
     timer.start();
     mem = 0;
@@ -178,8 +129,7 @@ void test(char* data, size_t size) {
         mem += res;
     }
     timer.stop();
-    cout << "all_zero2: time = " << timer.elapsedMilliseconds()
-         << "ms, mem = " << mem << endl;
+    cout << "all_zero2: time = " << timer.elapsedMilliseconds() << "ms, mem = " << mem << endl;
 
     mem = 0;
     timer.start();
@@ -194,8 +144,7 @@ void test(char* data, size_t size) {
         mem += res;
     }
     timer.stop();
-    cout << "memchr: time = " << timer.elapsedMilliseconds()
-         << "ms, mem = " << mem << endl;
+    cout << "memchr: time = " << timer.elapsedMilliseconds() << "ms, mem = " << mem << endl;
 }
 
 int main() {

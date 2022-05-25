@@ -1,5 +1,4 @@
 #include <benchmark/benchmark.h>
-#include <functional>
 
 std::vector<int32_t> ConstructRandomSet(int64_t size) {
     std::vector<int32_t> a;
@@ -28,7 +27,6 @@ static void stdhash(benchmark::State& state) {
 }
 // Register the function as a benchmark
 BENCHMARK(stdhash)->Arg(N);
-
 
 #define FORCE_INLINE inline __attribute__((always_inline))
 
@@ -126,7 +124,7 @@ static void inline_murmurhash(benchmark::State& state) {
         size_t acc = 0;
         for (size_t i = 0; i < state.range(0); ++i) {
             int64_t value = 0;
-            inline_murmur_hash3_x64_64(p+i, sizeof(p[i]), 0x42, &value);
+            inline_murmur_hash3_x64_64(p + i, sizeof(p[i]), 0x42, &value);
             acc += value;
         }
     }

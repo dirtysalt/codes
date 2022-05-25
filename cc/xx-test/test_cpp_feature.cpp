@@ -2,16 +2,9 @@
  * Copyright (C) dirlt
  */
 
-#include <algorithm>
 #include <atomic>
-#include <cstdio>
 #include <filesystem>
-#include <iostream>
-#include <map>
-#include <string>
 #include <thread>
-#include <unordered_map>
-#include <vector>
 
 #include "Common.h"
 using namespace std;

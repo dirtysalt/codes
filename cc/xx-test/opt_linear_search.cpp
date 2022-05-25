@@ -5,11 +5,11 @@
 // 对比几种线性搜索的效率
 // 这个问题来自于编程珠玑
 
-#include <cstdlib>
-#include <cstdio>
-#include <chrono>
-#include <iostream>
 #include <cassert>
+#include <chrono>
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
 
 int search1(int* x, int n, int t) {
     for (int i = 0; i < n; i++) {
@@ -20,10 +20,13 @@ int search1(int* x, int n, int t) {
     return -1;
 }
 
-
 int search11(int* x, int n, int t) {
-    for (int i = 0;; i+=8) {
-#define COMP(d) if (((i+d) < n) && (x[i+d] == t)) { i += d; return i; }
+    for (int i = 0;; i += 8) {
+#define COMP(d)                             \
+    if (((i + d) < n) && (x[i + d] == t)) { \
+        i += d;                             \
+        return i;                           \
+    }
         COMP(0);
         COMP(1);
         COMP(2);
@@ -36,7 +39,6 @@ int search11(int* x, int n, int t) {
     }
     return -1;
 }
-
 
 // 相比search1而言，增加sentinel. 因为我们确定最终肯定会匹配上
 // 所以每次循环期间都可以少一次比较
@@ -66,7 +68,11 @@ int search21(int* x, int n, int t) {
     x[n] = t;
     int i = 0;
     for (i = 0;; i += 8) {
-#define COMP(d) if (x[i+d] == t) {i += d; break;}
+#define COMP(d)          \
+    if (x[i + d] == t) { \
+        i += d;          \
+        break;           \
+    }
         COMP(0);
         COMP(1);
         COMP(2);
@@ -84,13 +90,16 @@ int search21(int* x, int n, int t) {
     return i;
 }
 
-
 int search22(int* x, int n, int t) {
     int tmp = x[n];
     x[n] = t;
     int i = 0;
     for (i = 0;; i += 16) {
-#define COMP(d) if (x[i+d] == t) {i += d; break;}
+#define COMP(d)          \
+    if (x[i + d] == t) { \
+        i += d;          \
+        break;           \
+    }
         COMP(0);
         COMP(1);
         COMP(2);
@@ -116,7 +125,7 @@ int search22(int* x, int n, int t) {
     return i;
 }
 
-void measure(int*x, int n, int t, int(*fn)(int*,int,int), const char* fn_name) {
+void measure(int* x, int n, int t, int (*fn)(int*, int, int), const char* fn_name) {
     auto t_start = std::chrono::high_resolution_clock::now();
     int res = 0;
     for (int i = 0; i < 100; i++) {
@@ -125,18 +134,17 @@ void measure(int*x, int n, int t, int(*fn)(int*,int,int), const char* fn_name) {
     }
     auto t_end = std::chrono::high_resolution_clock::now();
 
-    std::cout << "[" << fn_name << "]Wall clock time passed: "
-              << std::chrono::duration<double, std::milli>(t_end-t_start).count()
+    std::cout << "[" << fn_name
+              << "]Wall clock time passed: " << std::chrono::duration<double, std::milli>(t_end - t_start).count()
               << " ms\n";
-    assert(res == (n-1) * 100);
-
+    assert(res == (n - 1) * 100);
 }
 
 int main() {
     int n = 1000000;
     int* x = new int[n + 1];
     int t = 0x1234567;
-    for(int i=0;i<n;i++) {
+    for (int i = 0; i < n; i++) {
         while (1) {
             int value = rand();
             if (value != t) {
@@ -145,7 +153,7 @@ int main() {
             }
         }
     }
-    x[n-1] = t;
+    x[n - 1] = t;
 
     measure(x, n, t, search1, "  search1");
     measure(x, n, t, search11, " search11");

@@ -59,7 +59,6 @@ static void BatchUpdateSIMD(benchmark::State& state) {
 }
 BENCHMARK(BatchUpdateSIMD);
 
-
 __attribute__((noinline)) void batch_update1(int* res, int col[], int size) {
     int tmp{};
     for (int i = 0; i < size; ++i) {
@@ -73,7 +72,6 @@ __attribute__((noinline)) void batch_update2(int* res, int col[], int size) {
         *res += col[i];
     }
 }
-
 
 __attribute__((noinline)) void batch_update3(int* __restrict__ res, int* col, int size) {
     for (int i = 0; i < size; ++i) {

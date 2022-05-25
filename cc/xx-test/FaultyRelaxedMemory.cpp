@@ -1,6 +1,7 @@
 /* coding:utf-8
  * Copyright (C) dirlt
  */
+
 #include <atomic>
 #include <cstdint>
 #include <iostream>

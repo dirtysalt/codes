@@ -2,16 +2,7 @@
  * Copyright (C) dirlt
  */
 
-#include <cassert>
-#include <cstdio>
-#include <cstring>
-#include <functional>
-#include <iostream>
-#include <map>
-#include <memory>
-#include <string>
-#include <thread>
-#include <vector>
+#include "Common.h"
 
 using namespace std;
 
@@ -39,38 +30,6 @@ void bit_unpack_tail(const uint8_t* in, int fb, int64_t* data, int nums) {
 }
 
 #include "gen_bit_unpack.inc"
-
-class Timer {
-public:
-    void start() {
-        m_StartTime = std::chrono::system_clock::now();
-        m_bRunning = true;
-    }
-
-    void stop() {
-        m_EndTime = std::chrono::system_clock::now();
-        m_bRunning = false;
-    }
-
-    long long elapsedMilliseconds() {
-        std::chrono::time_point<std::chrono::system_clock> endTime;
-
-        if (m_bRunning) {
-            endTime = std::chrono::system_clock::now();
-        } else {
-            endTime = m_EndTime;
-        }
-
-        return std::chrono::duration_cast<std::chrono::milliseconds>(endTime - m_StartTime).count();
-    }
-
-    double elapsedSeconds() { return elapsedMilliseconds() / 1000.0; }
-
-private:
-    std::chrono::time_point<std::chrono::system_clock> m_StartTime;
-    std::chrono::time_point<std::chrono::system_clock> m_EndTime;
-    bool m_bRunning = false;
-};
 
 void test(int fb, const uint8_t* input, int64_t* output, int num) {
     Timer t;

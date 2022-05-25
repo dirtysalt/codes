@@ -2,17 +2,7 @@
  * Copyright (C) dirlt
  */
 
-#include <condition_variable>
-#include <cstdio>
-#include <cstring>
-#include <functional>
-#include <iostream>
-#include <map>
-#include <memory>
-#include <mutex>
-#include <string>
-#include <thread>
-#include <vector>
+#include "Common.h"
 
 using namespace std;
 
