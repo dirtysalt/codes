@@ -11,7 +11,7 @@ all: \
 	PrintSIMDConstants.exe \
 	StringLowerTest.exe \
 	StringReplaceTest.exe \
-	test_bit_unpacking.exe \
+	test_bit_unpack.exe \
 	test_tcc_codegen.exe \
 	bench_uint8_max.exe \
 	WatchMemoryOrdering.exe \

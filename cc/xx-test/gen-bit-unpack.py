@@ -75,7 +75,7 @@ def gen_unpack_driver():
     return oss.get()
 
 
-with open('bit_unpack_gen.inc', 'w') as fh:
+with open('gen_bit_unpack.inc', 'w') as fh:
     for fb in fbs:
         s = gen_unpack_bit(fb)
         fh.write(s)
