@@ -2,8 +2,9 @@
  * Copyright (C) dirlt
  */
 
-#include <assert.h>
-#include <stdio.h>
+#include <cassert>
+#include <cstdio>
+#include <cstdint>
 
 struct Node {
     int value;
