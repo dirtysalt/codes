@@ -37,7 +37,7 @@ LD_FLAGS=-L$(HOME)/utils/installed/lib
 CXX_FLAGS=-std=c++17 -O3 -march=native # -mavx2 -mavx512f -mavx512bw -mavx512vbmi
 
 # tcc -> tiny c compiler
-LIB_FLAGS=-ltcc -lbenchmark -lbenchmark_main -lgtest -lgtest_main -latomic -lpthread -ldl
+LIB_FLAGS=-ltcc -lgtest_main -lbenchmark_main -lbenchmark -lgtest -latomic -lpthread -ldl
 
 runnable_so.exe:runnable_so.cc
 	$(CXX) -o $@ -fPIC $(CXX_FLAGS)  -shared -e so_main $^
