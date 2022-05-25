@@ -2,10 +2,6 @@
  * Copyright (C) dirlt
  */
 
-#include <benchmark/benchmark.h>
-#include <emmintrin.h>
-#include <immintrin.h>
-
 #include <cstdint>
 #include <iostream>
 #include <thread>

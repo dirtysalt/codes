@@ -2,12 +2,11 @@
  * Copyright (C) dirlt
  */
 
-#include <benchmark/benchmark.h>
-#include <emmintrin.h>
-#include <immintrin.h>
-
 #include <cstdint>
 #include <iostream>
+#include <limits>
+#include <vector>
+
 using namespace std;
 
 // out[i] = (a[i] >= b[i] ? c[i] : 0)
