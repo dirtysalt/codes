@@ -30,8 +30,8 @@ all: \
 	test_relaxed_memory.exe
 
 INC_PYTHON=/usr/include/python2.7/
-INC_FLAGS=-I$(HOME)/utils/tcc-0.9.27/
-LD_FLAGS=-L$(HOME)/utils/tcc-0.9.27/
+INC_FLAGS=-I$(HOME)/utils/tcc-0.9.27/ -I$(HOME)/installed/include
+LD_FLAGS=-L$(HOME)/utils/tcc-0.9.27/ -I$(HOME)/installed/lib
 CXX_FLAGS=-std=c++17 -O3 -mavx2 -mavx512f -mavx512bw -mavx512vbmi
 LIB_FLAGS=-ltcc -lbenchmark -lbenchmark_main -lpthread
 
