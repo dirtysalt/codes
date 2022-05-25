@@ -2,14 +2,13 @@
  * Copyright (C) dirlt
  */
 
-#include <condition_variable>
+#include <cassert>
 #include <cstdio>
 #include <cstring>
 #include <functional>
 #include <iostream>
 #include <map>
 #include <memory>
-#include <mutex>
 #include <string>
 #include <thread>
 #include <vector>
@@ -42,7 +41,7 @@ void bit_unpack_tail(const uint8_t* in, int fb, int64_t* data, int nums) {
 #include "bit_packing_gen.inc"
 
 class Timer {
-   public:
+public:
     void start() {
         m_StartTime = std::chrono::system_clock::now();
         m_bRunning = true;
@@ -62,14 +61,12 @@ class Timer {
             endTime = m_EndTime;
         }
 
-        return std::chrono::duration_cast<std::chrono::milliseconds>(
-                   endTime - m_StartTime)
-            .count();
+        return std::chrono::duration_cast<std::chrono::milliseconds>(endTime - m_StartTime).count();
     }
 
     double elapsedSeconds() { return elapsedMilliseconds() / 1000.0; }
 
-   private:
+private:
     std::chrono::time_point<std::chrono::system_clock> m_StartTime;
     std::chrono::time_point<std::chrono::system_clock> m_EndTime;
     bool m_bRunning = false;
@@ -103,10 +100,9 @@ void test(int fb, const uint8_t* input, int64_t* output, int num) {
     double ms2 = t.elapsedMilliseconds();
 
     // 处理单个元素的平均时间
-    cout << "unpack fb: " << fb << ". fast = " << ms1
-         << " ms, avg = " << (ms1 * 1000000) / (T * num) << " ns. "
-         << "tail = " << ms2 << " ms, avg = " << (ms2 * 1000000) / (T * num)
-         << " ns. speedup = " << ms2 * 1.0 / ms1 << endl;
+    cout << "unpack fb: " << fb << ". fast = " << ms1 << " ms, avg = " << (ms1 * 1000000) / (T * num) << " ns. "
+         << "tail = " << ms2 << " ms, avg = " << (ms2 * 1000000) / (T * num) << " ns. speedup = " << ms2 * 1.0 / ms1
+         << endl;
 }
 
 int main() {
@@ -118,9 +114,8 @@ int main() {
     int64_t* output = new int64_t[N * 64];
     memset(input, 0x73, N * 64);
 
-    vector<int> fbs = {1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11,
-                       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
-                       23, 24, 26, 28, 30, 32, 40, 48, 56, 64};
+    vector<int> fbs = {1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11, 12, 13, 14, 15, 16,
+                       17, 18, 19, 20, 21, 22, 23, 24, 26, 28, 30, 32, 40, 48, 56, 64};
     for (int fb : fbs) {
         test(fb, input, output, N);
     }
