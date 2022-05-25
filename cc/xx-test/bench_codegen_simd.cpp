@@ -77,27 +77,12 @@ void f_mul(int32_t* RE a, int32_t b, int32_t* RE c, int n) {
 }
 
 void f_simd_compose(int32_t* a, int32_t* b, int32_t* c, int32_t* d, int n) {
-    __m512i c0 = _mm512_set1_epi32(3);
-    __m512i c1 = _mm512_set1_epi32(4);
-    __m512i c2 = _mm512_set1_epi32(5);
-
-    int i = 0;
-    for (i = 0; (i + 16) < n; i += 16) {
-        __m512i x = _mm512_loadu_epi32(a + i);
-        __m512i y = _mm512_loadu_epi32(b + i);
-        __m512i z = _mm512_loadu_epi32(c + i);
-        x = _mm512_mul_epi32(x, c0);
-        y = _mm512_mul_epi32(y, c1);
-        x = _mm512_add_epi32(x, y);
-        z = _mm512_mul_epi32(z, c2);
-        x = _mm512_add_epi32(x, z);
-        _mm512_storeu_epi32(d + i, x);
-    }
-
-    while (i < n) {
-        d[i] = 3 * a[i] + 4 * b[i] + 5 * c[i];
-        i += 1;
-    }
+    std::vector<int32_t> t0(n), t1(n), t2(n), t3(n), t4(n);
+    f_mul(a, 3, t0.data(), n);
+    f_mul(b, 4, t1.data(), n);
+    f_mul(c, 5, t2.data(), n);
+    f_add(t0.data(), t1.data(), t3.data(), n);
+    f_add(t2.data(), t3.data(), d, n);
 }
 
 static void codegen(benchmark::State& state) {
@@ -143,6 +128,22 @@ static void simd_compose(benchmark::State& state) {
     for (auto _ : state) {
         state.PauseTiming();
         d.assign(n, 0);
+        state.ResumeTiming();
+        f_simd_compose(a.data(), b.data(), c.data(), d.data(), n);
+    }
+}
+
+static void simd_compose_noalloc(benchmark::State& state) {
+    size_t n = state.range(0);
+    auto a = ConstructRandomSet(n, 10);
+    auto b = ConstructRandomSet(n, 20);
+    auto c = ConstructRandomSet(n, 30);
+    std::vector<int32_t> d(n);
+
+    // Code inside this loop is measured repeatedly
+    for (auto _ : state) {
+        state.PauseTiming();
+        d.assign(n, 0);
         std::vector<int32_t> t0(n), t1(n), t2(n), t3(n), t4(n);
         state.ResumeTiming();
         f_mul(a.data(), 3, t0.data(), n);
@@ -161,3 +162,4 @@ static const int N2 = 409600;
 BENCHMARK(codegen)->Arg(N0)->Arg(N1)->Arg(N2);
 BENCHMARK(simd_fusion)->Arg(N0)->Arg(N1)->Arg(N2);
 BENCHMARK(simd_compose)->Arg(N0)->Arg(N1)->Arg(N2);
+BENCHMARK(simd_compose_noalloc)->Arg(N0)->Arg(N1)->Arg(N2);
