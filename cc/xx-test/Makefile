@@ -27,7 +27,8 @@ all: \
 	MemAlignTest.exe \
 	FaultyRelaxedMemory.exe \
 	test_cpp_feature.exe \
-	gtest_feature.exe
+	gtest_feature.exe \
+	test_native_jit.exe
 
 INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/installed/include
@@ -56,6 +57,11 @@ test_cpp_feature.exe:test_cpp_feature.cpp
 
 test_tcc_codegen.exe:test_tcc_codegen.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -ltcc -lpthread -ldl
+
+test_native_jit.exe:test_native_jit.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS} -I${HOME}/repo/NativeJIT/inc \
+		-L${HOME}/repo/NativeJIT/build-make/src/NativeJIT -L${HOME}/repo/NativeJIT/build-make/src/CodeGen \
+		-lNativeJIT -lCodeGen -lpthread -ldl
 
 clean:
 	rm -rf *.exe *.o *.so *.dSYM
