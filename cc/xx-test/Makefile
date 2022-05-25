@@ -2,8 +2,8 @@
 all: \
 	CheckAllZero.exe \
 	CompressFloat.exe \
-	ConvertI64ToI8Bench.exe \
-	ConvertI64ToI8Test.exe \
+	bench_cvt_i64toi8.exe \
+	test_cvt_i64toi8.exe \
 	FloatTest.exe \
 	MatrixTranspose.exe \
 	MemcopyTest.exe \
@@ -24,7 +24,7 @@ all: \
 	test_select_if.exe \
 	bench_restrict_sum.exe \
 	bench_template_pow.exe \
-	MemoryAlignTest.exe \
+	MemAlignTest.exe \
 	FaultyRelaxedMemory.exe \
 	test_cpp_feature.exe \
 	gtest_feature.exe
