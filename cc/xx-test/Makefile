@@ -40,7 +40,7 @@ ALL_FLAGS=${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS}
 # tcc -> tiny c compiler
 LIB_FLAGS=-ltcc -lgtest_main -lbenchmark_main -lbenchmark -lgtest -lpthread -ldl
 
-runnable_so.exe:runnable_so.cc
+runnable_so.so:runnable_so.cc
 	$(CXX) -o $@ $< -fPIC -O0 -g -shared -e so_main
 
 test_pye.so: test_pye.cc
