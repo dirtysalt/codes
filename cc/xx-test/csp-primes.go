@@ -31,16 +31,18 @@ func P(left chan int, output chan int, done chan bool) {
 }
 
 func collect(output chan int) {
+	fmt.Printf("prime numbers: ");
 	for p := range output {
-		fmt.Printf("prime number: %d\n", p)
+		fmt.Printf("%d ", p)
 	}
+	fmt.Printf("\n");
 }
 
 func main() {
 	output := make(chan int)
 	input := make(chan int)
 	done := make(chan bool)
-	const N = 100
+	const N = 10000
 	go P(input, output, done)
 	go collect(output)
 	for i := 2; i < N; i++ {
