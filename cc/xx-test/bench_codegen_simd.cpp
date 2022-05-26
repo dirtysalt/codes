@@ -76,6 +76,18 @@ void f_mul(int32_t* RE a, int32_t b, int32_t* RE c, int n) {
     }
 }
 
+void f_add_autovec(int32_t* RE a, int32_t* RE b, int32_t* RE c, int n) {
+    for (int i = 0; i < n; i++) {
+        c[i] = a[i] + b[i];
+    }
+}
+
+void f_mul_autovec(int32_t* RE a, int32_t b, int32_t* RE c, int n) {
+    for (int i = 0; i < n; i++) {
+        c[i] = a[i] * b;
+    }
+}
+
 void f_simd_compose(int32_t* a, int32_t* b, int32_t* c, int32_t* d, int n) {
     std::vector<int32_t> t0(n), t1(n), t2(n), t3(n), t4(n);
     f_mul(a, 3, t0.data(), n);
@@ -154,6 +166,27 @@ static void simd_compose_noalloc(benchmark::State& state) {
     }
 }
 
+static void simd_compose_noalloc_av(benchmark::State& state) {
+    size_t n = state.range(0);
+    auto a = ConstructRandomSet(n, 10);
+    auto b = ConstructRandomSet(n, 20);
+    auto c = ConstructRandomSet(n, 30);
+    std::vector<int32_t> d(n);
+
+    // Code inside this loop is measured repeatedly
+    for (auto _ : state) {
+        state.PauseTiming();
+        d.assign(n, 0);
+        std::vector<int32_t> t0(n), t1(n), t2(n), t3(n), t4(n);
+        state.ResumeTiming();
+        f_mul_autovec(a.data(), 3, t0.data(), n);
+        f_mul_autovec(b.data(), 4, t1.data(), n);
+        f_mul_autovec(c.data(), 5, t2.data(), n);
+        f_add_autovec(t0.data(), t1.data(), t3.data(), n);
+        f_add_autovec(t2.data(), t3.data(), d.data(), n);
+    }
+}
+
 // Register the function as a benchmark
 static const int N0 = 4096;
 static const int N1 = 40960;
@@ -163,3 +196,4 @@ BENCHMARK(codegen)->Arg(N0)->Arg(N1)->Arg(N2);
 BENCHMARK(simd_fusion)->Arg(N0)->Arg(N1)->Arg(N2);
 BENCHMARK(simd_compose)->Arg(N0)->Arg(N1)->Arg(N2);
 BENCHMARK(simd_compose_noalloc)->Arg(N0)->Arg(N1)->Arg(N2);
+BENCHMARK(simd_compose_noalloc_av)->Arg(N0)->Arg(N1)->Arg(N2);
