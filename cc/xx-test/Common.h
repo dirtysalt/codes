@@ -19,7 +19,7 @@
 #include <vector>
 
 #if __cplusplus > 201703L
-#define CXX20
+#define __CXX20__
 #endif
 
 void p128_hex_u8(__m128i in) {

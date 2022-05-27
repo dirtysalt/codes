@@ -94,13 +94,14 @@ void test_lock_free_op() {
     std::cout << "std::atomic<Y> is_always_lock_free = " << std::atomic<Y>::is_always_lock_free << "\n";
 }
 
-#ifdef CXX20
+
 void test_hardward_concurrency() {
     HEADER();
+#ifdef __cpp_lib_jthread
     unsigned int n = std::jthread::hardware_concurrency();
     std::cout << n << " concurrent threads are supported.\n";
-}
 #endif
+}
 
 #define CHECK_CPUID(x)                                                         \
     do {                                                                       \
@@ -121,8 +122,6 @@ int main() {
     use_filesystem();
     use_custom_allocator();
     test_lock_free_op();
-#ifdef CXX20
     test_hardward_concurrency();
-#endif
     test_cpu_supports();
 }

@@ -45,7 +45,7 @@ test_pye.so: test_pye.cc
 	$(CXX) -o $@ $< -fPIC -O0 -g -I$(INC_PYTHON)-shared -lboost_python
 
 test_cpp_feature.exe:test_cpp_feature.cpp
-	$(CXX) -o $@ $< ${ALL_FLAGS} -std=c++20 -latomic
+	$(CXX) -o $@ $< ${ALL_FLAGS} -std=c++2a # -latomic
 
 # https://bellard.org/tcc/
 test_tcc_codegen.exe:test_tcc_codegen.cpp

@@ -48,6 +48,7 @@ static void BatchUpdateRestrict(benchmark::State& state) {
 }
 BENCHMARK(BatchUpdateRestrict);
 
+#ifdef __AVX512F__
 static void BatchUpdateSIMD(benchmark::State& state) {
     std::vector<int> arrayx(N);
     initarray(arrayx.data(), arrayx.size());
@@ -58,6 +59,7 @@ static void BatchUpdateSIMD(benchmark::State& state) {
     }
 }
 BENCHMARK(BatchUpdateSIMD);
+#endif
 
 __attribute__((noinline)) void batch_update1(int* res, int col[], int size) {
     int tmp{};
@@ -79,6 +81,7 @@ __attribute__((noinline)) void batch_update3(int* __restrict__ res, int* col, in
     }
 }
 
+#ifdef __AVX512F__
 // __attribute__((noinline)) void batch_update4(int* res, int* col, int size) {
 //     assert(size % 16 == 0);
 //     int tmp[8] = {0, 0, 0, 0, 0, 0, 0, 0};
@@ -108,3 +111,4 @@ __attribute__((noinline)) void batch_update4(int* res, int* col, int size) {
     t0 = _mm512_add_epi32(t0, t1);
     *res = _mm512_reduce_add_epi32(t0);
 }
+#endif
