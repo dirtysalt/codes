@@ -85,6 +85,7 @@ def test_tree_list():
 ANYTHING = '!!!anything!!!'
 EXP = None
 
+
 def run_test_cases(fn, cases, eqfn=None):
     ok = True
     if eqfn is None:
@@ -111,7 +112,7 @@ def run_simulation_cases(cls, cases, eqfn=None):
     if eqfn is None:
         eqfn = lambda x, y: x == y
 
-    for c in cases:
+    for idx, c in enumerate(cases):
         cmds, args, exp = c
         obj = cls(*args[0])
         res = [None]
@@ -125,6 +126,8 @@ def run_simulation_cases(cls, cases, eqfn=None):
         if exp is not ANYTHING and not eqfn(res, exp):
             print('case failed. {}, out = {}'.format(c, res))
             ok = False
+        else:
+            print('case #%d passed' % idx)
     if ok:
         print('all cases passed!!!')
 
