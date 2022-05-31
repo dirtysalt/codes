@@ -1,4 +1,4 @@
-package com.dirlt.java.jni;
+package com.dirlt.java.trash;
 
 import java.io.File;
 import java.io.FileOutputStream;

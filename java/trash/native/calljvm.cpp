@@ -288,7 +288,7 @@ JNIEnv* getJNIEnv(void) {
 
 // ============================================================
 int runGreet(JNIEnv* env) {
-    jclass mainClass = env->FindClass("com/dirlt/java/jni/CalledByNative");
+    jclass mainClass = env->FindClass("com/dirlt/java/trash/CalledByNative");
     if (mainClass == nullptr) {
         fprintf(stderr, "class not found");
         return 1;

@@ -1,4 +1,4 @@
-package com.dirlt.java.jni;
+package com.dirlt.java.trash;
 
 public class CalledByNative {
     public static void greet() {
