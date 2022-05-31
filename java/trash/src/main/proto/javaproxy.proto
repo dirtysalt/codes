@@ -1,0 +1,36 @@
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "com.starrocks.javaproxy";
+option java_outer_classname = "JavaProxyProto";
+
+package javaproxy;
+
+message HDFSRequest {
+  optional string path = 1;
+  optional string session_id = 2;
+  optional int32 offset = 3;
+  optional int32 size = 4;
+}
+
+message HDFSStats {
+  optional int64 total_bytes_read = 1;
+  optional int64 total_local_bytes_read = 2 ;
+  optional int64 total_short_circuit_bytes_read = 3;
+}
+
+message HDFSResponse {
+  optional string session_id = 1;
+  optional bytes data = 2;
+  optional int64 size = 3;
+  optional HDFSStats stats = 4;
+}
+
+service HDFSService {
+
+  rpc Open (HDFSRequest) returns (HDFSResponse) {}
+  rpc Close (HDFSRequest) returns (HDFSResponse) {}
+  rpc Read (HDFSRequest) returns (HDFSResponse) {}
+  rpc GetSize (HDFSRequest) returns (HDFSResponse) {}
+  rpc GetStats (HDFSRequest) returns (HDFSResponse) {}
+}
