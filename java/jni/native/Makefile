@@ -1,7 +1,7 @@
 #coding:utf-8
 #Copyright (C) dirlt
 
-ALL:libnative.so calljvm.exe
+ALL:libnative.so calljvm.exe SMOnFileChannel.exe
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/
 INCFLAGS=-I${JAVA_HOME}/include -I${JAVA_HOME}/include/darwin
@@ -18,7 +18,10 @@ calljvm.exe:calljvm.cpp
 	g++ -o $@ $< -std=c++11 ${INCFLAGS} ${LDFLAGS} -ljvm
 
 clean:
-	rm -rf libnative.so ../src/main/resources/libnative.so calljvm.exe
+	rm -rf libnative.so ../src/main/resources/libnative.so calljvm.exe SMOnFileChannel.exe
 
 run_calljvm:calljvm.exe
 	CLASSPATH=../target/jni-1.0-SNAPSHOT.jar ./calljvm.exe
+
+SMOnFileChannel.exe:SMOnFileChannel.cpp
+	g++ -o $@ $< -std=c++11
