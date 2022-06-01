@@ -13,6 +13,8 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hdfs.DFSInputStream;
 import org.apache.hadoop.hdfs.client.HdfsDataInputStream;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.net.URI;
@@ -21,6 +23,8 @@ import java.time.Duration;
 import java.util.UUID;
 
 public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase {
+    private final Logger logger = LogManager.getLogger(HdfsRpcHandler.class.getCanonicalName());
+
     private static class CacheValue {
         public FileSystem fs;
         public Path path;
@@ -43,7 +47,7 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
                     @Override
                     public void onRemoval(RemovalNotification<String, CacheValue> notification) {
                         CacheValue cv = notification.getValue();
-                        System.out.printf("release sssion %s\n", notification.getKey());
+                        logger.info(String.format("release session %s", notification.getKey()));
                         cv.buffer.clear();
                         try {
                             cv.inputStream.close();
@@ -96,12 +100,15 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
         String sessionId = UUID.randomUUID().toString();
         cache.put(sessionId, cv);
         HdfsResponse resp = HdfsResponse.newBuilder().setSessionId(sessionId).build();
+        logger.info(String.format("open file %s, session = %s", requestPath, sessionId));
         return resp;
     }
 
     private HdfsResponse doClose(HdfsRequest request) {
         cache.invalidate(request.getSessionId());
-        System.out.printf("cache size = %d\n", cache.size());
+        logger.info(
+                String.format("close session = %s, cache size = %d", request.getSessionId(),
+                        cache.size()));
         return HdfsResponse.getDefaultInstance();
     }
 
@@ -114,6 +121,10 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
     }
 
     private HdfsResponse doRead(HdfsRequest request) throws IOException {
+        logger.info(
+                String.format("read session = %s, offset = %d, size = %d", request.getSessionId(),
+                        request.getOffset(),
+                        request.getSize()));
         CacheValue cv = getCacheValue(request.getSessionId());
         cv.buffer = resizeBuffer(cv.buffer, request.getSize());
         cv.inputStream.readFully(0, cv.buffer.array(), request.getOffset(), request.getSize());
@@ -150,10 +161,10 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
     public void hdfsOpen(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         try {
             responseObserver.onNext(doOpen(request));
+            responseObserver.onCompleted();
         } catch (IOException e) {
             responseObserver.onError(e);
         }
-        responseObserver.onCompleted();
     }
 
     @Override
@@ -166,29 +177,29 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
     public void hdfsRead(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         try {
             responseObserver.onNext(doRead(request));
+            responseObserver.onCompleted();
         } catch (IOException e) {
             responseObserver.onError(e);
         }
-        responseObserver.onCompleted();
     }
 
     @Override
     public void hdfsGetSize(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         try {
             responseObserver.onNext(doGetSize(request));
+            responseObserver.onCompleted();
         } catch (IOException e) {
             responseObserver.onError(e);
         }
-        responseObserver.onCompleted();
     }
 
     @Override
     public void hdfsGetStats(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         try {
             responseObserver.onNext(doGetStats(request));
+            responseObserver.onCompleted();
         } catch (IOException e) {
             responseObserver.onError(e);
         }
-        responseObserver.onCompleted();
     }
 }
