@@ -20,7 +20,7 @@ import java.nio.ByteBuffer;
 import java.time.Duration;
 import java.util.UUID;
 
-public class HdfsRpcHandler extends PInternalServiceGrpc.PInternalServiceImplBase {
+public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase {
     private static class CacheValue {
         public FileSystem fs;
         public Path path;

@@ -12,10 +12,10 @@ public class HdfsRpcClient {
 
     private static final Logger logger = Logger.getLogger(HelloWorldClient.class.getName());
 
-    private final PInternalServiceGrpc.PInternalServiceBlockingStub blockingStub;
+    private final PBackendServiceGrpc.PBackendServiceBlockingStub blockingStub;
 
     public HdfsRpcClient(Channel channel) {
-        blockingStub = PInternalServiceGrpc.newBlockingStub(channel);
+        blockingStub = PBackendServiceGrpc.newBlockingStub(channel);
     }
 
     public void test(String path) {
