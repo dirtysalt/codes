@@ -20,7 +20,7 @@ import java.nio.ByteBuffer;
 import java.time.Duration;
 import java.util.UUID;
 
-public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
+public class HdfsRpcHandler extends PInternalServiceGrpc.PInternalServiceImplBase {
     private static class CacheValue {
         public FileSystem fs;
         public Path path;
@@ -31,7 +31,7 @@ public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
     private Configuration configuration;
     private Cache<String, CacheValue> cache;
 
-    public HDFSRpcHandler() {
+    public HdfsRpcHandler() {
         Configuration conf = new Configuration();
         conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
         conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
@@ -80,7 +80,7 @@ public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
         return ByteBuffer.allocate(size);
     }
 
-    private HDFSResponse doOpen(HDFSRequest request) throws IOException {
+    private HdfsResponse doOpen(HdfsRequest request) throws IOException {
         String requestPath = request.getPath();
         Path path = new Path(requestPath);
 
@@ -95,14 +95,14 @@ public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
 
         String sessionId = UUID.randomUUID().toString();
         cache.put(sessionId, cv);
-        HDFSResponse resp = HDFSResponse.newBuilder().setSessionId(sessionId).build();
+        HdfsResponse resp = HdfsResponse.newBuilder().setSessionId(sessionId).build();
         return resp;
     }
 
-    private HDFSResponse doClose(HDFSRequest request) {
+    private HdfsResponse doClose(HdfsRequest request) {
         cache.invalidate(request.getSessionId());
         System.out.printf("cache size = %d\n", cache.size());
-        return HDFSResponse.getDefaultInstance();
+        return HdfsResponse.getDefaultInstance();
     }
 
     private CacheValue getCacheValue(String sessionId) throws IOException {
@@ -113,25 +113,25 @@ public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
         return cv;
     }
 
-    private HDFSResponse doRead(HDFSRequest request) throws IOException {
+    private HdfsResponse doRead(HdfsRequest request) throws IOException {
         CacheValue cv = getCacheValue(request.getSessionId());
         cv.buffer = resizeBuffer(cv.buffer, request.getSize());
         cv.inputStream.read(0, cv.buffer.array(), request.getOffset(), request.getSize());
         ByteString bs = ByteString.copyFrom(cv.buffer, request.getSize());
-        HDFSResponse resp = HDFSResponse.newBuilder().setData(bs).build();
+        HdfsResponse resp = HdfsResponse.newBuilder().setData(bs).build();
         return resp;
     }
 
-    private HDFSResponse doGetSize(HDFSRequest request) throws IOException {
+    private HdfsResponse doGetSize(HdfsRequest request) throws IOException {
         CacheValue cv = getCacheValue(request.getSessionId());
         FileStatus st = cv.fs.getFileStatus(cv.path);
-        HDFSResponse resp = HDFSResponse.newBuilder().setSize(st.getLen()).build();
+        HdfsResponse resp = HdfsResponse.newBuilder().setSize(st.getLen()).build();
         return resp;
     }
 
-    private HDFSResponse doGetStats(HDFSRequest request) throws IOException {
+    private HdfsResponse doGetStats(HdfsRequest request) throws IOException {
         CacheValue cv = getCacheValue(request.getSessionId());
-        HDFSStats.Builder stats = HDFSStats.newBuilder();
+        HdfsStats.Builder stats = HdfsStats.newBuilder();
 
         if (cv.inputStream instanceof HdfsDataInputStream) {
             HdfsDataInputStream inputStream = (HdfsDataInputStream) cv.inputStream;
@@ -140,14 +140,14 @@ public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
                     .setTotalLocalBytesRead(st.getTotalLocalBytesRead())
                     .setTotalShortCircuitBytesRead(st.getTotalShortCircuitBytesRead());
         }
-        HDFSResponse resp = HDFSResponse.newBuilder().setStats(stats).build();
+        HdfsResponse resp = HdfsResponse.newBuilder().setStats(stats).build();
         return resp;
     }
 
     // ============================================================
 
     @Override
-    public void open(HDFSRequest request, StreamObserver<HDFSResponse> responseObserver) {
+    public void hdfsOpen(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         try {
             responseObserver.onNext(doOpen(request));
         } catch (IOException e) {
@@ -157,13 +157,13 @@ public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
     }
 
     @Override
-    public void close(HDFSRequest request, StreamObserver<HDFSResponse> responseObserver) {
+    public void hdfsClose(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         responseObserver.onNext(doClose(request));
         responseObserver.onCompleted();
     }
 
     @Override
-    public void read(HDFSRequest request, StreamObserver<HDFSResponse> responseObserver) {
+    public void hdfsRead(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         try {
             responseObserver.onNext(doRead(request));
         } catch (IOException e) {
@@ -173,7 +173,7 @@ public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
     }
 
     @Override
-    public void getSize(HDFSRequest request, StreamObserver<HDFSResponse> responseObserver) {
+    public void hdfsGetSize(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         try {
             responseObserver.onNext(doGetSize(request));
         } catch (IOException e) {
@@ -183,7 +183,7 @@ public class HDFSRpcHandler extends HDFSServiceGrpc.HDFSServiceImplBase {
     }
 
     @Override
-    public void getStats(HDFSRequest request, StreamObserver<HDFSResponse> responseObserver) {
+    public void hdfsGetStats(HdfsRequest request, StreamObserver<HdfsResponse> responseObserver) {
         try {
             responseObserver.onNext(doGetStats(request));
         } catch (IOException e) {

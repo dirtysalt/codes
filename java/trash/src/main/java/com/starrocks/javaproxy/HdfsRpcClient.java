@@ -8,38 +8,38 @@ import io.grpc.ManagedChannelBuilder;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
-public class HDFSRpcClient {
+public class HdfsRpcClient {
 
     private static final Logger logger = Logger.getLogger(HelloWorldClient.class.getName());
 
-    private final HDFSServiceGrpc.HDFSServiceBlockingStub blockingStub;
+    private final PInternalServiceGrpc.PInternalServiceBlockingStub blockingStub;
 
-    public HDFSRpcClient(Channel channel) {
-        blockingStub = HDFSServiceGrpc.newBlockingStub(channel);
+    public HdfsRpcClient(Channel channel) {
+        blockingStub = PInternalServiceGrpc.newBlockingStub(channel);
     }
 
     public void test(String path) {
-        HDFSRequest request = HDFSRequest.newBuilder().setPath(path).build();
-        HDFSResponse resp = blockingStub.open(request);
+        HdfsRequest request = HdfsRequest.newBuilder().setPath(path).build();
+        HdfsResponse resp = blockingStub.hdfsOpen(request);
         String sessionId = resp.getSessionId();
         System.out.println("Session Id = " + sessionId);
 
         // get size, read, get stats
         {
-            request = HDFSRequest.newBuilder().setSessionId(sessionId).setOffset(0).setSize(12).build();
-            resp = blockingStub.getSize(request);
+            request = HdfsRequest.newBuilder().setSessionId(sessionId).setOffset(0).setSize(12).build();
+            resp = blockingStub.hdfsGetSize(request);
             System.out.printf("size = %d\n", resp.getSize());
 
-            resp = blockingStub.read(request);
+            resp = blockingStub.hdfsRead(request);
             String ss = resp.getData().toString();
             System.out.printf("data = %s\n", ss);
 
-            resp = blockingStub.getStats(request);
+            resp = blockingStub.hdfsGetStats(request);
             System.out.printf("stats = %d\n", resp.getStats().getTotalBytesRead());
         }
 
-        request = HDFSRequest.newBuilder().setSessionId(sessionId).build();
-        blockingStub.close(request);
+        request = HdfsRequest.newBuilder().setSessionId(sessionId).build();
+        blockingStub.hdfsClose(request);
     }
 
     public static void main(String[] args) throws Exception {
@@ -51,7 +51,7 @@ public class HDFSRpcClient {
         ManagedChannel channel = ManagedChannelBuilder.forTarget(target)
                 .usePlaintext().build();
         try {
-            HDFSRpcClient client = new HDFSRpcClient(channel);
+            HdfsRpcClient client = new HdfsRpcClient(channel);
             client.test(path);
         } finally {
             // ManagedChannels use resources like threads and TCP connections. To prevent leaking these
