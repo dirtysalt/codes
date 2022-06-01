@@ -100,15 +100,11 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
         String sessionId = UUID.randomUUID().toString();
         cache.put(sessionId, cv);
         HdfsResponse resp = HdfsResponse.newBuilder().setSessionId(sessionId).build();
-        logger.info(String.format("open file %s, session = %s", requestPath, sessionId));
         return resp;
     }
 
     private HdfsResponse doClose(HdfsRequest request) {
         cache.invalidate(request.getSessionId());
-        logger.info(
-                String.format("close session = %s, cache size = %d", request.getSessionId(),
-                        cache.size()));
         return HdfsResponse.getDefaultInstance();
     }
 
@@ -121,10 +117,6 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
     }
 
     private HdfsResponse doRead(HdfsRequest request) throws IOException {
-        logger.info(
-                String.format("read session = %s, offset = %d, size = %d", request.getSessionId(),
-                        request.getOffset(),
-                        request.getSize()));
         CacheValue cv = getCacheValue(request.getSessionId());
         cv.buffer = resizeBuffer(cv.buffer, request.getSize());
         cv.inputStream.readFully(0, cv.buffer.array(), request.getOffset(), request.getSize());

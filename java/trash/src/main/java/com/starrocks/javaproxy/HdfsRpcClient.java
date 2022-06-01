@@ -26,14 +26,21 @@ public class HdfsRpcClient {
 
         // get size, read, get stats
         {
-            request = HdfsRequest.newBuilder().setSessionId(sessionId).setOffset(0).setSize(12).build();
+            request = HdfsRequest.newBuilder().setSessionId(sessionId).setOffset(0).build();
             resp = blockingStub.hdfsGetSize(request);
             logger.info(String.format("size = %d", resp.getSize()));
+            long size = resp.getSize();
 
-            resp = blockingStub.hdfsRead(request);
-            String ss = resp.getData().toString();
-            logger.info(String.format("data = %s", ss));
-
+            long blockSize = 1024 * 1024;
+            long offset = 0;
+            while (offset < size) {
+                blockSize = Math.min(blockSize, size - offset);
+                request = HdfsRequest.newBuilder().setSessionId(sessionId).setOffset((int) offset)
+                        .setSize((int) blockSize).build();
+                resp = blockingStub.hdfsRead(request);
+                logger.info(String.format("read bytes = %d", resp.getData().size()));
+                offset += blockSize;
+            }
             resp = blockingStub.hdfsGetStats(request);
             logger.info(String.format("stats = %d", resp.getStats().getTotalBytesRead()));
         }
