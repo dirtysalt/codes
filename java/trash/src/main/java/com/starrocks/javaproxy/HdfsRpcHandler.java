@@ -77,7 +77,7 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
             cap *= 2;
         }
         buffer.clear();
-        return ByteBuffer.allocate(size);
+        return ByteBuffer.allocate(cap);
     }
 
     private HdfsResponse doOpen(HdfsRequest request) throws IOException {
@@ -116,7 +116,7 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
     private HdfsResponse doRead(HdfsRequest request) throws IOException {
         CacheValue cv = getCacheValue(request.getSessionId());
         cv.buffer = resizeBuffer(cv.buffer, request.getSize());
-        cv.inputStream.read(0, cv.buffer.array(), request.getOffset(), request.getSize());
+        cv.inputStream.readFully(0, cv.buffer.array(), request.getOffset(), request.getSize());
         ByteString bs = ByteString.copyFrom(cv.buffer, request.getSize());
         HdfsResponse resp = HdfsResponse.newBuilder().setData(bs).build();
         return resp;

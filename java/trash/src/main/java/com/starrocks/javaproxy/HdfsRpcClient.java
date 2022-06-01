@@ -1,6 +1,5 @@
 package com.starrocks.javaproxy;
 
-import com.dirlt.java.grpc.examples.helloworld.HelloWorldClient;
 import io.grpc.Channel;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
@@ -10,7 +9,7 @@ import java.util.logging.Logger;
 
 public class HdfsRpcClient {
 
-    private static final Logger logger = Logger.getLogger(HelloWorldClient.class.getName());
+    private static final Logger logger = Logger.getLogger(HdfsRpcClient.class.getName());
 
     private final PBackendServiceGrpc.PBackendServiceBlockingStub blockingStub;
 
