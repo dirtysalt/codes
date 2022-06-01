@@ -100,10 +100,12 @@ public class HdfsRpcHandler extends PBackendServiceGrpc.PBackendServiceImplBase 
         String sessionId = UUID.randomUUID().toString();
         cache.put(sessionId, cv);
         HdfsResponse resp = HdfsResponse.newBuilder().setSessionId(sessionId).build();
+        logger.info(String.format("open file. path = %s, session id = %s", requestPath, sessionId));
         return resp;
     }
 
     private HdfsResponse doClose(HdfsRequest request) {
+        logger.info(String.format("close file. session id = %s", request.getSessionId()));
         cache.invalidate(request.getSessionId());
         return HdfsResponse.getDefaultInstance();
     }
