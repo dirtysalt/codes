@@ -3,13 +3,14 @@ package com.starrocks.javaproxy;
 import io.grpc.Channel;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
 
 public class HdfsRpcClient {
 
-    private static final Logger logger = Logger.getLogger(HdfsRpcClient.class.getName());
+    private static final Logger logger = LogManager.getLogger(HdfsRpcClient.class.getName());
 
     private final PBackendServiceGrpc.PBackendServiceBlockingStub blockingStub;
 
@@ -21,20 +22,20 @@ public class HdfsRpcClient {
         HdfsRequest request = HdfsRequest.newBuilder().setPath(path).build();
         HdfsResponse resp = blockingStub.hdfsOpen(request);
         String sessionId = resp.getSessionId();
-        System.out.println("Session Id = " + sessionId);
+        logger.info(String.format("Session Id = " + sessionId));
 
         // get size, read, get stats
         {
             request = HdfsRequest.newBuilder().setSessionId(sessionId).setOffset(0).setSize(12).build();
             resp = blockingStub.hdfsGetSize(request);
-            System.out.printf("size = %d\n", resp.getSize());
+            logger.info(String.format("size = %d", resp.getSize()));
 
             resp = blockingStub.hdfsRead(request);
             String ss = resp.getData().toString();
-            System.out.printf("data = %s\n", ss);
+            logger.info(String.format("data = %s", ss));
 
             resp = blockingStub.hdfsGetStats(request);
-            System.out.printf("stats = %d\n", resp.getStats().getTotalBytesRead());
+            logger.info(String.format("stats = %d", resp.getStats().getTotalBytesRead()));
         }
 
         request = HdfsRequest.newBuilder().setSessionId(sessionId).build();

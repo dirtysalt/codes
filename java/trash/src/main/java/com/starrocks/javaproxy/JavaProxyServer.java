@@ -2,15 +2,16 @@ package com.starrocks.javaproxy;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
 
 public class JavaProxyServer {
 
     private static final Logger logger =
-            Logger.getLogger(JavaProxyServer.class.getCanonicalName());
+            LogManager.getLogger(JavaProxyServer.class.getCanonicalName());
 
     private Server server;
 
