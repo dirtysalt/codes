@@ -26,7 +26,7 @@ message HdfsResponse {
   optional HdfsStats stats = 4;
 }
 
-service PInternalService {
+service PBackendService {
 
   rpc HdfsOpen (HdfsRequest) returns (HdfsResponse) {}
   rpc HdfsClose (HdfsRequest) returns (HdfsResponse) {}
