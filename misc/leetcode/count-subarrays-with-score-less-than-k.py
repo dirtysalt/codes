@@ -4,6 +4,18 @@
 
 from typing import List
 
+class Solution:
+    def countSubarrays(self, nums: List[int], k: int) -> int:
+        t = 0
+        j = 0
+        ans = 0
+        for i in range(len(nums)):
+            t += nums[i]
+            while (t * (i-j+1)) >= k:
+                t -= nums[j]
+                j += 1
+            ans += (i-j+1)
+        return ans
 
 class Solution:
     def countSubarrays(self, nums: List[int], k: int) -> int:
