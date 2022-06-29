@@ -1,10 +1,11 @@
 /* coding:utf-8
  * Copyright (C) dirlt
  */
-
+#include "Common.h"
 #include "tdigest.h"
 
 int main() {
+    DeferOp op([]() { printf("defer op ...\n"); });
     {
         starrocks::TDigest td;
         for (int i = 0; i < 20; i++) {
