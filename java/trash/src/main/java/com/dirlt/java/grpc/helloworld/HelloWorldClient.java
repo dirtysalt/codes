@@ -1,5 +1,8 @@
-package com.dirlt.java.grpc.examples.helloworld;
+package com.dirlt.java.grpc.helloworld;
 
+import com.dirlt.java.grpc.examples.helloworld.GreeterGrpc;
+import com.dirlt.java.grpc.examples.helloworld.HelloReply;
+import com.dirlt.java.grpc.examples.helloworld.HelloRequest;
 import io.grpc.Channel;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;

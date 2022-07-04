@@ -1,4 +1,4 @@
-package com.dirlt.java.grpc.examples.helloworld;
+package com.dirlt.java.grpc.helloworld;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -9,11 +9,14 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 public class HelloWorldServer {
-    private static class GreeterImpl extends GreeterGrpc.GreeterImplBase {
-
+    private static class GreeterImpl extends com.dirlt.java.grpc.examples.helloworld.GreeterGrpc.GreeterImplBase {
         @Override
-        public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver) {
-            HelloReply reply = HelloReply.newBuilder().setMessage("Hello " + req.getName()).build();
+        public void sayHello(com.dirlt.java.grpc.examples.helloworld.HelloRequest req,
+                             StreamObserver<com.dirlt.java.grpc.examples.helloworld.HelloReply> responseObserver) {
+            com.dirlt.java.grpc.examples.helloworld.HelloReply
+                    reply =
+                    com.dirlt.java.grpc.examples.helloworld.HelloReply.newBuilder().setMessage("Hello " + req.getName())
+                            .build();
             responseObserver.onNext(reply);
             responseObserver.onCompleted();
         }
