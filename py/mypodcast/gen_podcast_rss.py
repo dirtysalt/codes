@@ -17,53 +17,7 @@ import mutagen.mp3
 from tinytag import TinyTag
 from jinja2 import Template
 
-RSS_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:atom="http://www.w3.org/2005/Atom"
-     version="2.0">
-    <channel>
-        <atom:link href="http://{{ domain }}/rss/{{ name }}.xml" type="application/rss+xml" rel="self"/>
-        <copyright>dirtysalt</copyright>
-        <link>http://dirtysalt.github.io</link>
-        <language>{{ language or "zh-cn"}}</language>
-
-        <title>{{ title }}</title>
-        <description>{{ description }}</description>
-        <pubDate>{{ releaseDate }}</pubDate>
-
-        <itunes:summary>{{ summary }}</itunes:summary>
-        <itunes:subtitle>{{ subtitle }}</itunes:subtitle>
-        <itunes:author>{{ author }}</itunes:author>
-        <itunes:image href="{{ image_url }}"/>
-        <itunes:owner>
-            <itunes:name>{{ author }}</itunes:name>
-            <itunes:email>{{ email }}</itunes:email>
-        </itunes:owner>
-        <itunes:keywords>{{ keywords }}</itunes:keywords>
-        <itunes:category text="Education"/>
-        <itunes:explicit>no</itunes:explicit>
-
-        {% for t in tracks %}
-        <item>
-            <title>{{ t.title }}</title>
-            <description>{{ t.description }}</description>
-            <itunes:summary>{{ t.summary }}</itunes:summary>
-            <itunes:image href="{{ t.image_url }}"/>
-            <!-- <itunes:order>{{ t.itunes_order }}</itunes:order> -->
-            <enclosure url="{{ t.audio_url }}" type="audio/mp3" length="{{ t.audio_size or 0}}"/>
-            <itunes:duration>{{ t.audio_duration_text or 0 }}</itunes:duration>
-            <guid isPermaLink="false">{{ t.guid }}</guid>
-            <pubDate>{{ t.releaseDate }}</pubDate>
-            <itunes:explicit>no</itunes:explicit>
-        </item>
-        {% endfor %}
-    </channel>
-</rss>
-"""
-
-rss_template = Template(RSS_TEMPLATE)
-
-
+# ============================================================
 def get_audio_duration(f):
     # try:
     #     x = mutagen.mp3.MP3(f)
@@ -113,17 +67,69 @@ def gen_uuid(s):
     x = uuid.uuid3(uuid.NAMESPACE_DNS, s)
     return str(x)
 
+# ============================================================
+
+
+RSS_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     version="2.0">
+    <channel>
+        <atom:link href="http://{{ domain }}/rss/{{ name }}.xml" type="application/rss+xml" rel="self"/>
+        <copyright>{{ author }}</copyright>
+        <link>{{ link }} </link>
+        <language>{{ language or "zh-cn"}}</language>
+
+        <title>{{ title }}</title>
+        <description>{{ description }}</description>
+        <pubDate>{{ releaseDate }}</pubDate>
+
+        <itunes:summary>{{ summary }}</itunes:summary>
+        <itunes:subtitle>{{ subtitle }}</itunes:subtitle>
+        <itunes:author>{{ author }}</itunes:author>
+        <itunes:image href="{{ image_url }}"/>
+        <itunes:owner>
+            <itunes:name>{{ author }}</itunes:name>
+            <itunes:email>{{ email }}</itunes:email>
+        </itunes:owner>
+        <itunes:keywords>{{ keywords }}</itunes:keywords>
+        <itunes:category text="Education"/>
+        <itunes:explicit>no</itunes:explicit>
+
+        {% for t in tracks %}
+        <item>
+            <title>{{ t.title }}</title>
+            <description>{{ t.description }}</description>
+            <itunes:summary>{{ t.summary }}</itunes:summary>
+            <itunes:image href="{{ t.image_url }}"/>
+            <!-- <itunes:order>{{ t.itunes_order }}</itunes:order> -->
+            <enclosure url="{{ t.audio_url }}" type="audio/mp3" length="{{ t.audio_size or 0}}"/>
+            <itunes:duration>{{ t.audio_duration_text or 0 }}</itunes:duration>
+            <guid isPermaLink="false">{{ t.guid }}</guid>
+            <pubDate>{{ t.releaseDate }}</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>
+"""
+
+rss_template = Template(RSS_TEMPLATE)
+
 
 def run(ctx):
     mp3_dir = ctx['mp3_dir']
 
-    myfiles = glob.glob(os.path.join(mp3_dir, ctx['name'], '*.mp3'))
-    myfiles += glob.glob(os.path.join(mp3_dir, ctx['name'], '*.m4a'))
+    myfiles = []
+    for ext in ('mp3', 'm4a', 'mp4'):
+        myfiles += glob.glob(os.path.join(mp3_dir, ctx['name'], '*.' + ext))
+
+    # sort by filename
     myfiles.sort()
 
     now = datetime.now()
     ctx['tracks'] = []
-    ctx['description'] = '\n'.join(['{}. {}'.format(x[0] + 1, os.path.basename(x[1])) for x in enumerate(myfiles)])
+    ctx['description'] = '<br/>\n'.join(['{}. {}'.format(x[0] + 1, os.path.basename(x[1])) for x in enumerate(myfiles)])
     ctx['releaseDate'] = to_rfc822_datetime(now)
     ctx['image_url'] = 'http://{}/image/{}.jpg'.format(ctx['domain'], ctx['name'])
 
@@ -147,23 +153,26 @@ def run(ctx):
     if tracks:
         with open(os.path.join(ctx['rss_dir'], '%s.xml' % ctx['name']), 'w') as fh:
             fh.write(rss)
+        print('rss url = http://{}/rss/{}.xml'.format(ctx['domain'], ctx['name']))
     else:
-        # print('No episodes. skipped generating rss')
-        pass
-    print('rss url = http://{}/rss/{}.xml'.format(ctx['domain'], ctx['name']))
+        print("No available episode for '%s'" % (ctx['name']))
 
 
+# ============================================================
 """
+# Example configuration.
 sites = {
-    'site_id': {
-        'name': 'TestFeed',
+    'TestFeed': {
         'title': '这是测试站点',
-        'author': 'dirtysalt',
-        'email': 'dirtysalt1987@gmail.com',
-        'domain': 'dirtysalt.github.io',
-        'mp3_dir': 'podcast_mp3',
-        'rss_dir': 'podcast_rss'
     },
+}
+
+glob = {
+  'author': 'dirtysalt',
+  'email': 'dirtysalt1987@gmail.com',
+  'domain': 'dirtysalt.github.io',
+  'mp3_dir': 'mp3',
+  'rss_dir': 'rss'
 }
 """
 
@@ -175,11 +184,12 @@ def main():
     reqs = sites.keys() if len(sys.argv) == 1 else sys.argv[1:]
 
     for site in reqs:
+        if site not in sites: continue
         print('Generating RSS XML for {}'.format(site))
         ctx = glob.copy()
         ctx.update(sites[site])
-        if 'name' not in ctx:
-            ctx['name'] = site
+        # use site id as name
+        ctx['name'] = site
         run(ctx)
 
 if __name__ == '__main__':
