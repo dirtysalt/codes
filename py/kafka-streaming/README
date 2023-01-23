@@ -1,0 +1,7 @@
+从kafka中读取数据进行流式处理，其中worker.py是包装库，simple.py则是使用示例代码。
+
+python没有什么好的kafka封装，可能kafka-python算是相对较好的。里面现成比较好用的consumer只有单进程KafkaConsumer. 虽然可以使用下面组件继续做一些事情比如分partition给不同的进程来读，但是代价有点高（好像SimpleConsumer和MultipleProcessConsumer也可以做）。kafka-python文档写的不是特别清楚，也限制了进一步的尝试。
+
+另外一个方式可以是，有一个master进程专门从kafka中读取数据，然后这个master进程启动多个worker进程，master将读取的数据交给worker. 但是不太好的地方是worker似乎不太好做commit操作。
+
+或许使用类似storm + python才是更加合适的方式(或者纯JVM会更合适?)，另外使用这种框架另外一个好处是可以看到metrics.

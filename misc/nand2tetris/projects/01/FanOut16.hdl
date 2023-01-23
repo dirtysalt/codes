@@ -1,0 +1,22 @@
+CHIP FanOut16 {
+  IN in;
+  OUT out[16];
+
+  PARTS:
+And(a = in, b = in, out = out[0]);
+And(a = in, b = in, out = out[1]);
+And(a = in, b = in, out = out[2]);
+And(a = in, b = in, out = out[3]);
+And(a = in, b = in, out = out[4]);
+And(a = in, b = in, out = out[5]);
+And(a = in, b = in, out = out[6]);
+And(a = in, b = in, out = out[7]);
+And(a = in, b = in, out = out[8]);
+And(a = in, b = in, out = out[9]);
+And(a = in, b = in, out = out[10]);
+And(a = in, b = in, out = out[11]);
+And(a = in, b = in, out = out[12]);
+And(a = in, b = in, out = out[13]);
+And(a = in, b = in, out = out[14]);
+And(a = in, b = in, out = out[15]);
+}

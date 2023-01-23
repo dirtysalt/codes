@@ -1,0 +1,13 @@
+---
+title:
+- type: main
+  text: 云风的Blog
+creator:
+- role: author
+  text: 云风@codingnow.com
+description: 思绪来得快去得也快，偶尔会在这里停留
+rights: Non-Commercial
+language: en-US
+stylesheet: metadata/epub.css
+# cover-image: metadata/cover.jpg
+...

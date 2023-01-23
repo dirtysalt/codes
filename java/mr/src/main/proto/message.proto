@@ -1,0 +1,10 @@
+package com.dirlt.java.mr.proto;
+
+// FATAL: This name works as a version number
+// Increase this number everytime you do a non-compatible modification!!
+// The block storage writer is responsible for write the version number.
+option java_outer_classname = "MessageProtos1";
+
+message Message {
+  required string text = 1;
+}

@@ -1,0 +1,11 @@
+我写了一个python websocket server, 在美区的aws上面测试了一下
+
+test_ws_server.py + test_ws_client2.py. 这个是ping-pong程序。5000个connections，延迟在2s左右，这个还是本地client/server的响应。bottlenect在CPU上，这种情况下面websocket server就不仅仅是个io intensive的应用了。
+
+test_ws_server.py + test_ws_client.py. 这个仅仅是client接受数据的程序，同样5000 connections. 延迟在1~1.5s左右，不过还没有出现bottleneck的情况。如果继续增加connections到15k的话，依然没有出现bottleneck. 这种应用就是纯粹的IO intensive的了。
+
+编写test_ws_server.py的时候，我有点启发：就是使用async函数包含普通函数，然后在在async函数里面使用 `run_executor`来执行普通函数避免阻塞，而不要用普通函数包装async函数。
+
+trigger.py 是向redis里面写数据。
+
+websocket本身只是一个协议，拿过来直接使用还不太方便，而且对浏览器兼容不太好。socketio是websocket + xhr polling的实现：如果浏览器不支持websocket的话，就会退化到xhr polling，兼容性会更好。而且socketio还管理了当前所有的连接，做了许多合适的抽象出来，使用socketio来编写应用会更加简单可靠。

@@ -1,0 +1,12 @@
+cache/
+.vscode
+output*
+cache*
+channel-*
+gen_podcast_rss_conf.py
+podcast_xml/
+podcast_mp3/
+podcast_rss/
+podcast_image/
+top10k_feeds.json
+geekbang_scraper_conf.py

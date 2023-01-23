@@ -1,0 +1,9 @@
+按照这个 [[http://blog.csdn.net/wds2006sdo/article/details/51923546][教程]] 依葫芦画瓢实现了其中几个算法，其中最大熵和SVM没有实现，感觉这两个有点困难。
+
+这个教程也有对应的 [[https://github.com/WenDesi/lihang_book_algorithm][github]] 非常不错，我的代码里面使用到了 mnist_data.pkl 这个文件，是从这个仓库里面data/train.csv然后运行 `mnist_util.py` 这个脚本生成的。
+
+实现下来觉得有点意思，但是更多的是不适，一些代码需要花上很多时间去调试，然后尽可能吧其中一些代码向量化也花费了不少时间。
+
+可能是作者比较忙，在实现的时候我遇到了不少问题，在github issue上面提问但是迟迟没有回复，有时间打算邮件请教他。
+
+这些代码都可以运行在python3环境下面。我现在的项目使用的是python2, 但是3毕竟是趋势，还是早点切换适应一些比较好。
