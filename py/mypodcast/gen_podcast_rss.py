@@ -178,9 +178,9 @@ glob = {
 
 
 def main():
-    import gen_podcast_rss_conf
-    sites = gen_podcast_rss_conf.sites
-    glob = gen_podcast_rss_conf.glob
+    import config
+    sites = config.sites
+    glob = config.glob
     reqs = sites.keys() if len(sys.argv) == 1 else sys.argv[1:]
 
     for site in reqs:
