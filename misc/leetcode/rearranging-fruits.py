@@ -27,6 +27,9 @@ class Solution:
                 C.append(x)
 
         assert (len(A) == len(B))
+        # 选择最小值作为proxy, A先和proxy交换， 然后proxy和B交换
+        # 代价就是2 * proxy. 这个和proxy是否处于A, B无关：
+        # 如果处于的话，那么A,B最小值就是proxy，不会使用2*proxy的方案
         proxy = min(basket1 + basket2)
         A.sort()
         B.sort(reverse=True)
