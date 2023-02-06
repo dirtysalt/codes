@@ -12,37 +12,19 @@ import time
 import uuid
 from datetime import datetime, timedelta
 from urllib.parse import quote
-
-import mutagen.mp3
-from tinytag import TinyTag
 from jinja2 import Template
+import subprocess
+import json
 
 # ============================================================
+
 def get_audio_duration(f):
-    # try:
-    #     x = mutagen.mp3.MP3(f)
-    #     res = x.info.length
-    #     return res
-    # except mutagen.mp3.HeaderNotFoundError:
-    #     return 0
-    try:
-        tag = TinyTag.get(f)
-        duration = tag.duration
-        if duration is None:
-            raise Exception()
-        return duration
-    except:
-        output = '/tmp/gen_podcast_rss_mp3_duration.txt'
-        cmd="""ffprobe "%s" 2>&1 | grep Duration | awk '{print(substr($2, 0, 8));}' > %s""" % (f, output)
-        # print(cmd)
-        os.system(cmd)
-        with open(output) as fh:
-            text = fh.read()
-            text = text.split(':')
-            try:
-                return 3600 * int(text[0]) + 60 * int(text[1]) + int(text[2])
-            except:
-                return 0
+    input_filename = "input.mp4"
+    out = subprocess.check_output(["ffprobe", "-v", "quiet", "-show_format", "-print_format", "json", f])
+    ffprobe_data = json.loads(out)
+    duration_seconds = float(ffprobe_data["format"]["duration"])
+    print("[get_audio_duration] f = %s, duration = %.2f" % (f, duration_seconds))
+    return duration_seconds
 
 
 def audio_duration_in_text(v):
