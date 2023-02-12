@@ -84,7 +84,7 @@ RSS_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
             <description>{{ t.description }}</description>
             <itunes:summary>{{ t.summary }}</itunes:summary>
             <itunes:image href="{{ t.image_url }}"/>
-            <!-- <itunes:order>{{ t.itunes_order }}</itunes:order> -->
+            <itunes:order>{{ t.itunes_order }}</itunes:order>
             <enclosure url="{{ t.audio_url }}" type="audio/mp3" length="{{ t.audio_size or 0}}"/>
             <itunes:duration>{{ t.audio_duration_text or 0 }}</itunes:duration>
             <guid isPermaLink="false">{{ t.guid }}</guid>
@@ -109,7 +109,7 @@ def run(ctx):
     # sort by filename
     myfiles.sort()
 
-    now = datetime.now()
+    now = datetime.now() - timedelta(days = 30)
     ctx['tracks'] = []
     ctx['description'] = '<br/>\n'.join(['{}. {}'.format(x[0] + 1, os.path.basename(x[1])) for x in enumerate(myfiles)])
     ctx['releaseDate'] = to_rfc822_datetime(now)
@@ -124,7 +124,7 @@ def run(ctx):
             'audio_size': get_file_size(name),
             'audio_duration_text': audio_duration_in_text(get_audio_duration(name)),
             'guid': gen_uuid(name),
-            'releaseDate': to_rfc822_datetime(now - timedelta(hours=order)),
+            'releaseDate': to_rfc822_datetime(now + timedelta(minutes=order)),
             'itunes_order': order + 1,
             'image_url': ctx['image_url']
         }
