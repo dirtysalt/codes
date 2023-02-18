@@ -1,0 +1,15 @@
+*.pyc
+V2/nsched.db
+V2/nsched.db-journal
+V2/mr/.classpath
+V2/mr/.project
+V2/mr/.settings/
+!V2/mr/target/TestMR-1.0-SNAPSHOT.jar
+V2/mr/target/
+V2/*.log
+V2/logs/
+V2/nsched.mailbox
+.idea/
+*.out
+*.bak
+

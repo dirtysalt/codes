@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="README"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-07-03 13:03:56 CST"/>
+<meta name="author" content="dirtysalt"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">README</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 nsched</a>
+<ul>
+<li><a href="#sec-1-1">1.1 code</a>
+<ul>
+<li><a href="#sec-1-1-1">1.1.1 lib</a></li>
+<li><a href="#sec-1-1-2">1.1.2 conf</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-2">1.2 design</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1 HTTP Server</a></li>
+<li><a href="#sec-1-2-2">1.2.2 DB</a></li>
+<li><a href="#sec-1-2-3">1.2.3 Job Coordinator</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-3">1.3 deploy</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1 服务端</a></li>
+<li><a href="#sec-1-3-2">1.3.2 客户端</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> nsched</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> code</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<ul>
+<li>nsched.py # 调度器
+</li>
+<li>vierwe.py # webserver
+</li>
+<li>clear-logs # 清除logs里面旧文件
+</li>
+<li>sample.py # client sample code
+</li>
+<li>run-nsched # easier to start nsched core service
+</li>
+<li>run-viewer # easier to start nsched viewer service.
+</li>
+<li>copydb # 
+</li>
+<li>logs # 任务输出重定向文件
+</li>
+<li><b>NOTE(dirlt):顶层添加了sqlite3的可执行文件以及源代码是为了可以方便修改手动修改db</b>
+</li>
+<li><b>NOTE(dirlt):所谓的viewer只是处理http的webserver，没有后端的调度逻辑。之所以这样做的原因是，是因为我发现绑定在外网的ip上，有时候webserver会失效。所以现在的处理办法是，调度器程序nsched绑定在127.0.0.1上，而前端webserver程序viewer绑定在外网ip上</b>
+</li>
+</ul>
+
+
+
+</div>
+
+<div id="outline-container-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> lib</h4>
+<div class="outline-text-4" id="text-1-1-1">
+
+<ul>
+<li>db.py # database
+</li>
+<li>util.py # logger,mail,conf,locker,etc.
+</li>
+<li>http.py # httpserver.
+</li>
+<li>task.py # coordinator use task.py to initiate task.
+</li>
+<li>coord.py # coordinator.
+</li>
+<li>api.py # some client code.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> conf</h4>
+<div class="outline-text-4" id="text-1-1-2">
+
+<ul>
+<li>nsched.sample.conf # sample config for nsched.
+</li>
+<li>配置文件字段的详细内容参考deploy一节
+</li>
+</ul>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> design</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>调度器软件架构如下图：
+</p>
+<p>
+<img src="./nsched-arch.png"  alt="./nsched-arch.png" />
+</p>
+<p> 
+调度器主要包含三个比较重要的组件：
+</p><ul>
+<li>HTTP Server
+</li>
+<li>DB
+</li>
+<li>Job Coordinator
+</li>
+</ul>
+
+
+
+</div>
+
+<div id="outline-container-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> HTTP Server</h4>
+<div class="outline-text-4" id="text-1-2-1">
+
+<p>HTTP Server一方面接收新的任务请求Job Request，另外一方面可以作为Web UI
+</p>
+<p>
+Job Request包含下面这些请求：
+</p><ul>
+<li>submit job 提交job
+</li>
+<li>delete job 删除job
+</li>
+<li>alter job 修改job属性
+</li>
+<li>start job 强制执行job
+</li>
+<li>query status 查询当前状态
+</li>
+</ul>
+
+<p>所有Job Request都是通过HTTP请求提交的。
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> DB</h4>
+<div class="outline-text-4" id="text-1-2-2">
+
+<p>DB里面保存了所有Job包括已经完成，正在执行以及有待执行的Job信息。DB在这里充当了交换HTTP Server信息和Job Coordinator信息的媒介。DB选用SQLite这个RDBMS。
+</p>
+<p>
+db现在只需要一个table jobtable，schema如下
+</p><ul>
+<li>jobName/string primary（任务名称，主键）
+</li>
+<li>command/string（任务执行命令）
+</li>
+<li>dep/string（任务依赖条件）
+</li>
+<li>schedTime/int（被调度时间）
+</li>
+<li>status/string（任务运行状态，有SUCCESS/KILLED/FAILED/WAITING/RUNNING这几种）
+</li>
+<li>force/string（是否强制运行）
+</li>
+<li>startTime/int（任务开始时间）
+</li>
+<li>endTime/int（任务结束时间）
+</li>
+<li>description/string(当前任务描述）
+</li>
+</ul>
+
+
+<p>
+对于所有的job而言，db里面记录的状态有下面几种：
+</p><ul>
+<li>KILLED # 手动标记
+</li>
+<li>FAILED # 执行失败
+</li>
+<li>SUCCESS # 执行成功
+</li>
+<li>WAITING # 等待执行
+</li>
+<li>RUNNING # 正在执行
+</li>
+</ul>
+
+
+<p>
+任务的依赖决定了任务什么时候能够被执行，任务的依赖使用JSON来表示，
+</p><ul>
+<li>任务超过一定时间阈值 lagtime:10，表示超过10min
+</li>
+<li>任务A运行完成 job-status<A>:success
+</li>
+</ul>
+
+
+<p>
+依赖之间可以通过与(and)和或(or)关系操作符连接起来。比如
+</p><ul>
+<li>[“and”, R1, R2, R3]
+</li>
+<li>[“or”, R1, R2, R3]
+</li>
+<li>R={“key”:”value”} 
+</li>
+</ul>
+
+<p>外层的JSON表示为{"lagtime":&lt;lagtime&gt;,"rest":["and",R1,R2,R3]}
+</p>
+<p>
+coordinator在解析这些时候，可以每个条件转换成为一个python callable对象返回True和False。比如lagtime:10这个条件的话，我们预先编写好一个检测lagtime的函数成为getLagTime，
+</p>
+
+
+<pre class="src src-Python">def generateLagTime(job,threshold):
+    def fun():
+        lagTime=getLagTime(job)
+        return (lagTime &gt;= threshold)   
+    return fun
+</pre>
+
+<p>
+这样只需要解析一次即可生成执行代码。
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2-3" class="outline-4">
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> Job Coordinator</h4>
+<div class="outline-text-4" id="text-1-2-3">
+
+<p>Job Coordinator主要负责：
+</p><ul>
+<li>决定任务是否需要运行。
+</li>
+<li>将任务提交到Hadoop Cluster上
+</li>
+<li>检测任务运行情况并且更新到DB
+</li>
+</ul>
+
+
+<p>
+Coordinator调度逻辑如下：
+</p><ul>
+<li>从DB中查询所有没有完成的job（WAITING/RUNNING）全部标记为KILLED状态。
+</li>
+<li>启动http server接收请求。
+</li>
+<li>进行Coordinator loop逻辑
+</li>
+</ul>
+
+
+<p>
+Coordinator loop逻辑如下：
+</p><ul>
+<li>遍历所有的job，判断这个job是否需要启动。
+</li>
+<li>如果job需要启动的话，那么启动并且修改db状态。
+<ul>
+<li>使用线程池来进行提交
+</li>
+<li>返回之后检查状态，如果没有提交成功的话那么需要重复提交。
+</li>
+<li>重复提交超过一定次数就报警（邮件通知或者是短信通知） 
+</li>
+<li>任务运行结束之后会直接修改db标记为SUCCESS状态。 
+</li>
+</ul>
+
+</li>
+<li>扫描整个db处于WAITING的表。
+<ul>
+<li>如果coordinator不存在而db存在的，那么是因为submit操作的，那么解析这个job并且加入coordinator.
+</li>
+<li>如果都存在的话，那么比较依赖是否发生变化，如果变化的话是因为alter造成的，那么重新解析。
+</li>
+</ul>
+
+</li>
+<li>进入下轮loop逻辑。
+</li>
+</ul>
+
+
+<p>
+为了防止coordinator loop过快造成压力的话，判断一次逻辑耗时时间。如果一次耗时大于某个阈值的话，那么下次就继续loop.否则需要等待。举个例子，如果阈值时间是2min,而如果一次loop非常快速30s搞定的话，那么就需要等待1min 30s，如果这次loop非常慢耗时3min，那么下次继续loop.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> deploy</h3>
+<div class="outline-text-3" id="text-1-3">
+
+
+</div>
+
+<div id="outline-container-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> 服务端</h4>
+<div class="outline-text-4" id="text-1-3-1">
+
+<ul>
+<li>创建nsched.conf文件（在conf下面有一个nsched.sample.conf可以参考）.
+<ul>
+<li>nsched.submit-retry  // 如果提交任务失败的话，重试次数
+</li>
+<li>nsched.notify.* // 报警设置
+</li>
+<li>nsched.mail.* // 邮件报警参数
+</li>
+<li>nsched.sms.* // 短信报警参数
+</li>
+<li>nsched.db // 数据库存放位置
+</li>
+<li>nsched.http-host // 服务器绑定IP（可能需要放在内网IP）
+</li>
+<li>nsched.http-port // 服务器工作端口
+</li>
+<li>nsched.log-dir // 存放job输出日志位置
+</li>
+<li>nsched.max-fetch-log-size' // 每次获取日志最大数量
+</li>
+<li>使用命令行nsched.py &lt;path-to-nsched.conf&gt;来启动
+</li>
+<li>也可以在命令行里面使用 &ndash;host= &ndash;port= 来指定IP和端口
+</li>
+</ul>
+
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> 客户端</h4>
+<div class="outline-text-4" id="text-1-3-2">
+
+<p>可以参考sample.py下面的代码
+</p><ul>
+<li>创建Client，指定nsched server位置
+</li>
+<li>创建Job，并且设置相关参数
+</li>
+<li>通过client来提交或者是修改Job。其他操作可以直接通过浏览器进行操作。
+<ul>
+<li>submitJob(job) // api
+<ul>
+<li><a href="http://localhost:8000/sumbit">http://localhost:8000/sumbit</a>
+</li>
+</ul>
+
+</li>
+<li>alterJob(job) // api
+<ul>
+<li><a href="http://localhost:8000/alter">http://localhost:8000/alter</a>
+</li>
+</ul>
+
+</li>
+<li>deleteJob // <a href="http://localhost:8000/delete?id">http://localhost:8000/delete?id</a>=&lt;jobName&gt; 
+</li>
+<li>forceStartJob // <a href="http://localhost:8000/fstart?id">http://localhost:8000/fstart?id</a>=&lt;jobName&gt; 
+</li>
+<li>queryJobsDependOn // <a href="http://localhost:8000/dep?id">http://localhost:8000/dep?id</a>=&lt;jobName&gt;
+</li>
+<li>view // <a href="http://localhost:8000/view">http://localhost:8000/view</a> or <a href="http://localhost:8000">http://localhost:8000</a>
+</li>
+</ul>
+
+</li>
+</ul>
+
+
+<p>
+也可以通过自己构造json串发送http req来提交作业，包括下面这些字段：
+</p><ul>
+<li>jobName. # 必须唯一
+</li>
+<li>command # 执行命令
+</li>
+<li>dep. 
+<ul>
+<li>{'lagTime': lagTimeInSeconds, 'rest': restJson }
+</li>
+<li>lagTime 如果在scheduleTime + lagTime时间内没有启动的话，那么会邮件报警
+</li>
+<li>rest 
+<ul>
+<li>['and',expr,expr]
+</li>
+<li>['or',expr,expr]
+</li>
+<li>expr
+<ul>
+<li>{'job-status<jobName>':'success'}
+</li>
+<li>&hellip; # to be completed.
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li>schedTime. timestamp in second.
+</li>
+</ul>
+
+<p>可以使用下面代码来做http提交
+</p>
+
+
+<pre class="src src-Python">def raiseHTTPRequest(url,data=None,timeout=3):
+    # if we do post, we have to provide data.
+    f=urllib2.urlopen(url,data,timeout)
+    return f.read()
+</pre>
+
+
+<p>
+下面是自己构造job并且提交的一段sample代码
+</p>
+
+
+<pre class="example">import time
+jid=time.time();
+jobName='echo#%d'%(jid)
+x={'jobName':jobName,
+   'command':'echo "hello"',
+   'dep':["and",{"file-ready":"/home/dirlt/_SUCCESS2"}, {"job-status@echo#%d"%(jid-1):"success"}],
+   'schedTime':time.time()}
+data=json.dumps(x)
+print raiseHTTPRequest('http://127.0.0.1:8000/submit',data)
+</pre>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2013-07-03 13:03:56 CST</p>
+<p class="creator">Org version 7.8.02 with Emacs version 23</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

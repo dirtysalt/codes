@@ -1,0 +1,174 @@
+* nsched
+** code
+   - nsched.py # 调度器
+   - vierwe.py # webserver
+   - clear-logs # 清除logs里面旧文件
+   - sample.py # client sample code
+   - run-nsched # easier to start nsched core service
+   - run-viewer # easier to start nsched viewer service.
+   - copydb # 
+   - logs # 任务输出重定向文件
+   - *NOTE(dirlt):顶层添加了sqlite3的可执行文件以及源代码是为了可以方便修改手动修改db*
+   - *NOTE(dirlt):所谓的viewer只是处理http的webserver，没有后端的调度逻辑。之所以这样做的原因是，是因为我发现绑定在外网的ip上，有时候webserver会失效。所以现在的处理办法是，调度器程序nsched绑定在127.0.0.1上，而前端webserver程序viewer绑定在外网ip上*
+
+*** lib
+   - db.py # database
+   - util.py # logger,mail,conf,locker,etc.
+   - http.py # httpserver.
+   - task.py # coordinator use task.py to initiate task.
+   - coord.py # coordinator.
+   - api.py # some client code.
+
+*** conf
+   - nsched.sample.conf # sample config for nsched.
+   - 配置文件字段的详细内容参考deploy一节
+
+** design
+调度器软件架构如下图：
+
+file:./nsched-arch.png
+ 
+调度器主要包含三个比较重要的组件：
+   - HTTP Server
+   - DB
+   - Job Coordinator
+
+*** HTTP Server
+HTTP Server一方面接收新的任务请求Job Request，另外一方面可以作为Web UI
+
+Job Request包含下面这些请求：
+   - submit job 提交job
+   - delete job 删除job
+   - alter job 修改job属性
+   - start job 强制执行job
+   - query status 查询当前状态
+所有Job Request都是通过HTTP请求提交的。
+
+*** DB
+DB里面保存了所有Job包括已经完成，正在执行以及有待执行的Job信息。DB在这里充当了交换HTTP Server信息和Job Coordinator信息的媒介。DB选用SQLite这个RDBMS。
+
+db现在只需要一个table jobtable，schema如下
+   - jobName/string primary（任务名称，主键）
+   - command/string（任务执行命令）
+   - dep/string（任务依赖条件）
+   - schedTime/int（被调度时间）
+   - status/string（任务运行状态，有SUCCESS/KILLED/FAILED/WAITING/RUNNING这几种）
+   - force/string（是否强制运行）
+   - startTime/int（任务开始时间）
+   - endTime/int（任务结束时间）
+   - description/string(当前任务描述）
+
+对于所有的job而言，db里面记录的状态有下面几种：
+   - KILLED # 手动标记
+   - FAILED # 执行失败
+   - SUCCESS # 执行成功
+   - WAITING # 等待执行
+   - RUNNING # 正在执行
+
+任务的依赖决定了任务什么时候能够被执行，任务的依赖使用JSON来表示，
+   - 任务超过一定时间阈值 lagtime:10，表示超过10min
+   - 任务A运行完成 job-status@<A>:success
+
+依赖之间可以通过与(and)和或(or)关系操作符连接起来。比如
+   - [“and”, R1, R2, R3]
+   - [“or”, R1, R2, R3]
+   - R={“key”:”value”} 
+外层的JSON表示为{"lagtime":<lagtime>,"rest":["and",R1,R2,R3]}
+
+coordinator在解析这些时候，可以每个条件转换成为一个python callable对象返回True和False。比如lagtime:10这个条件的话，我们预先编写好一个检测lagtime的函数成为getLagTime，
+#+BEGIN_SRC Python
+def generateLagTime(job,threshold):
+    def fun():
+        lagTime=getLagTime(job)
+        return (lagTime >= threshold)   
+    return fun
+#+END_SRC
+这样只需要解析一次即可生成执行代码。
+
+*** Job Coordinator
+Job Coordinator主要负责：
+   - 决定任务是否需要运行。
+   - 将任务提交到Hadoop Cluster上
+   - 检测任务运行情况并且更新到DB
+
+Coordinator调度逻辑如下：
+   - 从DB中查询所有没有完成的job（WAITING/RUNNING）全部标记为KILLED状态。
+   - 启动http server接收请求。
+   - 进行Coordinator loop逻辑
+
+Coordinator loop逻辑如下：
+   - 遍历所有的job，判断这个job是否需要启动。
+   - 如果job需要启动的话，那么启动并且修改db状态。
+     - 使用线程池来进行提交
+     - 返回之后检查状态，如果没有提交成功的话那么需要重复提交。
+     - 重复提交超过一定次数就报警（邮件通知或者是短信通知） 
+     - 任务运行结束之后会直接修改db标记为SUCCESS状态。 
+   - 扫描整个db处于WAITING的表。
+     - 如果coordinator不存在而db存在的，那么是因为submit操作的，那么解析这个job并且加入coordinator.
+     - 如果都存在的话，那么比较依赖是否发生变化，如果变化的话是因为alter造成的，那么重新解析。
+   - 进入下轮loop逻辑。
+
+为了防止coordinator loop过快造成压力的话，判断一次逻辑耗时时间。如果一次耗时大于某个阈值的话，那么下次就继续loop.否则需要等待。举个例子，如果阈值时间是2min,而如果一次loop非常快速30s搞定的话，那么就需要等待1min 30s，如果这次loop非常慢耗时3min，那么下次继续loop.
+
+** deploy
+*** 服务端
+   - 创建nsched.conf文件（在conf下面有一个nsched.sample.conf可以参考）.
+     - nsched.submit-retry  // 如果提交任务失败的话，重试次数
+     - nsched.notify.* // 报警设置
+     - nsched.mail.* // 邮件报警参数
+     - nsched.sms.* // 短信报警参数
+     - nsched.db // 数据库存放位置
+     - nsched.http-host // 服务器绑定IP（可能需要放在内网IP）
+     - nsched.http-port // 服务器工作端口
+     - nsched.log-dir // 存放job输出日志位置
+     - nsched.max-fetch-log-size' // 每次获取日志最大数量
+     - 使用命令行nsched.py <path-to-nsched.conf>来启动
+     - 也可以在命令行里面使用 --host= --port= 来指定IP和端口
+
+*** 客户端
+可以参考sample.py下面的代码
+   - 创建Client，指定nsched server位置
+   - 创建Job，并且设置相关参数
+   - 通过client来提交或者是修改Job。其他操作可以直接通过浏览器进行操作。
+     - submitJob(job) // api
+       - http://localhost:8000/sumbit
+     - alterJob(job) // api
+       - http://localhost:8000/alter
+     - deleteJob // http://localhost:8000/delete?id=<jobName> 
+     - forceStartJob // http://localhost:8000/fstart?id=<jobName> 
+     - queryJobsDependOn // http://localhost:8000/dep?id=<jobName>
+     - view // http://localhost:8000/view or http://localhost:8000
+
+也可以通过自己构造json串发送http req来提交作业，包括下面这些字段：
+   - jobName. # 必须唯一
+   - command # 执行命令
+   - dep. 
+     - {'lagTime': lagTimeInSeconds, 'rest': restJson }
+     - lagTime 如果在scheduleTime + lagTime时间内没有启动的话，那么会邮件报警
+     - rest 
+       - ['and',expr,expr]
+       - ['or',expr,expr]
+       - expr
+	 - {'job-status@<jobName>':'success'}
+         - ... # to be completed.
+   - schedTime. timestamp in second.
+可以使用下面代码来做http提交
+#+BEGIN_SRC Python
+def raiseHTTPRequest(url,data=None,timeout=3):
+    # if we do post, we have to provide data.
+    f=urllib2.urlopen(url,data,timeout)
+    return f.read()
+#+END_SRC
+
+下面是自己构造job并且提交的一段sample代码
+#+BEGIN_EXAMPLE
+import time
+jid=time.time();
+jobName='echo#%d'%(jid)
+x={'jobName':jobName,
+   'command':'echo "hello"',
+   'dep':["and",{"file-ready":"/home/dirlt/_SUCCESS2"}, {"job-status@echo#%d"%(jid-1):"success"}],
+   'schedTime':time.time()}
+data=json.dumps(x)
+print raiseHTTPRequest('http://127.0.0.1:8000/submit',data)
+#+END_EXAMPLE
