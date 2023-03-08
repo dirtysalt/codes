@@ -2,34 +2,32 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
-from typing import List
-from collections import Counter, defaultdict, deque
-from functools import lru_cache
-import heapq
+
+class Solution:
+    def minOperations(self, n: int) -> int:
+        import functools
+        @functools.cache
+        def search(x):
+            if x & (x - 1) == 0: return 1
+            # to get the lowest bit.
+            lb = x & -x
+            return 1 + min(search(x + lb), search(x - lb))
+
+        return search(n)
 
 
 class Solution:
     def minOperations(self, n: int) -> int:
-        from collections import deque
-        q = deque()
-        vis = set()
-        q.append((n, 0))
-        vis.add(n)
-
-        def extend(x):
-            d = x & (x - 1)
-            if d == 0:
-                return [0]
-            return [d, x + (x - d)]
-
-        while q:
-            (x, y) = q.popleft()
-            if x == 0: return y
-            vis.add(x)
-            for z in extend(x):
-                if z not in vis:
-                    vis.add(z)
-                    q.append((z, y + 1))
+        ans = 1
+        while n & (n - 1):
+            # to get the lowest bit.
+            lb = n & -n
+            if n & (lb << 1):
+                n += lb
+            else:
+                n -= lb
+            ans += 1
+        return ans
 
 
 true, false, null = True, False, None
@@ -37,7 +35,7 @@ import aatest_helper
 
 cases = [
     (39, 3),
-    (54, 3),
+    (54, 3)
 ]
 
 aatest_helper.run_test_cases(Solution().minOperations, cases)

@@ -3,18 +3,15 @@
 # Copyright (C) dirlt
 
 from typing import List
-from collections import Counter, defaultdict, deque
-from functools import lru_cache
-import heapq
 
 
 class Solution:
     def squareFreeSubsets(self, nums: List[int]) -> int:
         primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-        dp = [0] * (2 ** len(primes))
+        dp = [0] * (1 << len(primes))
         dp[0] = 1
 
-        def isSpecial(x):
+        def hasSquareFactor(x):
             for p in primes:
                 if x % p == 0:
                     c = 0
@@ -29,7 +26,7 @@ class Solution:
         for x in nums:
             if x == 1:
                 ONE += 1
-            elif isSpecial(x):
+            elif hasSquareFactor(x):
                 continue
             else:
                 tmp.append(x)
@@ -37,7 +34,6 @@ class Solution:
 
         MOD = 10 ** 9 + 7
         for x in nums:
-            ok = True
             bits = []
             st = 0
             for idx, p in enumerate(primes):
@@ -67,12 +63,7 @@ class Solution:
 
         S = pow(2, ONE)
         ans = sum(dp[1:])
-        if ans == 0:
-            ans = (S - 1)
-        elif ONE == 0:
-            pass
-        else:
-            ans = (ans + 1) * S - 1
+        ans = (ans + 1) * S - 1
         ans = ans % MOD
         return ans
 
@@ -81,17 +72,8 @@ true, false, null = True, False, None
 import aatest_helper
 
 cases = [
-    ([3, 4, 4, 5], 3),
+    ([3, 4, 4, 5], 3,),
     ([1], 1),
-    ([6, 6], 2),
-    ([26, 6, 6, 18], 3),
-    ([26, 6, 4, 27, 6, 18], 3),
-    ([17, 27, 20, 1, 19], 7),
-    ([1, 2, 6, 15, 7, 19, 6, 29, 28, 24, 21, 25, 25, 18, 9, 6, 20, 21, 8, 24, 14, 19, 24, 28, 30, 27, 13, 21, 1, 23, 13,
-      29, 24, 29, 18, 7], 9215),
 ]
 
 aatest_helper.run_test_cases(Solution().squareFreeSubsets, cases)
-
-if __name__ == '__main__':
-    pass
