@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding:utf-8
 # Copyright (C) dirlt
+import time
 from collections import deque, OrderedDict
 
 
@@ -97,12 +98,14 @@ def run_test_cases(fn, cases, eqfn=None):
         args, exp = c[:-1], c[-1]
         global EXP
         EXP = exp
+        start = time.time()
         res = fn(*args)
+        end = time.time()
         if exp is not ANYTHING and not eqfn(res, exp):
             print('case failed. {}, out = {}'.format(c, res))
             ok = False
         else:
-            print('case passed. {}'.format(c))
+            print('case passed. %s(!timer = %dms)' % (c, (end - start) * 1000))
     if ok:
         print('all cases passed!!!')
 
@@ -117,29 +120,38 @@ def run_simulation_cases(cls, cases, eqfn=None):
         obj = cls(*args[0])
         res = [None]
         assert cls.__name__ == cmds[0]
+        start = time.time()
         for i in range(1, len(cmds)):
             fn = getattr(obj, cmds[i])
             v = fn(*args[i])
             if v != exp[i]:
                 print('!DIFF. fn = {}, args = {}, v = {}, exp[{}] = {}'.format(fn, args[i], v, i, exp[i]))
             res.append(v)
+        end = time.time()
         if exp is not ANYTHING and not eqfn(res, exp):
             print('case failed. {}, out = {}'.format(c, res))
             ok = False
         else:
-            print('case #%d passed' % idx)
+            print('case #%d passed(!timer = %dms)' % (idx, (end - start) * 1000))
     if ok:
         print('all cases passed!!!')
 
 
-def read_case_from_file(f, exp):
-    res = []
+def read_cases_from_file(f, size):
+    cases = []
     with open(f) as fh:
+        c = []
+        idx = 0
         for s in fh:
-            val = eval(s)
-            res.append(val)
-    res.append(exp)
-    return tuple(res)
+            s = s.strip()
+            if not s: continue
+            c.append(eval(s))
+            idx += 1
+            if idx == size:
+                cases.append(c)
+                idx = 0
+                c = []
+    return cases
 
 
 if __name__ == '__main__':
