@@ -67,6 +67,33 @@ class Solution:
         ans = ans % MOD
         return ans
 
+class Solution:
+    def squareFreeSubsets(self, nums: List[int]) -> int:
+        primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+        M = 1 << len(primes)
+        mask = [0] * 31
+
+        # preprocess.
+        for x in range(1, 31):
+            for idx, p in enumerate(primes):
+                if x % p == 0:
+                    if (x // p) % p == 0:
+                        mask[x] = -1
+                    else:
+                        mask[x] |= (1 << idx)
+
+        MOD = 10 ** 9 + 7
+        dp = [0] * M
+        dp[0] = 1
+        for x in nums:
+            m = mask[x]
+            if m >= 0:  # mask[1] = 0
+                for st in reversed(range(M)):
+                    if (st | m) == st:
+                        # 选择st, 不选择m. 或者是选择st ^ m, 选择m.
+                        dp[st] = (dp[st] + dp[st ^ m]) % MOD
+
+        return (sum(dp) - 1) % MOD
 
 true, false, null = True, False, None
 import aatest_helper

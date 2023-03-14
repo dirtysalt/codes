@@ -70,6 +70,37 @@ class Solution:
         return -1
 
 
+class Solution:
+    def findValidSplit(self, nums: List[int]) -> int:
+        M = min(max(nums), 10 ** 3)
+        primes = get_primes(M)
+        left = {}
+        right = [0] * (len(nums))
+
+        def update(p, idx):
+            if p not in left:
+                pos = idx
+                left[p] = idx
+            else:
+                pos = left[p]
+            right[pos] = idx
+
+        for idx, x in enumerate(nums):
+            for p in primes:
+                if x % p == 0:
+                    while x % p == 0:
+                        x = x // p
+                    update(p, idx)
+            if x > 1:
+                update(x, idx)
+
+        ans = 0
+        for idx, r in enumerate(right):
+            if idx > ans:
+                return ans
+            ans = max(ans, r)
+        return -1
+
 true, false, null = True, False, None
 import aatest_helper
 
