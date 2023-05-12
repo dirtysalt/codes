@@ -749,7 +749,7 @@ inline void* memcpy_gutil(void* dst, const void* src, size_t size) {
     return dst;
 }
 
-static uint8_t* memcpy_sr(uint8_t* __restrict dst, const uint8_t* __restrict src, size_t size) {
+static inline uint8_t* memcpy_sr(uint8_t* __restrict dst, const uint8_t* __restrict src, size_t size) {
     uint8_t* ret = dst;
 
     [[maybe_unused]] tail : if (size <= 16) {
@@ -838,62 +838,59 @@ static uint8_t* memcpy_sr(uint8_t* __restrict dst, const uint8_t* __restrict src
     return ret;
 }
 
-static uint8_t* memcpy_sr2(uint8_t* __restrict dst, const uint8_t* __restrict src, size_t size) {
+static inline uint8_t* memcpy_sr2(uint8_t* __restrict dst, const uint8_t* __restrict src, size_t size) {
     uint8_t* ret = dst;
-
     [[maybe_unused]] tail : if (size <= 16) {
-        // Compiler inlines code with minimal amount of data movement when third
-        // parameter of memcpy is a constant.
         switch (size) {
         case 0:
             break;
         case 1:
-            memcpy(dst, src, 1);
+            __builtin_memcpy(dst, src, 1);
             break;
         case 2:
-            memcpy(dst, src, 2);
+            __builtin_memcpy(dst, src, 2);
             break;
         case 3:
-            memcpy(dst, src, 3);
+            __builtin_memcpy(dst, src, 3);
             break;
         case 4:
-            memcpy(dst, src, 4);
+            __builtin_memcpy(dst, src, 4);
             break;
         case 5:
-            memcpy(dst, src, 5);
+            __builtin_memcpy(dst, src, 5);
             break;
         case 6:
-            memcpy(dst, src, 6);
+            __builtin_memcpy(dst, src, 6);
             break;
         case 7:
-            memcpy(dst, src, 7);
+            __builtin_memcpy(dst, src, 7);
             break;
         case 8:
-            memcpy(dst, src, 8);
+            __builtin_memcpy(dst, src, 8);
             break;
         case 9:
-            memcpy(dst, src, 9);
+            __builtin_memcpy(dst, src, 9);
             break;
         case 10:
-            memcpy(dst, src, 10);
+            __builtin_memcpy(dst, src, 10);
             break;
         case 11:
-            memcpy(dst, src, 11);
+            __builtin_memcpy(dst, src, 11);
             break;
         case 12:
-            memcpy(dst, src, 12);
+            __builtin_memcpy(dst, src, 12);
             break;
         case 13:
-            memcpy(dst, src, 13);
+            __builtin_memcpy(dst, src, 13);
             break;
         case 14:
-            memcpy(dst, src, 14);
+            __builtin_memcpy(dst, src, 14);
             break;
         case 15:
-            memcpy(dst, src, 15);
+            __builtin_memcpy(dst, src, 15);
             break;
         case 16:
-            memcpy(dst, src, 16);
+            __builtin_memcpy(dst, src, 16);
             break;
         }
     }
