@@ -76,6 +76,7 @@ int main() {
     VARIANT(29, __memcpy_avx512_no_vzeroupper)
     VARIANT(30, memcpy_sr)
     VARIANT(31, memcpy_gutil)
+    VARIANT(32, memcpy_sr2)
 
     for (auto suite : suites) {
         suite.run();

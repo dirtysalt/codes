@@ -41,4 +41,4 @@ memcpy-test.o:memcpy-test.cpp memcpy-impl.h
 	$(CXX) -o $@ -c $< ${INC_FLAGS} ${CK_FLAGS} ${CXX_FLAGS}
 
 clean:
-	rm -rf *.exe perf.data* *.o ${OBJS}
+	rm -rf *.exe perf.data* *.o ${OBJS} core.*
