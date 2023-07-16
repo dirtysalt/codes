@@ -14,7 +14,8 @@ all: \
 	malloc_perf.exe \
 	filter_range_perf.exe \
 	filter_range_test.exe \
-	runtime_filter_perf.exe
+	runtime_filter_perf.exe \
+	float_distance_perf.exe
 
 %.exe: %.cpp
 	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS} ${LIBCXX_FLAGS}
