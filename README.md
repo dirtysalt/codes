@@ -1,1 +1,1 @@
-codes dies & ideas lives.
+code dies but idea lives.
