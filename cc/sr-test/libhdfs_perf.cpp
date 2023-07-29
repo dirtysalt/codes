@@ -111,7 +111,7 @@ std::vector<FileMetadata> listFiles(hdfsFS fs, const char* prefix) {
     int numEntries = 0;
     ret = hdfsListDirectory(fs, prefix, &numEntries);
     if (ret == nullptr) {
-        fprintf(stderr, "listFiles failed. prefix = %s, error = %s", prefix, getHdfsErrorMessage());
+        fprintf(stderr, "listFiles failed. prefix = %s, error = %s\n", prefix, getHdfsErrorMessage());
         return files;
     }
 
@@ -126,7 +126,7 @@ std::vector<FileMetadata> listFiles(hdfsFS fs, const char* prefix) {
 hdfsFile openFileForRead(hdfsFS fs, const char* path) {
     hdfsFile file = hdfsOpenFile(fs, path, O_RDONLY, 0, 0, 0);
     if (file == nullptr) {
-        fprintf(stderr, "openFile failed. path = %s, error = %s", path, getHdfsErrorMessage());
+        fprintf(stderr, "openFile failed. path = %s, error = %s\n", path, getHdfsErrorMessage());
         return nullptr;
     }
     return file;
@@ -141,7 +141,7 @@ void readData(hdfsFS fs, hdfsFile file, const char* path, uint8_t* buf, int64_t 
 
     ret = hdfsSeek(fs, file, offset);
     if (ret != 0) {
-        fprintf(stderr, "seekFile failed. path = %s, error = %s", path, getHdfsErrorMessage());
+        fprintf(stderr, "seekFile failed. path = %s, error = %s\n", path, getHdfsErrorMessage());
         return;
     }
 
@@ -150,11 +150,14 @@ void readData(hdfsFS fs, hdfsFile file, const char* path, uint8_t* buf, int64_t 
         tSize r = hdfsRead(fs, file, buf + now, size - now);
         if (r == -1) {
             if (errno == EINTR) continue;
-            fprintf(stderr, "readFile failed. path = %s, error = %s", path, getHdfsErrorMessage());
+            fprintf(stderr, "readFile failed. path = %s, error = %s\n", path, getHdfsErrorMessage());
             return;
         }
         if (r == 0) break;
         now += r;
+    }
+    if (now != size) {
+        fprintf(stderr, "!!!readFile not fully. path = %s\n", path);
     }
 }
 
@@ -202,8 +205,6 @@ struct Task {
 };
 
 int main(int argc, const char** argv) {
-    int idx = 1;
-
     const char* namenode = nullptr;
     const char* path = nullptr;
     int block_size = 4;
@@ -212,6 +213,7 @@ int main(int argc, const char** argv) {
     int round = 100;
     int threads = 16;
 
+    int idx = 1;
     while (idx < argc) {
         std::string s(argv[idx]);
         if (s == "--endpoint") {
@@ -239,6 +241,11 @@ int main(int argc, const char** argv) {
             idx += 1;
         }
     }
+
+    fprintf(stdout,
+            "%s: endpoint = %s, path = %s, threads = %d, block_size = %dKB, scan_size = %dMB, round = %d, repeat = "
+            "%d\n",
+            argv[0], namenode, path, threads, block_size, scan_size, round, repeat);
 
     block_size *= 1024;
     scan_size *= 1024 * 1024;
