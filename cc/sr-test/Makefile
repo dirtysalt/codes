@@ -22,7 +22,7 @@ all: \
 	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS} ${LIBCXX_FLAGS}
 
 libhdfs_perf.exe: libhdfs_perf.cpp
-	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} libhdfs.a ${LD_FLAGS} -L$(JAVA_HOME)/jre/lib/amd64/server -ljvm ${LIB_FLAGS} ${LIBCXX_FLAGS}
+	$(CXX) -o $@ $< ${INC_FLAGS} -std=c++20 -O2 -g libhdfs.a ${LD_FLAGS} -L$(JAVA_HOME)/jre/lib/amd64/server -ljvm -lpthread ${LIBCXX_FLAGS}
 
 clean:
 	rm -rf *.exe perf.data*
