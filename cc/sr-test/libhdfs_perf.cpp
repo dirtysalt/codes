@@ -2,7 +2,12 @@
  * Copyright (C) dirlt
  */
 
+#ifdef LIBHDFS3
+#include <hdfs3/hdfs.h>
+#else
 #include <hdfs/hdfs.h>
+#endif
+
 #include <unistd.h>
 
 #include <algorithm>
@@ -90,8 +95,12 @@ hdfsFS makeHdfsFS(const char* namenode) {
 }
 
 const char* getHdfsErrorMessage() {
+#ifdef LIBHDFS3
+    return hdfsGetLastError();
+#else
     char* root_cause = hdfsGetLastExceptionRootCause();
     return root_cause ? root_cause : "";
+#endif
 }
 
 struct FileMetadata {
