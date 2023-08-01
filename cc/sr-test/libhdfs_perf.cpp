@@ -88,12 +88,6 @@ struct LatencyStats {
     }
 };
 
-hdfsFS makeHdfsFS(const char* namenode) {
-    auto hdfs_builder = hdfsNewBuilder();
-    hdfsBuilderSetNameNode(hdfs_builder, namenode);
-    return hdfsBuilderConnect(hdfs_builder);
-}
-
 const char* getHdfsErrorMessage() {
 #ifdef LIBHDFS3
     return hdfsGetLastError();
@@ -103,6 +97,15 @@ const char* getHdfsErrorMessage() {
 #endif
 }
 
+hdfsFS makeHdfsFS(const char* namenode) {
+    auto hdfs_builder = hdfsNewBuilder();
+    hdfsBuilderSetNameNode(hdfs_builder, namenode);
+    hdfsFS fs = hdfsBuilderConnect(hdfs_builder);
+    if (fs == nullptr) {
+        fprintf(stderr, "makeHdfsFS failed. namenode = %s, error = %s\n", namenode, getHdfsErrorMessage());
+    }
+    return fs;
+}
 struct FileMetadata {
     std::string name;
     int64_t size;
