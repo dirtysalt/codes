@@ -29,10 +29,9 @@ class Solution:
             t = 1 << T[j]
             while i < len(bits):
                 t -= nums[i]
-                if t == 0:
-                    break
+                if t <= 0: break
                 i += 1
-            return i
+            return i if t == 0 else len(bits)
 
         @functools.cache
         def search(i, j):
