@@ -324,18 +324,21 @@ def tarjan_lca(graph, root, queries):
 
     n = len(graph)
     ufs = UnionFindSet(n)
+    visited = [0] * n
 
     def dfs(root, parent):
         # answer queries.
+        visited[root] = 1
         query = query_index[root]
         for v, idx in query:
+            # 如果这个节点之前没有被访问过，那么是不知道LCA的
+            if not visited[v]: continue
             # 如果有对应的查询节点v, 并且这个节点之前访问过
             # 那么使用这个节点的parent.
             # 如果v是root的祖先节点的话，那么就是v
             # 如果v在另外一个树上的话，那么就是最早交汇的节点
             p = ufs.find(v)
-            if p != -1:
-                ans[idx] = p
+            ans[idx] = p
 
         # continue to dfs.
         for v, _ in graph[root]:
@@ -346,6 +349,20 @@ def tarjan_lca(graph, root, queries):
 
     dfs(root, -1)
     return ans
+
+
+def get_primes(N):
+    ps = []
+    mask = [0] * (N + 1)
+    for i in range(2, N + 1):
+        if mask[i] == 1: continue
+        for j in range(2, N + 1):
+            if i * j > N: break
+            mask[i * j] = 1
+    for i in range(2, N + 1):
+        if mask[i] == 0:
+            ps.append(i)
+    return ps
 
 
 if __name__ == '__main__':
