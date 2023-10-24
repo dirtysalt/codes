@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding:utf-8
 # Copyright (C) dirlt
+import cProfile
+import os.path
 import time
 from collections import deque, OrderedDict
 
@@ -86,11 +88,18 @@ def test_tree_list():
 ANYTHING = '!!!anything!!!'
 EXP = None
 
+PR = cProfile.Profile()
+PROFILE = False
+
 
 def run_test_cases(fn, cases, eqfn=None):
     ok = True
     if eqfn is None:
         eqfn = lambda x, y: x == y
+
+    global PROFILE
+    if PROFILE:
+        PR.enable()
 
     for c in cases:
         if isinstance(c, OrderedDict):
@@ -108,6 +117,15 @@ def run_test_cases(fn, cases, eqfn=None):
             print('case passed. %s(!timer = %dms)' % (c, (end - start) * 1000))
     if ok:
         print('all cases passed!!!')
+
+    if PROFILE:
+        import pstats, io
+        PR.disable()
+        s = io.StringIO()
+        sortby = pstats.SortKey.CUMULATIVE
+        ps = pstats.Stats(PR, stream=s).sort_stats(sortby)
+        ps.print_stats()
+        print(s.getvalue())
 
 
 def run_simulation_cases(cls, cases, eqfn=None):
@@ -139,6 +157,8 @@ def run_simulation_cases(cls, cases, eqfn=None):
 
 def read_cases_from_file(f, size):
     cases = []
+    if not os.path.exists(f):
+        return cases
     with open(f) as fh:
         c = []
         idx = 0

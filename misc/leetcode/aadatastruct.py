@@ -66,7 +66,7 @@ class StringHashBuilder:
             self.hash[i + 1] = h
             self.base[i + 1] = b
 
-    def getHash(self, left, right):
+    def get_hash(self, left, right):
         upper = self.hash[right]
         lower = (self.hash[left] * self.base[right - left]) % self.MOD
         return (upper - lower + self.MOD) % self.MOD
@@ -78,9 +78,9 @@ class PrefixSumTree:
         self.tree = [0] * (n + 1)
         self.n = n
         for i in range(n):
-            self.updateSum(i, arr[i])
+            self.update_sum(i, arr[i])
 
-    def getSum(self, index):
+    def get_sum(self, index):
         t = 0
         index = index + 1
         while index > 0:
@@ -88,7 +88,7 @@ class PrefixSumTree:
             index -= index & (-index)
         return t
 
-    def updateSum(self, index, val):
+    def update_sum(self, index, val):
         index = index + 1
         while index <= self.n:
             self.tree[index] += val
@@ -132,6 +132,7 @@ class StreamStatistics:
 
 
 class GeometryUtil:
+    # 求解两条线的交点
     @staticmethod
     def TwoLinesCrossPoint(line1, line2, onLine=True):
         # https://zhuanlan.zhihu.com/p/138718555
@@ -167,23 +168,23 @@ class GeometryUtil:
             y = k1 * x * 1.0 + b1 * 1.0
             point_is_exist = True
 
+        def PointOnLine(p, l, l2):
+            x, y = p
+            x1, y1, x2, y2 = l
+            if not (min(x1, x2) <= x <= max(x1, x2) and min(y1, y2) <= y <= max(y1, y2)):
+                return False
+            x1, y1, x2, y2 = l2
+            if not (min(x1, x2) <= x <= max(x1, x2) and min(y1, y2) <= y <= max(y1, y2)):
+                return False
+            return True
+
         if point_is_exist:
             p = [x, y]
-            if onLine and GeometryUtil.PointOnLine(p, line1, line2):
+            if onLine and PointOnLine(p, line1, line2):
                 return [x, y]
         return []
 
-    @staticmethod
-    def PointOnLine(p, l, l2):
-        x, y = p
-        x1, y1, x2, y2 = l
-        if not (min(x1, x2) <= x <= max(x1, x2) and min(y1, y2) <= y <= max(y1, y2)):
-            return []
-        x1, y1, x2, y2 = l2
-        if not (min(x1, x2) <= x <= max(x1, x2) and min(y1, y2) <= y <= max(y1, y2)):
-            return []
-        return p
-
+    # 求解圆和直线的交点
     @staticmethod
     def LineIntersectCircle(p, l):
         # https://www.codingdict.com/questions/187334
@@ -217,6 +218,7 @@ class GeometryUtil:
                 inp = []
         return inp
 
+    # 求解两个圆之间的交点
     @staticmethod
     def TwoCirclesCrossPoint(p1, p2):
         x, y, R = p1
@@ -246,11 +248,11 @@ class RangeOp:
         self.fn = fn
 
     @staticmethod
-    def MaxOp():
+    def max():
         return RangeOp(0, lambda x, y: max(x, y))
 
     @staticmethod
-    def SumOp():
+    def sum():
         return RangeOp(0, lambda x, y: x + y)
 
 
@@ -363,6 +365,43 @@ def get_primes(N):
         if mask[i] == 0:
             ps.append(i)
     return ps
+
+
+# 费马小定理, 但是这里必须确保MOD是质数
+# b^MOD % MOD = b
+# b^(MOD-1) % MOD = 1
+# b^(MOD-2) % MOD = (b^-1) % MOD
+def pow_mod(a, b, MOD):
+    res = 1
+    while b:
+        if b & 0x1:
+            res = (res * a) % MOD
+        a = (a * a) % MOD
+        b = b >> 1
+    return res
+
+
+#
+def div_mod(b, MOD):
+    return pow_mod(b, MOD - 2, MOD)
+
+
+# 相比费马小定理，这里不要求MOD是质数，只需要确保b和MOD是互质就行
+# b * x + MOD * y =  1(% MOD)
+def extended_gcd(a, b):
+    if b == 0:
+        return a, 1, 0
+    else:
+        d, x1, y1 = extended_gcd(b, a % b)
+        x = y1
+        y = x1 - (a // b) * y1
+        return d, x, y
+
+
+def mod_inverse(b, MOD):
+    d, x, y = extended_gcd(b, MOD)
+    assert (d == 1)
+    return x % MOD
 
 
 if __name__ == '__main__':
