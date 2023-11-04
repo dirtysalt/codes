@@ -95,17 +95,6 @@ class PrefixSumTree:
             index += index & (-index)
 
 
-def mat_mul(a, b, MOD):
-    R, K, C = len(a), len(a[0]), len(b[0])
-    res = [[0] * C for _ in range(R)]
-    for k in range(K):
-        for i in range(R):
-            for j in range(C):
-                res[i][j] += (a[i][k] * b[k][j]) % MOD
-                res[i][j] %= MOD
-    return res
-
-
 class StreamStatistics:
     def __init__(self):
         self.sum = 0
@@ -131,115 +120,113 @@ class StreamStatistics:
         return t / self.n
 
 
-class GeometryUtil:
-    # 求解两条线的交点
-    @staticmethod
-    def TwoLinesCrossPoint(line1, line2, onLine=True):
-        # https://zhuanlan.zhihu.com/p/138718555
-        point_is_exist = False
-        x = y = 0
-        x1, y1, x2, y2 = line1
-        x3, y3, x4, y4 = line2
+def two_lines_cross_point(line1, line2, on_the_line=True):
+    """求解两条线的交点"""
+    # https://zhuanlan.zhihu.com/p/138718555
+    point_is_exist = False
+    x = y = 0
+    x1, y1, x2, y2 = line1
+    x3, y3, x4, y4 = line2
 
-        if (x2 - x1) == 0:
-            k1 = None
-            b1 = 0
-        else:
-            k1 = (y2 - y1) * 1.0 / (x2 - x1)  # 计算k1,由于点均为整数，需要进行浮点数转化
-            b1 = y1 * 1.0 - x1 * k1 * 1.0  # 整型转浮点型是关键
+    if (x2 - x1) == 0:
+        k1 = None
+        b1 = 0
+    else:
+        k1 = (y2 - y1) * 1.0 / (x2 - x1)  # 计算k1,由于点均为整数，需要进行浮点数转化
+        b1 = y1 * 1.0 - x1 * k1 * 1.0  # 整型转浮点型是关键
 
-        if (x4 - x3) == 0:  # L2直线斜率不存在
-            k2 = None
-            b2 = 0
-        else:
-            k2 = (y4 - y3) * 1.0 / (x4 - x3)  # 斜率存在
-            b2 = y3 * 1.0 - x3 * k2 * 1.0
+    if (x4 - x3) == 0:  # L2直线斜率不存在
+        k2 = None
+        b2 = 0
+    else:
+        k2 = (y4 - y3) * 1.0 / (x4 - x3)  # 斜率存在
+        b2 = y3 * 1.0 - x3 * k2 * 1.0
 
-        if k1 is None:
-            if not k2 is None:
-                x = x1
-                y = k2 * x1 + b2
-                point_is_exist = True
-        elif k2 is None:
-            x = x3
-            y = k1 * x3 + b1
-        elif not k2 == k1:
-            x = (b2 - b1) * 1.0 / (k1 - k2)
-            y = k1 * x * 1.0 + b1 * 1.0
+    if k1 is None:
+        if not k2 is None:
+            x = x1
+            y = k2 * x1 + b2
             point_is_exist = True
+    elif k2 is None:
+        x = x3
+        y = k1 * x3 + b1
+    elif not k2 == k1:
+        x = (b2 - b1) * 1.0 / (k1 - k2)
+        y = k1 * x * 1.0 + b1 * 1.0
+        point_is_exist = True
 
-        def PointOnLine(p, l, l2):
-            x, y = p
-            x1, y1, x2, y2 = l
-            if not (min(x1, x2) <= x <= max(x1, x2) and min(y1, y2) <= y <= max(y1, y2)):
-                return False
-            x1, y1, x2, y2 = l2
-            if not (min(x1, x2) <= x <= max(x1, x2) and min(y1, y2) <= y <= max(y1, y2)):
-                return False
-            return True
-
-        if point_is_exist:
-            p = [x, y]
-            if onLine and PointOnLine(p, line1, line2):
-                return [x, y]
-        return []
-
-    # 求解圆和直线的交点
-    @staticmethod
-    def LineIntersectCircle(p, l):
-        # https://www.codingdict.com/questions/187334
-        x0, y0, r0 = p
+    def is_point_on_line(p, l, l2):
+        x, y = p
         x1, y1, x2, y2 = l
-        if x1 == x2:
-            if abs(r0) >= abs(x1 - x0):
-                p1 = x1, y0 - math.sqrt(r0 ** 2 - (x1 - x0) ** 2)
-                p2 = x1, y0 + math.sqrt(r0 ** 2 - (x1 - x0) ** 2)
-                inp = [p1, p2]
-                # select the points lie on the line segment
-                inp = [p for p in inp if min(y1, y2) <= p[1] <= max(y1, y2)]
-            else:
-                inp = []
-        else:
-            k = (y1 - y2) / (x1 - x2)
-            b0 = y1 - k * x1
-            a = k ** 2 + 1
-            b = 2 * k * (b0 - y0) - 2 * x0
-            c = (b0 - y0) ** 2 + x0 ** 2 - r0 ** 2
-            delta = b ** 2 - 4 * a * c
-            if delta >= 0:
-                p1x = (-b - math.sqrt(delta)) / (2 * a)
-                p2x = (-b + math.sqrt(delta)) / (2 * a)
-                p1y = k * x1 + b0
-                p2y = k * x2 + b0
-                inp = [[p1x, p1y], [p2x, p2y]]
-                # select the points lie on the line segment
-                inp = [p for p in inp if min(x1, x2) <= p[0] <= max(x1, x2)]
-            else:
-                inp = []
-        return inp
+        if not (min(x1, x2) <= x <= max(x1, x2) and min(y1, y2) <= y <= max(y1, y2)):
+            return False
+        x1, y1, x2, y2 = l2
+        if not (min(x1, x2) <= x <= max(x1, x2) and min(y1, y2) <= y <= max(y1, y2)):
+            return False
+        return True
 
-    # 求解两个圆之间的交点
-    @staticmethod
-    def TwoCirclesCrossPoint(p1, p2):
-        x, y, R = p1
-        a, b, S = p2
-        d = math.sqrt((abs(a - x)) ** 2 + (abs(b - y)) ** 2)
-        if d > (R + S) or d < (abs(R - S)):
-            # print("Two circles have no intersection")
-            return []
-        elif d == 0 and R == S:
-            # print("Two circles have same center!")
-            return []
+    if point_is_exist:
+        p = [x, y]
+        if on_the_line and is_point_on_line(p, line1, line2):
+            return [x, y]
+    return []
+
+
+def line_intersect_circle(p, l):
+    """求解圆和直线的交点"""
+    # https://www.codingdict.com/questions/187334
+    x0, y0, r0 = p
+    x1, y1, x2, y2 = l
+    if x1 == x2:
+        if abs(r0) >= abs(x1 - x0):
+            p1 = x1, y0 - math.sqrt(r0 ** 2 - (x1 - x0) ** 2)
+            p2 = x1, y0 + math.sqrt(r0 ** 2 - (x1 - x0) ** 2)
+            inp = [p1, p2]
+            # select the points lie on the line segment
+            inp = [p for p in inp if min(y1, y2) <= p[1] <= max(y1, y2)]
         else:
-            A = (R ** 2 - S ** 2 + d ** 2) / (2 * d)
-            h = math.sqrt(R ** 2 - A ** 2)
-            x2 = x + A * (a - x) / d
-            y2 = y + A * (b - y) / d
-            x3 = x2 - h * (b - y) / d
-            y3 = y2 + h * (a - x) / d
-            x4 = x2 + h * (b - y) / d
-            y4 = y2 - h * (a - x) / d
-            return [x3, y3, x4, y4]
+            inp = []
+    else:
+        k = (y1 - y2) / (x1 - x2)
+        b0 = y1 - k * x1
+        a = k ** 2 + 1
+        b = 2 * k * (b0 - y0) - 2 * x0
+        c = (b0 - y0) ** 2 + x0 ** 2 - r0 ** 2
+        delta = b ** 2 - 4 * a * c
+        if delta >= 0:
+            p1x = (-b - math.sqrt(delta)) / (2 * a)
+            p2x = (-b + math.sqrt(delta)) / (2 * a)
+            p1y = k * x1 + b0
+            p2y = k * x2 + b0
+            inp = [[p1x, p1y], [p2x, p2y]]
+            # select the points lie on the line segment
+            inp = [p for p in inp if min(x1, x2) <= p[0] <= max(x1, x2)]
+        else:
+            inp = []
+    return inp
+
+
+def two_circles_cross_point(p1, p2):
+    """求解两个圆之间的交点"""
+    x, y, R = p1
+    a, b, S = p2
+    d = math.sqrt((abs(a - x)) ** 2 + (abs(b - y)) ** 2)
+    if d > (R + S) or d < (abs(R - S)):
+        # print("Two circles have no intersection")
+        return []
+    elif d == 0 and R == S:
+        # print("Two circles have same center!")
+        return []
+    else:
+        A = (R ** 2 - S ** 2 + d ** 2) / (2 * d)
+        h = math.sqrt(R ** 2 - A ** 2)
+        x2 = x + A * (a - x) / d
+        y2 = y + A * (b - y) / d
+        x3 = x2 - h * (b - y) / d
+        y3 = y2 + h * (a - x) / d
+        x4 = x2 + h * (b - y) / d
+        y4 = y2 - h * (a - x) / d
+        return [x3, y3, x4, y4]
 
 
 class RangeOp:
@@ -294,6 +281,88 @@ class RangeTree:
             return self.op.fn(vx, vy)
 
         return search(1, 0, self.n)
+
+
+class SegmentTreeSummer:
+    class Base:
+        def __init__(self, n):
+            self.values = [0] * n
+
+        def update(self, i, j, delta):
+            for k in range(i, j + 1):
+                self.values[k] += delta
+
+        def query(self, i, j):
+            acc = 0
+            for k in range(i, j + 1):
+                acc += self.values[k]
+            return acc
+
+    def __init__(self, n):
+        self.n = n
+        sz = 1
+        while sz < n:
+            sz <<= 1
+        self.sum = [0] * (sz << 1)
+        self.lazy = [0] * (sz << 1)
+        self.sz = sz
+        self.base = SegmentTreeSummer.Base(n)
+        self.debug = False
+
+    def dump(self):
+        sz = 1
+        off = 1
+        while sz <= self.sz:
+            print(self.sum[off:off + sz], self.lazy[off:off + sz])
+            off += sz
+            sz = sz << 1
+
+    def query_and_update(self, i, j, delta):
+        def do(i, j, k, s, sz):
+
+            if i <= s <= (s + sz - 1) <= j:
+                res = self.sum[k]
+                self.apply_lazy(k, sz, delta)
+                return res
+
+            self.push_down(k, sz)
+            mid = s + sz // 2
+            res = 0
+            if i < mid:
+                res += do(i, j, 2 * k, s, sz // 2)
+            if j >= mid:
+                res += do(i, j, 2 * k + 1, mid, sz // 2)
+
+            self.sum[k] = self.sum[2 * k] + self.sum[2 * k + 1]
+            return res
+
+        ans = do(i, j, 1, 0, self.sz)
+        if self.debug:
+            exp = self.base.query(i, j)
+            self.base.update(i, j, delta)
+            print('query_and_update(%d, %d) = %d' % (i, j, ans))
+            self.dump()
+
+            if ans != exp:
+                assert (ans == exp)
+        return ans
+
+    def push_down(self, k, sz):
+        if self.lazy[k] and sz != 1:
+            v = self.lazy[k]
+            self.apply_lazy(2 * k, sz // 2, v)
+            self.apply_lazy(2 * k + 1, sz // 2, v)
+            self.lazy[k] = 0
+
+    def apply_lazy(self, k, sz, delta):
+        self.sum[k] += delta * sz
+        self.lazy[k] += delta
+
+    def query(self, i, j):
+        return self.query_and_update(i, j, 0)
+
+    def update(self, i, j, delta):
+        self.query_and_update(i, j, delta)
 
 
 def tarjan_lca(graph, root, queries):
@@ -402,6 +471,17 @@ def mod_inverse(b, MOD):
     d, x, y = extended_gcd(b, MOD)
     assert (d == 1)
     return x % MOD
+
+
+def mat_mul(a, b, MOD):
+    R, K, C = len(a), len(a[0]), len(b[0])
+    res = [[0] * C for _ in range(R)]
+    for k in range(K):
+        for i in range(R):
+            for j in range(C):
+                res[i][j] += (a[i][k] * b[k][j]) % MOD
+                res[i][j] %= MOD
+    return res
 
 
 if __name__ == '__main__':
