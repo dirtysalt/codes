@@ -37,7 +37,7 @@ public class FixedSizeHeap<E> {
         heap.add(5);
         heap.add(30);
         Iterator<Integer> iterator = heap.iterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             Integer a = iterator.next();
             System.out.println(a);
         }

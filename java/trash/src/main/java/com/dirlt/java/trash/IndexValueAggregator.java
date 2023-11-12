@@ -87,9 +87,9 @@ public class IndexValueAggregator {
 
     public static void main(String[] args) {
         IndexValueAggregator iv = new IndexValueAggregator("1");
-        iv.sink("osVersion","installCnt","100",(long)1,(long)1,(long)2);
-        iv.sink("osVersion","installCnt","101",(long)2,(long)2,(long)1);
-        iv.sink("osVersion","installCnt","102",(long)2,(long)2,(long)1);
+        iv.sink("osVersion", "installCnt", "100", (long) 1, (long) 1, (long) 2);
+        iv.sink("osVersion", "installCnt", "101", (long) 2, (long) 2, (long) 1);
+        iv.sink("osVersion", "installCnt", "102", (long) 2, (long) 2, (long) 1);
         iv.doOutput();
     }
 

@@ -1,8 +1,8 @@
 package com.dirlt.java.trash;
 
+import java.lang.management.ManagementFactory;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
-import java.lang.management.ManagementFactory;
 
 /**
  * Created with IntelliJ IDEA.

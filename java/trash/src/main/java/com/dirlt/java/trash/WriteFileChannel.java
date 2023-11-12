@@ -6,7 +6,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.file.StandardOpenOption;
 
-public class SMOnFileChannel {
+public class WriteFileChannel {
     public static void main(String[] args) throws IOException, InterruptedException {
         File f = new File("/tmp/test-file-channel.txt");
         FileChannel fc = FileChannel.open(f.toPath(), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING,
