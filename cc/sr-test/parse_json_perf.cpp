@@ -11,13 +11,16 @@
 #include <string>
 #include <vector>
 
+#include "json_converter.cpp"
 #include "util/json.h"
+#include "util/json_converter.h"
 #include "util/slice.h"
 
 using namespace starrocks;
 
-const char* github_event_json0 = R"(
- {
+// const char* github_event_json0 = R"({"a":10})";
+
+const char* github_event_json0 = R"({
     "id": "1978774738",
     "type": "PullRequestEvent",
     "actor": {
@@ -346,14 +349,15 @@ const char* github_event_json0 = R"(
       "url": "https://api.github.com/orgs/RichmondDay",
       "avatar_url": "https://gravatar.com/avatar/9e7208e61842f701042e1222865cb8eb?d=https%3A%2F%2Fa248.e.akamai.net%2Fassets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png&r=x"
     }
-  }
-)";
+  })";
 
 std::vector<Slice> input_data;
 
 void velocypack_load(const Slice& src, JsonValue& value) {
     Status st = JsonValue::parse(src, &value);
-    assert(st.ok());
+    if (!st.ok()) {
+        std::cout << st.get_error_msg() << "\n";
+    }
 }
 
 static void test_velocypack_load(benchmark::State& state) {
@@ -374,9 +378,12 @@ void simdjson_load(const Slice& src, JsonValue& value) {
     simdjson::padded_string_view view(room.data(), src.size, room.size());
 
     simdjson::ondemand::document _doc = _parser.iterate(view);
-    simdjson::ondemand::object row = _doc.get_object();    
-    StatusOr<JsonValue> st = JsonValue::from_simdjson(&row);    
-    assert(st.ok());
+    simdjson::ondemand::object row = _doc.get_object();
+
+    StatusOr<JsonValue> st = SimdJsonConverter::create((SimdJsonObject)row);
+    if (!st.ok()) {
+        std::cout << st.status().get_error_msg() << "\n";
+    }
     value = std::move(st.value());
 }
 
@@ -403,18 +410,20 @@ int main(int argc, char** argv) {
     // }
 
     input_data.push_back(Slice(github_event_json0));
-    for (const Slice& x : input_data) {
-        std::cout << "json length = " << x.size << "\n";
-    }
 
-    for (const Slice& x : input_data) {
-        JsonValue value;
+    bool stats = false;
+    if (stats) {
+        for (const Slice& x : input_data) {
+            JsonValue value;
 
-        // velocypack_load(x, value);
-        // std::cout << "json data = " << value.to_string().value() << "\n";
+            velocypack_load(x, value);
+            std::cout << "json data = " << value.to_string().value() << "\n";
 
-        simdjson_load(x, value);
-        std::cout << "json data = " << value.to_string().value() << "\n";
+            simdjson_load(x, value);
+            std::cout << "json data = " << value.to_string().value() << "\n";
+
+            std::cout << "json length = " << x.size << "\n";
+        }
     }
 
     // 运行基准测试

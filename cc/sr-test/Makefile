@@ -3,7 +3,7 @@
 LD_FLAGS=-L${HOME}/installed/lib -L${HOME}/installed/lib64
 CK_FLAGS=-I./CK/ -I./CK/base/
 SR_FLAGS=-I${STARROCKS_HOME}/be/src -I${STARROCKS_HOME}/gensrc/build/
-INC_FLAGS=-I${HOME}/installed/include ${SR_FLAGS} ${CK_FLAGS} 
+INC_FLAGS=-I${TP_INSTALL_DIR}/include -I${HOME}/installed/include ${SR_FLAGS} ${CK_FLAGS} 
 CXX_FLAGS=-std=c++20 -O3 -g -mavx2 -mavx512f
 LIB_FLAGS=-lbenchmark -lbenchmark_main -lpthread
 LIBCXX_FLAGS=-static-libstdc++ -static-libgcc
@@ -17,7 +17,8 @@ SR_LIB_FLAGS=${STARROCKS_HOME}/be/output/tmp/${SR_BUILD_TYPE}/libUtil.a \
   ${TP_INSTALL_DIR}/lib64/libfmt.a \
   ${TP_INSTALL_DIR}/lib/libglog.a \
   ${TP_INSTALL_DIR}/lib/libgflags.a \
-  -L${TP_INSTALL_DIR}/lib/ -lvelocypack -lsimdjson
+  ${TP_INSTALL_DIR}/lib/libsimdjson.a \
+  ${TP_INSTALL_DIR}/lib/libvelocypack.a
 
 
 all: \
