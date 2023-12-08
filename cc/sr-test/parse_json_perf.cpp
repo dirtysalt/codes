@@ -11,6 +11,7 @@
 #include <string>
 #include <vector>
 
+#include "exprs/jsonpath.h"
 #include "json_converter.cpp"
 #include "util/json.h"
 #include "util/json_converter.h"
@@ -357,6 +358,7 @@ void velocypack_load(const Slice& src, JsonValue& value) {
     Status st = JsonValue::parse(src, &value);
     if (!st.ok()) {
         std::cout << st.get_error_msg() << "\n";
+        return
     }
 }
 
@@ -384,6 +386,7 @@ void simdjson_load(const Slice& src, JsonValue& value) {
     StatusOr<JsonValue> st = SimdJsonConverter::create((SimdJsonObject)row);
     if (!st.ok()) {
         std::cout << st.status().get_error_msg() << "\n";
+        return;
     }
     value = std::move(st.value());
 }
@@ -427,6 +430,8 @@ int main(int argc, char** argv) {
         }
     }
 
-    // 运行基准测试
-    benchmark::RunSpecifiedBenchmarks();
+    if (!stats) {
+        // 运行基准测试
+        benchmark::RunSpecifiedBenchmarks();
+    }
 }
