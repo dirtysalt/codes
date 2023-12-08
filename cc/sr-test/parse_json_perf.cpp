@@ -381,12 +381,11 @@ void simdjson_load(const Slice& src, JsonValue& value) {
     simdjson::ondemand::object row = _doc.get_object();
 
     benchmark::DoNotOptimize(row);
-    // StatusOr<JsonValue> st = SimdJsonConverter::create((SimdJsonObject)row);
-    // if (!st.ok()) {
-    //     std::cout << st.status().get_error_msg() << "\n";
-    // }
-    // // std::cout << st.value().to_string().value() << "\n";
-    // value = std::move(st.value());
+    StatusOr<JsonValue> st = SimdJsonConverter::create((SimdJsonObject)row);
+    if (!st.ok()) {
+        std::cout << st.status().get_error_msg() << "\n";
+    }
+    value = std::move(st.value());
 }
 
 static void test_simdjson_load(benchmark::State& state) {
