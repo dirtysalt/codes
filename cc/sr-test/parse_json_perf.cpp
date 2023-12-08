@@ -358,7 +358,7 @@ void velocypack_load(const Slice& src, JsonValue& value) {
     Status st = JsonValue::parse(src, &value);
     if (!st.ok()) {
         std::cout << st.get_error_msg() << "\n";
-        return
+        return;
     }
 }
 
