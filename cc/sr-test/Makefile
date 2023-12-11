@@ -12,6 +12,7 @@ LIBCXX_FLAGS=-static-libstdc++ -static-libgcc
 SR_BUILD_TYPE=RELEASE
 SR_INC_FLAGS=-I${TP_INSTALL_DIR}/include -I${STARROCKS_HOME}/gensrc/build/
 SR_LIB_FLAGS= \
+  ${STARROCKS_HOME}/be/output/tmp/${SR_BUILD_TYPE}/libExprs.a \
   ${STARROCKS_HOME}/be/output/tmp/${SR_BUILD_TYPE}/libUtil.a \
   ${STARROCKS_HOME}/be/output/tmp/${SR_BUILD_TYPE}/libGutil.a \
   ${STARROCKS_HOME}/be/output/tmp/${SR_BUILD_TYPE}/libCommon.a \
@@ -19,6 +20,7 @@ SR_LIB_FLAGS= \
   ${TP_INSTALL_DIR}/lib64/libfmt.a \
   ${TP_INSTALL_DIR}/lib/libglog.a \
   ${TP_INSTALL_DIR}/lib/libgflags.a \
+  ${TP_INSTALL_DIR}/lib/libre2.a \
   ${TP_INSTALL_DIR}/lib/libsimdjson.a \
   ${TP_INSTALL_DIR}/lib/libvelocypack.a \
   ${TP_INSTALL_DIR}/lib64/libbenchmark.a \

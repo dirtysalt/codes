@@ -401,8 +401,22 @@ static void test_simdjson_load(benchmark::State& state) {
     }
 }
 
+static void test_velocypack_parse_path(benchmark::State& state) {
+    const char* path = "$.payload.pull_request.url";
+    const Slice slice(path);
+    for (auto _ : state) {
+        auto res = JsonPath::parse(slice);
+        if (!res.ok()) {
+            std::cout << res.status().get_error_msg() << "\n";
+            break;
+        }
+        benchmark::DoNotOptimize(res);
+    }
+}
+
 BENCHMARK(test_velocypack_load);
 BENCHMARK(test_simdjson_load);
+BENCHMARK(test_velocypack_parse_path);
 
 int main(int argc, char** argv) {
     // 初始化 Google Benchmark
