@@ -35,14 +35,15 @@ all: \
 	fizzbuzz-asm.exe \
 	fizzbuzz-loop.exe \
 	fizzbuzz-cjit.exe \
-	test_perf_event.exe
+	test_perf_event.exe \
+	test_memory_order.exe
 
 INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/installed/include
 LD_FLAGS=-L$(HOME)/utils/installed/lib
 CXX_FLAGS=-std=c++17 -g -O3 -march=native # -mavx2 -mavx512f -mavx512bw -mavx512vbmi
 ALL_FLAGS=${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS}
-LIB_FLAGS=-lbenchmark -lbenchmark_main -lpthread -lz
+LIB_FLAGS=-lpthread -lz
 LIBCXX_FLAGS=-static-libstdc++ -static-libgcc
 
 runnable_so.so:runnable_so.cc
