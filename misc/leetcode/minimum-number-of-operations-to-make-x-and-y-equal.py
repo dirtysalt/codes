@@ -5,8 +5,9 @@
 class Solution:
     def minimumOperationsToMakeEqual(self, x: int, y: int) -> int:
         import heapq
+
         target = x
-        N = (10 ** 4)
+        N = 10**4
 
         PQ = []
         PQ.append((0, y))
@@ -23,8 +24,14 @@ class Solution:
                 return d
             # x-1, x * 11, x * 5, x + 1
             add_edge(d + 1, x - 1)
-            add_edge(d + 1, x * 11)
-            add_edge(d + 1, x * 5)
+            if x * 11 > target:
+                add_edge(d + 1 + x * 11 - target, target)
+            else:
+                add_edge(d + 1, x * 11)
+            if x * 5 > target:
+                add_edge(d + 1 + x * 5 - target, target)
+            else:
+                add_edge(d + 1, x * 5)
             add_edge(d + 1, x + 1)
 
 
