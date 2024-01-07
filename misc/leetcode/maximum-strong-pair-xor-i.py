@@ -58,7 +58,7 @@ import aatest_helper
 cases = [
     ([1, 2, 3, 4, 5], 7),
     ([10, 100], 0),
-    ([500, 520, 2500, 3000], 1020),
+    ([5, 6, 25, 30], 7),
 ]
 
 aatest_helper.run_test_cases(Solution().maximumStrongPairXor, cases)

@@ -2,7 +2,7 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
-from typing import List
+from typing import List, Optional
 
 
 # Definition for a binary tree node.
