@@ -6,5 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories(
     /usr/local/include
 )
+link_directories(
+    /usr/local/lib/quickjs
+)
 add_executable(testqjs.exe testqjs.cpp)
-target_link_libraries(testqjs.exe /usr/local/lib/quickjs/libquickjs.a)
+target_link_libraries(testqjs.exe quickjs)
+target_link_options(testqjs.exe PRIVATE -ldl -lm -lpthread)
