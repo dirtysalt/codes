@@ -2,27 +2,21 @@
 # coding:utf-8
 # Copyright (C) dirlt
 
-class Solution:
-    def rob(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        n = len(nums)
-        if n == 0: return 0
+from typing import List
 
-        dp = nums.copy()
+
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        n = len(nums)
+        dp = [[0, 0] for _ in range(n + 1)]
         for i in range(n):
-            for k in (2, 3):
-                v = i + k
-                if v < n:
-                    dp[v] = max(dp[v], dp[i] + nums[v])
-        ans = max(dp[-2:])
-        return ans
+            # dp[i][0] is not choosen
+            # dp[i][1] is choosen
+            dp[i + 1][0] = max(dp[i][0], dp[i][1])
+            dp[i + 1][1] = nums[i] + dp[i][0]
+
+        return max(dp[-1])
 
 
 if __name__ == '__main__':
-    s = Solution()
-    print(s.rob([1, 2, 3, 1]))
-    print(s.rob([2, 7, 9, 3, 1]))
-    print(s.rob([2, 1, 1, 2]))
+    pass
