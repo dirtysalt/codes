@@ -2,19 +2,13 @@
 #include <emmintrin.h>
 #include <immintrin.h>
 
-#include <cmath>
-#include <cstdlib>
 #include <cstring>
-#include <functional>
 #include <iostream>
-#include <random>
-#include <string>
 #include <vector>
 
 #include "exprs/jsonpath.h"
 #include "json_converter.cpp"
 #include "util/json.h"
-#include "util/json_converter.h"
 #include "util/slice.h"
 
 using namespace starrocks;
@@ -357,7 +351,7 @@ std::vector<Slice> input_data;
 void velocypack_load(const Slice& src, JsonValue& value) {
     Status st = JsonValue::parse(src, &value);
     if (!st.ok()) {
-        std::cout << st.get_error_msg() << "\n";
+        std::cout << st.message() << "\n";
         return;
     }
 }
@@ -385,7 +379,7 @@ void simdjson_load(const Slice& src, JsonValue& value) {
     benchmark::DoNotOptimize(row);
     StatusOr<JsonValue> st = SimdJsonConverter::create((SimdJsonObject)row);
     if (!st.ok()) {
-        std::cout << st.status().get_error_msg() << "\n";
+        std::cout << st.status().message() << "\n";
         return;
     }
     value = std::move(st.value());
@@ -407,7 +401,7 @@ static void test_velocypack_parse_path(benchmark::State& state) {
     for (auto _ : state) {
         auto res = JsonPath::parse(slice);
         if (!res.ok()) {
-            std::cout << res.status().get_error_msg() << "\n";
+            std::cout << res.status().message() << "\n";
             break;
         }
         benchmark::DoNotOptimize(res);
@@ -427,7 +421,7 @@ int main(int argc, char** argv) {
     //     return 1;
     // }
 
-    input_data.push_back(Slice(github_event_json0));
+    input_data.emplace_back(github_event_json0);
 
     bool stats = false;
     if (stats) {
