@@ -37,7 +37,8 @@ all: \
 	float_distance_perf.exe \
 	libhdfs_perf.exe \
 	libhdfs3_perf.exe \
-	parse_json_perf.exe
+	parse_json_perf.exe \
+	python_udf_checker.exe
 
 %.exe: %.cpp
 	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS} ${LIBCXX_FLAGS}

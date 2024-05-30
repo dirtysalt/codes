@@ -11,4 +11,4 @@ link_directories(
 )
 add_executable(testqjs.exe testqjs.cpp)
 target_link_libraries(testqjs.exe quickjs)
-target_link_options(testqjs.exe PRIVATE -ldl -lm -lpthread)
+target_link_options(testqjs.exe PRIVATE -ldl -lpthread)
