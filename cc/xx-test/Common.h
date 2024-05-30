@@ -627,7 +627,6 @@ inline void stl_string_resize_uninitialized(std::string* str, size_t new_size) {
 } // namespace raw
 } //namespace starrocks
 
-
 #ifdef __x86_64__
 #define POINTER_LOWEST_UNUSED_BIT 48
 #define POINTER_SET_BIT(p, b)               \

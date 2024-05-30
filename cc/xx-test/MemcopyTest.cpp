@@ -7,10 +7,13 @@
 void Memcopy(char* src, char* dst, size_t sz) {
     // unaligned.
     int i = 0;
+
+#ifdef __AVX2__
     for (; (i + 16) < sz; i += 16) {
         __m128i d = _mm_loadu_si128((__m128i*)(src + i));
         _mm_storeu_si128((__m128i*)(dst + i), d);
     }
+#endif
     for (; i < sz; i++) {
         dst[i] = src[i];
     }

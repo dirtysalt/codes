@@ -37,6 +37,8 @@ void convert_i64toi8_simd2(int64_t* src, int8_t* dst, size_t size) {
     int64_t* end = src + size;
     size_t loop = size / 16;
     static uint8_t mask_data[16] = {0x00, 0x08};
+
+#ifdef __AVX2__
     __m128i mask = _mm_loadu_si128((__m128i const*)mask_data);
     for (size_t i = 0; i < loop; i++) {
         __m128i a = _mm_loadu_si128((__m128i const*)src);
@@ -69,6 +71,7 @@ void convert_i64toi8_simd2(int64_t* src, int8_t* dst, size_t size) {
         _mm_storeu_si128((__m128i*)(dst), x);
         dst += 16;
     }
+#endif
     while (src < end) {
         int8_t a = (int8_t)(*src & 0xff);
         *dst = a;
@@ -82,6 +85,7 @@ void convert_i64toi8_simd(int64_t* src, int8_t* dst, size_t size) {
     int64_t* end = src + size;
     size_t loop = size / 8;
     static uint8_t mask_data[16] = {0x00, 0x08};
+#ifdef __AVX2__
     __m128i mask = _mm_loadu_si128((__m128i const*)mask_data);
     for (size_t i = 0; i < loop; i++) {
         __m128i a = _mm_loadu_si128((__m128i const*)src);
@@ -99,6 +103,7 @@ void convert_i64toi8_simd(int64_t* src, int8_t* dst, size_t size) {
         src += 8;
         dst += 8;
     }
+#endif
     while (src < end) {
         int8_t a = (int8_t)(*src & 0xff);
         *dst = a;

@@ -3,7 +3,6 @@
  */
 
 #include <benchmark/benchmark.h>
-#include <immintrin.h>
 
 #include <cstdint>
 using namespace std;

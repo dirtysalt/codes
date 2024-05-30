@@ -11,7 +11,6 @@ all: \
 	StringLowerTest.exe \
 	StringReplaceTest.exe \
 	test_bit_unpack.exe \
-	test_tcc_codegen.exe \
 	bench_uint8_max.exe \
 	WatchMemoryOrdering.exe \
 	ob_math_pic.exe \
@@ -25,18 +24,21 @@ all: \
 	bench_template_pow.exe \
 	MemAlignTest.exe \
 	FaultyRelaxedMemory.exe \
-	test_cpp_feature.exe \
 	gtest_feature.exe \
-	test_native_jit.exe \
-	bench_codegen_simd.exe \
 	test_tdigest.exe \
 	bench_checksum_disk_data.exe \
+	fizzbuzz-loop.exe \
+	test_memory_order.exe
+
+x86-linux: \
+	test_tcc_codegen.exe \
+	test_native_jit.exe \
+	test_cpp_feature.exe \
+	test_perf_event.exe \
+	test_codegen_simd.exe \
 	fizzbuzz.exe \
 	fizzbuzz-asm.exe \
-	fizzbuzz-loop.exe \
-	fizzbuzz-cjit.exe \
-	test_perf_event.exe \
-	test_memory_order.exe
+	fizzbuzz-cjit.exe
 
 INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/installed/include

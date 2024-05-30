@@ -1,6 +1,8 @@
+/* coding:utf-8
+ * Copyright (C) dirlt
+ */
 
 #include <benchmark/benchmark.h>
-#include <immintrin.h>
 
 std::vector<uint8_t> ConstructRandomSet(int64_t size) {
     std::vector<uint8_t> a;
@@ -86,6 +88,7 @@ static void simdmax(benchmark::State& state) {
         uint8_t* dst = a.data();
         uint8_t* src = b.data();
 
+#ifdef __AVX2__
         int _loop = size / 32;
         for (int i = 0; i < _loop; i++) {
             __m256i xa = _mm256_lddqu_si256((const __m256i*)dst);
@@ -95,9 +98,9 @@ static void simdmax(benchmark::State& state) {
             _mm256_storeu_si256((__m256i*)dst, xc);
             dst += 32;
         }
-
-        int _rem = size % 32;
-        for (int i = 0; i < _rem; i++) {
+        size = size % 32;
+#endif
+        for (int i = 0; i < size; i++) {
             dst[i] = std::max(dst[i], src[i]);
         }
     }

@@ -3,9 +3,10 @@
  */
 
 #include <benchmark/benchmark.h>
-#include <immintrin.h>
 
 #include <cmath>
+
+#include "Common.h"
 using namespace std;
 
 static const int N = (100000) / 8 * 8;
@@ -35,6 +36,7 @@ static inline __attribute__((always_inline)) float Q_rsqrt(float number) {
     return y;
 }
 
+#ifdef __AVX2__
 void Q_rsqrt_simd(float* number, float* output, size_t n) {
     assert(n % 8 == 0);
     // 32 * 8 = 256 bits.
@@ -91,6 +93,7 @@ void rsqrt_simd(float* number, float* output, size_t n) {
     }
     return;
 }
+#endif
 
 static void run_std_rsqrt(benchmark::State& state) {
     // Code inside this loop is measured repeatedly
@@ -111,6 +114,7 @@ static void run_std_rsqrt(benchmark::State& state) {
 // Register the function as a benchmark
 BENCHMARK(run_std_rsqrt)->Arg(N);
 
+#ifdef __AVX2__
 static void run_rsqrt_simd(benchmark::State& state) {
     // Code inside this loop is measured repeatedly
     std::vector<float> a;
@@ -128,6 +132,25 @@ static void run_rsqrt_simd(benchmark::State& state) {
 
 // Register the function as a benchmark
 BENCHMARK(run_rsqrt_simd)->Arg(N);
+
+static void run_Q_rsqrt_simd(benchmark::State& state) {
+    // Code inside this loop is measured repeatedly
+    std::vector<float> a;
+    std::vector<float> b;
+    for (auto _ : state) {
+        state.PauseTiming();
+        a = ConstructRandomSet(state.range(0));
+        b = ConstructRandomSet(state.range(0));
+        float* p0 = a.data();
+        float* p1 = b.data();
+        state.ResumeTiming();
+        Q_rsqrt_simd(p0, p1, state.range(0));
+    }
+}
+
+// Register the function as a benchmark
+BENCHMARK(run_Q_rsqrt_simd)->Arg(N);
+#endif
 
 static void run_Q_rsqrt(benchmark::State& state) {
     // Code inside this loop is measured repeatedly
@@ -148,24 +171,6 @@ static void run_Q_rsqrt(benchmark::State& state) {
 
 // Register the function as a benchmark
 BENCHMARK(run_Q_rsqrt)->Arg(N);
-
-static void run_Q_rsqrt_simd(benchmark::State& state) {
-    // Code inside this loop is measured repeatedly
-    std::vector<float> a;
-    std::vector<float> b;
-    for (auto _ : state) {
-        state.PauseTiming();
-        a = ConstructRandomSet(state.range(0));
-        b = ConstructRandomSet(state.range(0));
-        float* p0 = a.data();
-        float* p1 = b.data();
-        state.ResumeTiming();
-        Q_rsqrt_simd(p0, p1, state.range(0));
-    }
-}
-
-// Register the function as a benchmark
-BENCHMARK(run_Q_rsqrt_simd)->Arg(N);
 
 #ifdef TEST
 int main() {

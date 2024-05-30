@@ -1,5 +1,8 @@
+/* coding:utf-8
+ * Copyright (C) dirlt
+ */
+
 #include <benchmark/benchmark.h>
-#include <immintrin.h>
 
 void batch_update1(int* res, int col[], int size);
 void batch_update2(int* res, int col[], int size);

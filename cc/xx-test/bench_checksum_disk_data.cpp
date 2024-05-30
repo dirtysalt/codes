@@ -1,6 +1,5 @@
 #include <benchmark/benchmark.h>
 #include <fcntl.h>
-#include <immintrin.h>
 #include <zlib.h>
 
 #include <cstring>
