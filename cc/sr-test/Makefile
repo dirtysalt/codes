@@ -1,5 +1,6 @@
 # makefile.
-
+SRCC=gcc
+SRCXX=g++
 LD_FLAGS=-L${HOME}/installed/lib -L${HOME}/installed/lib64
 CK_FLAGS=-I./CK/ -I./CK/base/
 SR_FLAGS=-I${STARROCKS_HOME}/be/src
