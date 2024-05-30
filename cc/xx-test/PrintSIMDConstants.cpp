@@ -2,11 +2,9 @@
  * Copyright (C) dirlt
  */
 
+#ifdef __x86_64__
 #include <nmmintrin.h>
-
-#include "Common.h"
-
-using namespace std;
+#endif
 
 #define M(x) \
     { #x, x }
@@ -15,6 +13,8 @@ struct IMM {
     int value;
 
 } imm8[] = {
+
+#ifdef __x86_64__
         M(_SIDD_UBYTE_OPS),                // unsigned 8-bit characters
         M(_SIDD_UWORD_OPS),                // unsigned 16-bit characters
         M(_SIDD_SBYTE_OPS),                // signed 8-bit characters
@@ -29,7 +29,12 @@ struct IMM {
         M(_SIDD_MOST_SIGNIFICANT),         // index only: return most significant bit
         M(_SIDD_BIT_MASK),                 // mask only: return bit mask
         M(_SIDD_UNIT_MASK),                // mask only: return byte/word mask
+#endif
 };
+
+#include <cstdio>
+
+using namespace std;
 
 void print_pcmpstr_const() {
     printf("========== pcmpstr constants ==========\n");

@@ -9,11 +9,13 @@
 #include <linux/perf_event.h>
 #endif // __linux__
 
+#ifdef __AVX2__
 // #include <emmintrin.h>
 // #include <xmmintrin.h>
 // #include <pmmintrin.h>
 #include <immintrin.h>
 //#include <x86intrin.h>
+#endif
 
 #include <sched.h>
 #include <sys/ioctl.h>
@@ -96,6 +98,7 @@
 #endif
 #endif // ifndef DIAGNOSTIC_IGNORE
 
+#ifdef __AVX2__
 void p128_hex_u8(__m128i in) {
     alignas(16) uint8_t v[16];
     _mm_store_si128((__m128i*)v, in);
@@ -131,6 +134,7 @@ void p256_hex_u8(__m256i in) {
     }
     printf("|\n");
 }
+#endif
 
 class Timer {
 public:

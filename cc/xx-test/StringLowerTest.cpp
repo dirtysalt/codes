@@ -22,6 +22,7 @@ void StringLower0(char* s, size_t sz) {
 
 void StringLower1(char* s, size_t sz) {
     size_t i = 0;
+#ifdef __AVX2__
     __m128i a = _mm_set1_epi8(64);
     __m128i z = _mm_set1_epi8(91);
     __m128i delta = _mm_set1_epi8(32);
@@ -35,6 +36,7 @@ void StringLower1(char* s, size_t sz) {
         __m128i res = _mm_add_epi8(d, z2);
         _mm_storeu_si128((__m128i*)(s + i), res);
     }
+#endif
     for (; i < sz; i++) {
         if (s[i] >= 65 && s[i] <= 90) {
             s[i] += 32;
@@ -44,6 +46,7 @@ void StringLower1(char* s, size_t sz) {
 
 void StringUpper1(char* s, size_t sz) {
     size_t i = 0;
+#ifdef __AVX2__
     __m128i a = _mm_set1_epi8(96);
     __m128i z = _mm_set1_epi8(123);
     __m128i delta = _mm_set1_epi8(32);
@@ -57,6 +60,7 @@ void StringUpper1(char* s, size_t sz) {
         __m128i res = _mm_sub_epi8(d, z2);
         _mm_storeu_si128((__m128i*)(s + i), res);
     }
+#endif
     for (; i < sz; i++) {
         if (s[i] >= 97 && s[i] <= 122) {
             s[i] -= 32;

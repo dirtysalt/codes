@@ -13,8 +13,11 @@ using namespace std;
 
 // #define _GNU_SOURCE /* See feature_test_macros(7) */
 #include <fcntl.h>
+
+#ifdef __AVX2__
 #include <immintrin.h>
 #include <xmmintrin.h>
+#endif
 
 // ssize_t vmsplice(int fd, const struct iovec* iov, size_t nr_segs, unsigned int flags);
 

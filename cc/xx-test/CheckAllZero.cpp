@@ -2,11 +2,10 @@
  * Copyright (C) dirlt
  */
 
-#include <immintrin.h>
-
 #include "Common.h"
 using namespace std;
 
+#ifdef __AVX2__
 static bool all_zero_128b(const char* data, size_t size) {
     // assume 128bits.
     __m256i q = _mm256_set1_epi8(0x0);
@@ -50,6 +49,7 @@ static bool all_zero_32b(const char* data, size_t size) {
     }
     return true;
 }
+#endif
 
 static bool all_zero(const char* data, size_t size) {
     const char* end = data + size;
@@ -76,6 +76,7 @@ static bool all_zero(const char* data, size_t size) {
 }
 
 static bool all_zero2(const char* data, size_t size) {
+#ifdef __AVX2__
     if (size >= 1024) {
         size_t az = size / 1024 * 1024;
         if (!all_zero_128b(data, az)) return false;
@@ -89,7 +90,7 @@ static bool all_zero2(const char* data, size_t size) {
         data += az;
         size -= az;
     }
-
+#endif
     return all_zero(data, size);
 }
 
@@ -99,8 +100,7 @@ void test(char* data, size_t size) {
     Timer timer;
     memset(data, 0, size);
 
-    cout << "========== "
-         << "size = " << size << " ==========" << endl;
+    cout << "========== " << "size = " << size << " ==========" << endl;
     timer.start();
     mem = 0;
     for (int i = 0; i < N; i++) {

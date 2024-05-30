@@ -18,6 +18,8 @@ int StringReplace0(char* s, size_t sz, char x, char y) {
 int StringReplace1(char* s, size_t sz, char x, char y) {
     int ans = 0;
     size_t i = 0;
+
+#ifdef __AVX2__
     __m128i search = _mm_set1_epi8(x);
     __m128i delta = _mm_set1_epi8(y - x);
     // unaligned.
@@ -32,6 +34,7 @@ int StringReplace1(char* s, size_t sz, char x, char y) {
             //            ans += __builtin_popcount(ret);
         }
     }
+#endif
     for (; i < sz; i++) {
         if (s[i] == x) {
             s[i] = y;
