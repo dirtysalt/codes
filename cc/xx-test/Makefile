@@ -43,7 +43,7 @@ x86-linux: \
 INC_PYTHON=/usr/include/python2.7/
 INC_FLAGS=-I$(HOME)/utils/installed/include
 LD_FLAGS=-L$(HOME)/utils/installed/lib
-CXX_FLAGS=-std=c++17 -g -O3 -march=native # -mavx2 -mavx512f -mavx512bw -mavx512vbmi
+CXX_FLAGS=-std=c++17 -g -O3 -march=native # -mavx2 -mavx512f -mavx512bw -mavx512vbmi # clangd does not understand -march
 ALL_FLAGS=${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS}
 LIB_FLAGS=-lpthread -lz
 LIBCXX_FLAGS=-static-libstdc++ -static-libgcc
