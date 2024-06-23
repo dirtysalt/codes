@@ -4,6 +4,8 @@
 
 #include <benchmark/benchmark.h>
 
+#include "Common.h"
+
 std::vector<uint8_t> ConstructRandomSet(int64_t size) {
     std::vector<uint8_t> a;
     a.reserve(size);
