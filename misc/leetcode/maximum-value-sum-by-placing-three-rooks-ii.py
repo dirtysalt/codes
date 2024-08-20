@@ -58,6 +58,45 @@ class Solution:
         return ans
 
 
+class Solution:
+    def maximumValueSum(self, board: List[List[int]]) -> int:
+        n, m = len(board), len(board[0])
+
+        MAX_VAL = [[0] * m for _ in range(n)]
+        for i in reversed(range(n)):
+            for j in range(m):
+                MAX_VAL[i][j] = board[i][j]
+                if (i + 1) < n:
+                    MAX_VAL[i][j] = max(MAX_VAL[i][j], MAX_VAL[i + 1][j])
+
+        DOWN = MAX_VAL
+
+        MAX_VAL = [[0] * m for _ in range(n)]
+        for i in range(n):
+            for j in range(m):
+                MAX_VAL[i][j] = board[i][j]
+                if (i - 1) >= 0:
+                    MAX_VAL[i][j] = max(MAX_VAL[i][j], MAX_VAL[i - 1][j])
+        UP = MAX_VAL
+
+        ans = -(1 << 63)
+        for i in range(1, n - 1):
+            up = list(range(m))
+            up.sort(key=lambda x: UP[i - 1][x], reverse=True)
+            up = up[:3]
+            down = list(range(m))
+            down.sort(key=lambda x: DOWN[i + 1][x], reverse=True)
+            down = down[:3]
+
+            for j in range(m):
+                for a in up:
+                    for b in down:
+                        if a == j or b == j or a == b: continue
+                        r = board[i][j] + UP[i - 1][a] + DOWN[i + 1][b]
+                        ans = max(ans, r)
+        return ans
+
+
 true, false, null = True, False, None
 import aatest_helper
 
