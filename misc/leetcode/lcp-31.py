@@ -172,12 +172,11 @@ class SolutionC:
         return False
 
 # 看了这题的动态规划解法，其中有个观察就是，如果某次使用了永久卷轴的话，那么可以在这里多次等待，效果其实类似可以跳到之后的+d时刻，而不是仅仅+1时刻。
-import numpy as np
 class Solution:
     def escapeMaze(self, maze: List[List[str]]) -> bool:
         T, N, M = len(maze), len(maze[0]), len(maze[0][0])
-        dp = np.zeros((T, N, M, 4), dtype=np.int8)
-        maxhis = np.zeros((T, N, M, 4), dtype=np.int8)
+        dp = [[[[0] * 4 for _ in range(M)] for _ in range(N)] for _ in range(T)]
+        maxhis = [[[[0] * 4 for _ in range(M)] for _ in range(N)] for _ in range(T)]
 
         dp[0][0][0][0] = 1
 
