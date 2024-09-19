@@ -5,8 +5,7 @@
 
 class Solution:
     def numberOfStableArrays(self, zero: int, one: int, limit: int) -> int:
-        import numpy as np
-        dp = np.zeros((zero + 1, one + 1, 2), np.int64).tolist()
+        dp = [[[0] * 2 for _ in range(one + 1)] for _ in range(zero + 1)]
         MOD = 10 ** 9 + 7
 
         # dp[x][y][z] -> x 0, y 1, endswith z[0/1]
