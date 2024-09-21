@@ -113,7 +113,7 @@ def run(ctx):
     ctx['tracks'] = []
     ctx['description'] = '<br/>\n'.join(['{}. {}'.format(x[0] + 1, os.path.basename(x[1])) for x in enumerate(myfiles)])
     ctx['releaseDate'] = to_rfc822_datetime(now)
-    ctx['image_url'] = 'http://{}/image/{}.jpg'.format(ctx['domain'], ctx['name'])
+    ctx['image_url'] = 'http://{}/images/{}.jpg'.format(ctx['domain'], ctx['name'])
 
     tracks = ctx['tracks']
     for order, name in enumerate(myfiles):

@@ -10,7 +10,7 @@ sites = {
 }
 
 glob = {
-    'domain': '192.168.31.64:8000/mypodcast',
+    'domain': '192.168.31.66:18000/mypodcast',
     'author': 'dirtysalt',
     'link': 'https://dirtysalt.github.io',
     'email': 'dirtysalt1987@gmail.com',
