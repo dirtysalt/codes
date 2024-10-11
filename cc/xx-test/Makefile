@@ -28,7 +28,8 @@ all: \
 	test_tdigest.exe \
 	bench_checksum_disk_data.exe \
 	fizzbuzz-loop.exe \
-	test_memory_order.exe
+	test_memory_order.exe \
+	test_boost_fiber.exe 
 
 x86-linux: \
 	test_tcc_codegen.exe \
@@ -67,6 +68,9 @@ test_native_jit.exe:test_native_jit.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -I${HOME}/repo/NativeJIT/inc \
 		-L${HOME}/repo/NativeJIT/build-make/src/NativeJIT -L${HOME}/repo/NativeJIT/build-make/src/CodeGen \
 		-lNativeJIT -lCodeGen -lpthread -ldl
+
+test_boost_fiber.exe:test_boost_fiber.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS} -lboost_context
 
 bench_%.exe:bench_%.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -lbenchmark -lbenchmark_main
