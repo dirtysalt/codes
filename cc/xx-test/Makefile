@@ -41,7 +41,7 @@ x86-linux: \
 	fizzbuzz-asm.exe \
 	fizzbuzz-cjit.exe
 
-INC_PYTHON=/usr/include/python2.7/
+INC_PYTHON=/usr/include/python3.10/
 INC_FLAGS=-I$(HOME)/utils/installed/include
 LD_FLAGS=-L$(HOME)/utils/installed/lib
 CXX_FLAGS=-std=c++17 -g -O3 -march=native # -mavx2 -mavx512f -mavx512bw -mavx512vbmi # clangd does not understand -march
@@ -49,11 +49,20 @@ ALL_FLAGS=${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS}
 LIB_FLAGS=-lpthread -lz
 LIBCXX_FLAGS=-static-libstdc++ -static-libgcc
 
-runnable_so.so:runnable_so.cc
-	$(CXX) -o $@ $< -fPIC -O0 -g -shared -e so_main
+test_boost_pythonext.so: test_boost_pythonext.cpp
+	$(CXX) -o $@ $< -fPIC -O0 -g -I$(INC_PYTHON) -shared -lboost_python310
 
-test_pye.so: test_pye.cc
-	$(CXX) -o $@ $< -fPIC -O0 -g -I$(INC_PYTHON)-shared -lboost_python
+test_boost_*.exe:test_boost_*.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS} -lboost_context
+
+bench_%.exe:bench_%.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS} -lbenchmark -lbenchmark_main
+
+gtest_%.exe:gtest_%.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS} -lgtest -lgtest_main
+
+%.exe:%.cpp
+	$(CXX) -o $@ $< ${ALL_FLAGS}
 
 # gnu libatomic
 test_cpp_feature.exe:test_cpp_feature.cpp
@@ -69,18 +78,7 @@ test_native_jit.exe:test_native_jit.cpp
 		-L${HOME}/repo/NativeJIT/build-make/src/NativeJIT -L${HOME}/repo/NativeJIT/build-make/src/CodeGen \
 		-lNativeJIT -lCodeGen -lpthread -ldl
 
-test_boost_fiber.exe:test_boost_fiber.cpp
-	$(CXX) -o $@ $< ${ALL_FLAGS} -lboost_context
-
-bench_%.exe:bench_%.cpp
-	$(CXX) -o $@ $< ${ALL_FLAGS} -lbenchmark -lbenchmark_main
-
-gtest_%.exe:gtest_%.cpp
-	$(CXX) -o $@ $< ${ALL_FLAGS} -lgtest -lgtest_main
-
-%.exe:%.cpp
-	$(CXX) -o $@ $< ${ALL_FLAGS}
-
+# fizzbuss test
 fizzbuzz-asm.exe:fizzbuzz-asm.S
 	gcc -mavx2 -c $<
 	ld -o $@ fizzbuzz-asm.o

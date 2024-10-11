@@ -2,7 +2,7 @@
 #coding:utf-8
 #Copyright (C) dirlt
 
-from test_pye import *
+from test_boost_pythonext import *
 assert(add(1,2) == 3)
 
 items = ItemArray()
@@ -25,11 +25,11 @@ items2 = [items[0], items[1]]
 handle_item_array(items2)
 
 op = items[0].get_opaque()
-print op
+print(op)
 
 # test copy ctor or operator =
-print item.x, item.y
+print(item.x, item.y)
 a = item
 a.x += 10
 a.y += 20
-print item.x, item.y
+print(item.x, item.y)

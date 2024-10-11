@@ -22,6 +22,7 @@ class Item {
     }
     Item& operator=(const Item& item) {
         cerr << "operator = " << endl;
+        return *this;
     }
     Item(int x, int y = 10): x(x), y(y) {}
     void echo(const string& arg = "world") {
