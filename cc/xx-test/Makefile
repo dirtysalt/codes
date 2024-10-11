@@ -29,7 +29,8 @@ all: \
 	bench_checksum_disk_data.exe \
 	fizzbuzz-loop.exe \
 	test_memory_order.exe \
-	test_boost_fiber.exe 
+	test_boost_fiber.exe \
+	test_boost_continuation.exe
 
 x86-linux: \
 	test_tcc_codegen.exe \
@@ -52,7 +53,7 @@ LIBCXX_FLAGS=-static-libstdc++ -static-libgcc
 test_boost_pythonext.so: test_boost_pythonext.cpp
 	$(CXX) -o $@ $< -fPIC -O0 -g -I$(INC_PYTHON) -shared -lboost_python310
 
-test_boost_*.exe:test_boost_*.cpp
+test_boost_%.exe:test_boost_%.cpp
 	$(CXX) -o $@ $< ${ALL_FLAGS} -lboost_context
 
 bench_%.exe:bench_%.cpp
