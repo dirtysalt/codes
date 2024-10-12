@@ -4,6 +4,8 @@
 
 #include <benchmark/benchmark.h>
 
+#include "Common.h"
+
 void batch_update1(int* res, int col[], int size);
 void batch_update2(int* res, int col[], int size);
 void batch_update3(int* __restrict__ res, int* col, int size);

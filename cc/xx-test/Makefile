@@ -28,19 +28,20 @@ all: \
 	test_tdigest.exe \
 	bench_checksum_disk_data.exe \
 	fizzbuzz-loop.exe \
+	fizzbuzz.exe \
+	fizzbuzz-asm.exe \
+	fizzbuzz-cjit.exe \
 	test_memory_order.exe \
+	bench_codegen_simd.exe \
+	test_cpp_feature.exe \
+	test_perf_event.exe \
 	test_boost_fiber.exe \
 	test_boost_continuation.exe
 
 x86-linux: \
 	test_tcc_codegen.exe \
-	test_native_jit.exe \
-	test_cpp_feature.exe \
-	test_perf_event.exe \
-	test_codegen_simd.exe \
-	fizzbuzz.exe \
-	fizzbuzz-asm.exe \
-	fizzbuzz-cjit.exe
+	test_native_jit.exe
+
 
 INC_PYTHON=/usr/include/python3.10/
 INC_FLAGS=-I$(HOME)/utils/installed/include
