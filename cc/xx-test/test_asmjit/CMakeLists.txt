@@ -3,7 +3,7 @@ project(test_asmjit CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(test_asmjit src/main.cpp)
+add_executable(test_asmjit main.cpp)
 target_include_directories(test_asmjit PRIVATE $ENV{HOME}/utils/installed/include)
 target_link_directories(test_asmjit PRIVATE $ENV{HOME}/utils/installed/lib)
 
