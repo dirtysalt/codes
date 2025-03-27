@@ -39,7 +39,8 @@ all: \
 	libhdfs_perf.exe \
 	libhdfs3_perf.exe \
 	parse_json_perf.exe \
-	python_udf_checker.exe
+	python_udf_checker.exe \
+	test_jni.exe
 
 %.exe: %.cpp
 	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} ${LIB_FLAGS} ${LIBCXX_FLAGS}
@@ -52,6 +53,9 @@ libhdfs3_perf.exe: libhdfs_perf.cpp
 
 parse_json_perf.exe: parse_json_perf.cpp
 	$(CXX) -o $@ $< ${SR_INC_FLAGS} ${INC_FLAGS} ${CXX_FLAGS} -O0 ${LD_FLAGS} ${SR_LIB_FLAGS} ${LIBCXX_FLAGS}
+
+test_jni.exe: test_jni.cpp
+	$(CXX) -o $@ $< ${INC_FLAGS} ${CXX_FLAGS} ${LD_FLAGS} libhdfs.a -L$(JAVA_HOME)/lib/server -ljvm ${LIBCXX_FLAGS}
 
 clean:
 	rm -rf *.exe perf.data*
