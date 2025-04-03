@@ -1,0 +1,3 @@
+- feishu_export_pdf 下载原始pdf文件
+- remove_image_pdf 从pdf文件里面删除图片
+- merge_pdf_files 将多个pdf文件合并起来
