@@ -36,7 +36,8 @@ all: \
 	test_cpp_feature.exe \
 	test_perf_event.exe \
 	test_boost_fiber.exe \
-	test_boost_continuation.exe
+	test_boost_continuation.exe \
+	test_multi_version.exe
 
 x86-linux: \
 	test_tcc_codegen.exe \
