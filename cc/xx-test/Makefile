@@ -89,7 +89,6 @@ fizzbuzz-asm.exe:fizzbuzz-asm.S
 
 fizzbuzz.exe:fizzbuzz.cpp fizzbuzz-gen.h
 	$(CXX) -o $@ $< ${ALL_FLAGS}
-	echo ${LIBCXX_FLAGS}
 
 fizzbuzz-cjit.exe:fizzbuzz-cjit.c
 	$(CC) -o $@ $< -O2 -g -mavx -mavx2 -flax-vector-conversions
