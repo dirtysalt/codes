@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     version="2.0">
+    <channel>
+        <atom:link href="http://192.168.1.8:18000/mypodcast/rss/RAZ_B_Podcast.xml" type="application/rss+xml" rel="self"/>
+        <copyright>dirtysalt</copyright>
+        <link>https://dirtysalt.github.io </link>
+        <language>zh-cn</language>
+
+        <title>RAZ B级别音频 5集连播</title>
+        <description>1. 01 taking care of chase-02 the pet rats-03 gracie s nose-04 playful puppy-05 my pet dinosaur.mp3<br/>
+2. 06 on the farm-07 bonkers likes to bark-08 animal sounds-09 pond life-10 where is water.mp3<br/>
+3. 11 i love the earth-12 animal coverings-13 animal ears-14 the new forest path-15 what has these feet.mp3<br/>
+4. 16 what has these stripes-17 what has this tail-18 what has these spots-19 amazing caves-20 animals can move.mp3<br/>
+5. 21 rain in the city-22 rain in the country-23 gobi desert animals-24 wind blows-25 how many legs.mp3<br/>
+6. 26 what flies in the sky-27 paint it purple-28 our show-29 ten-30 my brain.mp3<br/>
+7. 31 high or low-32 healthy snacks_20200811212953-33 things made of wood_20200811213012-34 what gives cover_20200811213002-35 fun with paper.mp3<br/>
+8. 36 bananas sometimes-37 henry s hike-38 applesauce-39 we pack a picnic-40 the picnic.mp3<br/>
+9. 41 we make cookies-42 halloween costumes-43 on thanksgiving-44 the aquarium-45 too high.mp3<br/>
+10. 46 trucks_20200811212954-47 so many shops-48 animal caution signs-49 stop that cat-50 go animals go.mp3<br/>
+11. 51 i read a book-52 i pick up-53 you and i-54 carlos and his teacher-55 maria and her teacher.mp3<br/>
+12. 56 i love art class-57 games we play-58 the big game-59 clean is not for me-60 beach fun.mp3<br/>
+13. 61 taking the bus-62 too many leaves-63 a cold day-64 the kids built it-65 firefly.mp3<br/>
+14. 66 under my bed-67 we do not share-68 after school-69 all by myseif-70 boats.mp3<br/>
+15. 71 old and new-72 the sandwich-73 valenes all around-74 mixing colors-75 it is school time.mp3<br/>
+16. 76 time for soccer-77 i am a community worker-78 winter fun-79 it is spring-80 sophie goes for a walk.mp3<br/>
+17. 81 yours or mine-82 near and far away-83 you can go-84 swing sydney swing-85 bridges.mp3<br/>
+18. 86 where-87 are these his or hers-88 lazy lulu-89 light and hesvy-90 the hungry goat.mp3<br/>
+19. 91 three baby birds-92 two little dicky birds-93 wet wally-94 drop it-95 mouse in the city.mp3<br/>
+20. 96 crows on a wire-97 wake up rooster_20200811212956-98 make a superhero!-99 this turtle.mp3</description>
+        <pubDate>Fri, 11 Jul 2025 14:39:12 -0000</pubDate>
+
+        <itunes:summary></itunes:summary>
+        <itunes:subtitle></itunes:subtitle>
+        <itunes:author>dirtysalt</itunes:author>
+        <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+        <itunes:owner>
+            <itunes:name>dirtysalt</itunes:name>
+            <itunes:email>dirtysalt1987@gmail.com</itunes:email>
+        </itunes:owner>
+        <itunes:keywords></itunes:keywords>
+        <itunes:category text="Education"/>
+        <itunes:explicit>no</itunes:explicit>
+
+        
+        <item>
+            <title>01 taking care of chase-02 the pet rats-03 gracie s nose-04 playful puppy-05 my pet dinosaur.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>1</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/01%20taking%20care%20of%20chase-02%20the%20pet%20rats-03%20gracie%20s%20nose-04%20playful%20puppy-05%20my%20pet%20dinosaur.mp3" type="audio/mp3" length="2752788"/>
+            <itunes:duration>00:04:07</itunes:duration>
+            <guid isPermaLink="false">5cf5d7b0-245d-387a-91e6-34ab2b145c75</guid>
+            <pubDate>Fri, 11 Jul 2025 14:39:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>06 on the farm-07 bonkers likes to bark-08 animal sounds-09 pond life-10 where is water.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>2</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/06%20on%20the%20farm-07%20bonkers%20likes%20to%20bark-08%20animal%20sounds-09%20pond%20life-10%20where%20is%20water.mp3" type="audio/mp3" length="2566280"/>
+            <itunes:duration>00:03:35</itunes:duration>
+            <guid isPermaLink="false">f3a1eafd-e32c-39fc-91d9-2c81edbf9a31</guid>
+            <pubDate>Fri, 11 Jul 2025 14:40:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>11 i love the earth-12 animal coverings-13 animal ears-14 the new forest path-15 what has these feet.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>3</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/11%20i%20love%20the%20earth-12%20animal%20coverings-13%20animal%20ears-14%20the%20new%20forest%20path-15%20what%20has%20these%20feet.mp3" type="audio/mp3" length="1875632"/>
+            <itunes:duration>00:02:37</itunes:duration>
+            <guid isPermaLink="false">c00ddb39-8328-3f53-a763-09011108edc4</guid>
+            <pubDate>Fri, 11 Jul 2025 14:41:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>16 what has these stripes-17 what has this tail-18 what has these spots-19 amazing caves-20 animals can move.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>4</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/16%20what%20has%20these%20stripes-17%20what%20has%20this%20tail-18%20what%20has%20these%20spots-19%20amazing%20caves-20%20animals%20can%20move.mp3" type="audio/mp3" length="1953178"/>
+            <itunes:duration>00:02:40</itunes:duration>
+            <guid isPermaLink="false">0ed3fe49-d21f-3d3f-88dd-2e5fccfb11f1</guid>
+            <pubDate>Fri, 11 Jul 2025 14:42:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>21 rain in the city-22 rain in the country-23 gobi desert animals-24 wind blows-25 how many legs.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>5</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/21%20rain%20in%20the%20city-22%20rain%20in%20the%20country-23%20gobi%20desert%20animals-24%20wind%20blows-25%20how%20many%20legs.mp3" type="audio/mp3" length="3265442"/>
+            <itunes:duration>00:04:54</itunes:duration>
+            <guid isPermaLink="false">aefecb5e-008c-3f3c-9c30-1e504bb2d6eb</guid>
+            <pubDate>Fri, 11 Jul 2025 14:43:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>26 what flies in the sky-27 paint it purple-28 our show-29 ten-30 my brain.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>6</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/26%20what%20flies%20in%20the%20sky-27%20paint%20it%20purple-28%20our%20show-29%20ten-30%20my%20brain.mp3" type="audio/mp3" length="2810235"/>
+            <itunes:duration>00:04:06</itunes:duration>
+            <guid isPermaLink="false">98c3e9d2-fb9d-3e6f-8dcf-ff9731f5d0f9</guid>
+            <pubDate>Fri, 11 Jul 2025 14:44:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>31 high or low-32 healthy snacks_20200811212953-33 things made of wood_20200811213012-34 what gives cover_20200811213002-35 fun with paper.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>7</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/31%20high%20or%20low-32%20healthy%20snacks_20200811212953-33%20things%20made%20of%20wood_20200811213012-34%20what%20gives%20cover_20200811213002-35%20fun%20with%20paper.mp3" type="audio/mp3" length="4298767"/>
+            <itunes:duration>00:06:56</itunes:duration>
+            <guid isPermaLink="false">8a777c99-be34-37d7-b44f-7dfd1da2e1a3</guid>
+            <pubDate>Fri, 11 Jul 2025 14:45:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>36 bananas sometimes-37 henry s hike-38 applesauce-39 we pack a picnic-40 the picnic.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>8</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/36%20bananas%20sometimes-37%20henry%20s%20hike-38%20applesauce-39%20we%20pack%20a%20picnic-40%20the%20picnic.mp3" type="audio/mp3" length="2397715"/>
+            <itunes:duration>00:03:33</itunes:duration>
+            <guid isPermaLink="false">faab7cdf-45a3-3cab-8adc-198da0a1e3e6</guid>
+            <pubDate>Fri, 11 Jul 2025 14:46:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>41 we make cookies-42 halloween costumes-43 on thanksgiving-44 the aquarium-45 too high.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>9</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/41%20we%20make%20cookies-42%20halloween%20costumes-43%20on%20thanksgiving-44%20the%20aquarium-45%20too%20high.mp3" type="audio/mp3" length="3885524"/>
+            <itunes:duration>00:06:12</itunes:duration>
+            <guid isPermaLink="false">b7082736-2adc-3a74-9a4d-2895c10dc327</guid>
+            <pubDate>Fri, 11 Jul 2025 14:47:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>46 trucks_20200811212954-47 so many shops-48 animal caution signs-49 stop that cat-50 go animals go.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>10</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/46%20trucks_20200811212954-47%20so%20many%20shops-48%20animal%20caution%20signs-49%20stop%20that%20cat-50%20go%20animals%20go.mp3" type="audio/mp3" length="4069107"/>
+            <itunes:duration>00:06:16</itunes:duration>
+            <guid isPermaLink="false">c9e15305-bc1e-3fcc-a2e5-b2614f063d2c</guid>
+            <pubDate>Fri, 11 Jul 2025 14:48:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>51 i read a book-52 i pick up-53 you and i-54 carlos and his teacher-55 maria and her teacher.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>11</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/51%20i%20read%20a%20book-52%20i%20pick%20up-53%20you%20and%20i-54%20carlos%20and%20his%20teacher-55%20maria%20and%20her%20teacher.mp3" type="audio/mp3" length="2312675"/>
+            <itunes:duration>00:03:24</itunes:duration>
+            <guid isPermaLink="false">5681e788-3f4f-367e-b897-3e082064a03d</guid>
+            <pubDate>Fri, 11 Jul 2025 14:49:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>56 i love art class-57 games we play-58 the big game-59 clean is not for me-60 beach fun.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>12</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/56%20i%20love%20art%20class-57%20games%20we%20play-58%20the%20big%20game-59%20clean%20is%20not%20for%20me-60%20beach%20fun.mp3" type="audio/mp3" length="2741783"/>
+            <itunes:duration>00:03:58</itunes:duration>
+            <guid isPermaLink="false">4d4d9cab-e6b2-3b24-9c2c-4b47b71d8ff8</guid>
+            <pubDate>Fri, 11 Jul 2025 14:50:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>61 taking the bus-62 too many leaves-63 a cold day-64 the kids built it-65 firefly.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>13</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/61%20taking%20the%20bus-62%20too%20many%20leaves-63%20a%20cold%20day-64%20the%20kids%20built%20it-65%20firefly.mp3" type="audio/mp3" length="2961155"/>
+            <itunes:duration>00:04:15</itunes:duration>
+            <guid isPermaLink="false">fb0e4bc5-d103-3fd5-aaef-8a91f8bd924a</guid>
+            <pubDate>Fri, 11 Jul 2025 14:51:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>66 under my bed-67 we do not share-68 after school-69 all by myseif-70 boats.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>14</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/66%20under%20my%20bed-67%20we%20do%20not%20share-68%20after%20school-69%20all%20by%20myseif-70%20boats.mp3" type="audio/mp3" length="5221828"/>
+            <itunes:duration>00:08:20</itunes:duration>
+            <guid isPermaLink="false">4ff9ced8-56bb-341c-b798-ba625e21edf2</guid>
+            <pubDate>Fri, 11 Jul 2025 14:52:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>71 old and new-72 the sandwich-73 valenes all around-74 mixing colors-75 it is school time.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>15</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/71%20old%20and%20new-72%20the%20sandwich-73%20valenes%20all%20around-74%20mixing%20colors-75%20it%20is%20school%20time.mp3" type="audio/mp3" length="3350072"/>
+            <itunes:duration>00:05:06</itunes:duration>
+            <guid isPermaLink="false">f8be2be3-5d40-3386-8f3f-ff32233955be</guid>
+            <pubDate>Fri, 11 Jul 2025 14:53:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>76 time for soccer-77 i am a community worker-78 winter fun-79 it is spring-80 sophie goes for a walk.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>16</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/76%20time%20for%20soccer-77%20i%20am%20a%20community%20worker-78%20winter%20fun-79%20it%20is%20spring-80%20sophie%20goes%20for%20a%20walk.mp3" type="audio/mp3" length="3342092"/>
+            <itunes:duration>00:04:59</itunes:duration>
+            <guid isPermaLink="false">2b1f4cf3-f95b-3eb8-8474-d6c7965828b5</guid>
+            <pubDate>Fri, 11 Jul 2025 14:54:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>81 yours or mine-82 near and far away-83 you can go-84 swing sydney swing-85 bridges.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>17</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/81%20yours%20or%20mine-82%20near%20and%20far%20away-83%20you%20can%20go-84%20swing%20sydney%20swing-85%20bridges.mp3" type="audio/mp3" length="2885269"/>
+            <itunes:duration>00:04:14</itunes:duration>
+            <guid isPermaLink="false">563eadcb-ea98-3e35-b6e6-68fe0ec45dc1</guid>
+            <pubDate>Fri, 11 Jul 2025 14:55:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>86 where-87 are these his or hers-88 lazy lulu-89 light and hesvy-90 the hungry goat.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>18</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/86%20where-87%20are%20these%20his%20or%20hers-88%20lazy%20lulu-89%20light%20and%20hesvy-90%20the%20hungry%20goat.mp3" type="audio/mp3" length="3361024"/>
+            <itunes:duration>00:05:08</itunes:duration>
+            <guid isPermaLink="false">cb538bdf-4326-3cc5-b4c9-3c5c04c12936</guid>
+            <pubDate>Fri, 11 Jul 2025 14:56:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>91 three baby birds-92 two little dicky birds-93 wet wally-94 drop it-95 mouse in the city.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>19</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/91%20three%20baby%20birds-92%20two%20little%20dicky%20birds-93%20wet%20wally-94%20drop%20it-95%20mouse%20in%20the%20city.mp3" type="audio/mp3" length="3296880"/>
+            <itunes:duration>00:05:02</itunes:duration>
+            <guid isPermaLink="false">1d7029be-9d71-3de6-8906-f7daa152d213</guid>
+            <pubDate>Fri, 11 Jul 2025 14:57:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>96 crows on a wire-97 wake up rooster_20200811212956-98 make a superhero!-99 this turtle.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_B_Podcast.jpg"/>
+            <itunes:order>20</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_B_Podcast/96%20crows%20on%20a%20wire-97%20wake%20up%20rooster_20200811212956-98%20make%20a%20superhero%21-99%20this%20turtle.mp3" type="audio/mp3" length="3197606"/>
+            <itunes:duration>00:04:27</itunes:duration>
+            <guid isPermaLink="false">4f3815fe-7bb4-33bf-b7a6-f5eb9d585315</guid>
+            <pubDate>Fri, 11 Jul 2025 14:58:12 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+    </channel>
+</rss>
