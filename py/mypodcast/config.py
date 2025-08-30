@@ -20,10 +20,11 @@ sites = {
 
 glob = {
     # change this if you want to publish it to other place.
-    'domain': '192.168.1.8:18000/mypodcast',
+    'domain': '192.168.1.8:18000/mypodcast/shows/',
     'author': 'dirtysalt',
     'link': 'https://dirtysalt.github.io',
     'email': 'dirtysalt1987@gmail.com',
-    'mp3_dir': 'mp3',
-    'rss_dir': 'rss'
+    'mp3_dir': 'shows/mp3',
+    'rss_dir': 'shows/rss',
+    'image_dir': 'shows/image'
 }

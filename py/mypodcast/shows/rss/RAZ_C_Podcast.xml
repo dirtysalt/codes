@@ -3,7 +3,7 @@
      xmlns:atom="http://www.w3.org/2005/Atom"
      version="2.0">
     <channel>
-        <atom:link href="http://192.168.1.8:18000/mypodcast/rss/RAZ_C_Podcast.xml" type="application/rss+xml" rel="self"/>
+        <atom:link href="http://192.168.1.8:18000/mypodcast/res//rss/RAZ_C_Podcast.xml" type="application/rss+xml" rel="self"/>
         <copyright>dirtysalt</copyright>
         <link>https://dirtysalt.github.io </link>
         <language>zh-cn</language>
@@ -30,12 +30,12 @@
 19. 87 sherman sure is shy-88 selfish sasha-89 open and close-90 there is a mouse in the house-91 mongo and cutie.mp3<br/>
 20. 92 one stubborn horse-93 who stole the north pole-94 who who who-95 abby and zots-96 i want to be a cat.mp3<br/>
 21. 97 the box-98 too hot-99 build a world.mp3</description>
-        <pubDate>Thu, 31 Jul 2025 01:17:53 -0000</pubDate>
+        <pubDate>Thu, 31 Jul 2025 01:25:36 -0000</pubDate>
 
         <itunes:summary></itunes:summary>
         <itunes:subtitle></itunes:subtitle>
         <itunes:author>dirtysalt</itunes:author>
-        <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+        <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
         <itunes:owner>
             <itunes:name>dirtysalt</itunes:name>
             <itunes:email>dirtysalt1987@gmail.com</itunes:email>
@@ -49,12 +49,12 @@
             <title>01 what is at the zoo-02 more baby animals-03 all about spiders-04 ladybugs-05 apple tree.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>1</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/01%20what%20is%20at%20the%20zoo-02%20more%20baby%20animals-03%20all%20about%20spiders-04%20ladybugs-05%20apple%20tree.mp3" type="audio/mp3" length="4077798"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/01%20what%20is%20at%20the%20zoo-02%20more%20baby%20animals-03%20all%20about%20spiders-04%20ladybugs-05%20apple%20tree.mp3" type="audio/mp3" length="4077798"/>
             <itunes:duration>00:05:45</itunes:duration>
-            <guid isPermaLink="false">9810f072-74d9-31da-bb3a-898862a608e4</guid>
-            <pubDate>Thu, 31 Jul 2025 01:17:53 -0000</pubDate>
+            <guid isPermaLink="false">4e74c70e-b477-3e45-a3a1-77eca4207cf0</guid>
+            <pubDate>Thu, 31 Jul 2025 01:25:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -62,12 +62,12 @@
             <title>06 how frogs grow-07 moms do so much-08 allie and ollie-09 what animals eat-10 the animals of canada.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>2</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/06%20how%20frogs%20grow-07%20moms%20do%20so%20much-08%20allie%20and%20ollie-09%20what%20animals%20eat-10%20the%20animals%20of%20canada.mp3" type="audio/mp3" length="2807146"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/06%20how%20frogs%20grow-07%20moms%20do%20so%20much-08%20allie%20and%20ollie-09%20what%20animals%20eat-10%20the%20animals%20of%20canada.mp3" type="audio/mp3" length="2807146"/>
             <itunes:duration>00:04:16</itunes:duration>
-            <guid isPermaLink="false">cbbd23aa-c846-30b3-b1b9-07e7b42a0389</guid>
-            <pubDate>Thu, 31 Jul 2025 01:18:53 -0000</pubDate>
+            <guid isPermaLink="false">bc2154da-abf6-31c1-ae7e-22e5bbfa9f0b</guid>
+            <pubDate>Thu, 31 Jul 2025 01:26:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -75,12 +75,12 @@
             <title>100 what does the wind move-101 we are all people-102 making music-103 My Tree House-11 different kinds of sharks.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>3</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/100%20what%20does%20the%20wind%20move-101%20we%20are%20all%20people-102%20making%20music-103%20My%20Tree%20House-11%20different%20kinds%20of%20sharks.mp3" type="audio/mp3" length="4098106"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/100%20what%20does%20the%20wind%20move-101%20we%20are%20all%20people-102%20making%20music-103%20My%20Tree%20House-11%20different%20kinds%20of%20sharks.mp3" type="audio/mp3" length="4098106"/>
             <itunes:duration>00:06:29</itunes:duration>
-            <guid isPermaLink="false">151bb61e-d4a4-3315-8070-de9c5290f28d</guid>
-            <pubDate>Thu, 31 Jul 2025 01:19:53 -0000</pubDate>
+            <guid isPermaLink="false">cd89a8ed-1057-30bc-8893-737a114d8d1e</guid>
+            <pubDate>Thu, 31 Jul 2025 01:27:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -88,12 +88,12 @@
             <title>12 we count-13 many kinds of dinosaurs-14 snow falls-15 strange animals-16 thats a fruit.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>4</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/12%20we%20count-13%20many%20kinds%20of%20dinosaurs-14%20snow%20falls-15%20strange%20animals-16%20thats%20a%20fruit.mp3" type="audio/mp3" length="4121755"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/12%20we%20count-13%20many%20kinds%20of%20dinosaurs-14%20snow%20falls-15%20strange%20animals-16%20thats%20a%20fruit.mp3" type="audio/mp3" length="4121755"/>
             <itunes:duration>00:06:00</itunes:duration>
-            <guid isPermaLink="false">2afeab42-869a-31a7-9238-add73d3a4f06</guid>
-            <pubDate>Thu, 31 Jul 2025 01:20:53 -0000</pubDate>
+            <guid isPermaLink="false">a40477c5-53b3-3c0b-a935-487701e86822</guid>
+            <pubDate>Thu, 31 Jul 2025 01:28:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -101,12 +101,12 @@
             <title>17 all adout penguins-18 all about earthworms-19 ice-20 animals that sting-21 how many.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>5</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/17%20all%20adout%20penguins-18%20all%20about%20earthworms-19%20ice-20%20animals%20that%20sting-21%20how%20many.mp3" type="audio/mp3" length="4417739"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/17%20all%20adout%20penguins-18%20all%20about%20earthworms-19%20ice-20%20animals%20that%20sting-21%20how%20many.mp3" type="audio/mp3" length="4417739"/>
             <itunes:duration>00:06:52</itunes:duration>
-            <guid isPermaLink="false">6ddc188b-08c9-3373-86e3-2ad47745bb58</guid>
-            <pubDate>Thu, 31 Jul 2025 01:21:53 -0000</pubDate>
+            <guid isPermaLink="false">fed6cb88-68ec-3895-9825-5065c89454aa</guid>
+            <pubDate>Thu, 31 Jul 2025 01:29:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -114,12 +114,12 @@
             <title>22 spirals spirals everywhere-23 space-24 the moon-25 then and now-26 the woodsy band jam.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>6</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/22%20spirals%20spirals%20everywhere-23%20space-24%20the%20moon-25%20then%20and%20now-26%20the%20woodsy%20band%20jam.mp3" type="audio/mp3" length="4392183"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/22%20spirals%20spirals%20everywhere-23%20space-24%20the%20moon-25%20then%20and%20now-26%20the%20woodsy%20band%20jam.mp3" type="audio/mp3" length="4392183"/>
             <itunes:duration>00:06:46</itunes:duration>
-            <guid isPermaLink="false">ffa84679-e23e-3b92-a412-de0564ea09f0</guid>
-            <pubDate>Thu, 31 Jul 2025 01:22:53 -0000</pubDate>
+            <guid isPermaLink="false">69b9caa9-f048-31fc-a9d1-bec09b224922</guid>
+            <pubDate>Thu, 31 Jul 2025 01:30:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -127,12 +127,12 @@
             <title>27 yummy yummy-28 mash the potatoes-29 making salsa-30 we learn to swim-31 the easter egg hunt.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>7</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/27%20yummy%20yummy-28%20mash%20the%20potatoes-29%20making%20salsa-30%20we%20learn%20to%20swim-31%20the%20easter%20egg%20hunt.mp3" type="audio/mp3" length="3004144"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/27%20yummy%20yummy-28%20mash%20the%20potatoes-29%20making%20salsa-30%20we%20learn%20to%20swim-31%20the%20easter%20egg%20hunt.mp3" type="audio/mp3" length="3004144"/>
             <itunes:duration>00:04:39</itunes:duration>
-            <guid isPermaLink="false">f6b7d06d-1921-3d96-a37e-b43eba53e251</guid>
-            <pubDate>Thu, 31 Jul 2025 01:23:53 -0000</pubDate>
+            <guid isPermaLink="false">e598abc0-4096-384a-9fba-bfa5c7f86a4d</guid>
+            <pubDate>Thu, 31 Jul 2025 01:31:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -140,12 +140,12 @@
             <title>32 what can i be-33 going away-34 a place called home-35 city shapes-36 road trip.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>8</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/32%20what%20can%20i%20be-33%20going%20away-34%20a%20place%20called%20home-35%20city%20shapes-36%20road%20trip.mp3" type="audio/mp3" length="4501360"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/32%20what%20can%20i%20be-33%20going%20away-34%20a%20place%20called%20home-35%20city%20shapes-36%20road%20trip.mp3" type="audio/mp3" length="4501360"/>
             <itunes:duration>00:06:38</itunes:duration>
-            <guid isPermaLink="false">f2c875e9-8122-3f0f-8d35-903258111197</guid>
-            <pubDate>Thu, 31 Jul 2025 01:24:53 -0000</pubDate>
+            <guid isPermaLink="false">4570bb3c-aabd-3201-83eb-0e7dab14cf86</guid>
+            <pubDate>Thu, 31 Jul 2025 01:32:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -153,12 +153,12 @@
             <title>37 shadows-38 building a road-39 airplanes-40 rocks-41 get in.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>9</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/37%20shadows-38%20building%20a%20road-39%20airplanes-40%20rocks-41%20get%20in.mp3" type="audio/mp3" length="4352977"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/37%20shadows-38%20building%20a%20road-39%20airplanes-40%20rocks-41%20get%20in.mp3" type="audio/mp3" length="4352977"/>
             <itunes:duration>00:06:21</itunes:duration>
-            <guid isPermaLink="false">0512817c-2c0b-3cf6-a20c-ef7026eda975</guid>
-            <pubDate>Thu, 31 Jul 2025 01:25:53 -0000</pubDate>
+            <guid isPermaLink="false">cbe2fe58-11ec-3e49-9a37-df7ecaa5f11e</guid>
+            <pubDate>Thu, 31 Jul 2025 01:33:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -166,12 +166,12 @@
             <title>42 we buy-43 birthday party-44 fall fun-45 busy at school-46 taking turns.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>10</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/42%20we%20buy-43%20birthday%20party-44%20fall%20fun-45%20busy%20at%20school-46%20taking%20turns.mp3" type="audio/mp3" length="3870973"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/42%20we%20buy-43%20birthday%20party-44%20fall%20fun-45%20busy%20at%20school-46%20taking%20turns.mp3" type="audio/mp3" length="3870973"/>
             <itunes:duration>00:05:41</itunes:duration>
-            <guid isPermaLink="false">201bad65-526f-3cd4-9d49-e9faf55bfba1</guid>
-            <pubDate>Thu, 31 Jul 2025 01:26:53 -0000</pubDate>
+            <guid isPermaLink="false">cd0e5d47-5314-3010-afd1-4ba55a718923</guid>
+            <pubDate>Thu, 31 Jul 2025 01:34:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -179,12 +179,12 @@
             <title>47 what can we draw-48 i can be-49 at the fair-50 teeth brushing fun-51 what l want.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>11</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/47%20what%20can%20we%20draw-48%20i%20can%20be-49%20at%20the%20fair-50%20teeth%20brushing%20fun-51%20what%20l%20want.mp3" type="audio/mp3" length="3438643"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/47%20what%20can%20we%20draw-48%20i%20can%20be-49%20at%20the%20fair-50%20teeth%20brushing%20fun-51%20what%20l%20want.mp3" type="audio/mp3" length="3438643"/>
             <itunes:duration>00:04:53</itunes:duration>
-            <guid isPermaLink="false">c7e4fa6c-af19-37c7-9354-7dd1f689e1db</guid>
-            <pubDate>Thu, 31 Jul 2025 01:27:53 -0000</pubDate>
+            <guid isPermaLink="false">72646070-32a6-3f9a-8c7c-2fe58b00ce4f</guid>
+            <pubDate>Thu, 31 Jul 2025 01:35:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -192,12 +192,12 @@
             <title>52 my clothes are too small-53 pairs-54 i looked everywhere-55 l won t-56 jack and lily s favorite food.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>12</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/52%20my%20clothes%20are%20too%20small-53%20pairs-54%20i%20looked%20everywhere-55%20l%20won%20t-56%20jack%20and%20lily%20s%20favorite%20food.mp3" type="audio/mp3" length="2878009"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/52%20my%20clothes%20are%20too%20small-53%20pairs-54%20i%20looked%20everywhere-55%20l%20won%20t-56%20jack%20and%20lily%20s%20favorite%20food.mp3" type="audio/mp3" length="2878009"/>
             <itunes:duration>00:03:57</itunes:duration>
-            <guid isPermaLink="false">c5c35ae0-1240-397a-9a66-8d2812d40053</guid>
-            <pubDate>Thu, 31 Jul 2025 01:28:53 -0000</pubDate>
+            <guid isPermaLink="false">d441feeb-0965-31ad-92ea-2fb89148b4eb</guid>
+            <pubDate>Thu, 31 Jul 2025 01:36:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -205,12 +205,12 @@
             <title>57 spring-gleaning!-58 machines at home-59 l wonder-60 go away lily-61 lucy did it.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>13</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/57%20spring-gleaning%21-58%20machines%20at%20home-59%20l%20wonder-60%20go%20away%20lily-61%20lucy%20did%20it.mp3" type="audio/mp3" length="2664574"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/57%20spring-gleaning%21-58%20machines%20at%20home-59%20l%20wonder-60%20go%20away%20lily-61%20lucy%20did%20it.mp3" type="audio/mp3" length="2664574"/>
             <itunes:duration>00:03:43</itunes:duration>
-            <guid isPermaLink="false">1157773f-3eb5-3472-9887-e7ef86c6aa82</guid>
-            <pubDate>Thu, 31 Jul 2025 01:29:53 -0000</pubDate>
+            <guid isPermaLink="false">74b17a62-03bb-35b7-96d6-c28299b48541</guid>
+            <pubDate>Thu, 31 Jul 2025 01:37:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -218,12 +218,12 @@
             <title>62 we make a snowman-63 new again-64 water fight-65 tools-66 pick me!.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>14</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/62%20we%20make%20a%20snowman-63%20new%20again-64%20water%20fight-65%20tools-66%20pick%20me%21.mp3" type="audio/mp3" length="2909079"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/62%20we%20make%20a%20snowman-63%20new%20again-64%20water%20fight-65%20tools-66%20pick%20me%21.mp3" type="audio/mp3" length="2909079"/>
             <itunes:duration>00:04:12</itunes:duration>
-            <guid isPermaLink="false">ee4b070d-1ecb-3edb-ae2a-eabb51233ac5</guid>
-            <pubDate>Thu, 31 Jul 2025 01:30:53 -0000</pubDate>
+            <guid isPermaLink="false">db949902-fbdc-3f88-850d-af44b1ab0f38</guid>
+            <pubDate>Thu, 31 Jul 2025 01:38:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -231,12 +231,12 @@
             <title>67 we make good choices-68 whats for breakfast-69 winter hats-70 you like what-71 the festival of lights.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>15</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/67%20we%20make%20good%20choices-68%20whats%20for%20breakfast-69%20winter%20hats-70%20you%20like%20what-71%20the%20festival%20of%20lights.mp3" type="audio/mp3" length="3926734"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/67%20we%20make%20good%20choices-68%20whats%20for%20breakfast-69%20winter%20hats-70%20you%20like%20what-71%20the%20festival%20of%20lights.mp3" type="audio/mp3" length="3926734"/>
             <itunes:duration>00:06:06</itunes:duration>
-            <guid isPermaLink="false">b8551eaf-3b55-3f09-9815-03fe24516ea4</guid>
-            <pubDate>Thu, 31 Jul 2025 01:31:53 -0000</pubDate>
+            <guid isPermaLink="false">a06e239b-b338-34cf-a47b-7b04192c7396</guid>
+            <pubDate>Thu, 31 Jul 2025 01:39:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -244,12 +244,12 @@
             <title>72 i can help-73 quiet or loud-74 how many wheels-75 what do i wear-76 wash your hands.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>16</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/72%20i%20can%20help-73%20quiet%20or%20loud-74%20how%20many%20wheels-75%20what%20do%20i%20wear-76%20wash%20your%20hands.mp3" type="audio/mp3" length="2938976"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/72%20i%20can%20help-73%20quiet%20or%20loud-74%20how%20many%20wheels-75%20what%20do%20i%20wear-76%20wash%20your%20hands.mp3" type="audio/mp3" length="2938976"/>
             <itunes:duration>00:04:29</itunes:duration>
-            <guid isPermaLink="false">4e0d24d6-dca1-30c6-9e29-6bb2f6560acc</guid>
-            <pubDate>Thu, 31 Jul 2025 01:32:53 -0000</pubDate>
+            <guid isPermaLink="false">f5fc2998-d0d2-3311-912c-7605fa0df3d2</guid>
+            <pubDate>Thu, 31 Jul 2025 01:40:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -257,12 +257,12 @@
             <title>77 elphant car wash-78 how things move-79 fall foods-80 feelings-81 what s my job.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>17</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/77%20elphant%20car%20wash-78%20how%20things%20move-79%20fall%20foods-80%20feelings-81%20what%20s%20my%20job.mp3" type="audio/mp3" length="2946249"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/77%20elphant%20car%20wash-78%20how%20things%20move-79%20fall%20foods-80%20feelings-81%20what%20s%20my%20job.mp3" type="audio/mp3" length="2946249"/>
             <itunes:duration>00:04:19</itunes:duration>
-            <guid isPermaLink="false">8316e132-9a33-3fa0-a4bf-dce723e501cf</guid>
-            <pubDate>Thu, 31 Jul 2025 01:33:53 -0000</pubDate>
+            <guid isPermaLink="false">e31f2492-bc83-38d2-b6b2-3de31bb9a088</guid>
+            <pubDate>Thu, 31 Jul 2025 01:41:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -270,12 +270,12 @@
             <title>82 when is nighttime-83 take a bite-84 fall-85 what season is it-86 my teacher.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>18</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/82%20when%20is%20nighttime-83%20take%20a%20bite-84%20fall-85%20what%20season%20is%20it-86%20my%20teacher.mp3" type="audio/mp3" length="3426220"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/82%20when%20is%20nighttime-83%20take%20a%20bite-84%20fall-85%20what%20season%20is%20it-86%20my%20teacher.mp3" type="audio/mp3" length="3426220"/>
             <itunes:duration>00:04:57</itunes:duration>
-            <guid isPermaLink="false">b6ef1bcb-a42f-3579-b2fd-9aa39336b9f7</guid>
-            <pubDate>Thu, 31 Jul 2025 01:34:53 -0000</pubDate>
+            <guid isPermaLink="false">3159e26a-86cc-30d1-bf67-8431947f8f11</guid>
+            <pubDate>Thu, 31 Jul 2025 01:42:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -283,12 +283,12 @@
             <title>87 sherman sure is shy-88 selfish sasha-89 open and close-90 there is a mouse in the house-91 mongo and cutie.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>19</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/87%20sherman%20sure%20is%20shy-88%20selfish%20sasha-89%20open%20and%20close-90%20there%20is%20a%20mouse%20in%20the%20house-91%20mongo%20and%20cutie.mp3" type="audio/mp3" length="3703831"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/87%20sherman%20sure%20is%20shy-88%20selfish%20sasha-89%20open%20and%20close-90%20there%20is%20a%20mouse%20in%20the%20house-91%20mongo%20and%20cutie.mp3" type="audio/mp3" length="3703831"/>
             <itunes:duration>00:05:36</itunes:duration>
-            <guid isPermaLink="false">e3289e4c-2d86-34eb-92c8-3760005feac9</guid>
-            <pubDate>Thu, 31 Jul 2025 01:35:53 -0000</pubDate>
+            <guid isPermaLink="false">d5107881-96b9-331c-b647-c05d977e2f2c</guid>
+            <pubDate>Thu, 31 Jul 2025 01:43:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -296,12 +296,12 @@
             <title>92 one stubborn horse-93 who stole the north pole-94 who who who-95 abby and zots-96 i want to be a cat.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>20</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/92%20one%20stubborn%20horse-93%20who%20stole%20the%20north%20pole-94%20who%20who%20who-95%20abby%20and%20zots-96%20i%20want%20to%20be%20a%20cat.mp3" type="audio/mp3" length="4896524"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/92%20one%20stubborn%20horse-93%20who%20stole%20the%20north%20pole-94%20who%20who%20who-95%20abby%20and%20zots-96%20i%20want%20to%20be%20a%20cat.mp3" type="audio/mp3" length="4896524"/>
             <itunes:duration>00:07:28</itunes:duration>
-            <guid isPermaLink="false">ade20b3b-87e0-335c-9070-72f989692a53</guid>
-            <pubDate>Thu, 31 Jul 2025 01:36:53 -0000</pubDate>
+            <guid isPermaLink="false">fb894104-7da7-3358-8dd1-aa41a78c8a4d</guid>
+            <pubDate>Thu, 31 Jul 2025 01:44:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         
@@ -309,12 +309,12 @@
             <title>97 the box-98 too hot-99 build a world.mp3</title>
             <description></description>
             <itunes:summary></itunes:summary>
-            <itunes:image href="http://192.168.1.8:18000/mypodcast/images/RAZ_C_Podcast.jpg"/>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/RAZ_C_Podcast.jpg"/>
             <itunes:order>21</itunes:order>
-            <enclosure url="http://192.168.1.8:18000/mypodcast/mp3/RAZ_C_Podcast/97%20the%20box-98%20too%20hot-99%20build%20a%20world.mp3" type="audio/mp3" length="3568906"/>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/RAZ_C_Podcast/97%20the%20box-98%20too%20hot-99%20build%20a%20world.mp3" type="audio/mp3" length="3568906"/>
             <itunes:duration>00:05:26</itunes:duration>
-            <guid isPermaLink="false">2de62ecf-86eb-36a0-b82c-ec801b897e26</guid>
-            <pubDate>Thu, 31 Jul 2025 01:37:53 -0000</pubDate>
+            <guid isPermaLink="false">32ad6952-fdbf-3380-81f7-a16b7fbdded4</guid>
+            <pubDate>Thu, 31 Jul 2025 01:45:36 -0000</pubDate>
             <itunes:explicit>no</itunes:explicit>
         </item>
         

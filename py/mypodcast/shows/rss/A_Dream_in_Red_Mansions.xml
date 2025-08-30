@@ -1,0 +1,2268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     version="2.0">
+    <channel>
+        <atom:link href="http://192.168.1.8:18000/mypodcast/res//rss/A_Dream_in_Red_Mansions.xml" type="application/rss+xml" rel="self"/>
+        <copyright>dirtysalt</copyright>
+        <link>https://dirtysalt.github.io </link>
+        <language>zh-cn</language>
+
+        <title>蒋勋细说红楼梦</title>
+        <description>1. 蔣勳 - 細說紅樓夢 - 第01回上.mp3<br/>
+2. 蔣勳 - 細說紅樓夢 - 第01回下.mp3<br/>
+3. 蔣勳 - 細說紅樓夢 - 第02回上.mp3<br/>
+4. 蔣勳 - 細說紅樓夢 - 第02回下.mp3<br/>
+5. 蔣勳 - 細說紅樓夢 - 第03回上.mp3<br/>
+6. 蔣勳 - 細說紅樓夢 - 第03回下.mp3<br/>
+7. 蔣勳 - 細說紅樓夢 - 第04回上.mp3<br/>
+8. 蔣勳 - 細說紅樓夢 - 第04回下.mp3<br/>
+9. 蔣勳 - 細說紅樓夢 - 第05回上.mp3<br/>
+10. 蔣勳 - 細說紅樓夢 - 第05回下.mp3<br/>
+11. 蔣勳 - 細說紅樓夢 - 第06回上.mp3<br/>
+12. 蔣勳 - 細說紅樓夢 - 第06回下.mp3<br/>
+13. 蔣勳 - 細說紅樓夢 - 第07回上.mp3<br/>
+14. 蔣勳 - 細說紅樓夢 - 第07回下.mp3<br/>
+15. 蔣勳 - 細說紅樓夢 - 第08回上.mp3<br/>
+16. 蔣勳 - 細說紅樓夢 - 第08回下.mp3<br/>
+17. 蔣勳 - 細說紅樓夢 - 第09回上.mp3<br/>
+18. 蔣勳 - 細說紅樓夢 - 第09回下.mp3<br/>
+19. 蔣勳 - 細說紅樓夢 - 第10回上.mp3<br/>
+20. 蔣勳 - 細說紅樓夢 - 第10回下.mp3<br/>
+21. 蔣勳 - 細說紅樓夢 - 第11回上.mp3<br/>
+22. 蔣勳 - 細說紅樓夢 - 第11回下.mp3<br/>
+23. 蔣勳 - 細說紅樓夢 - 第12回上.mp3<br/>
+24. 蔣勳 - 細說紅樓夢 - 第12回下.mp3<br/>
+25. 蔣勳 - 細說紅樓夢 - 第13回上.mp3<br/>
+26. 蔣勳 - 細說紅樓夢 - 第13回下.mp3<br/>
+27. 蔣勳 - 細說紅樓夢 - 第14回上.mp3<br/>
+28. 蔣勳 - 細說紅樓夢 - 第14回下.mp3<br/>
+29. 蔣勳 - 細說紅樓夢 - 第15回上.mp3<br/>
+30. 蔣勳 - 細說紅樓夢 - 第15回下.mp3<br/>
+31. 蔣勳 - 細說紅樓夢 - 第16回上.mp3<br/>
+32. 蔣勳 - 細說紅樓夢 - 第16回下.mp3<br/>
+33. 蔣勳 - 細說紅樓夢 - 第17回上.mp3<br/>
+34. 蔣勳 - 細說紅樓夢 - 第17回下.mp3<br/>
+35. 蔣勳 - 細說紅樓夢 - 第18回上.mp3<br/>
+36. 蔣勳 - 細說紅樓夢 - 第18回下.mp3<br/>
+37. 蔣勳 - 細說紅樓夢 - 第19回上.mp3<br/>
+38. 蔣勳 - 細說紅樓夢 - 第19回下.mp3<br/>
+39. 蔣勳 - 細說紅樓夢 - 第20回上.mp3<br/>
+40. 蔣勳 - 細說紅樓夢 - 第20回下.mp3<br/>
+41. 蔣勳 - 細說紅樓夢 - 第21回上.mp3<br/>
+42. 蔣勳 - 細說紅樓夢 - 第21回下.mp3<br/>
+43. 蔣勳 - 細說紅樓夢 - 第22回上.mp3<br/>
+44. 蔣勳 - 細說紅樓夢 - 第22回下.mp3<br/>
+45. 蔣勳 - 細說紅樓夢 - 第23回上.mp3<br/>
+46. 蔣勳 - 細說紅樓夢 - 第23回下.mp3<br/>
+47. 蔣勳 - 細說紅樓夢 - 第24回上.mp3<br/>
+48. 蔣勳 - 細說紅樓夢 - 第24回下.mp3<br/>
+49. 蔣勳 - 細說紅樓夢 - 第25回上.mp3<br/>
+50. 蔣勳 - 細說紅樓夢 - 第25回下.mp3<br/>
+51. 蔣勳 - 細說紅樓夢 - 第26回上.mp3<br/>
+52. 蔣勳 - 細說紅樓夢 - 第26回下.mp3<br/>
+53. 蔣勳 - 細說紅樓夢 - 第27回上.mp3<br/>
+54. 蔣勳 - 細說紅樓夢 - 第27回下.mp3<br/>
+55. 蔣勳 - 細說紅樓夢 - 第28回上.mp3<br/>
+56. 蔣勳 - 細說紅樓夢 - 第28回下.mp3<br/>
+57. 蔣勳 - 細說紅樓夢 - 第29回上.mp3<br/>
+58. 蔣勳 - 細說紅樓夢 - 第29回下.mp3<br/>
+59. 蔣勳 - 細說紅樓夢 - 第30回上.mp3<br/>
+60. 蔣勳 - 細說紅樓夢 - 第30回下.mp3<br/>
+61. 蔣勳 - 細說紅樓夢 - 第31回上.mp3<br/>
+62. 蔣勳 - 細說紅樓夢 - 第31回下.mp3<br/>
+63. 蔣勳 - 細說紅樓夢 - 第32回上.mp3<br/>
+64. 蔣勳 - 細說紅樓夢 - 第32回下.mp3<br/>
+65. 蔣勳 - 細說紅樓夢 - 第33回上.mp3<br/>
+66. 蔣勳 - 細說紅樓夢 - 第33回下.mp3<br/>
+67. 蔣勳 - 細說紅樓夢 - 第34回上.mp3<br/>
+68. 蔣勳 - 細說紅樓夢 - 第34回下.mp3<br/>
+69. 蔣勳 - 細說紅樓夢 - 第35回上.mp3<br/>
+70. 蔣勳 - 細說紅樓夢 - 第35回下.mp3<br/>
+71. 蔣勳 - 細說紅樓夢 - 第36回上.mp3<br/>
+72. 蔣勳 - 細說紅樓夢 - 第36回下.mp3<br/>
+73. 蔣勳 - 細說紅樓夢 - 第37回上.mp3<br/>
+74. 蔣勳 - 細說紅樓夢 - 第37回下.mp3<br/>
+75. 蔣勳 - 細說紅樓夢 - 第38回上.mp3<br/>
+76. 蔣勳 - 細說紅樓夢 - 第38回下.mp3<br/>
+77. 蔣勳 - 細說紅樓夢 - 第39回上.mp3<br/>
+78. 蔣勳 - 細說紅樓夢 - 第39回下.mp3<br/>
+79. 蔣勳 - 細說紅樓夢 - 第40回上.mp3<br/>
+80. 蔣勳 - 細說紅樓夢 - 第40回下.mp3<br/>
+81. 蔣勳 - 細說紅樓夢 - 第41回上.mp3<br/>
+82. 蔣勳 - 細說紅樓夢 - 第41回下.mp3<br/>
+83. 蔣勳 - 細說紅樓夢 - 第42回上.mp3<br/>
+84. 蔣勳 - 細說紅樓夢 - 第42回下.mp3<br/>
+85. 蔣勳 - 細說紅樓夢 - 第43回上.mp3<br/>
+86. 蔣勳 - 細說紅樓夢 - 第43回下.mp3<br/>
+87. 蔣勳 - 細說紅樓夢 - 第44回上.mp3<br/>
+88. 蔣勳 - 細說紅樓夢 - 第44回下.mp3<br/>
+89. 蔣勳 - 細說紅樓夢 - 第45回上.mp3<br/>
+90. 蔣勳 - 細說紅樓夢 - 第45回下.mp3<br/>
+91. 蔣勳 - 細說紅樓夢 - 第46回上.mp3<br/>
+92. 蔣勳 - 細說紅樓夢 - 第46回下.mp3<br/>
+93. 蔣勳 - 細說紅樓夢 - 第47回上.mp3<br/>
+94. 蔣勳 - 細說紅樓夢 - 第47回下.mp3<br/>
+95. 蔣勳 - 細說紅樓夢 - 第48回上.mp3<br/>
+96. 蔣勳 - 細說紅樓夢 - 第48回下.mp3<br/>
+97. 蔣勳 - 細說紅樓夢 - 第49回上.mp3<br/>
+98. 蔣勳 - 細說紅樓夢 - 第49回下.mp3<br/>
+99. 蔣勳 - 細說紅樓夢 - 第50回上.mp3<br/>
+100. 蔣勳 - 細說紅樓夢 - 第50回下.mp3<br/>
+101. 蔣勳 - 細說紅樓夢 - 第51回上.mp3<br/>
+102. 蔣勳 - 細說紅樓夢 - 第51回下.mp3<br/>
+103. 蔣勳 - 細說紅樓夢 - 第52回上.mp3<br/>
+104. 蔣勳 - 細說紅樓夢 - 第52回下.mp3<br/>
+105. 蔣勳 - 細說紅樓夢 - 第53回上.mp3<br/>
+106. 蔣勳 - 細說紅樓夢 - 第53回下.mp3<br/>
+107. 蔣勳 - 細說紅樓夢 - 第54回上.mp3<br/>
+108. 蔣勳 - 細說紅樓夢 - 第54回下.mp3<br/>
+109. 蔣勳 - 細說紅樓夢 - 第55回上.mp3<br/>
+110. 蔣勳 - 細說紅樓夢 - 第55回下.mp3<br/>
+111. 蔣勳 - 細說紅樓夢 - 第56回上.mp3<br/>
+112. 蔣勳 - 細說紅樓夢 - 第56回下.mp3<br/>
+113. 蔣勳 - 細說紅樓夢 - 第57回上.mp3<br/>
+114. 蔣勳 - 細說紅樓夢 - 第57回下.mp3<br/>
+115. 蔣勳 - 細說紅樓夢 - 第58回上.mp3<br/>
+116. 蔣勳 - 細說紅樓夢 - 第58回下.mp3<br/>
+117. 蔣勳 - 細說紅樓夢 - 第59回上.mp3<br/>
+118. 蔣勳 - 細說紅樓夢 - 第59回下.mp3<br/>
+119. 蔣勳 - 細說紅樓夢 - 第60回上.mp3<br/>
+120. 蔣勳 - 細說紅樓夢 - 第60回下.mp3<br/>
+121. 蔣勳 - 細說紅樓夢 - 第61回上.mp3<br/>
+122. 蔣勳 - 細說紅樓夢 - 第61回下.mp3<br/>
+123. 蔣勳 - 細說紅樓夢 - 第62回上.mp3<br/>
+124. 蔣勳 - 細說紅樓夢 - 第62回下.mp3<br/>
+125. 蔣勳 - 細說紅樓夢 - 第63回上.mp3<br/>
+126. 蔣勳 - 細說紅樓夢 - 第63回下.mp3<br/>
+127. 蔣勳 - 細說紅樓夢 - 第64回上.mp3<br/>
+128. 蔣勳 - 細說紅樓夢 - 第64回下.mp3<br/>
+129. 蔣勳 - 細說紅樓夢 - 第65回上.mp3<br/>
+130. 蔣勳 - 細說紅樓夢 - 第65回下.mp3<br/>
+131. 蔣勳 - 細說紅樓夢 - 第66回上.mp3<br/>
+132. 蔣勳 - 細說紅樓夢 - 第66回下.mp3<br/>
+133. 蔣勳 - 細說紅樓夢 - 第67回上.mp3<br/>
+134. 蔣勳 - 細說紅樓夢 - 第67回下.mp3<br/>
+135. 蔣勳 - 細說紅樓夢 - 第68回上.mp3<br/>
+136. 蔣勳 - 細說紅樓夢 - 第68回下.mp3<br/>
+137. 蔣勳 - 細說紅樓夢 - 第69回上.mp3<br/>
+138. 蔣勳 - 細說紅樓夢 - 第69回下.mp3<br/>
+139. 蔣勳 - 細說紅樓夢 - 第70回上.mp3<br/>
+140. 蔣勳 - 細說紅樓夢 - 第70回下.mp3<br/>
+141. 蔣勳 - 細說紅樓夢 - 第71回上.mp3<br/>
+142. 蔣勳 - 細說紅樓夢 - 第71回下.mp3<br/>
+143. 蔣勳 - 細說紅樓夢 - 第72回上.mp3<br/>
+144. 蔣勳 - 細說紅樓夢 - 第72回下.mp3<br/>
+145. 蔣勳 - 細說紅樓夢 - 第73回上.mp3<br/>
+146. 蔣勳 - 細說紅樓夢 - 第73回下.mp3<br/>
+147. 蔣勳 - 細說紅樓夢 - 第74回上.mp3<br/>
+148. 蔣勳 - 細說紅樓夢 - 第74回下.mp3<br/>
+149. 蔣勳 - 細說紅樓夢 - 第75回上.mp3<br/>
+150. 蔣勳 - 細說紅樓夢 - 第75回下.mp3<br/>
+151. 蔣勳 - 細說紅樓夢 - 第76回上.mp3<br/>
+152. 蔣勳 - 細說紅樓夢 - 第76回下.mp3<br/>
+153. 蔣勳 - 細說紅樓夢 - 第77回上.mp3<br/>
+154. 蔣勳 - 細說紅樓夢 - 第77回下.mp3<br/>
+155. 蔣勳 - 細說紅樓夢 - 第78回上.mp3<br/>
+156. 蔣勳 - 細說紅樓夢 - 第78回下.mp3<br/>
+157. 蔣勳 - 細說紅樓夢 - 第79回上.mp3<br/>
+158. 蔣勳 - 細說紅樓夢 - 第79回下.mp3<br/>
+159. 蔣勳 - 細說紅樓夢 - 第80回上.mp3<br/>
+160. 蔣勳 - 細說紅樓夢 - 第80回下.mp3</description>
+        <pubDate>Thu, 31 Jul 2025 01:25:37 -0000</pubDate>
+
+        <itunes:summary></itunes:summary>
+        <itunes:subtitle></itunes:subtitle>
+        <itunes:author>dirtysalt</itunes:author>
+        <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+        <itunes:owner>
+            <itunes:name>dirtysalt</itunes:name>
+            <itunes:email>dirtysalt1987@gmail.com</itunes:email>
+        </itunes:owner>
+        <itunes:keywords></itunes:keywords>
+        <itunes:category text="Education"/>
+        <itunes:explicit>no</itunes:explicit>
+
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第01回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>1</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC01%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74401043"/>
+            <itunes:duration>01:17:27</itunes:duration>
+            <guid isPermaLink="false">00c8581e-5ecc-3356-8cf7-b4ef81efea49</guid>
+            <pubDate>Thu, 31 Jul 2025 01:25:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第01回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>2</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC01%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="70927226"/>
+            <itunes:duration>01:13:52</itunes:duration>
+            <guid isPermaLink="false">e3d7676b-040a-3b26-83ad-684fdfe7e673</guid>
+            <pubDate>Thu, 31 Jul 2025 01:26:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第02回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>3</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC02%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76710269"/>
+            <itunes:duration>01:19:51</itunes:duration>
+            <guid isPermaLink="false">2ca2dd6c-56b5-3f70-9f6c-d84048bdb26b</guid>
+            <pubDate>Thu, 31 Jul 2025 01:27:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第02回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>4</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC02%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76409587"/>
+            <itunes:duration>01:19:35</itunes:duration>
+            <guid isPermaLink="false">388cb23b-fbe5-3ce5-8641-7f5f5f0676af</guid>
+            <pubDate>Thu, 31 Jul 2025 01:28:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第03回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>5</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC03%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74458979"/>
+            <itunes:duration>01:17:33</itunes:duration>
+            <guid isPermaLink="false">0a645dd6-b659-3c97-aac0-e55c8e98abc0</guid>
+            <pubDate>Thu, 31 Jul 2025 01:29:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第03回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>6</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC03%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75651400"/>
+            <itunes:duration>01:18:48</itunes:duration>
+            <guid isPermaLink="false">ba5300ef-f7e4-3efa-9cfb-18d49a353962</guid>
+            <pubDate>Thu, 31 Jul 2025 01:30:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第04回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>7</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC04%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75515163"/>
+            <itunes:duration>01:18:39</itunes:duration>
+            <guid isPermaLink="false">52840fc9-0e2e-33fd-aad5-e72e66dc1aee</guid>
+            <pubDate>Thu, 31 Jul 2025 01:31:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第04回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>8</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC04%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76415026"/>
+            <itunes:duration>01:19:35</itunes:duration>
+            <guid isPermaLink="false">ee662eb6-efd1-393f-84d1-d9d598308e0f</guid>
+            <pubDate>Thu, 31 Jul 2025 01:32:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第05回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>9</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC05%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75936026"/>
+            <itunes:duration>01:19:05</itunes:duration>
+            <guid isPermaLink="false">78ff71e4-32b0-3575-9323-986ed223f0b3</guid>
+            <pubDate>Thu, 31 Jul 2025 01:33:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第05回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>10</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC05%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74754236"/>
+            <itunes:duration>01:17:49</itunes:duration>
+            <guid isPermaLink="false">d5e514e7-9bfa-3b80-a93b-e88b643b1f9e</guid>
+            <pubDate>Thu, 31 Jul 2025 01:34:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第06回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>11</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC06%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76572173"/>
+            <itunes:duration>01:19:45</itunes:duration>
+            <guid isPermaLink="false">2fe80036-0264-339b-9223-0ff951210230</guid>
+            <pubDate>Thu, 31 Jul 2025 01:35:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第06回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>12</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC06%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76537901"/>
+            <itunes:duration>01:19:43</itunes:duration>
+            <guid isPermaLink="false">750364cc-9933-317f-9605-e9338eb4db21</guid>
+            <pubDate>Thu, 31 Jul 2025 01:36:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第07回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>13</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC07%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75426973"/>
+            <itunes:duration>01:18:34</itunes:duration>
+            <guid isPermaLink="false">f17090a8-f551-3365-b1cd-61c413e31ea6</guid>
+            <pubDate>Thu, 31 Jul 2025 01:37:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第07回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>14</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC07%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74996888"/>
+            <itunes:duration>01:18:07</itunes:duration>
+            <guid isPermaLink="false">3819cd5c-4430-37af-8991-35f439d0bdc7</guid>
+            <pubDate>Thu, 31 Jul 2025 01:38:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第08回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>15</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC08%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="73168729"/>
+            <itunes:duration>01:16:13</itunes:duration>
+            <guid isPermaLink="false">1c41e8c2-a4fb-3226-80bb-98382e3d89dd</guid>
+            <pubDate>Thu, 31 Jul 2025 01:39:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第08回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>16</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC08%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75816234"/>
+            <itunes:duration>01:18:57</itunes:duration>
+            <guid isPermaLink="false">ecbc98d3-f42e-3279-a78f-a201d8d9e3d0</guid>
+            <pubDate>Thu, 31 Jul 2025 01:40:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第09回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>17</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC09%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74046094"/>
+            <itunes:duration>01:17:06</itunes:duration>
+            <guid isPermaLink="false">12236e91-05ff-36f5-ad5d-870770d4d507</guid>
+            <pubDate>Thu, 31 Jul 2025 01:41:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第09回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>18</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC09%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74359103"/>
+            <itunes:duration>01:17:26</itunes:duration>
+            <guid isPermaLink="false">bd053749-0c10-3b57-a3f7-724d4b3e77a3</guid>
+            <pubDate>Thu, 31 Jul 2025 01:42:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第10回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>19</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC10%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74755622"/>
+            <itunes:duration>01:17:51</itunes:duration>
+            <guid isPermaLink="false">54d6a2ac-84c6-38e2-b1d7-346e1f7ae707</guid>
+            <pubDate>Thu, 31 Jul 2025 01:43:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第10回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>20</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC10%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75963468"/>
+            <itunes:duration>01:19:06</itunes:duration>
+            <guid isPermaLink="false">bef90241-b6e7-3001-a086-0ea3164e7075</guid>
+            <pubDate>Thu, 31 Jul 2025 01:44:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第11回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>21</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC11%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="72791826"/>
+            <itunes:duration>01:15:48</itunes:duration>
+            <guid isPermaLink="false">6c978a92-8029-3f3d-9363-8a61a078c5cd</guid>
+            <pubDate>Thu, 31 Jul 2025 01:45:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第11回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>22</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC11%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74774541"/>
+            <itunes:duration>01:17:52</itunes:duration>
+            <guid isPermaLink="false">3379b05a-cd1b-3ed9-94dd-2ceb2c9ee4dc</guid>
+            <pubDate>Thu, 31 Jul 2025 01:46:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第12回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>23</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC12%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74566804"/>
+            <itunes:duration>01:17:40</itunes:duration>
+            <guid isPermaLink="false">7552b8ca-f396-316a-ad2c-7fbaf1f8801e</guid>
+            <pubDate>Thu, 31 Jul 2025 01:47:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第12回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>24</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC12%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="68016137"/>
+            <itunes:duration>01:10:50</itunes:duration>
+            <guid isPermaLink="false">432ece21-9add-3dae-ad27-e2406fc25f72</guid>
+            <pubDate>Thu, 31 Jul 2025 01:48:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第13回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>25</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC13%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="71241529"/>
+            <itunes:duration>01:14:12</itunes:duration>
+            <guid isPermaLink="false">259f3179-c686-34bd-81a5-a035b5604131</guid>
+            <pubDate>Thu, 31 Jul 2025 01:49:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第13回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>26</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC13%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="72563518"/>
+            <itunes:duration>01:15:35</itunes:duration>
+            <guid isPermaLink="false">19df1e5f-57b1-3d38-a7d0-5592ec9f3104</guid>
+            <pubDate>Thu, 31 Jul 2025 01:50:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第14回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>27</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC14%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75595790"/>
+            <itunes:duration>01:18:43</itunes:duration>
+            <guid isPermaLink="false">f1680ff8-aa9a-37c9-b15a-d05e03dfa2db</guid>
+            <pubDate>Thu, 31 Jul 2025 01:51:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第14回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>28</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC14%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="68815154"/>
+            <itunes:duration>01:11:39</itunes:duration>
+            <guid isPermaLink="false">a7b96784-f402-3aa1-b0ed-faa9c081ed56</guid>
+            <pubDate>Thu, 31 Jul 2025 01:52:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第15回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>29</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC15%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="73744910"/>
+            <itunes:duration>01:16:47</itunes:duration>
+            <guid isPermaLink="false">e391a98a-e1ab-3354-9ede-e7dcc02d34cd</guid>
+            <pubDate>Thu, 31 Jul 2025 01:53:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第15回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>30</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC15%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="70783502"/>
+            <itunes:duration>01:13:42</itunes:duration>
+            <guid isPermaLink="false">cd07be29-4c93-30ea-8ebc-d90d11e1a67b</guid>
+            <pubDate>Thu, 31 Jul 2025 01:54:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第16回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>31</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC16%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="73505963"/>
+            <itunes:duration>01:16:33</itunes:duration>
+            <guid isPermaLink="false">b4cf4e05-445f-3a37-962b-1bd40a8aafc8</guid>
+            <pubDate>Thu, 31 Jul 2025 01:55:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第16回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>32</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC16%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="65881609"/>
+            <itunes:duration>01:08:37</itunes:duration>
+            <guid isPermaLink="false">87b57728-1795-3c81-bc8d-cdd5831335ec</guid>
+            <pubDate>Thu, 31 Jul 2025 01:56:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第17回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>33</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC17%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="72979709"/>
+            <itunes:duration>01:16:00</itunes:duration>
+            <guid isPermaLink="false">2abf5f2b-81dc-30da-b0a4-b5506d4dbdd6</guid>
+            <pubDate>Thu, 31 Jul 2025 01:57:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第17回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>34</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC17%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="69364146"/>
+            <itunes:duration>01:12:14</itunes:duration>
+            <guid isPermaLink="false">d1cecad1-ed05-35f9-a8c5-0fdadf1fc969</guid>
+            <pubDate>Thu, 31 Jul 2025 01:58:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第18回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>35</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC18%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75270764"/>
+            <itunes:duration>01:18:21</itunes:duration>
+            <guid isPermaLink="false">40088e25-b377-3083-867e-da6552b68aae</guid>
+            <pubDate>Thu, 31 Jul 2025 01:59:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第18回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>36</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC18%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74235775"/>
+            <itunes:duration>01:17:19</itunes:duration>
+            <guid isPermaLink="false">d3eac3c3-8412-3b1b-ba3a-a1d04d32be8f</guid>
+            <pubDate>Thu, 31 Jul 2025 02:00:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第19回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>37</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC19%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75477945"/>
+            <itunes:duration>01:18:37</itunes:duration>
+            <guid isPermaLink="false">bf50458e-45b2-3072-97ef-4262d7b4f8a7</guid>
+            <pubDate>Thu, 31 Jul 2025 02:01:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第19回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>38</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC19%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76201022"/>
+            <itunes:duration>01:19:22</itunes:duration>
+            <guid isPermaLink="false">67a66650-57fd-3902-81cd-517783b4ddc6</guid>
+            <pubDate>Thu, 31 Jul 2025 02:02:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第20回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>39</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC20%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75618820"/>
+            <itunes:duration>01:18:46</itunes:duration>
+            <guid isPermaLink="false">8506f6c9-b1e4-36e4-9e40-99c8909caddc</guid>
+            <pubDate>Thu, 31 Jul 2025 02:03:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第20回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>40</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC20%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76124530"/>
+            <itunes:duration>01:19:17</itunes:duration>
+            <guid isPermaLink="false">af0ac498-d8ab-3dd0-b088-97aabc25a247</guid>
+            <pubDate>Thu, 31 Jul 2025 02:04:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第21回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>41</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC21%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74873589"/>
+            <itunes:duration>01:17:59</itunes:duration>
+            <guid isPermaLink="false">14221c5f-0796-3f64-9d70-41abd266ae56</guid>
+            <pubDate>Thu, 31 Jul 2025 02:05:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第21回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>42</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC21%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75994130"/>
+            <itunes:duration>01:19:09</itunes:duration>
+            <guid isPermaLink="false">a6e84a95-7bbf-3f7f-859e-5588aa6a0f34</guid>
+            <pubDate>Thu, 31 Jul 2025 02:06:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第22回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>43</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC22%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="47052859"/>
+            <itunes:duration>01:18:25</itunes:duration>
+            <guid isPermaLink="false">ca1d4378-146d-38e2-9feb-9ea87ff75043</guid>
+            <pubDate>Thu, 31 Jul 2025 02:07:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第22回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>44</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC22%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="47483059"/>
+            <itunes:duration>01:19:08</itunes:duration>
+            <guid isPermaLink="false">8a87fed0-2a5b-372d-8127-1d5e836f57f7</guid>
+            <pubDate>Thu, 31 Jul 2025 02:08:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第23回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>45</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC23%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="72936363"/>
+            <itunes:duration>01:15:58</itunes:duration>
+            <guid isPermaLink="false">6ec8a31a-b186-3fb0-a6ea-a21302674f08</guid>
+            <pubDate>Thu, 31 Jul 2025 02:09:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第23回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>46</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC23%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74547156"/>
+            <itunes:duration>01:17:39</itunes:duration>
+            <guid isPermaLink="false">e8e90a8a-10f7-3988-8690-9c3219902fc4</guid>
+            <pubDate>Thu, 31 Jul 2025 02:10:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第24回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>47</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC24%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="73166645"/>
+            <itunes:duration>01:16:12</itunes:duration>
+            <guid isPermaLink="false">c48df914-b135-35b4-9671-2f514abadf8d</guid>
+            <pubDate>Thu, 31 Jul 2025 02:11:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第24回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>48</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC24%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74344457"/>
+            <itunes:duration>01:17:26</itunes:duration>
+            <guid isPermaLink="false">fd8ed4f5-159e-3a88-b3bb-258acdc4ee73</guid>
+            <pubDate>Thu, 31 Jul 2025 02:12:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第25回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>49</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC25%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74607941"/>
+            <itunes:duration>01:17:40</itunes:duration>
+            <guid isPermaLink="false">00083fe9-1ac1-3d89-bf1a-44f70457706c</guid>
+            <pubDate>Thu, 31 Jul 2025 02:13:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第25回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>50</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC25%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="72144319"/>
+            <itunes:duration>01:15:08</itunes:duration>
+            <guid isPermaLink="false">ad9abb87-8a5d-3a08-9363-d5f2f6fd3e7a</guid>
+            <pubDate>Thu, 31 Jul 2025 02:14:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第26回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>51</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC26%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="73339670"/>
+            <itunes:duration>01:16:23</itunes:duration>
+            <guid isPermaLink="false">4fd01f87-81f0-3769-951b-3274bedbcad1</guid>
+            <pubDate>Thu, 31 Jul 2025 02:15:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第26回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>52</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC26%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="70441544"/>
+            <itunes:duration>01:13:22</itunes:duration>
+            <guid isPermaLink="false">749f9d84-b498-3e62-bbb4-919b4de97019</guid>
+            <pubDate>Thu, 31 Jul 2025 02:16:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第27回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>53</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC27%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76526619"/>
+            <itunes:duration>01:19:42</itunes:duration>
+            <guid isPermaLink="false">58f0e916-c7cb-3643-9731-70d057f63cbb</guid>
+            <pubDate>Thu, 31 Jul 2025 02:17:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第27回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>54</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC27%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="68490886"/>
+            <itunes:duration>01:11:20</itunes:duration>
+            <guid isPermaLink="false">38f0acb3-ae4b-3bd8-98cf-83113ee0c2ed</guid>
+            <pubDate>Thu, 31 Jul 2025 02:18:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第28回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>55</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC28%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75948570"/>
+            <itunes:duration>01:19:06</itunes:duration>
+            <guid isPermaLink="false">35d89968-a62e-3018-98d8-937a5aa628cd</guid>
+            <pubDate>Thu, 31 Jul 2025 02:19:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第28回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>56</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC28%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76491111"/>
+            <itunes:duration>01:19:40</itunes:duration>
+            <guid isPermaLink="false">8a6d1406-0b9f-3772-a589-1523a00a4616</guid>
+            <pubDate>Thu, 31 Jul 2025 02:20:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第29回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>57</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC29%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75671464"/>
+            <itunes:duration>01:18:49</itunes:duration>
+            <guid isPermaLink="false">23bec0bc-de10-3eab-8d92-8ef20478e679</guid>
+            <pubDate>Thu, 31 Jul 2025 02:21:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第29回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>58</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC29%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74094933"/>
+            <itunes:duration>01:17:10</itunes:duration>
+            <guid isPermaLink="false">c63428ce-64d7-3c39-892b-f38ebf52b1ac</guid>
+            <pubDate>Thu, 31 Jul 2025 02:22:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第30回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>59</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC30%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74406724"/>
+            <itunes:duration>01:17:30</itunes:duration>
+            <guid isPermaLink="false">dfe90d88-58c2-3f5d-99bc-284dde998729</guid>
+            <pubDate>Thu, 31 Jul 2025 02:23:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第30回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>60</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC30%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74711847"/>
+            <itunes:duration>01:17:49</itunes:duration>
+            <guid isPermaLink="false">bd4fa6ed-19e9-391a-b25f-dc542de84f77</guid>
+            <pubDate>Thu, 31 Jul 2025 02:24:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第31回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>61</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC31%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="71831695"/>
+            <itunes:duration>01:14:49</itunes:duration>
+            <guid isPermaLink="false">0dd39b7c-cc7f-3f97-92ee-ba31cf6ea75b</guid>
+            <pubDate>Thu, 31 Jul 2025 02:25:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第31回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>62</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC31%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="69124134"/>
+            <itunes:duration>01:12:00</itunes:duration>
+            <guid isPermaLink="false">8b18d40c-1b58-3b4b-a7eb-c1d98b15d2a3</guid>
+            <pubDate>Thu, 31 Jul 2025 02:26:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第32回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>63</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC32%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="72316515"/>
+            <itunes:duration>01:15:19</itunes:duration>
+            <guid isPermaLink="false">db141ec9-722b-3f64-9ceb-69e9b0cbbe3c</guid>
+            <pubDate>Thu, 31 Jul 2025 02:27:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第32回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>64</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC32%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="67906217"/>
+            <itunes:duration>01:10:44</itunes:duration>
+            <guid isPermaLink="false">6b4ff156-2899-3bfe-8bab-d27d72002f54</guid>
+            <pubDate>Thu, 31 Jul 2025 02:28:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第33回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>65</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC33%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76466838"/>
+            <itunes:duration>01:19:39</itunes:duration>
+            <guid isPermaLink="false">02ef8e1c-0da8-313c-8efd-530f0a40f952</guid>
+            <pubDate>Thu, 31 Jul 2025 02:29:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第33回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>66</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC33%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="72804262"/>
+            <itunes:duration>01:15:50</itunes:duration>
+            <guid isPermaLink="false">1499c431-35a9-3d96-a281-a87b6d9fed74</guid>
+            <pubDate>Thu, 31 Jul 2025 02:30:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第34回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>67</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC34%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="73491812"/>
+            <itunes:duration>01:16:33</itunes:duration>
+            <guid isPermaLink="false">00e4b5fb-34a1-3ad1-8576-cd8280a728f8</guid>
+            <pubDate>Thu, 31 Jul 2025 02:31:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第34回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>68</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC34%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75714107"/>
+            <itunes:duration>01:18:52</itunes:duration>
+            <guid isPermaLink="false">7a8876da-96ea-3fea-ae85-bd4f39e4e802</guid>
+            <pubDate>Thu, 31 Jul 2025 02:32:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第35回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>69</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC35%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74758646"/>
+            <itunes:duration>01:17:52</itunes:duration>
+            <guid isPermaLink="false">ce692992-2d05-3c6b-959a-f51234840855</guid>
+            <pubDate>Thu, 31 Jul 2025 02:33:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第35回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>70</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC35%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75510556"/>
+            <itunes:duration>01:18:39</itunes:duration>
+            <guid isPermaLink="false">45439f94-3f0b-3314-9a41-069e47d166c6</guid>
+            <pubDate>Thu, 31 Jul 2025 02:34:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第36回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>71</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC36%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76509900"/>
+            <itunes:duration>01:19:41</itunes:duration>
+            <guid isPermaLink="false">b174b4a4-d0d8-35f8-b803-fc4a1dad0160</guid>
+            <pubDate>Thu, 31 Jul 2025 02:35:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第36回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>72</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC36%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74450207"/>
+            <itunes:duration>01:17:33</itunes:duration>
+            <guid isPermaLink="false">1df49664-1b1f-35c7-8def-f4ce8184951a</guid>
+            <pubDate>Thu, 31 Jul 2025 02:36:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第37回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>73</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC37%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="71031292"/>
+            <itunes:duration>01:13:59</itunes:duration>
+            <guid isPermaLink="false">f71e14b0-39f4-3ab6-b088-3d1dbd1c1399</guid>
+            <pubDate>Thu, 31 Jul 2025 02:37:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第37回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>74</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC37%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76395799"/>
+            <itunes:duration>01:19:34</itunes:duration>
+            <guid isPermaLink="false">93d840d1-1d79-33d7-a03e-9fb6b3fab9ca</guid>
+            <pubDate>Thu, 31 Jul 2025 02:38:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第38回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>75</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC38%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75961548"/>
+            <itunes:duration>01:19:07</itunes:duration>
+            <guid isPermaLink="false">a9feb50b-4510-37ba-bdbd-213c88b06da2</guid>
+            <pubDate>Thu, 31 Jul 2025 02:39:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第38回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>76</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC38%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76369052"/>
+            <itunes:duration>01:19:33</itunes:duration>
+            <guid isPermaLink="false">10db411c-972a-37e6-aa92-8e0f47216ee0</guid>
+            <pubDate>Thu, 31 Jul 2025 02:40:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第39回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>77</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC39%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75263566"/>
+            <itunes:duration>01:18:23</itunes:duration>
+            <guid isPermaLink="false">f8ed43db-c7a8-37f1-a5c4-03de30f83460</guid>
+            <pubDate>Thu, 31 Jul 2025 02:41:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第39回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>78</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC39%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76103226"/>
+            <itunes:duration>01:19:16</itunes:duration>
+            <guid isPermaLink="false">aa0d6df7-7a95-3067-ad57-bd5c3fc65270</guid>
+            <pubDate>Thu, 31 Jul 2025 02:42:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第40回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>79</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC40%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76219411"/>
+            <itunes:duration>01:19:23</itunes:duration>
+            <guid isPermaLink="false">ab729d08-6581-34c2-940e-7f7c87487940</guid>
+            <pubDate>Thu, 31 Jul 2025 02:43:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第40回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>80</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC40%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76373630"/>
+            <itunes:duration>01:19:33</itunes:duration>
+            <guid isPermaLink="false">fec3af21-3f8d-3b5b-abb5-bfce07f9a296</guid>
+            <pubDate>Thu, 31 Jul 2025 02:44:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第41回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>81</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC41%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75128553"/>
+            <itunes:duration>01:18:15</itunes:duration>
+            <guid isPermaLink="false">fd247f2a-60f7-3bd9-89e9-7cf5c16df3bd</guid>
+            <pubDate>Thu, 31 Jul 2025 02:45:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第41回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>82</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC41%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="73929836"/>
+            <itunes:duration>01:17:00</itunes:duration>
+            <guid isPermaLink="false">9500f822-8441-3477-8771-7904743019d9</guid>
+            <pubDate>Thu, 31 Jul 2025 02:46:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第42回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>83</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC42%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76070910"/>
+            <itunes:duration>01:19:14</itunes:duration>
+            <guid isPermaLink="false">29017fb4-b5d0-3c08-b3f5-9e047e26bf15</guid>
+            <pubDate>Thu, 31 Jul 2025 02:47:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第42回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>84</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC42%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76351902"/>
+            <itunes:duration>01:19:31</itunes:duration>
+            <guid isPermaLink="false">88955b5d-af1e-31fb-982c-2944e5801318</guid>
+            <pubDate>Thu, 31 Jul 2025 02:48:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第43回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>85</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC43%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74221309"/>
+            <itunes:duration>01:17:16</itunes:duration>
+            <guid isPermaLink="false">266e2341-35db-365e-8692-ad7608ca89f7</guid>
+            <pubDate>Thu, 31 Jul 2025 02:49:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第43回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>86</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC43%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76206470"/>
+            <itunes:duration>01:19:22</itunes:duration>
+            <guid isPermaLink="false">4d088d1c-fdfb-3f9b-8c76-d97ed8b8e89f</guid>
+            <pubDate>Thu, 31 Jul 2025 02:50:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第44回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>87</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC44%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76519079"/>
+            <itunes:duration>01:19:42</itunes:duration>
+            <guid isPermaLink="false">a79e19eb-6f35-3b12-9eb0-74986aaed7c1</guid>
+            <pubDate>Thu, 31 Jul 2025 02:51:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第44回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>88</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC44%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74863138"/>
+            <itunes:duration>01:17:58</itunes:duration>
+            <guid isPermaLink="false">85846d1c-d507-3a70-88fc-4af446ef9ad2</guid>
+            <pubDate>Thu, 31 Jul 2025 02:52:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第45回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>89</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC45%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76528706"/>
+            <itunes:duration>01:19:43</itunes:duration>
+            <guid isPermaLink="false">f73e994d-bc2e-3b81-9d79-3e1ad465a4f8</guid>
+            <pubDate>Thu, 31 Jul 2025 02:53:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第45回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>90</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC45%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75762173"/>
+            <itunes:duration>01:18:55</itunes:duration>
+            <guid isPermaLink="false">311591ed-860f-37eb-bc64-8b5567d9b764</guid>
+            <pubDate>Thu, 31 Jul 2025 02:54:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第46回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>91</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC46%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76368218"/>
+            <itunes:duration>01:19:32</itunes:duration>
+            <guid isPermaLink="false">3d1e7d5b-691a-3001-af15-8213f866710a</guid>
+            <pubDate>Thu, 31 Jul 2025 02:55:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第46回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>92</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC46%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="57902350"/>
+            <itunes:duration>01:00:18</itunes:duration>
+            <guid isPermaLink="false">90305fdb-f705-3dee-ad38-e7bbe8dbf753</guid>
+            <pubDate>Thu, 31 Jul 2025 02:56:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第47回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>93</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC47%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76241986"/>
+            <itunes:duration>01:19:25</itunes:duration>
+            <guid isPermaLink="false">29c5c239-ab0f-386c-b97c-2ced984c74c7</guid>
+            <pubDate>Thu, 31 Jul 2025 02:57:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第47回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>94</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC47%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75775129"/>
+            <itunes:duration>01:18:55</itunes:duration>
+            <guid isPermaLink="false">9c297099-9b97-304c-a95b-3f7f859f5f28</guid>
+            <pubDate>Thu, 31 Jul 2025 02:58:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第48回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>95</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC48%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75288614"/>
+            <itunes:duration>01:18:25</itunes:duration>
+            <guid isPermaLink="false">a7399483-2b8c-327d-9bf3-2ec53d9e5738</guid>
+            <pubDate>Thu, 31 Jul 2025 02:59:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第48回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>96</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC48%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75123114"/>
+            <itunes:duration>01:18:15</itunes:duration>
+            <guid isPermaLink="false">873e8e19-db56-3f35-9b1a-8b160691ab32</guid>
+            <pubDate>Thu, 31 Jul 2025 03:00:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第49回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>97</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC49%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75482587"/>
+            <itunes:duration>01:18:37</itunes:duration>
+            <guid isPermaLink="false">04fc6cdb-2284-3217-b3b8-8e0c60ed6f28</guid>
+            <pubDate>Thu, 31 Jul 2025 03:01:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第49回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>98</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC49%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74899071"/>
+            <itunes:duration>01:18:01</itunes:duration>
+            <guid isPermaLink="false">70626072-e1e7-3338-bd4b-69b3be3f219f</guid>
+            <pubDate>Thu, 31 Jul 2025 03:02:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第50回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>99</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC50%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75775961"/>
+            <itunes:duration>01:18:55</itunes:duration>
+            <guid isPermaLink="false">a03c2c6a-23d8-3621-9a0c-dc125f3fb318</guid>
+            <pubDate>Thu, 31 Jul 2025 03:03:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第50回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>100</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC50%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="66568488"/>
+            <itunes:duration>01:19:14</itunes:duration>
+            <guid isPermaLink="false">15b5b30a-4634-3475-87f8-c488c3e05c5d</guid>
+            <pubDate>Thu, 31 Jul 2025 03:04:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第51回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>101</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC51%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75620899"/>
+            <itunes:duration>01:18:46</itunes:duration>
+            <guid isPermaLink="false">bf9727d5-3cbc-339f-bd91-9e72cef5e940</guid>
+            <pubDate>Thu, 31 Jul 2025 03:05:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第51回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>102</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC51%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76114501"/>
+            <itunes:duration>01:19:17</itunes:duration>
+            <guid isPermaLink="false">3d214cc0-a02a-3c55-99a4-2a9ffbd59a89</guid>
+            <pubDate>Thu, 31 Jul 2025 03:06:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第52回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>103</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC52%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75600813"/>
+            <itunes:duration>01:18:45</itunes:duration>
+            <guid isPermaLink="false">446cd030-7351-3509-ad48-efa092c0888e</guid>
+            <pubDate>Thu, 31 Jul 2025 03:07:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第52回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>104</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC52%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75746282"/>
+            <itunes:duration>01:18:54</itunes:duration>
+            <guid isPermaLink="false">38b72bd5-8d7a-330a-be9a-1129e1ad6ffa</guid>
+            <pubDate>Thu, 31 Jul 2025 03:08:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第53回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>105</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC53%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74888210"/>
+            <itunes:duration>01:18:00</itunes:duration>
+            <guid isPermaLink="false">6cf27d2a-92e2-3974-9e82-70f6d7964495</guid>
+            <pubDate>Thu, 31 Jul 2025 03:09:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第53回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>106</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC53%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75268981"/>
+            <itunes:duration>01:18:24</itunes:duration>
+            <guid isPermaLink="false">b2587f17-869f-38a4-aaa0-baa8c8c71007</guid>
+            <pubDate>Thu, 31 Jul 2025 03:10:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第54回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>107</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC54%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75540630"/>
+            <itunes:duration>01:18:41</itunes:duration>
+            <guid isPermaLink="false">c373fc4a-a8bf-3d16-b2c2-02134b9cce11</guid>
+            <pubDate>Thu, 31 Jul 2025 03:11:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第54回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>108</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC54%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76306927"/>
+            <itunes:duration>01:19:26</itunes:duration>
+            <guid isPermaLink="false">25185aaa-12bd-352c-b2da-4e3269900de5</guid>
+            <pubDate>Thu, 31 Jul 2025 03:12:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第55回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>109</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC55%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75171589"/>
+            <itunes:duration>01:18:18</itunes:duration>
+            <guid isPermaLink="false">39b4d8ce-d9a8-375f-aaab-e8212e36c939</guid>
+            <pubDate>Thu, 31 Jul 2025 03:13:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第55回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>110</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC55%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75538433"/>
+            <itunes:duration>01:18:41</itunes:duration>
+            <guid isPermaLink="false">e203c7ff-de55-3002-b8bd-b1d90b5ac196</guid>
+            <pubDate>Thu, 31 Jul 2025 03:14:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第56回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>111</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC56%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74903216"/>
+            <itunes:duration>01:18:01</itunes:duration>
+            <guid isPermaLink="false">9b7b4034-a9ad-37c1-a4a5-586c447253f1</guid>
+            <pubDate>Thu, 31 Jul 2025 03:15:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第56回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>112</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC56%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76070194"/>
+            <itunes:duration>01:19:14</itunes:duration>
+            <guid isPermaLink="false">c6d70e86-5a53-30d0-a97e-b572eb2548bb</guid>
+            <pubDate>Thu, 31 Jul 2025 03:16:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第57回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>113</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC57%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="73090571"/>
+            <itunes:duration>01:16:08</itunes:duration>
+            <guid isPermaLink="false">f4e0f7f1-de9a-3980-8a5d-129ce7bf7910</guid>
+            <pubDate>Thu, 31 Jul 2025 03:17:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第57回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>114</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC57%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="73583763"/>
+            <itunes:duration>01:16:38</itunes:duration>
+            <guid isPermaLink="false">66831748-a52b-3618-b637-339948272a16</guid>
+            <pubDate>Thu, 31 Jul 2025 03:18:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第58回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>115</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC58%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74960939"/>
+            <itunes:duration>01:18:05</itunes:duration>
+            <guid isPermaLink="false">63622eb1-d007-3acf-8d52-ecf1dc74dda3</guid>
+            <pubDate>Thu, 31 Jul 2025 03:19:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第58回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>116</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC58%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="60465288"/>
+            <itunes:duration>01:02:59</itunes:duration>
+            <guid isPermaLink="false">b047b930-aa2f-3dc4-a9c5-512e5de38867</guid>
+            <pubDate>Thu, 31 Jul 2025 03:20:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第59回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>117</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC59%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75974066"/>
+            <itunes:duration>01:19:08</itunes:duration>
+            <guid isPermaLink="false">58a8357d-95a0-3539-a8d0-4e0c2f9c819e</guid>
+            <pubDate>Thu, 31 Jul 2025 03:21:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第59回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>118</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC59%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74122468"/>
+            <itunes:duration>01:17:12</itunes:duration>
+            <guid isPermaLink="false">8cafbb57-925d-3797-bf41-5c72c149115d</guid>
+            <pubDate>Thu, 31 Jul 2025 03:22:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第60回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>119</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC60%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76025060"/>
+            <itunes:duration>01:19:11</itunes:duration>
+            <guid isPermaLink="false">232813ae-cb62-31f1-b10a-8bfe09327783</guid>
+            <pubDate>Thu, 31 Jul 2025 03:23:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第60回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>120</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC60%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="65799686"/>
+            <itunes:duration>01:08:32</itunes:duration>
+            <guid isPermaLink="false">c22301b6-28ca-37ed-a958-fbcc83525690</guid>
+            <pubDate>Thu, 31 Jul 2025 03:24:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第61回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>121</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC61%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75413581"/>
+            <itunes:duration>01:18:33</itunes:duration>
+            <guid isPermaLink="false">4b4320a1-459a-3343-8980-63f65dbce926</guid>
+            <pubDate>Thu, 31 Jul 2025 03:25:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第61回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>122</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC61%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="72982275"/>
+            <itunes:duration>01:16:01</itunes:duration>
+            <guid isPermaLink="false">ad45e407-5be2-33e4-bb13-f17a5c5aaecf</guid>
+            <pubDate>Thu, 31 Jul 2025 03:26:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第62回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>123</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC62%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74851399"/>
+            <itunes:duration>01:17:58</itunes:duration>
+            <guid isPermaLink="false">e0dc846c-c532-3a42-aa43-a77ab424e0cf</guid>
+            <pubDate>Thu, 31 Jul 2025 03:27:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第62回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>124</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC62%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="72954272"/>
+            <itunes:duration>01:15:59</itunes:duration>
+            <guid isPermaLink="false">98623b9a-5f2d-3f47-8dd2-81765e67d77a</guid>
+            <pubDate>Thu, 31 Jul 2025 03:28:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第63回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>125</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC63%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76731140"/>
+            <itunes:duration>01:19:53</itunes:duration>
+            <guid isPermaLink="false">59939a06-3c1a-374b-9e4f-c527959057d1</guid>
+            <pubDate>Thu, 31 Jul 2025 03:29:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第63回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>126</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC63%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76527872"/>
+            <itunes:duration>01:19:42</itunes:duration>
+            <guid isPermaLink="false">73864c5f-0ff9-3783-b167-14b148e0c6e0</guid>
+            <pubDate>Thu, 31 Jul 2025 03:30:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第64回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>127</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC64%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76390782"/>
+            <itunes:duration>01:19:34</itunes:duration>
+            <guid isPermaLink="false">931e5a69-3a76-35de-b1d3-9fd16db0d5b5</guid>
+            <pubDate>Thu, 31 Jul 2025 03:31:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第64回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>128</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC64%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="73742990"/>
+            <itunes:duration>01:16:48</itunes:duration>
+            <guid isPermaLink="false">03233be0-adfc-3e0c-9a9e-936dcafdc410</guid>
+            <pubDate>Thu, 31 Jul 2025 03:32:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第65回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>129</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC65%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74510379"/>
+            <itunes:duration>01:17:36</itunes:duration>
+            <guid isPermaLink="false">479c1598-8e88-370b-96eb-a9b4ca22fde1</guid>
+            <pubDate>Thu, 31 Jul 2025 03:33:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第65回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>130</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC65%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74001720"/>
+            <itunes:duration>01:17:05</itunes:duration>
+            <guid isPermaLink="false">54209519-b8c3-31c7-95f9-f7d65278d36e</guid>
+            <pubDate>Thu, 31 Jul 2025 03:34:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第66回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>131</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC66%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74079875"/>
+            <itunes:duration>01:17:09</itunes:duration>
+            <guid isPermaLink="false">391e6da9-685e-366c-82b1-f378b0684561</guid>
+            <pubDate>Thu, 31 Jul 2025 03:35:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第66回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>132</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC66%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74708897"/>
+            <itunes:duration>01:17:49</itunes:duration>
+            <guid isPermaLink="false">19ba7490-58bb-354d-b2a5-6caeaf6b185a</guid>
+            <pubDate>Thu, 31 Jul 2025 03:36:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第67回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>133</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC67%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75730822"/>
+            <itunes:duration>01:18:53</itunes:duration>
+            <guid isPermaLink="false">a899e65f-b804-3864-af89-76ea3f0aa1b6</guid>
+            <pubDate>Thu, 31 Jul 2025 03:37:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第67回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>134</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC67%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74649973"/>
+            <itunes:duration>01:17:45</itunes:duration>
+            <guid isPermaLink="false">b77dde55-180f-3cd3-af57-f6b9ecb885db</guid>
+            <pubDate>Thu, 31 Jul 2025 03:38:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第68回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>135</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC68%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74973914"/>
+            <itunes:duration>01:18:05</itunes:duration>
+            <guid isPermaLink="false">c6c08cc4-6d7b-3107-b757-49ea99d0932e</guid>
+            <pubDate>Thu, 31 Jul 2025 03:39:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第68回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>136</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC68%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75549007"/>
+            <itunes:duration>01:18:41</itunes:duration>
+            <guid isPermaLink="false">d9dca832-aba1-3d1b-8ee4-fca3b0b7b859</guid>
+            <pubDate>Thu, 31 Jul 2025 03:40:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第69回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>137</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC69%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75113062"/>
+            <itunes:duration>01:18:14</itunes:duration>
+            <guid isPermaLink="false">7fe1348b-3dc9-395f-8b80-66549bfa01ca</guid>
+            <pubDate>Thu, 31 Jul 2025 03:41:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第69回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>138</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC69%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75708666"/>
+            <itunes:duration>01:18:51</itunes:duration>
+            <guid isPermaLink="false">92dc52e3-4d2e-32b3-92f5-c3f17d78ef48</guid>
+            <pubDate>Thu, 31 Jul 2025 03:42:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第70回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>139</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC70%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76103645"/>
+            <itunes:duration>01:19:16</itunes:duration>
+            <guid isPermaLink="false">e094f1f0-ee41-3e2d-999b-858352d20685</guid>
+            <pubDate>Thu, 31 Jul 2025 03:43:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第70回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>140</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC70%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75690680"/>
+            <itunes:duration>01:18:50</itunes:duration>
+            <guid isPermaLink="false">b6f05877-7bde-37db-a944-47da97e9ee52</guid>
+            <pubDate>Thu, 31 Jul 2025 03:44:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第71回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>141</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC71%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="76561702"/>
+            <itunes:duration>01:19:45</itunes:duration>
+            <guid isPermaLink="false">6b47d483-fe1f-3043-9ec5-70034890d238</guid>
+            <pubDate>Thu, 31 Jul 2025 03:45:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第71回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>142</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC71%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75989137"/>
+            <itunes:duration>01:19:09</itunes:duration>
+            <guid isPermaLink="false">355ef540-6ddf-39ef-a8b6-8b8bcc41ed9d</guid>
+            <pubDate>Thu, 31 Jul 2025 03:46:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第72回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>143</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC72%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="75817747"/>
+            <itunes:duration>01:18:58</itunes:duration>
+            <guid isPermaLink="false">2a41005f-90a7-3810-8292-59fb378cf37e</guid>
+            <pubDate>Thu, 31 Jul 2025 03:47:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第72回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>144</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC72%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75325557"/>
+            <itunes:duration>01:18:25</itunes:duration>
+            <guid isPermaLink="false">dd46779f-bf45-366b-854e-52b3f9b76384</guid>
+            <pubDate>Thu, 31 Jul 2025 03:48:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第73回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>145</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC73%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74650398"/>
+            <itunes:duration>01:17:45</itunes:duration>
+            <guid isPermaLink="false">bbe40aa6-8b47-3fba-ac52-3538e81b139f</guid>
+            <pubDate>Thu, 31 Jul 2025 03:49:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第73回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>146</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC73%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="76199335"/>
+            <itunes:duration>01:19:22</itunes:duration>
+            <guid isPermaLink="false">c015ce87-f58b-3e54-80ef-a43d986c63f7</guid>
+            <pubDate>Thu, 31 Jul 2025 03:50:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第74回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>147</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC74%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="72823078"/>
+            <itunes:duration>01:15:51</itunes:duration>
+            <guid isPermaLink="false">2a9033d9-13bb-3a38-bfe4-e9115b900f77</guid>
+            <pubDate>Thu, 31 Jul 2025 03:51:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第74回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>148</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC74%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75984112"/>
+            <itunes:duration>01:19:08</itunes:duration>
+            <guid isPermaLink="false">4f2e0ac3-9a05-311a-b15e-870f800109ca</guid>
+            <pubDate>Thu, 31 Jul 2025 03:52:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第75回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>149</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC75%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="72644618"/>
+            <itunes:duration>01:15:40</itunes:duration>
+            <guid isPermaLink="false">ca2cf7ee-0c3d-3e3d-ab38-b0116a96c0cc</guid>
+            <pubDate>Thu, 31 Jul 2025 03:53:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第75回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>150</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC75%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75276902"/>
+            <itunes:duration>01:18:24</itunes:duration>
+            <guid isPermaLink="false">01038a1f-20a1-3c50-b63a-fa3a555b0bd8</guid>
+            <pubDate>Thu, 31 Jul 2025 03:54:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第76回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>151</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC76%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74214868"/>
+            <itunes:duration>01:17:18</itunes:duration>
+            <guid isPermaLink="false">14965949-dac6-3acd-ba88-faa6e9f06932</guid>
+            <pubDate>Thu, 31 Jul 2025 03:55:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第76回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>152</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC76%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75732082"/>
+            <itunes:duration>01:18:53</itunes:duration>
+            <guid isPermaLink="false">2eb936cb-ac0a-3a6b-a9a5-9c6f12399682</guid>
+            <pubDate>Thu, 31 Jul 2025 03:56:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第77回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>153</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC77%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74071519"/>
+            <itunes:duration>01:17:09</itunes:duration>
+            <guid isPermaLink="false">a02c8c17-ee74-3818-9edf-4c08febe80cc</guid>
+            <pubDate>Thu, 31 Jul 2025 03:57:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第77回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>154</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC77%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="75420265"/>
+            <itunes:duration>01:18:33</itunes:duration>
+            <guid isPermaLink="false">8563105f-5c92-3bbe-9626-db6e009cb18b</guid>
+            <pubDate>Thu, 31 Jul 2025 03:58:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第78回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>155</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC78%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74872734"/>
+            <itunes:duration>01:17:59</itunes:duration>
+            <guid isPermaLink="false">c6ade923-e441-3cff-8976-19279592e187</guid>
+            <pubDate>Thu, 31 Jul 2025 03:59:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第78回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>156</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC78%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74183545"/>
+            <itunes:duration>01:17:16</itunes:duration>
+            <guid isPermaLink="false">d7f5cfb4-50f3-3d36-8400-c804ec402571</guid>
+            <pubDate>Thu, 31 Jul 2025 04:00:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第79回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>157</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC79%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="73733386"/>
+            <itunes:duration>01:16:48</itunes:duration>
+            <guid isPermaLink="false">0d7ac094-3349-39b0-82f9-65f6081df08d</guid>
+            <pubDate>Thu, 31 Jul 2025 04:01:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第79回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>158</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC79%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="73823822"/>
+            <itunes:duration>01:16:51</itunes:duration>
+            <guid isPermaLink="false">6c78a4f1-0fd7-345e-946d-cd9fa10cd366</guid>
+            <pubDate>Thu, 31 Jul 2025 04:02:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第80回上.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>159</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC80%E5%9B%9E%E4%B8%8A.mp3" type="audio/mp3" length="74414260"/>
+            <itunes:duration>01:17:30</itunes:duration>
+            <guid isPermaLink="false">acdfaffc-23ce-3903-b5fe-f139c1d642ae</guid>
+            <pubDate>Thu, 31 Jul 2025 04:03:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+        <item>
+            <title>蔣勳 - 細說紅樓夢 - 第80回下.mp3</title>
+            <description></description>
+            <itunes:summary></itunes:summary>
+            <itunes:image href="http://192.168.1.8:18000/mypodcast/res//res/image/A_Dream_in_Red_Mansions.jpg"/>
+            <itunes:order>160</itunes:order>
+            <enclosure url="http://192.168.1.8:18000/mypodcast/res//mp3/A_Dream_in_Red_Mansions/%E8%94%A3%E5%8B%B3%20-%20%E7%B4%B0%E8%AA%AA%E7%B4%85%E6%A8%93%E5%A4%A2%20-%20%E7%AC%AC80%E5%9B%9E%E4%B8%8B.mp3" type="audio/mp3" length="74743183"/>
+            <itunes:duration>01:17:51</itunes:duration>
+            <guid isPermaLink="false">bdbd91ce-d77f-3bba-96ae-14a1a92aad32</guid>
+            <pubDate>Thu, 31 Jul 2025 04:04:37 -0000</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        
+    </channel>
+</rss>

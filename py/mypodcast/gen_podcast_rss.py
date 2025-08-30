@@ -18,9 +18,12 @@ import json
 
 # ============================================================
 
+
 def get_audio_duration(f):
     input_filename = "input.mp4"
-    out = subprocess.check_output(["ffprobe", "-v", "quiet", "-show_format", "-print_format", "json", f])
+    out = subprocess.check_output(
+        ["ffprobe", "-v", "quiet", "-show_format", "-print_format", "json", f]
+    )
     ffprobe_data = json.loads(out)
     duration_seconds = float(ffprobe_data["format"]["duration"])
     print("[get_audio_duration] f = %s, duration = %.2f" % (f, duration_seconds))
@@ -28,7 +31,7 @@ def get_audio_duration(f):
 
 
 def audio_duration_in_text(v):
-    return '%02d:%02d:%02d' % (v / 3600, (v % 3600) / 60, v % 60)
+    return "%02d:%02d:%02d" % (v / 3600, (v % 3600) / 60, v % 60)
 
 
 def get_file_size(f):
@@ -48,6 +51,7 @@ def get_sha1_key(s):
 def gen_uuid(s):
     x = uuid.uuid3(uuid.NAMESPACE_DNS, s)
     return str(x)
+
 
 # ============================================================
 
@@ -100,44 +104,49 @@ rss_template = Template(RSS_TEMPLATE)
 
 
 def run(ctx):
-    mp3_dir = ctx['mp3_dir']
+    mp3_dir = ctx["mp3_dir"]
 
     myfiles = []
-    for ext in ('mp3', 'm4a', 'mp4'):
-        myfiles += glob.glob(os.path.join(mp3_dir, ctx['name'], '*.' + ext))
+    for ext in ("mp3", "m4a", "mp4"):
+        myfiles += glob.glob(os.path.join(mp3_dir, ctx["name"], "*." + ext))
 
     # sort by filename
     myfiles.sort()
 
-    now = datetime.now() - timedelta(days = 30)
-    ctx['tracks'] = []
-    ctx['description'] = '<br/>\n'.join(['{}. {}'.format(x[0] + 1, os.path.basename(x[1])) for x in enumerate(myfiles)])
-    ctx['releaseDate'] = to_rfc822_datetime(now)
-    ctx['image_url'] = 'http://{}/images/{}.jpg'.format(ctx['domain'], ctx['name'])
+    now = datetime.now() - timedelta(days=30)
+    ctx["tracks"] = []
+    ctx["description"] = "<br/>\n".join(
+        ["{}. {}".format(x[0] + 1, os.path.basename(x[1])) for x in enumerate(myfiles)]
+    )
+    ctx["releaseDate"] = to_rfc822_datetime(now)
+    ctx["image_url"] = "http://{}/{}/{}.jpg".format(
+        ctx["domain"], ctx["image_dir"], ctx["name"]
+    )
 
-    tracks = ctx['tracks']
+    tracks = ctx["tracks"]
     for order, name in enumerate(myfiles):
         base_name = os.path.basename(name)
         t = {
-            'title': base_name,
-            'audio_url': 'http://{}/'.format(ctx['domain']) + quote('mp3/{}/{}'.format(ctx['name'], base_name)),
-            'audio_size': get_file_size(name),
-            'audio_duration_text': audio_duration_in_text(get_audio_duration(name)),
-            'guid': gen_uuid(name),
-            'releaseDate': to_rfc822_datetime(now + timedelta(minutes=order)),
-            'itunes_order': order + 1,
-            'image_url': ctx['image_url']
+            "title": base_name,
+            "audio_url": "http://{}/".format(ctx["domain"])
+            + quote("mp3/{}/{}".format(ctx["name"], base_name)),
+            "audio_size": get_file_size(name),
+            "audio_duration_text": audio_duration_in_text(get_audio_duration(name)),
+            "guid": gen_uuid(name),
+            "releaseDate": to_rfc822_datetime(now + timedelta(minutes=order)),
+            "itunes_order": order + 1,
+            "image_url": ctx["image_url"],
         }
         tracks.append(t)
 
     rss = rss_template.render(**ctx)
 
     if tracks:
-        with open(os.path.join(ctx['rss_dir'], '%s.xml' % ctx['name']), 'w') as fh:
+        with open(os.path.join(ctx["rss_dir"], "%s.xml" % ctx["name"]), "w") as fh:
             fh.write(rss)
-        print('rss url = http://{}/rss/{}.xml'.format(ctx['domain'], ctx['name']))
+        print("rss url = http://{}/rss/{}.xml".format(ctx["domain"], ctx["name"]))
     else:
-        print("No available episode for '%s'" % (ctx['name']))
+        print("No available episode for '%s'" % (ctx["name"]))
 
 
 # ============================================================
@@ -161,18 +170,21 @@ glob = {
 
 def main():
     import config
+
     sites = config.sites
     glob = config.glob
     reqs = sites.keys() if len(sys.argv) == 1 else sys.argv[1:]
 
     for site in reqs:
-        if site not in sites: continue
-        print('Generating RSS XML for {}'.format(site))
+        if site not in sites:
+            continue
+        print("Generating RSS XML for {}".format(site))
         ctx = glob.copy()
         ctx.update(sites[site])
         # use site id as name
-        ctx['name'] = site
+        ctx["name"] = site
         run(ctx)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
