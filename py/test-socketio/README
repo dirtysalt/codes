@@ -1,0 +1,40 @@
+server.py 使用的是flask-socketio, 客户端nodejs的版本(client.js)，也有python版本(client.py, socketio-client). 但是python版本似乎有点bug, 在实测的时候消息触发有时候也不太及时。
+
+UPDATE: python的客户端有两个实现，socketio_client和python_socketio. 第一个库好像很长时间没有维护了，测试的时候发现好像还没有办法把协议升级到websocket上这种bug，以至于一直以Polling的方式工作。
+所以推荐使用python_socketio. 这个库同时有server版本的实现，有同步和异步(async)两个版本的实现。
+
+socketio实现里面有个好的地方就是支持message queue，一方面可以在外部实现控制，另外一方面可以做水平扩展，连接数可以超过单台机器的限制。
+
+ngx.conf提供了nginx的配置，可以使用 `multi_if.sh` 来创建多个网卡，这样nginx reverse proxy就可以创建更多的连接了。缺点估计就是，连接数量会翻倍，但是管理起来会更加方便。
+
+反向代理支持绑定本地网卡，但是这个需要在请求的时候headers里面带上room字段，room字段直接对应到绑定的网卡上。这个做法有点粗暴，更好的做法应该是，创建多个域名，每个域名绑定不同的反向代理网卡，然后在链接的时候随机选择域名。
+
+另外注意虚拟网卡只能链接本机，所以nginx proxy_bind 只能转发到本机上。所以水平扩展的正确方式应该是多搞几台nginx，nginx只会proxy到本机上，而不要用一台nginx proxy到多个机器上。
+
+-----
+
+load.* 主要是用来做压力测试
+- load_fio.py flask-socketio编写的server
+- load_sio.py socketio编写的server, 性能可能会比flask-socketio高点
+- load.js nodejs编写的client, 但是没有使用
+- load_client.py 用python编写的client.
+
+压力测试有个工具 https://github.com/M6Web/websocket-bench, 可以做点简单的benchmark.
+
+这个benchmark做了两个测试：连接延迟和接收消息延迟。最终state没有办法合并，因为没有办法做序列化，所以只能是每个进程看看链接延迟和消息延迟
+
+-----
+
+如果nginx日志一直是下面这样的话，那么说明还是使用长轮询而非websocket协议
+
+```
+127.0.0.1 - - [19/Nov/2019:11:14:47 +0800] "GET /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133286835-16 HTTP/1.1" 200 4 "-" "python-requests/2.22.0"
+127.0.0.1 - - [19/Nov/2019:11:14:48 +0800] "POST /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133288818-19 HTTP/1.1" 200 2 "-" "python-requests/2.22.0"
+127.0.0.1 - - [19/Nov/2019:11:14:48 +0800] "GET /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133287817-18 HTTP/1.1" 200 4 "-" "python-requests/2.22.0"
+127.0.0.1 - - [19/Nov/2019:11:14:49 +0800] "POST /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133289827-21 HTTP/1.1" 200 2 "-" "python-requests/2.22.0"
+127.0.0.1 - - [19/Nov/2019:11:14:49 +0800] "GET /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133288826-20 HTTP/1.1" 200 4 "-" "python-requests/2.22.0"
+127.0.0.1 - - [19/Nov/2019:11:14:50 +0800] "POST /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133290840-23 HTTP/1.1" 200 2 "-" "python-requests/2.22.0"
+127.0.0.1 - - [19/Nov/2019:11:14:50 +0800] "GET /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133289835-22 HTTP/1.1" 200 4 "-" "python-requests/2.22.0"
+127.0.0.1 - - [19/Nov/2019:11:14:51 +0800] "POST /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133291848-25 HTTP/1.1" 200 2 "-" "python-requests/2.22.0"
+127.0.0.1 - - [19/Nov/2019:11:14:51 +0800] "GET /socket.io/?EIO=3&transport=polling&sid=cb74d348763d46baae519742a2d961c4&t=1574133290848-24 HTTP/1.1" 200 4 "-" "python-requests/2.22.0"
+```
