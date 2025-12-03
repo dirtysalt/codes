@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Trends</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Offline Stock Trends</h1>
+  </header>
+  <main>
+    <div class="tabs">
+      <button class="tab-btn active" data-target="prices-tab">Prices</button>
+      <button class="tab-btn" data-target="portfolios-tab">Portfolios</button>
+    </div>
+
+    <section id="prices-tab" class="tab-panel active">
+      <div class="card">
+        <div class="controls">
+          <div>
+            <label for="symbols">Symbols (multi-select)</label>
+            <select id="symbols" multiple size="6"></select>
+          </div>
+          <div>
+            <label for="start">Start date</label>
+            <input id="start" type="date" />
+          </div>
+          <div>
+            <label for="end">End date</label>
+            <input id="end" type="date" />
+          </div>
+          <div style="display:flex;align-items:flex-end; gap:8px; flex-wrap: wrap;">
+            <label style="display:flex;align-items:center;gap:6px; font-size:13px; color:var(--muted);">
+              <input id="normalize" type="checkbox" style="width:auto; accent-color:#22c55e;" />
+              Normalize to first price (index 100)
+            </label>
+            <button id="refresh">Load chart</button>
+          </div>
+        </div>
+        <div class="status" id="status">Choose symbols and date range.</div>
+      </div>
+      <div class="card chart-card">
+        <div class="chart-wrapper">
+          <canvas id="chart"></canvas>
+        </div>
+        <div class="series-panel" id="series-panel">
+          <div class="series-title">Series</div>
+          <div class="series-list" id="series-list">No data loaded</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolios-tab" class="tab-panel">
+      <div class="card">
+        <div class="portfolio-header-row">
+          <div>
+            <div class="section-title">Portfolios</div>
+            <div class="muted small">Define symbol weights and save locally.</div>
+          </div>
+          <button id="add-portfolio">Add portfolio</button>
+        </div>
+        <div id="portfolio-list" class="portfolio-list"></div>
+      </div>
+      <div class="card">
+        <div class="controls">
+          <div>
+            <label for="portfolio-select">Portfolios to compare</label>
+            <select id="portfolio-select" multiple size="5"></select>
+          </div>
+          <div>
+            <label for="pf-start">Start date</label>
+            <input id="pf-start" type="date" />
+          </div>
+          <div>
+            <label for="pf-end">End date</label>
+            <input id="pf-end" type="date" />
+          </div>
+          <div style="display:flex;align-items:flex-end; gap:8px; flex-wrap: wrap;">
+            <label style="display:flex;align-items:center;gap:6px; font-size:13px; color:var(--muted);">
+              <input id="pf-normalize" type="checkbox" style="width:auto; accent-color:#22c55e;" />
+              Normalize to first value (index 100)
+            </label>
+            <button id="pf-refresh">Load portfolios</button>
+          </div>
+        </div>
+        <div class="status" id="pf-status">Set allocations and load.</div>
+      </div>
+      <div class="card chart-card">
+        <div class="chart-wrapper">
+          <canvas id="pf-chart"></canvas>
+        </div>
+        <div class="series-panel" id="pf-series-panel">
+          <div class="series-title">Portfolios</div>
+          <div class="series-list" id="pf-series-list">No data loaded</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/static/chart.umd.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
