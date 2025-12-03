@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Side Panel – Options</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body { margin: 0 auto; padding: 16px; max-width: 880px; font: 14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+      h1 { font-size: 20px; margin: 0 0 12px; }
+      p.help { color: #555; margin-top: 0; }
+      form { display: flex; gap: 8px; margin: 12px 0; }
+      input[type="text"] { flex: 1; padding: 8px; font: inherit; }
+      button { padding: 8px 10px; font: inherit; }
+      table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+      th, td { border-bottom: 1px solid #ddd; padding: 8px; text-align: left; }
+      td.actions { width: 1%; white-space: nowrap; }
+      .muted { color: #666; }
+      .note { margin-top: 12px; font-size: 12px; color: #666; }
+    </style>
+  </head>
+  <body>
+    <h1>Manage Sites</h1>
+    <p class="help">Add AI sites that you want available in the Side Panel selector. Use HTTPS URLs (e.g., https://chatgpt.com/). Some sites may not load in an iframe and will require “Open in Tab”.</p>
+
+    <form id="addForm">
+      <input id="label" type="text" placeholder="Label (e.g., ChatGPT)" required />
+      <input id="url" type="text" placeholder="URL (https://example.com/)" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Label</th>
+          <th>URL</th>
+          <th class="actions">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+
+    <p class="note">Embedding caveat: Many providers set X-Frame-Options or frame-ancestors in CSP to prevent embedding. The extension includes limited header rules for a few default hosts, but custom hosts may still refuse loading. Use “Open in Tab” when needed.</p>
+
+    <script src="defaults.js"></script>
+    <script src="options.js"></script>
+  </body>
+  </html>
