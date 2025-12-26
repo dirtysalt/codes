@@ -376,6 +376,13 @@ def main():
         if args.max_position:
             kwargs['max_position'] = args.max_position
 
+        # Pass market cap data for market_cap_weighted strategy
+        if args.allocation == 'market_cap_weighted':
+            kwargs['market_caps'] = results['MarketCap'].values
+            # Default to top 100 for SPMO replication if not specified
+            if 'top_n' not in kwargs and top_n is None:
+                kwargs['top_n'] = 100
+
         allocations = alloc_func(
             results['NormalizedScore'].values,
             results['Ticker'].values,

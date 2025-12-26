@@ -316,6 +316,54 @@ def rank_based_allocation(
     return dict(zip(top_tickers, allocations))
 
 
+def market_cap_weighted_allocation(
+    scores: Union[np.ndarray, pd.Series],
+    tickers: Union[np.ndarray, pd.Series],
+    top_n: int = 100,
+    max_position: float = None,
+    market_caps: Union[np.ndarray, pd.Series] = None
+) -> Dict[str, float]:
+    """
+    Market-cap weighted allocation (SPMO methodology).
+
+    Selects top N stocks by momentum score, then allocates based on
+    market capitalization weights. This replicates the SPMO ETF strategy.
+
+    Args:
+        scores: Normalized momentum scores
+        tickers: Stock ticker symbols
+        top_n: Number of top momentum stocks to select (default: 100)
+        max_position: Maximum percentage for any single position (optional)
+        market_caps: Market capitalization values for each stock (required)
+
+    Returns:
+        Dictionary of {ticker: allocation_percentage}
+    """
+    if market_caps is None:
+        raise ValueError("market_caps parameter is required for market_cap_weighted allocation")
+
+    scores = np.array(scores)
+    tickers = np.array(tickers)
+    market_caps = np.array(market_caps)
+
+    # Sort by momentum score and select top N
+    idx = np.argsort(scores)[::-1]
+    top_indices = idx[:top_n]
+
+    selected_tickers = tickers[top_indices]
+    selected_market_caps = market_caps[top_indices]
+
+    # Allocate based on market cap weights
+    total_market_cap = selected_market_caps.sum()
+    allocations = (selected_market_caps / total_market_cap) * 100
+
+    # Apply position cap if specified
+    if max_position is not None:
+        allocations = _apply_position_cap(allocations, max_position)
+
+    return dict(zip(selected_tickers, allocations))
+
+
 def _apply_position_cap(allocations: np.ndarray, max_position: float) -> np.ndarray:
     """
     Apply position cap to allocation array and redistribute excess.
@@ -377,6 +425,7 @@ AVAILABLE_ALLOCATIONS = {
     'logarithmic': logarithmic_allocation,
     'threshold': threshold_allocation,
     'rank_based': rank_based_allocation,
+    'market_cap_weighted': market_cap_weighted_allocation,
 }
 
 

@@ -91,14 +91,27 @@ See [CUSTOM_FORMULAS.md](CUSTOM_FORMULAS.md) for details on each formula and how
 To replicate the Invesco S&P 500 Momentum ETF (SPMO) methodology:
 
 ```bash
-python momentum_calculator.py --formula spmo --months 12 --top 100
+python momentum_calculator.py --formula spmo --months 12 --allocation market_cap_weighted
+```
+
+Or with position size limit:
+
+```bash
+python momentum_calculator.py --formula spmo --months 12 --allocation market_cap_weighted --max-position 10
+```
+
+To match a specific SPMO rebalancing date (SPMO rebalances semi-annually in May and November):
+
+```bash
+python momentum_calculator.py --formula spmo --months 12 --end-date 2024-11-30 --allocation market_cap_weighted --max-position 10
 ```
 
 This uses the same methodology as SPMO:
 - 12-month lookback period (excluding most recent month)
 - Volatility-adjusted returns (price change / volatility)
-- Weighted by market capitalization
-- Top 100 stocks by momentum score
+- Selects top 100 stocks by momentum score
+- Weights holdings by market capitalization (not momentum score)
+- Optional position size caps to limit concentration
 
 ### Portfolio Allocation
 
@@ -129,6 +142,7 @@ Available allocation strategies:
 - `logarithmic`: Log-based allocation (reduces impact of outliers)
 - `threshold`: Only allocate to stocks above a threshold score
 - `rank_based`: Weight by rank (top stock gets most weight)
+- `market_cap_weighted`: Select top N by momentum, then weight by market cap (SPMO methodology)
 
 ### Complete Example
 
