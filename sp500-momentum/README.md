@@ -82,8 +82,23 @@ Available formulas:
 - `max_drawdown`: Drawdown-adjusted momentum
 - `percentile`: Price percentile ranking
 - `trend_strength`: Trend consistency weighted
+- `spmo`: SPMO (Invesco S&P 500 Momentum ETF) methodology
 
 See [CUSTOM_FORMULAS.md](CUSTOM_FORMULAS.md) for details on each formula and how to create your own.
+
+### Replicate SPMO ETF Strategy
+
+To replicate the Invesco S&P 500 Momentum ETF (SPMO) methodology:
+
+```bash
+python momentum_calculator.py --formula spmo --months 12 --top 100
+```
+
+This uses the same methodology as SPMO:
+- 12-month lookback period (excluding most recent month)
+- Volatility-adjusted returns (price change / volatility)
+- Weighted by market capitalization
+- Top 100 stocks by momentum score
 
 ### Portfolio Allocation
 

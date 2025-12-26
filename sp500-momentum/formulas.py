@@ -186,6 +186,24 @@ def momentum_with_trend_strength(start_price, end_price, market_cap, period_data
     return price_ratio * trend_strength * market_cap
 
 
+def spmo_momentum(start_price, end_price, market_cap, period_data):
+    """
+    SPMO (Invesco S&P 500 Momentum ETF) methodology.
+
+    Formula: (Price Ratio / Volatility) × Market Cap
+
+    This replicates the S&P 500 Momentum Index methodology:
+    - 12-month price change (excluding most recent month)
+    - Divided by volatility (standard deviation of daily returns)
+    - Weighted by momentum score × market cap
+
+    Note: This is identical to volatility_adjusted formula.
+    Use with: --formula spmo --months 12 --top 100
+    """
+    # SPMO uses the same calculation as volatility-adjusted momentum
+    return volatility_adjusted_momentum(start_price, end_price, market_cap, period_data)
+
+
 # Dictionary mapping formula names to functions
 AVAILABLE_FORMULAS = {
     'classic': classic_momentum,
@@ -196,6 +214,7 @@ AVAILABLE_FORMULAS = {
     'max_drawdown': max_drawdown_adjusted_momentum,
     'percentile': percentile_rank_momentum,
     'trend_strength': momentum_with_trend_strength,
+    'spmo': spmo_momentum,
 }
 
 
