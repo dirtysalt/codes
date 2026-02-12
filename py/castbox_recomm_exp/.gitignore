@@ -1,0 +1,8 @@
+nova
+*.pyc
+.ipynb_checkpoints/
+*.data
+*.csv
+*.npz
+*.idea
+*.html

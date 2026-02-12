@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+# coding:utf-8
+# Copyright (C) dirlt
+
+class Solution:
+    def removeStars(self, s: str) -> str:
+        st = []
+        for c in s:
+            if c == '*':
+                if st:
+                    st.pop()
+            else:
+                st.append(c)
+        return ''.join(st)
+
+
+if __name__ == '__main__':
+    pass

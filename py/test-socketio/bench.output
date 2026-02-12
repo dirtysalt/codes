@@ -1,0 +1,890 @@
+(venv) [ec2-user@us_ws0 ~]$ ss -s
+Total: 160607 (kernel 0)
+TCP:   160106 (estab 160084, closed 0, orphaned 0, synrecv 0, timewait 0/0), ports 0
+
+Transport Total     IP        IPv6
+*         0         -         -
+RAW       0         0         0
+UDP       12        8         4
+TCP       160106    160102    4
+INET      160118    160110    8
+FRAG      0         0         0
+
+
+(venv) [ec2-user@us_ws0 ~]$ ./load_client.py --port 12307 --bind 192.168.77.10,192.168.77.11,192.168.77.12,192.168.77.13 --batch-round 10 --batch-size 500 --workers 2^C
+(venv) [ec2-user@us_ws0 ~]$ ./load_client.py --port 12307 --bind 192.168.77.10,192.168.77.11,192.168.77.12,192.168.77.13 --batch-round 10 --batch-size 500 --workers 2
+bind = 192.168.77.10, w = 0
+bind = 192.168.77.10, w = 1
+bind = 192.168.77.11, w = 0
+bind = 192.168.77.11, w = 1
+bind = 192.168.77.12, w = 0
+bind = 192.168.77.12, w = 1
+bind = 192.168.77.13, w = 0
+bind = 192.168.77.13, w = 1
+[2018-02-02 06:01:04,983][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #0 start
+[2018-02-02 06:01:04,984][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #0 start
+[2018-02-02 06:01:04,985][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #0 start
+[2018-02-02 06:01:04,986][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #0 start
+[2018-02-02 06:01:04,986][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #0 start
+[2018-02-02 06:01:04,987][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #0 start
+[2018-02-02 06:01:04,988][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #0 start
+[2018-02-02 06:01:04,992][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #0 start
+[2018-02-02 06:01:24,219][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #0 ok. current_conn = 500
+[2018-02-02 06:01:24,220][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #1 start
+[2018-02-02 06:01:24,308][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #0 ok. current_conn = 500
+[2018-02-02 06:01:24,308][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #1 start
+[2018-02-02 06:01:24,399][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #0 ok. current_conn = 500
+[2018-02-02 06:01:24,400][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #1 start
+[2018-02-02 06:01:24,426][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #0 ok. current_conn = 500
+[2018-02-02 06:01:24,426][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #1 start
+[2018-02-02 06:01:24,992][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #0 ok. current_conn = 500
+[2018-02-02 06:01:24,992][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #1 start
+[2018-02-02 06:01:25,038][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #0 ok. current_conn = 500
+[2018-02-02 06:01:25,038][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #1 start
+[2018-02-02 06:01:25,139][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #0 ok. current_conn = 500
+[2018-02-02 06:01:25,139][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #1 start
+[2018-02-02 06:01:26,288][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #0 ok. current_conn = 500
+[2018-02-02 06:01:26,288][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #1 start
+[2018-02-02 06:01:42,050][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #1 ok. current_conn = 1000
+[2018-02-02 06:01:42,050][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #2 start
+[2018-02-02 06:01:42,596][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #1 ok. current_conn = 1000
+[2018-02-02 06:01:42,596][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #2 start
+[2018-02-02 06:01:43,048][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #1 ok. current_conn = 1000
+[2018-02-02 06:01:43,048][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #2 start
+[2018-02-02 06:01:43,424][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #1 ok. current_conn = 1000
+[2018-02-02 06:01:43,424][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #2 start
+[2018-02-02 06:01:43,604][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #1 ok. current_conn = 1000
+[2018-02-02 06:01:43,604][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #2 start
+[2018-02-02 06:01:43,666][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #1 ok. current_conn = 1000
+[2018-02-02 06:01:43,666][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #2 start
+[2018-02-02 06:01:43,708][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #1 ok. current_conn = 1000
+[2018-02-02 06:01:43,708][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #2 start
+[2018-02-02 06:01:45,887][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #1 ok. current_conn = 1000
+[2018-02-02 06:01:45,888][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #2 start
+[2018-02-02 06:02:00,955][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #2 ok. current_conn = 1500
+[2018-02-02 06:02:00,956][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #3 start
+[2018-02-02 06:02:00,972][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #2 ok. current_conn = 1500
+[2018-02-02 06:02:00,972][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #3 start
+[2018-02-02 06:02:01,424][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #2 ok. current_conn = 1500
+[2018-02-02 06:02:01,424][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #3 start
+[2018-02-02 06:02:02,711][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #2 ok. current_conn = 1500
+[2018-02-02 06:02:02,711][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #3 start
+[2018-02-02 06:02:02,935][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #2 ok. current_conn = 1500
+[2018-02-02 06:02:02,936][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #3 start
+[2018-02-02 06:02:03,119][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #2 ok. current_conn = 1500
+[2018-02-02 06:02:03,120][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #3 start
+[2018-02-02 06:02:03,264][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #2 ok. current_conn = 1500
+[2018-02-02 06:02:03,264][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #3 start
+[2018-02-02 06:02:04,892][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #2 ok. current_conn = 1500
+[2018-02-02 06:02:04,892][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #3 start
+[2018-02-02 06:02:19,852][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #3 ok. current_conn = 2000
+[2018-02-02 06:02:19,852][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #4 start
+[2018-02-02 06:02:20,964][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #3 ok. current_conn = 2000
+[2018-02-02 06:02:20,964][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #4 start
+[2018-02-02 06:02:21,060][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #3 ok. current_conn = 2000
+[2018-02-02 06:02:21,060][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #4 start
+[2018-02-02 06:02:21,195][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #3 ok. current_conn = 2000
+[2018-02-02 06:02:21,195][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #4 start
+[2018-02-02 06:02:22,127][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #3 ok. current_conn = 2000
+[2018-02-02 06:02:22,127][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #4 start
+[2018-02-02 06:02:22,196][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #3 ok. current_conn = 2000
+[2018-02-02 06:02:22,196][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #4 start
+[2018-02-02 06:02:22,772][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #3 ok. current_conn = 2000
+[2018-02-02 06:02:22,772][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #4 start
+[2018-02-02 06:02:24,976][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #3 ok. current_conn = 2000
+[2018-02-02 06:02:24,976][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #4 start
+[2018-02-02 06:02:41,046][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #4 ok. current_conn = 2500
+[2018-02-02 06:02:41,046][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #5 start
+[2018-02-02 06:02:41,858][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #4 ok. current_conn = 2500
+[2018-02-02 06:02:41,858][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #5 start
+[2018-02-02 06:02:41,916][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #4 ok. current_conn = 2500
+[2018-02-02 06:02:41,916][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #5 start
+[2018-02-02 06:02:43,229][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #4 ok. current_conn = 2500
+[2018-02-02 06:02:43,230][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #5 start
+[2018-02-02 06:02:43,252][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #4 ok. current_conn = 2500
+[2018-02-02 06:02:43,252][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #5 start
+[2018-02-02 06:02:43,327][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #4 ok. current_conn = 2500
+[2018-02-02 06:02:43,327][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #5 start
+[2018-02-02 06:02:43,340][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #4 ok. current_conn = 2500
+[2018-02-02 06:02:43,340][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #5 start
+[2018-02-02 06:02:44,987][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #4 ok. current_conn = 2500
+[2018-02-02 06:02:44,987][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #5 start
+[2018-02-02 06:03:01,036][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #5 ok. current_conn = 3000
+[2018-02-02 06:03:01,036][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #6 start
+[2018-02-02 06:03:02,131][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #5 ok. current_conn = 3000
+[2018-02-02 06:03:02,131][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #6 start
+[2018-02-02 06:03:02,765][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #5 ok. current_conn = 3000
+[2018-02-02 06:03:02,765][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #6 start
+[2018-02-02 06:03:03,096][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #5 ok. current_conn = 3000
+[2018-02-02 06:03:03,096][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #6 start
+[2018-02-02 06:03:03,832][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #5 ok. current_conn = 3000
+[2018-02-02 06:03:03,832][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #6 start
+[2018-02-02 06:03:06,756][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #5 ok. current_conn = 3000
+[2018-02-02 06:03:06,756][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #6 start
+[2018-02-02 06:03:07,063][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #5 ok. current_conn = 3000
+[2018-02-02 06:03:07,064][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #6 start
+[2018-02-02 06:03:07,355][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #5 ok. current_conn = 3000
+[2018-02-02 06:03:07,355][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #6 start
+[2018-02-02 06:03:26,185][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #6 ok. current_conn = 3500
+[2018-02-02 06:03:26,185][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #7 start
+[2018-02-02 06:03:27,388][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #6 ok. current_conn = 3500
+[2018-02-02 06:03:27,388][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #7 start
+[2018-02-02 06:03:28,540][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #6 ok. current_conn = 3500
+[2018-02-02 06:03:28,540][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #7 start
+[2018-02-02 06:03:28,680][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #6 ok. current_conn = 3500
+[2018-02-02 06:03:28,680][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #7 start
+[2018-02-02 06:03:28,948][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #6 ok. current_conn = 3500
+[2018-02-02 06:03:28,948][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #7 start
+[2018-02-02 06:03:29,544][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #6 ok. current_conn = 3500
+[2018-02-02 06:03:29,544][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #7 start
+[2018-02-02 06:03:30,988][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #6 ok. current_conn = 3500
+[2018-02-02 06:03:30,988][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #7 start
+[2018-02-02 06:03:31,016][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #6 ok. current_conn = 3500
+[2018-02-02 06:03:31,016][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #7 start
+[2018-02-02 06:03:51,032][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #7 ok. current_conn = 4000
+[2018-02-02 06:03:51,032][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #8 start
+[2018-02-02 06:03:52,484][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #7 ok. current_conn = 4000
+[2018-02-02 06:03:52,484][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #8 start
+[2018-02-02 06:03:53,013][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #7 ok. current_conn = 4000
+[2018-02-02 06:03:53,013][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #8 start
+[2018-02-02 06:03:53,356][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #7 ok. current_conn = 4000
+[2018-02-02 06:03:53,356][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #8 start
+[2018-02-02 06:03:54,656][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #7 ok. current_conn = 4000
+[2018-02-02 06:03:54,657][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #8 start
+[2018-02-02 06:03:54,740][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #7 ok. current_conn = 4000
+[2018-02-02 06:03:54,740][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #8 start
+[2018-02-02 06:03:55,368][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #7 ok. current_conn = 4000
+[2018-02-02 06:03:55,368][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #8 start
+[2018-02-02 06:03:56,043][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #7 ok. current_conn = 4000
+[2018-02-02 06:03:56,043][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #8 start
+[2018-02-02 06:04:20,953][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #8 ok. current_conn = 4500
+[2018-02-02 06:04:20,953][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 0): round #9 start
+[2018-02-02 06:04:23,372][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #8 ok. current_conn = 4500
+[2018-02-02 06:04:23,372][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 1): round #9 start
+[2018-02-02 06:04:23,444][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #8 ok. current_conn = 4500
+[2018-02-02 06:04:23,444][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 1): round #9 start
+[2018-02-02 06:04:23,704][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #8 ok. current_conn = 4500
+[2018-02-02 06:04:23,704][WARNING]load_client.py@117: (bind = 192.168.77.12, w = 0): round #9 start
+[2018-02-02 06:04:23,836][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #8 ok. current_conn = 4500
+[2018-02-02 06:04:23,836][WARNING]load_client.py@117: (bind = 192.168.77.11, w = 1): round #9 start
+[2018-02-02 06:04:24,777][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #8 ok. current_conn = 4500
+[2018-02-02 06:04:24,777][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 0): round #9 start
+[2018-02-02 06:04:26,140][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #8 ok. current_conn = 4500
+[2018-02-02 06:04:26,140][WARNING]load_client.py@117: (bind = 192.168.77.10, w = 0): round #9 start
+[2018-02-02 06:04:26,880][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #8 ok. current_conn = 4500
+[2018-02-02 06:04:26,880][WARNING]load_client.py@117: (bind = 192.168.77.13, w = 1): round #9 start
+[2018-02-02 06:04:49,104][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 0): round #9 ok. current_conn = 5000
+[2018-02-02 06:04:49,104][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:50,932][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 1): round #9 ok. current_conn = 5000
+[2018-02-02 06:04:50,932][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:51,104][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:51,524][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 1): round #9 ok. current_conn = 5000
+[2018-02-02 06:04:51,524][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:52,613][WARNING]load_client.py@130: (bind = 192.168.77.11, w = 1): round #9 ok. current_conn = 5000
+[2018-02-02 06:04:52,613][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:52,884][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 0): round #9 ok. current_conn = 5000
+[2018-02-02 06:04:52,884][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:52,933][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:53,105][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:53,307][WARNING]load_client.py@130: (bind = 192.168.77.12, w = 0): round #9 ok. current_conn = 5000
+[2018-02-02 06:04:53,307][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:53,525][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:54,104][WARNING]load_client.py@130: (bind = 192.168.77.10, w = 0): round #9 ok. current_conn = 5000
+[2018-02-02 06:04:54,105][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:54,403][WARNING]load_client.py@130: (bind = 192.168.77.13, w = 1): round #9 ok. current_conn = 5000
+[2018-02-02 06:04:54,403][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:54,616][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:54,885][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:54,935][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:55,105][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:55,308][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:55,526][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:56,105][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:56,403][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:56,618][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:56,886][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:56,935][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:57,106][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:57,309][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:57,526][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:58,105][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:58,404][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:58,619][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:58,887][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:58,936][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:59,107][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:59,311][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:04:59,528][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:00,107][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:00,405][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:00,620][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:00,889][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:00,937][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:01,108][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:01,311][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:01,529][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:02,107][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:02,406][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:02,622][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:02,891][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:02,939][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:03,108][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:03,312][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:03,529][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:04,108][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:04,408][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:04,623][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:04,893][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:04,939][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:05,109][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:05,314][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:05,530][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:06,109][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:06,409][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:06,624][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:06,895][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:06,940][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:07,111][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:07,314][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:07,530][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:08,110][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:08,411][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:08,626][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:08,896][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:08,941][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:09,111][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:09,315][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:09,530][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:10,111][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:10,411][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:10,626][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:10,898][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:10,942][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:11,112][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:11,316][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:11,531][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:12,112][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:12,412][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:12,627][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:12,900][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:12,943][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:13,114][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:13,317][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:13,531][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:14,113][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:14,413][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:14,628][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:14,901][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:14,945][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:15,114][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:15,319][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:15,532][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:16,114][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:16,414][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:16,629][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:16,901][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:16,946][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:17,115][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:17,320][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:17,533][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:18,114][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:18,416][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:18,629][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:18,902][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:18,948][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:19,115][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:19,320][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:19,535][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:20,114][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:20,417][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:20,631][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:20,904][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:20,948][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:21,116][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:21,321][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:21,536][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:22,115][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:22,418][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:22,631][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:22,905][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:22,949][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:23,117][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:23,322][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:23,537][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:24,117][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:24,419][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:24,632][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:24,907][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:24,949][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:25,118][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:25,324][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:25,538][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:26,118][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:26,420][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:26,633][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:26,908][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:26,950][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:27,118][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:27,325][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:27,538][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:28,119][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:28,420][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:28,635][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:28,910][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:28,951][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:29,119][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:29,327][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:29,539][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:30,120][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:30,422][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:30,636][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:30,912][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:30,952][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:31,119][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:31,327][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:31,541][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:32,122][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:32,424][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:32,638][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:32,914][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:32,953][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:33,121][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:33,328][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:33,542][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:34,122][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:34,424][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:34,639][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:34,915][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:34,954][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:35,122][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:35,329][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:35,543][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:36,123][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:36,426][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:36,640][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:36,916][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:36,954][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:37,124][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:37,329][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:37,544][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:38,123][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:38,426][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:38,640][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:38,916][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:38,956][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:39,124][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:39,330][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:39,545][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:40,124][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:40,428][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:40,641][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:40,918][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:40,957][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:41,125][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:41,330][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:41,547][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:42,125][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:42,428][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:42,642][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:42,920][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:42,957][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:43,126][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:43,332][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:43,548][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:44,125][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:44,428][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:44,643][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:44,920][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:44,958][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:45,127][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:45,332][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:45,549][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:46,127][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:46,429][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:46,643][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:46,921][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:46,959][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:47,127][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:47,333][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:47,550][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:48,127][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:48,429][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:48,644][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:48,923][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:48,960][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:49,128][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:49,334][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:49,551][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:50,127][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:50,430][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:50,646][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:50,925][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:50,960][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:51,129][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:51,335][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:51,552][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:52,128][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:52,432][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:52,647][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:52,926][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:52,961][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:53,131][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:53,337][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:53,552][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:54,129][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:54,432][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:54,648][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:54,926][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:54,963][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:55,131][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:55,338][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:55,553][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:56,130][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:56,434][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:56,648][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:56,927][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:56,964][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:57,133][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:57,340][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:57,555][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:58,131][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:58,435][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:58,650][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:58,929][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:58,966][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:59,134][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:59,342][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:05:59,555][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:00,131][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:00,437][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:00,651][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:00,929][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:00,967][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:01,135][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:01,342][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:01,557][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:02,133][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:02,437][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:02,651][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:02,931][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:02,968][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:03,137][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:03,343][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:03,557][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:04,134][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:04,437][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:04,652][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:04,932][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:04,969][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:05,138][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:05,344][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:05,558][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:06,135][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:06,438][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:06,653][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:06,934][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:06,971][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:07,138][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:07,345][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:07,560][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:08,136][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:08,438][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:08,654][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:08,935][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:08,972][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:09,140][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:09,346][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:09,560][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:10,138][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:10,439][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:10,655][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:10,936][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:10,973][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:11,140][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:11,347][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:11,561][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:12,139][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:12,440][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:12,655][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:12,937][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:12,975][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:13,141][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:13,348][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:13,562][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:14,140][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:14,441][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:14,657][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:14,937][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:14,975][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:15,141][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:15,349][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:15,563][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:16,140][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:16,441][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:16,658][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:16,938][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:16,976][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:17,141][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:17,350][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:17,565][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:18,142][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:18,443][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:18,658][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:18,939][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:18,977][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:19,142][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:19,352][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:19,566][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:20,143][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:20,444][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:20,660][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:20,941][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:20,977][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:21,143][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:21,353][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:21,567][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:22,145][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:22,445][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:22,661][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:22,942][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:22,977][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:23,145][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:23,354][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:23,568][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:24,145][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:24,446][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:24,662][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:24,943][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:24,978][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:25,145][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:25,354][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:25,570][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:26,145][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:26,449][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:26,662][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:26,945][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:26,978][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:27,146][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:27,355][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:27,571][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:28,146][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:28,453][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:28,664][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:28,946][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:28,979][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:29,147][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:29,356][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:29,572][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:30,147][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:30,454][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:30,665][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:30,946][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:30,979][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:31,147][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:31,358][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:31,573][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:32,148][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:32,455][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:32,666][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:32,946][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:32,979][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:33,148][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:33,358][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:33,574][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:34,149][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:34,457][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:34,667][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:34,948][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:34,981][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:35,149][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:35,359][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:35,574][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:36,150][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:36,458][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:36,668][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:36,948][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:36,982][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:37,150][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:37,360][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:37,574][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:38,150][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:38,459][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:38,669][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:38,949][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:38,983][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:39,150][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:39,362][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:39,576][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:40,151][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:40,460][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:40,669][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:40,949][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:40,984][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:41,151][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:41,362][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:41,577][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:42,152][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:42,460][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:42,670][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:42,949][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:42,984][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:43,152][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:43,363][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:43,577][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:44,153][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:44,462][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:44,670][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:44,951][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:44,985][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:45,152][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:45,364][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:45,579][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:46,153][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:46,465][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:46,672][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:46,951][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:46,986][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:47,153][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:47,364][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:47,580][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:48,155][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:48,465][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:48,673][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:48,952][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:48,987][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:49,154][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:49,364][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:49,581][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:50,155][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:50,466][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:50,673][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:50,952][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:50,988][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:51,155][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:51,365][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:51,581][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:52,157][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:52,467][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:52,674][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:52,953][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:52,989][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:53,156][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:53,367][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:53,582][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:54,159][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:54,467][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:54,674][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:54,955][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:54,990][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:55,158][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:55,368][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:55,583][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:56,159][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:56,468][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:56,674][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:56,955][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:56,991][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:57,159][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:57,370][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:57,583][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:58,160][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:58,469][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:58,675][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:58,956][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:58,992][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:59,159][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:59,371][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:06:59,585][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:00,161][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:00,470][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:00,677][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:00,957][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:00,993][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:01,160][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:01,373][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:01,586][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:02,162][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:02,471][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:02,678][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:02,958][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:02,993][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:03,161][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:03,373][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:03,587][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:04,163][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:04,471][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:04,679][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:04,959][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:04,995][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:05,161][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:05,374][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:05,587][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:06,163][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:06,472][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:06,680][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:06,959][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:06,996][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:07,162][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:07,375][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:07,589][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:08,164][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:08,473][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:08,681][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:08,960][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:08,998][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:09,163][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:09,375][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:09,590][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:10,166][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:10,474][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:10,681][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:10,961][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:11,000][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:11,165][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:11,375][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:11,591][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:12,168][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:12,475][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:12,681][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:12,961][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:13,000][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:13,167][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:13,376][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:13,592][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:14,168][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:14,476][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:14,682][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:14,963][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:15,001][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:15,168][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:15,377][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:15,593][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:16,168][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:16,477][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:16,683][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:16,964][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:17,002][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:17,168][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 0, total_conn = 5000
+[2018-02-02 06:07:17,381][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 61, total_conn = 5000
+[2018-02-02 06:07:17,678][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 260, total_conn = 5000
+[2018-02-02 06:07:18,398][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 1024, total_conn = 5000
+[2018-02-02 06:07:18,686][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 1437, total_conn = 5000
+[2018-02-02 06:07:18,822][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 1473, total_conn = 5000
+[2018-02-02 06:07:19,195][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 1914, total_conn = 5000
+[2018-02-02 06:07:19,259][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 1968, total_conn = 5000
+[2018-02-02 06:07:19,389][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 2108, total_conn = 5000
+[2018-02-02 06:07:19,473][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 2273, total_conn = 5000
+[2018-02-02 06:07:19,703][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 2494, total_conn = 5000
+[2018-02-02 06:07:20,773][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 0): rcv_msg = 3508, total_conn = 5000
+[2018-02-02 06:07:21,127][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 1): rcv_msg = 3892, total_conn = 5000
+[2018-02-02 06:07:21,339][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 1): rcv_msg = 4127, total_conn = 5000
+[2018-02-02 06:07:21,619][WARNING]load_client.py@134: (bind = 192.168.77.11, w = 0): rcv_msg = 4531, total_conn = 5000
+[2018-02-02 06:07:21,631][WARNING]load_client.py@134: (bind = 192.168.77.10, w = 1): rcv_msg = 4571, total_conn = 5000
+[2018-02-02 06:07:21,747][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 0): rcv_msg = 4562, total_conn = 5000
+[2018-02-02 06:07:21,767][WARNING]load_client.py@134: (bind = 192.168.77.13, w = 0): rcv_msg = 4763, total_conn = 5000
+[2018-02-02 06:07:21,911][WARNING]load_client.py@134: (bind = 192.168.77.12, w = 1): rcv_msg = 4840, total_conn = 5000
+[2018-02-02 06:07:22,773][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #0 quit
+[2018-02-02 06:07:22,871][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #1 quit
+[2018-02-02 06:07:23,060][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #2 quit
+[2018-02-02 06:07:23,127][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #0 quit
+[2018-02-02 06:07:23,201][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #1 quit
+[2018-02-02 06:07:23,339][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #0 quit
+[2018-02-02 06:07:23,413][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #1 quit
+[2018-02-02 06:07:23,495][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #2 quit
+[2018-02-02 06:07:23,554][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #2 quit
+[2018-02-02 06:07:23,578][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #3 quit
+[2018-02-02 06:07:23,621][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #0 quit
+[2018-02-02 06:07:23,633][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #0 quit
+[2018-02-02 06:07:23,662][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #4 quit
+[2018-02-02 06:07:23,675][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #3 quit
+[2018-02-02 06:07:23,703][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #1 quit
+[2018-02-02 06:07:23,740][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #1 quit
+[2018-02-02 06:07:23,750][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #0 quit
+[2018-02-02 06:07:23,769][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #0 quit
+[2018-02-02 06:07:23,851][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #1 quit
+[2018-02-02 06:07:23,860][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #1 quit
+[2018-02-02 06:07:23,912][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #0 quit
+[2018-02-02 06:07:23,948][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #2 quit
+[2018-02-02 06:07:24,003][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #5 quit
+[2018-02-02 06:07:24,030][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #1 quit
+[2018-02-02 06:07:24,059][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #2 quit
+[2018-02-02 06:07:24,172][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #2 quit
+[2018-02-02 06:07:24,209][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #2 quit
+[2018-02-02 06:07:24,267][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #2 quit
+[2018-02-02 06:07:24,301][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #3 quit
+[2018-02-02 06:07:24,634][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #4 quit
+[2018-02-02 06:07:25,506][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #3 quit
+[2018-02-02 06:07:25,508][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #3 quit
+[2018-02-02 06:07:26,013][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #3 quit
+[2018-02-02 06:07:26,696][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #3 quit
+[2018-02-02 06:07:26,863][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #3 quit
+[2018-02-02 06:07:27,329][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #4 quit
+[2018-02-02 06:07:27,523][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #4 quit
+[2018-02-02 06:07:28,076][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #4 quit
+[2018-02-02 06:07:28,473][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #4 quit
+[2018-02-02 06:07:28,491][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #5 quit
+[2018-02-02 06:07:28,604][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #4 quit
+[2018-02-02 06:07:28,780][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #5 quit
+[2018-02-02 06:07:28,857][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #6 quit
+[2018-02-02 06:07:29,007][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #6 quit
+[2018-02-02 06:07:29,027][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #4 quit
+[2018-02-02 06:07:29,090][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #5 quit
+[2018-02-02 06:07:29,236][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #6 quit
+[2018-02-02 06:07:29,255][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #7 quit
+[2018-02-02 06:07:29,288][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #5 quit
+[2018-02-02 06:07:29,425][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #5 quit
+[2018-02-02 06:07:29,482][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #7 quit
+[2018-02-02 06:07:29,522][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #5 quit
+[2018-02-02 06:07:29,651][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #5 quit
+[2018-02-02 06:07:29,768][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #6 quit
+[2018-02-02 06:07:29,863][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #6 quit
+[2018-02-02 06:07:30,041][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #8 quit
+[2018-02-02 06:07:30,084][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #6 quit
+[2018-02-02 06:07:30,125][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #6 quit
+[2018-02-02 06:07:30,165][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #7 quit
+[2018-02-02 06:07:30,217][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #6 quit
+[2018-02-02 06:07:30,269][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #7 quit
+[2018-02-02 06:07:30,465][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #7 quit
+[2018-02-02 06:07:30,467][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #7 quit
+[2018-02-02 06:07:30,545][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #8 quit
+[2018-02-02 06:07:30,546][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #8 quit
+[2018-02-02 06:07:31,497][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #7 quit
+[2018-02-02 06:07:31,776][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #8 quit
+[2018-02-02 06:07:31,780][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #7 quit
+[2018-02-02 06:07:32,041][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #8 quit
+[2018-02-02 06:07:32,222][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 1): round #9 quit
+[2018-02-02 06:07:32,326][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 0): round #9 quit
+[2018-02-02 06:07:32,684][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #8 quit
+[2018-02-02 06:07:32,699][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 0): round #9 quit
+[2018-02-02 06:07:32,850][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #8 quit
+[2018-02-02 06:07:32,863][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #8 quit
+[2018-02-02 06:07:32,990][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 1): round #9 quit
+[2018-02-02 06:07:33,077][WARNING]load_client.py@138: (bind = 192.168.77.11, w = 0): round #9 quit
+[2018-02-02 06:07:33,502][WARNING]load_client.py@138: (bind = 192.168.77.10, w = 1): round #9 quit
+[2018-02-02 06:07:33,511][WARNING]load_client.py@138: (bind = 192.168.77.13, w = 0): round #9 quit
+[2018-02-02 06:07:33,990][WARNING]load_client.py@138: (bind = 192.168.77.12, w = 1): round #9 quit
+[2018-02-02 06:07:43,007][WARNING]load_client.py@151: (bind = 192.168.77.10, w = 0) join timeout. kill it
+[2018-02-02 06:07:43,513][WARNING]load_client.py@151: (bind = 192.168.77.11, w = 1) join timeout. kill it
+[2018-02-02 06:07:43,791][WARNING]load_client.py@151: (bind = 192.168.77.10, w = 1) join timeout. kill it
+[2018-02-02 06:07:43,904][WARNING]load_client.py@151: (bind = 192.168.77.13, w = 1) join timeout. kill it
+[2018-02-02 06:07:43,943][WARNING]load_client.py@151: (bind = 192.168.77.11, w = 0) join timeout. kill it
+[2018-02-02 06:07:44,023][WARNING]load_client.py@153: (bind = 192.168.77.11, w = 1) QUIT !!!
+[2018-02-02 06:07:44,035][WARNING]load_client.py@151: (bind = 192.168.77.13, w = 0) join timeout. kill it
+[2018-02-02 06:07:44,155][WARNING]load_client.py@153: (bind = 192.168.77.10, w = 0) QUIT !!!
+[2018-02-02 06:07:44,293][WARNING]load_client.py@153: (bind = 192.168.77.10, w = 1) QUIT !!!
+[2018-02-02 06:07:44,419][WARNING]load_client.py@153: (bind = 192.168.77.13, w = 1) QUIT !!!
+[2018-02-02 06:07:44,454][WARNING]load_client.py@151: (bind = 192.168.77.12, w = 1) join timeout. kill it
+[2018-02-02 06:07:44,455][WARNING]load_client.py@153: (bind = 192.168.77.11, w = 0) QUIT !!!
+[2018-02-02 06:07:44,545][WARNING]load_client.py@151: (bind = 192.168.77.12, w = 0) join timeout. kill it
+[2018-02-02 06:07:44,583][WARNING]load_client.py@153: (bind = 192.168.77.13, w = 0) QUIT !!!
+[2018-02-02 06:07:44,954][WARNING]load_client.py@153: (bind = 192.168.77.12, w = 1) QUIT !!!
+[2018-02-02 06:07:45,683][WARNING]load_client.py@153: (bind = 192.168.77.12, w = 0) QUIT !!!
+[2018-02-02 06:07:45,695][WARNING]load_client.py@180: state = (bind = 192.168.77.11, w = 1): create conn: p50 = 41.77, p90 = 45.77, p99 = 52.88, recv message: p50 = 9430.20, p90 = 11351.60, p99 = 11759.40
+[2018-02-02 06:07:45,695][WARNING]load_client.py@180: state = (bind = 192.168.77.10, w = 0): create conn: p50 = 41.78, p90 = 45.87, p99 = 50.97, recv message: p50 = 9446.05, p90 = 11338.10, p99 = 11658.45
+[2018-02-02 06:07:45,695][WARNING]load_client.py@180: state = (bind = 192.168.77.10, w = 1): create conn: p50 = 41.78, p90 = 45.80, p99 = 50.88, recv message: p50 = 9458.33, p90 = 11320.57, p99 = 11652.90
+[2018-02-02 06:07:45,695][WARNING]load_client.py@180: state = (bind = 192.168.77.13, w = 1): create conn: p50 = 41.87, p90 = 45.76, p99 = 50.33, recv message: p50 = 9405.09, p90 = 11287.55, p99 = 11761.30
+[2018-02-02 06:07:45,695][WARNING]load_client.py@180: state = (bind = 192.168.77.11, w = 0): create conn: p50 = 41.64, p90 = 45.77, p99 = 50.33, recv message: p50 = 9395.18, p90 = 11316.40, p99 = 11671.70
+[2018-02-02 06:07:45,695][WARNING]load_client.py@180: state = (bind = 192.168.77.13, w = 0): create conn: p50 = 41.85, p90 = 45.89, p99 = 51.47, recv message: p50 = 9422.50, p90 = 11239.40, p99 = 11673.45
+[2018-02-02 06:07:45,696][WARNING]load_client.py@180: state = (bind = 192.168.77.12, w = 1): create conn: p50 = 41.78, p90 = 45.71, p99 = 50.61, recv message: p50 = 9462.69, p90 = 11311.11, p99 = 11764.30
+[2018-02-02 06:07:45,696][WARNING]load_client.py@180: state = (bind = 192.168.77.12, w = 0): create conn: p50 = 41.83, p90 = 45.82, p99 = 52.20, recv message: p50 = 9432.50, p90 = 11431.67, p99 = 11745.45
+(venv) [ec2-user@us_ws0 ~]$

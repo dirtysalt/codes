@@ -1,0 +1,8 @@
+cache/
+.vscode
+output*
+cache*
+*.pbm
+*.dot
+*.png
+*.jpg

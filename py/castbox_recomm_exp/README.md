@@ -1,0 +1,11 @@
+推荐系统实验项目
+- data_prep_export_raw.ipynb 导出订阅数据
+- data_prep_export_mat.ipynb 根据订阅数据构造矩阵用于学习
+- evst_recomm_user.ipynb 用户播客推荐
+- recomm_item.ipynb 相似播客推荐
+- recomm_item_history.org 相似播客推荐的各种算法比较
+- recomm_locale.ipynb 根据用户locale进行推荐
+- recomm_user_test[_evst].ipynb 用户播客推荐的各种实验
+- train_test_prep[_evst].ipynb 用于准备用户播客推荐的训练和测试数据
+- util.py 公用代码
+- keyword_suggestion.ipynb 根据用户搜索的关键词来做关键词推荐
