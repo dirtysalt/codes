@@ -1,0 +1,40 @@
+%{
+
+#include <string>
+#include "nasty/nasty.h"
+using namespace nasty;
+#include "nasty/nasty.y.hh"
+
+#define SAVE(type) do {\
+DEBUG("got '%s'", yytext);\
+yylval->expr_ = new(std::nothrow) Expr(type, yytext, yyleng, yylloc->first_line, yylloc->first_column);\
+}while(0)
+
+#define YY_DECL int yylex(YYSTYPE* yylval_param, YYLTYPE* yylloc_param, yyscan_t yyscanner, Parser* parser)
+
+%}
+
+%option 8bit
+%option reentrant
+%option bison-bridge
+%option bison-locations
+%option noyywrap
+%option warn
+%option nodefault
+%option header-file="nasty.l.hh"
+%option outfile="nasty.l.cc"
+
+C [a-zA-Z_!@#$%^&*+-/<>:~]
+D [0-9]
+
+%%
+"(" { DEBUG("got '('"); return LBRACE; }
+")" { DEBUG("got ')'"); return RBRACE; }
+\"(\\.|[^\\"])*\"	{ SAVE(Expr::STR); return STR; }
+{C}({C}|{D})* { SAVE(Expr::ID); return ID; }
+{D}+\.{D}* { SAVE(Expr::FLT); return FLT; }
+{D}+  { SAVE(Expr::INT); return INT; }
+[ \t\n] {}
+. yyterminate();
+
+%%

@@ -1,0 +1,259 @@
+name: "LeNet"
+
+# layer {
+#   name: "mnist"
+#   type: "ImageData"
+#   top: "data"
+#   top: "label"
+#   include {
+#     phase: TRAIN
+#   }
+# # 载入灰度图像时候会变为三通道(-1, 3, 28, 28)
+# # 所以这个应该比较适合彩色图片
+#   image_data_param {
+#     source: "train.list"
+#     batch_size: 42
+#     shuffle: true
+#   }
+#   transform_param {
+#     scale: 0.00390625
+#   }
+# }
+
+layer {
+  name: "mnist"
+  type: "HDF5Data"
+  top: "data"
+  top: "label"
+  include {
+    phase: TRAIN
+  }
+  hdf5_data_param {
+    # see caffe-prepare.py
+    source: "train.list"
+    batch_size: 42
+    shuffle: true
+  }
+}
+
+layer {
+  name: "mnist"
+  type: "HDF5Data"
+  top: "data"
+  top: "label"
+  include {
+    phase: TEST
+  }
+  hdf5_data_param {
+    source: "test.list"
+    batch_size: 42
+    shuffle: true
+  }
+}
+
+# layer {
+#   name: "mnist"
+#   type: "MemoryData"
+#   top: "data"
+#   top: "label"
+#   include {
+#     phase: TRAIN
+#   }
+#   memory_data_param {
+#     batch_size: 42
+#     channels: 1
+#     height: 28
+#     width: 28
+#   }
+# }
+# layer {
+#   name: "mnist"
+#   type: "MemoryData"
+#   top: "data"
+#   top: "label"
+#   include {
+#      phase: TEST
+#   }
+#   memory_data_param {
+#     batch_size: 42
+#     channels: 1
+#     height: 28
+#     width: 28
+#   }
+# }
+
+layer {
+  name: "conv1"
+  type: "Convolution"
+  bottom: "data"
+  top: "conv1"
+  param {
+    lr_mult: 1
+  }
+  param {
+    lr_mult: 2
+  }
+  convolution_param {
+    num_output: 32
+    kernel_size: 3
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layer {
+  name: "pool1"
+  type: "Pooling"
+  bottom: "conv1"
+  top: "pool1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 1
+  }
+}
+layer {
+  name: "relu1"
+  type: "TanH"
+  bottom: "pool1"
+  top: "relu1"
+}
+# layer {
+#   name: "drop1"
+#   type: "Dropout"
+#   bottom: "relu1"
+#   top: "drop1"
+#   dropout_param {
+#     dropout_ratio: 0.5
+#   }
+# }
+layer {
+  name: "conv2"
+  type: "Convolution"
+  bottom: "relu1"
+  top: "conv2"
+  param {
+    lr_mult: 1
+  }
+  param {
+    lr_mult: 2
+  }
+  convolution_param {
+    num_output: 64
+    kernel_size: 3
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layer {
+  name: "pool2"
+  type: "Pooling"
+  bottom: "conv2"
+  top: "pool2"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layer {
+  name: "relu2"
+  type: "TanH"
+  bottom: "pool2"
+  top: "relu2"
+}
+# layer {
+#   name: "drop2"
+#   type: "Dropout"
+#   bottom: "relu2"
+#   top: "drop2"
+#   dropout_param {
+#     dropout_ratio: 0.5
+#   }
+# }
+layer {
+  name: "ip1"
+  type: "InnerProduct"
+  bottom: "relu2"
+  top: "ip1"
+  param {
+    lr_mult: 1
+  }
+  param {
+    lr_mult: 2
+  }
+  inner_product_param {
+    num_output: 500
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layer {
+  name: "relu3"
+  type: "ReLU"
+  bottom: "ip1"
+  top: "relu3"
+}
+# layer {
+#   name: "drop3"
+#   type: "Dropout"
+#   bottom: "relu3"
+#   top: "drop3"
+#   dropout_param {
+#     dropout_ratio: 0.5
+#   }
+# }
+layer {
+  name: "ip2"
+  type: "InnerProduct"
+  bottom: "relu3"
+  top: "ip2"
+  param {
+    lr_mult: 1
+  }
+  param {
+    lr_mult: 2
+  }
+  inner_product_param {
+    num_output: 10
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layer {
+  name: "loss"
+  type: "SoftmaxWithLoss"
+  bottom: "ip2"
+  bottom: "label"
+  top: "loss"
+  include {
+    phase: TRAIN
+  }
+}
+layer {
+  name: "accuracy"
+  type: "Accuracy"
+  bottom: "ip2"
+  bottom: "label"
+  top: "accuracy"
+  include {
+    phase: TEST
+  }
+}

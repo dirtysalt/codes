@@ -1,0 +1,54 @@
+%{
+
+#include <cstdio>
+#include <string>
+#include "nasty/nasty.h"
+using namespace nasty;
+
+union YYSTYPE;
+struct YYLTYPE;
+int yylex(YYSTYPE* yylval, YYLTYPE* yylloc, void* scanner, Parser* parser);
+void yyerror(YYLTYPE* yylloc, void* scanner, Parser* parser, const char* msg);
+
+%}
+
+%union {
+nasty::Expr* expr_;
+}
+
+%token <expr_> LBRACE RBRACE ID FLT INT STR
+%type <expr_> atom expr
+%defines
+%locations
+%output "nasty.y.cc"
+%define api.pure
+%lex-param {void* scanner}
+%lex-param {Parser* parser}
+%parse-param {void* scanner}
+%parse-param {Parser* parser}
+
+%start program
+
+%%
+program : expr { parser->setExpr($1); }
+;
+
+expr : expr atom { $1->appendExpr($2); $$ = $1; }
+| atom { $$ = new(std::nothrow) Expr(); $$->appendExpr($1); }
+;
+
+atom : LBRACE expr RBRACE { DEBUG("match (...)"); $$ = $2; }
+| ID { DEBUG("match ID"); $$ = $1; }
+| FLT { DEBUG("match FLT"); $$ = $1; }
+| INT { DEBUG("match INT"); $$ = $1; }
+| STR { DEBUG("match STR"); $$ = $1; }
+;
+
+
+%%
+
+void yyerror(YYLTYPE* yylloc, void* scanner, Parser* parser, const char* msg) {
+  FATAL("parse file(%s:%d:%d-%d:%d) failed(%s)", parser->file().c_str(), 
+    yylloc->first_line, yylloc->first_column,
+    yylloc->last_line, yylloc->last_column, msg);
+}

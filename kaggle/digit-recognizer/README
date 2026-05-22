@@ -1,0 +1,8 @@
+- caffe
+  - caffe-prepare.py将train.csv转换称为train.hdf5的HDF5格式，内部做了旋转操作
+  - caffe-train.py来进行训练，使用caffe-test.py来进行预测
+  - caffe-visual.py来做可视化效果，打印第一层和第二层卷积后效果，并且生成train.jpg和test.jpg
+  - caffe-plot-net.py绘出网络
+- rf.py # RandomForest
+- knn.py # KNN
+- cnn.py # CNN on theano

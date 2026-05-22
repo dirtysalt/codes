@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Copyright (C) dirlt
+
+~/repo/caffe/build/tools/caffe train -solver caffe-conf/solver.prototxt
