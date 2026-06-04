@@ -1,0 +1,1291 @@
+这里主要是想看看使用everest用户订阅和设备订阅数据跑出结果的差别
+
+这个项目下面还有一个 `keyword_suggestion.ipynb` 文件，这个是根据每个用户搜索的keyword做推荐，数据量不大。
+
+个人感觉是，在item推荐方面，bpr, lightfm两个模型效果都不错，而als模型比较差。但是在预测用户推荐上，als的效果要稍好于lightfm, bpr的效果就特别差。
+
+als比较适合做用户推荐，bpr比较适合做商品推荐，而lightfm则比较全面。这里使用的是lightfm的'warp'方法，可以试试'k-os warp'.
+
+* LFM Model
+
+#+BEGIN_SRC Python
+lfm_model = C.MyLightFM(no_components=100, loss = 'warp', random_state=42)
+lfm_model.fit_partial(mat_csr2, epochs = 20, num_threads = 8)
+#+END_SRC
+
+- everest 30s per epoch
+- devices 50s per epoch
+
+* LFM Model Everest
+-----
+- pid=486852, title=Deep Learning: Zero to One, score=-3.21
+- pid=1062110, title=Brightest Singularity - Blockchain and Machine Learning, score=-2.54
+- pid=650841, title=Machine Learning Guide, score=-2.52
+- pid=2348, title=Learning Machines 101, score=-2.52
+- pid=402010, title=This Week in Machine Learning & Artificial Intelligence (AI) Podcast, score=-2.50
+- pid=430829, title=Machine Learning, score=-2.49
+- pid=1031182, title=Machine Learning for Physicists 2017 (Audio), score=-2.48
+- pid=494706, title=RARE PERSPECTIVES: The AI and Machine Learning Podcast, score=-2.44
+- pid=25629, title=Artificial Intelligence in Industry with Dan Faggella, score=-2.43
+- pid=650739, title=Talking Machines, score=-2.43
+- pid=1030741, title=Machine Learning for Physicists 2017 (SD 640), score=-2.41
+- pid=378094, title=The O'Reilly Data Show Podcast, score=-2.40
+- pid=1516, title=O'Reilly Data Show - O'Reilly Media Podcast, score=-2.39
+- pid=530326, title=Artificial Intelligence News, score=-2.38
+- pid=538016, title=Machine Learning – Software Engineering Daily, score=-2.36
+- pid=1153931, title=The AI of Mankind, score=-2.36
+- pid=384310, title=HRTech.ai, score=-2.32
+- pid=396480, title=SuperDataScience, score=-2.31
+- pid=1047575, title=Data Skeptic Bonus Feed, score=-2.31
+- pid=26120, title=Linear Digressions, score=-2.29
+- pid=312661, title=Concerning AI | Existential Risk From Artificial Intelligence, score=-2.29
+- pid=934168, title=Startup Data Science, score=-2.28
+- pid=1093155, title=Power Generation and Storage, score=-2.28
+- pid=578031, title=Data Driven, score=-2.26
+- pid=6849, title=Partially Derivative, score=-2.25
+- pid=104511, title=Becoming A Data Scientist Podcast, score=-2.25
+- pid=421762, title=Data Science Storytime, score=-2.25
+- pid=371508, title=O'Reilly Bots Podcast - O'Reilly Media Podcast, score=-2.23
+- pid=1163955, title=Learning Data Science, score=-2.23
+- pid=1024101, title=AI Today Podcast: Artificial Intelligence Insights, Experts, and Opinion, score=-2.22
+- pid=571199, title=NLP Highlights, score=-2.22
+- pid=975612, title=Data Skeptic, score=-2.21
+- pid=524085, title=Artificially Intelligent, score=-2.20
+- pid=1223731, title=Talking Data Podcast » Episodes, score=-2.20
+- pid=433488, title=The AI Podcast, score=-2.19
+- pid=635, title=Data Skeptic, score=-2.19
+- pid=1110612, title=JohnWright.ai Artificial Intelligence Podcast, score=-2.17
+- pid=934188, title=Data Science Imposters Podcast, score=-2.17
+- pid=1234542, title=Artificial Intelligence, score=-2.17
+- pid=1086060, title=The Data Science Journal, score=-2.15
+- pid=408481, title=Data Exposed (Audio) - Channel 9, score=-2.14
+- pid=3725, title=Data Stories, score=-2.14
+- pid=203406, title=Hadooponomics, score=-2.13
+- pid=448945, title=THE ARCHITECHT SHOW, score=-2.13
+- pid=933690, title=Data Science, score=-2.13
+- pid=1193894, title=The Data Binge, score=-2.11
+- pid=982000, title=The AI Podcast, score=-2.10
+- pid=1136953, title=Data Science at Home, score=-2.10
+- pid=524406, title=Software Engineering Daily, score=-2.09
+- pid=1023155, title=All Things Data Podcast, score=-2.09
+
+-----
+- pid=1241617, title=Blockchain Inside, score=-3.36
+- pid=1240826, title=TFECON 2018: Blockchain Technology and Future Economy, score=-2.61
+- pid=1195023, title=The Doug Polk Podcast, score=-2.15
+- pid=1179486, title=Cryptocurrency Podcast by Coin.FM - Bitcoin, Crypto and Blockchain News, score=-1.80
+- pid=8681, title=Crypto Trading 101 | Surfing the crypto and stock market, score=-1.76
+- pid=1223753, title=Bitcoin Digital Money, score=-1.75
+- pid=1092219, title=The Cryptocurrency Investing Podcast, score=-1.73
+- pid=1144826, title=Crypto Basic Podcast: Teaching You The Basics of Bitcoin and the World of Cryptocurrency. CryptoBasic, score=-1.69
+- pid=1153724, title=Blockchain & Crypto Revolution, score=-1.66
+- pid=1225390, title=4 Minute Crypto | Bitcoin, Blockchain, and Cryptocurrency Daily News Updates about, score=-1.63
+- pid=1104523, title=Building Crypto Today, score=-1.63
+- pid=543816, title=Blockchain360, score=-1.62
+- pid=1135492, title=Daily Bitcoin Podcast, score=-1.61
+- pid=42662, title=Epicenter – Podcast on Blockchain, Ethereum, Bitcoin and Distributed Technologies, score=-1.61
+- pid=389896, title=Untitled – Bitcoin.com, score=-1.59
+- pid=310316, title=Satoshi Nakamoto Institute, score=-1.58
+- pid=1117796, title=Crypto Radio, score=-1.58
+- pid=1182152, title=Crypto Weekly | Cryptocurrency, Bitcoin, Ethereum, Altcoin and ICO news from the week, score=-1.56
+- pid=1142578, title=This Week in Bitcoin, score=-1.55
+- pid=1175559, title=Bottomshelf Bitcoin, score=-1.55
+- pid=376928, title=EntHead: Crypto Currency Trends and Insights| For Investors, Traders, and Fanatics| To Make Financial Decisions in Search of Portfolio Growth, score=-1.55
+- pid=410634, title=SilverFarm Honest Audio News, score=-1.55
+- pid=362333, title=Marathon Money - Bitcoin, Litecoin, Ethereum, Cryptocurrency, Blockchain, Stock Investing, Stock Options, 401k, Retirement, Value Stocks, Penny Stocks, Money, Stocks, Wincrease, Marijuana Stocks, Cannabis Stock, score=-1.54
+- pid=1234388, title=The Bad Crypto Podcast - Bitcoin, Blockchain, Ethereum, Altcoins, Fintech and Cryptocurrency for Newbies, score=-1.54
+- pid=1108174, title=Unchained: Big Ideas From The Worlds Of Blockchain And Cryptocurrency, score=-1.54
+- pid=426163, title=The Crypto Show, score=-1.53
+- pid=53924, title=The Bitbull's Cryptocurrency Podcast, score=-1.53
+- pid=1076089, title=Blockchain Curated - Learn Bitcoin & Cryptocurrency From Investors + Experts, score=-1.53
+- pid=1270670, title=The Bitcoin Game, score=-1.52
+- pid=1188192, title=EOS Go Presents - EOSRad.io, score=-1.52
+- pid=1062167, title=Crypto Cousins | Bitcoin for Beginners, Cryptocurrency, Blockchain & Bitcoins Currency, score=-1.52
+- pid=1172008, title=Unconfirmed: Insights and Analysis From the Top Minds in Crypto, score=-1.51
+- pid=1137198, title=The Crypto Street Podcast, score=-1.51
+- pid=1217712, title=Crypto Titans Podcast - Interviews with Blockchain Industry Leaders, Cryptocurrency Insights and Trends for Bitcoin, Ethereum, Litecoin, & Ripple, score=-1.50
+- pid=573252, title=Blockchain Innovation: Interviewing The Brightest Minds In Blockchain, score=-1.50
+- pid=406496, title=The Bitcoin Knowledge Podcast, score=-1.50
+- pid=1256781, title=Crazy/Genius, score=-1.50
+- pid=53928, title=The Bitcoin Podcast Network, score=-1.49
+- pid=1062059, title=Coloring Crypto, score=-1.49
+- pid=1030216, title=Cryptoknights: Top podcast on Bitcoin, Ethereum, Blockchain, Crypto, CryptoCurrencies, score=-1.49
+- pid=1137692, title=Crypto Bobby - Talking Investing in Cryptocurrencies, score=-1.49
+- pid=1168476, title=Blue Alpine Cast - Cryptocurrency News and Research (Bitcoin (BTC), Ethereum (ETH) and more), score=-1.48
+- pid=1172529, title=The World Crypto Network Podcast, score=-1.47
+- pid=1086058, title=Noded Bitcoin Podcast, score=-1.47
+- pid=935781, title=Coin Mastery - Building Your Cryptocurrency Empire, score=-1.46
+- pid=1114924, title=Explain Blockchain, score=-1.46
+- pid=70257, title=The Bitcoin Formula, score=-1.46
+- pid=1011070, title=Bitcoin Basics, score=-1.46
+- pid=344516, title=The Lighting Needs To Be Rebuilt - Unreal Engine Podcast, score=-1.45
+- pid=310315, title=Neocash Radio, score=-1.45
+
+-----
+- pid=285553, title=罗辑思维, score=-2.83
+- pid=972927, title=百家讲坛【2017】, score=-2.35
+- pid=527356, title=罗辑思维 2017, score=-2.34
+- pid=15418, title=极客公园【科技 互联网 新知识 奇酷探秘】, score=-2.34
+- pid=1220635, title=蒋勋细说红楼梦, score=-2.33
+- pid=1086228, title=潘吉Jenny告诉你|学英语聊美国|开言英语 · Podcast, score=-2.33
+- pid=433700, title=上官文露读书会, score=-2.32
+- pid=400138, title=科学史评话最新专辑, score=-2.32
+- pid=394548, title=国家人文历史, score=-2.31
+- pid=17517, title=品途商业评论, score=-2.31
+- pid=1041966, title=冬吴相对论, score=-2.31
+- pid=444648, title=罗辑思维, score=-2.30
+- pid=1041168, title=太医来了, score=-2.29
+- pid=16303, title=吴晓波频道, score=-2.29
+- pid=17984, title=Geek实验室, score=-2.29
+- pid=998186, title=北槽, score=-2.29
+- pid=18826, title=“大力”史, score=-2.29
+- pid=15573, title=喜马拉雅FM, score=-2.29
+- pid=15554, title=段子来了, score=-2.28
+- pid=935281, title=罗辑思维/得到App, score=-2.28
+- pid=441088, title=雷音寺 梁宏达, score=-2.28
+- pid=15416, title=科技FM, score=-2.27
+- pid=1000546, title=博物志, score=-2.27
+- pid=412634, title=看理想，伯凡非常道, score=-2.27
+- pid=15402, title=黑科技【科客网出品】, score=-2.26
+- pid=373534, title=软件那些事儿, score=-2.26
+- pid=425047, title=38号车评中心, score=-2.25
+- pid=943367, title=锵锵三人行, score=-2.25
+- pid=15995, title=文化媒体人, score=-2.25
+- pid=351360, title=保持冷静, score=-2.24
+- pid=1094929, title=简单心理, score=-2.24
+- pid=275355, title=艺术很难吗, score=-2.24
+- pid=298130, title=逗喵音乐教室, score=-2.24
+- pid=521629, title=历史是个什么玩意儿, score=-2.24
+- pid=974167, title=蒋勋细说红楼梦 99元福利版, score=-2.24
+- pid=971373, title=电影正反打, score=-2.24
+- pid=476161, title=养生大讲堂, score=-2.23
+- pid=973862, title=坏蛋调频, score=-2.23
+- pid=20239, title=一席, score=-2.23
+- pid=394555, title=老沈一说, score=-2.23
+- pid=476582, title=致我们正在消逝的文化印记, score=-2.23
+- pid=16294, title=每天学点经济学, score=-2.23
+- pid=16391, title=艾问·人物, score=-2.22
+- pid=578245, title=梁文道：一千零一夜-探讨年轻人的矛盾生活, score=-2.22
+- pid=476190, title=品味书香, score=-2.22
+- pid=15430, title=科技富能量, score=-2.22
+- pid=15823, title=老汪谈职场, score=-2.21
+- pid=981336, title=看理想，伯凡非常道, score=-2.21
+- pid=428889, title=凤凰周刊有声故事, score=-2.21
+- pid=521631, title=袁腾飞讲改革-民主-战争-人物, score=-2.21
+
+-----
+- pid=1215926, title=Atlanta Monster, score=-2.59
+- pid=1114802, title=Up and Vanished, score=-2.10
+- pid=206912, title=Someone Knows Something, score=-2.07
+- pid=425154, title=Criminal, score=-2.06
+- pid=399161, title=Missing & Murdered: Finding Cleo, score=-2.00
+- pid=583614, title=Accused, score=-1.93
+- pid=10184, title=Undisclosed, score=-1.88
+- pid=1041944, title=Dirty John, score=-1.88
+- pid=407665, title=Crimetown, score=-1.87
+- pid=1207492, title=Felonious Florida, score=-1.86
+- pid=1146450, title=A Very Fatal Murder, score=-1.83
+- pid=1171023, title=DISGRACELAND, score=-1.83
+- pid=305058, title=True Crime Garage, score=-1.82
+- pid=1139548, title=Casefile True Crime, score=-1.82
+- pid=1236890, title=Buried Alive, score=-1.81
+- pid=1195768, title=Empire on Blood, score=-1.78
+- pid=576815, title=Ear Hustle, score=-1.77
+- pid=1003401, title=Small Town Dicks Podcast, score=-1.75
+- pid=1153459, title=This is Love, score=-1.75
+- pid=3175, title=Serial, score=-1.74
+- pid=1186231, title=Unmasking A Killer, score=-1.73
+- pid=1175924, title=Dear Franklin Jones, score=-1.70
+- pid=492411, title=S-Town, score=-1.70
+- pid=569596, title=The Vanished Podcast, score=-1.70
+- pid=1160337, title=Exposed: The East Area Rapist, score=-1.69
+- pid=1197694, title=Female Criminals, score=-1.69
+- pid=1208242, title=Impact Statement, score=-1.69
+- pid=580922, title=Sworn, score=-1.69
+- pid=1211206, title=Marcia Clark Investigates The First 48, score=-1.67
+- pid=1187993, title=Caught, score=-1.67
+- pid=1238764, title=The Generation Why Podcast, score=-1.66
+- pid=1199103, title=Unsolved Murders: True Crime Stories, score=-1.65
+- pid=1199139, title=Serial Killers, score=-1.64
+- pid=1219850, title=The Less Dead, score=-1.64
+- pid=1164637, title=ComeBack, score=-1.62
+- pid=362937, title=Sword and Scale, score=-1.61
+- pid=394776, title=Missing Maura Murray, score=-1.60
+- pid=1115107, title=Patty Has a Gun: The Life and Crimes of Patricia Hearst, score=-1.60
+- pid=1179592, title=Frozen Truth Podcast, score=-1.60
+- pid=1260433, title=Suspect Convictions, score=-1.59
+- pid=1101113, title=The Pope's Long Con, score=-1.59
+- pid=1181429, title=I’ll Be Gone In The Dark – The Podcast, score=-1.59
+- pid=1093694, title=Slow Burn: A Podcast About Watergate, score=-1.57
+- pid=1189174, title=My Favorite Murder with Karen Kilgariff and Georgia Hardstark, score=-1.57
+- pid=1082650, title=IS THIS ILLEGAL?, score=-1.57
+- pid=583720, title=Best Case Worst Case, score=-1.57
+- pid=10200, title=Truth & Justice with Bob Ruff, score=-1.56
+- pid=1101773, title=Southern Fried True Crime, score=-1.56
+- pid=1062161, title=Heaven's Gate, score=-1.56
+- pid=1209943, title=18 Days, score=-1.55
+
+* LFM Model Devices
+-----
+- pid=486852, title=Deep Learning: Zero to One, score=-3.38
+- pid=538016, title=Machine Learning – Software Engineering Daily, score=-2.51
+- pid=494706, title=RARE PERSPECTIVES: The AI and Machine Learning Podcast, score=-2.47
+- pid=650841, title=Machine Learning Guide, score=-2.45
+- pid=430829, title=Machine Learning, score=-2.44
+- pid=571199, title=NLP Highlights, score=-2.37
+- pid=410810, title=Python Bytes, score=-2.37
+- pid=1031182, title=Machine Learning for Physicists 2017 (Audio), score=-2.35
+- pid=1062110, title=Brightest Singularity - Blockchain and Machine Learning, score=-2.32
+- pid=934188, title=Data Science Imposters Podcast, score=-2.30
+- pid=402010, title=This Week in Machine Learning & Artificial Intelligence (AI) Podcast, score=-2.30
+- pid=2348, title=Learning Machines 101, score=-2.28
+- pid=1516, title=O'Reilly Data Show - O'Reilly Media Podcast, score=-2.27
+- pid=934168, title=Startup Data Science, score=-2.25
+- pid=2315, title=Talk Python To Me - Python conversations for passionate developers, score=-2.25
+- pid=1044247, title=Women in AI, score=-2.23
+- pid=682861, title=Data Podcast, score=-2.22
+- pid=129150, title=No Fluff Just Stuff, score=-2.22
+- pid=543003, title=O'Reilly Programming Podcast - O'Reilly Media Podcast, score=-2.21
+- pid=1153931, title=The AI of Mankind, score=-2.21
+- pid=26120, title=Linear Digressions, score=-2.20
+- pid=140808, title=For the Love of Data, score=-2.19
+- pid=1136953, title=Data Science at Home, score=-2.19
+- pid=1281105, title=Algorithm Design and Analysis, score=-2.18
+- pid=1030748, title=Machine Learning for Physicists 2017 (HD 1280 - Video & Folien), score=-2.18
+- pid=485455, title=This Week in Machine Learning & AI, score=-2.18
+- pid=530326, title=Artificial Intelligence News, score=-2.16
+- pid=421762, title=Data Science Storytime, score=-2.14
+- pid=500781, title=Planet Python, score=-2.14
+- pid=371508, title=O'Reilly Bots Podcast - O'Reilly Media Podcast, score=-2.13
+- pid=524005, title=R Weekly, score=-2.13
+- pid=104511, title=Becoming A Data Scientist Podcast, score=-2.13
+- pid=414495, title=Python Testing, score=-2.12
+- pid=1016459, title=All Things Java Podcast, score=-2.12
+- pid=47746, title=Unsupported Operation, score=-2.12
+- pid=1110612, title=JohnWright.ai Artificial Intelligence Podcast, score=-2.11
+- pid=330816, title=O'Reilly Security Podcast - O'Reilly Media Podcast, score=-2.11
+- pid=6849, title=Partially Derivative, score=-2.11
+- pid=537930, title=Cloud Engineering – Software Engineering Daily, score=-2.11
+- pid=1152077, title=Data Crunch | Artificial Intelligence | AI | Machine Learning | Big Data | Data Science, score=-2.11
+- pid=650739, title=Talking Machines, score=-2.11
+- pid=142341, title=Java Muses Podcast, score=-2.09
+- pid=39875, title=ThoughtWorks, score=-2.09
+- pid=540927, title=Data – Software Engineering Daily, score=-2.09
+- pid=378094, title=The O'Reilly Data Show Podcast, score=-2.09
+- pid=1067019, title=Enterprise Java Newscast, score=-2.08
+- pid=58343, title=O'Reilly Hardware Podcast - O'Reilly Media Podcast, score=-2.08
+- pid=367227, title=Data Stories, score=-2.08
+- pid=20761, title=Cloudera Podcasts, score=-2.07
+- pid=2363, title=All Things Hadoop, score=-2.06
+
+-----
+- pid=1241617, title=Blockchain Inside, score=-3.85
+- pid=1240826, title=TFECON 2018: Blockchain Technology and Future Economy, score=-3.05
+- pid=1179486, title=Cryptocurrency Podcast by Coin.FM - Bitcoin, Crypto and Blockchain News, score=-2.43
+- pid=1181565, title=Crypto Sewer, score=-2.43
+- pid=1195023, title=The Doug Polk Podcast, score=-2.41
+- pid=1179764, title=Blockchain 2025, score=-2.36
+- pid=1135492, title=Daily Bitcoin Podcast, score=-2.36
+- pid=1235873, title=Entrepreneur Success Stories, score=-2.32
+- pid=1187163, title=The Trader Cobb Crypto Podcast, score=-2.31
+- pid=1250093, title=Decentralized TV, score=-2.24
+- pid=1164032, title=Crypto the WonderDog show, score=-2.23
+- pid=1191834, title=Qlearly.com - Startup World, score=-2.23
+- pid=1180347, title=The Coin Pod, score=-2.21
+- pid=1019668, title=Cryptocurrently: A Cryptocurrency Podcast, score=-2.18
+- pid=1076089, title=Blockchain Curated - Learn Bitcoin & Cryptocurrency From Investors + Experts, score=-2.17
+- pid=1209713, title=Blockchain, score=-2.15
+- pid=1098038, title=Let's Talk Crypto - Bitcoin, Blockchain and Cryptocurrency: Sponsored by SchoolOfCrypto.com, score=-2.15
+- pid=1238911, title=Masters Of Business Podcast, score=-2.14
+- pid=1182152, title=Crypto Weekly | Cryptocurrency, Bitcoin, Ethereum, Altcoin and ICO news from the week, score=-2.13
+- pid=1270269, title=Growth tec podcast, score=-2.13
+- pid=1108174, title=Unchained: Big Ideas From The Worlds Of Blockchain And Cryptocurrency, score=-2.12
+- pid=1188228, title=Bitcoins & Cryptocurrency 101, score=-2.12
+- pid=1234388, title=The Bad Crypto Podcast - Bitcoin, Blockchain, Ethereum, Altcoins, Fintech and Cryptocurrency for Newbies, score=-2.12
+- pid=1202539, title=The Startup Addict, score=-2.11
+- pid=1144826, title=Crypto Basic Podcast: Teaching You The Basics of Bitcoin and the World of Cryptocurrency. CryptoBasic, score=-2.09
+- pid=1145769, title=ICO 101: the average consumers guide to ICOs, score=-2.09
+- pid=1043341, title=Daily Crypto - Bitcoin, Blockchain, Ethereum, Altcoin & Digital Cryptocurrency World News, score=-2.07
+- pid=1217712, title=Crypto Titans Podcast - Interviews with Blockchain Industry Leaders, Cryptocurrency Insights and Trends for Bitcoin, Ethereum, Litecoin, & Ripple, score=-2.06
+- pid=1228574, title=How I Make Money Online In 2018, score=-2.06
+- pid=1086058, title=Noded Bitcoin Podcast, score=-2.06
+- pid=414929, title=May The Best Brand Win, score=-2.06
+- pid=1225390, title=4 Minute Crypto | Bitcoin, Blockchain, and Cryptocurrency Daily News Updates about, score=-2.04
+- pid=1168476, title=Blue Alpine Cast - Cryptocurrency News and Research (Bitcoin (BTC), Ethereum (ETH) and more), score=-2.03
+- pid=544, title=The Let's Talk Bitcoin Network, score=-2.03
+- pid=1232241, title=小雨创业杂谈, score=-2.03
+- pid=1223753, title=Bitcoin Digital Money, score=-2.02
+- pid=1137301, title=Hacking Your Leadership, score=-2.02
+- pid=1134034, title=#FlipMyFunnel Podcast, score=-2.01
+- pid=1215375, title=Crypto News, score=-2.01
+- pid=1223612, title=J.P. Morgan Eye on the Market, score=-2.00
+- pid=1096071, title=Bitcoin Bros. Podcast, score=-1.99
+- pid=1219295, title=The Brutal Truth about B2B Sales & Selling - Business Hacker of B2B ENTERPRISE, SOCIAL, COLD CALLING - SALESMAN, score=-1.99
+- pid=330676, title=Bitcoin and Markets, score=-1.99
+- pid=1216211, title=The Man Made, score=-1.99
+- pid=446964, title=Crypto Voices, score=-1.99
+- pid=1003285, title=Bitcoin, Blockchain and Crypto Podcast, score=-1.99
+- pid=1108332, title=Unchained: Big Ideas From The Worlds Of Blockchain And Fintech, score=-1.99
+- pid=1174008, title=Humans of Bitcoin, score=-1.98
+- pid=1269059, title=Amazon Rainmakers, score=-1.98
+- pid=1175144, title=Crypto News With Matt Beasley, score=-1.98
+
+-----
+- pid=285553, title=罗辑思维, score=-3.33
+- pid=334635, title=罗辑思维推荐书解读, score=-2.84
+- pid=15410, title=触动力, score=-2.81
+- pid=346752, title=王自如 科技相对论【S01~S03】, score=-2.80
+- pid=19707, title=卓老板聊科技, score=-2.79
+- pid=16294, title=每天学点经济学, score=-2.79
+- pid=935281, title=罗辑思维/得到App, score=-2.79
+- pid=529296, title=晓说2017, score=-2.76
+- pid=984707, title=一席, score=-2.75
+- pid=16297, title=虎嗅·商业有味道, score=-2.75
+- pid=351776, title=消灭无聊, score=-2.75
+- pid=16328, title=创业美国, score=-2.75
+- pid=18813, title=凤凰FM, score=-2.71
+- pid=520022, title=极客电台, score=-2.71
+- pid=15430, title=科技富能量, score=-2.70
+- pid=20239, title=一席, score=-2.70
+- pid=361664, title=晓松奇谈, score=-2.70
+- pid=386646, title=罗辑思维微信每日文章, score=-2.70
+- pid=601402, title=冬吴同学会（冬吴相对论）, score=-2.70
+- pid=16303, title=吴晓波频道, score=-2.69
+- pid=16881, title=极客方式, score=-2.69
+- pid=15565, title=王自健脱口秀, score=-2.68
+- pid=302934, title=一个电台, score=-2.68
+- pid=1081179, title=不存在电台 non-exist, score=-2.68
+- pid=325713, title=锵锵三人行, score=-2.68
+- pid=1040237, title=一天世界, score=-2.68
+- pid=983122, title=疯投圈, score=-2.68
+- pid=1041966, title=冬吴相对论, score=-2.67
+- pid=382129, title=梁文道——一千零一夜, score=-2.67
+- pid=17964, title=边走边看, score=-2.67
+- pid=476179, title=冬吴相对论, score=-2.67
+- pid=400968, title=老梁脱口秀大全, score=-2.66
+- pid=19416, title=轻阅读, score=-2.66
+- pid=973880, title=【蛋解创业】, score=-2.65
+- pid=1255134, title=字谈字畅, score=-2.65
+- pid=386083, title=一刻talks, score=-2.65
+- pid=943367, title=锵锵三人行, score=-2.65
+- pid=570881, title=晓说2018, score=-2.65
+- pid=368982, title=卑鄙的圣人：曹操, score=-2.65
+- pid=1106635, title=PAGE SEVEN, score=-2.64
+- pid=400959, title=老梁脱口秀大全, score=-2.64
+- pid=424718, title=袁游, score=-2.64
+- pid=1013607, title=英语口语每天学, score=-2.63
+- pid=17955, title=老外看点, score=-2.63
+- pid=444207, title=圆桌派（窦文涛）, score=-2.63
+- pid=984007, title=什么值得买SMZDM, score=-2.63
+- pid=356441, title=良药：碎片时间听知识，读点干货也有趣。, score=-2.63
+- pid=140072, title=灭茶苦茶, score=-2.63
+- pid=394548, title=国家人文历史, score=-2.62
+- pid=20255, title=【静雅思听】品质美文, score=-2.62
+
+-----
+- pid=1215926, title=Atlanta Monster, score=-2.94
+- pid=1207492, title=Felonious Florida, score=-2.29
+- pid=1041944, title=Dirty John, score=-2.27
+- pid=1146450, title=A Very Fatal Murder, score=-2.25
+- pid=1171023, title=DISGRACELAND, score=-2.14
+- pid=1236890, title=Buried Alive, score=-2.14
+- pid=1208242, title=Impact Statement, score=-2.13
+- pid=1197694, title=Female Criminals, score=-2.10
+- pid=1226982, title=Genocide, score=-2.08
+- pid=1195768, title=Empire on Blood, score=-2.08
+- pid=1145771, title=Somebody Somewhere, score=-2.07
+- pid=1189174, title=My Favorite Murder with Karen Kilgariff and Georgia Hardstark, score=-2.06
+- pid=1275406, title=Crime Junkie, score=-2.03
+- pid=1062161, title=Heaven's Gate, score=-2.03
+- pid=1050506, title=Cults, score=-2.03
+- pid=206912, title=Someone Knows Something, score=-2.02
+- pid=1175924, title=Dear Franklin Jones, score=-1.98
+- pid=1209943, title=18 Days, score=-1.96
+- pid=1153459, title=This is Love, score=-1.95
+- pid=1169652, title=The Doe Files, score=-1.94
+- pid=1082628, title=Emma Fillipoff is Missing, score=-1.93
+- pid=576815, title=Ear Hustle, score=-1.93
+- pid=1187993, title=Caught, score=-1.93
+- pid=583720, title=Best Case Worst Case, score=-1.91
+- pid=425154, title=Criminal, score=-1.91
+- pid=1181429, title=I’ll Be Gone In The Dark – The Podcast, score=-1.91
+- pid=1099459, title=MURDERISH, score=-1.91
+- pid=580922, title=Sworn, score=-1.91
+- pid=1114802, title=Up and Vanished, score=-1.90
+- pid=979044, title=Criminology, score=-1.90
+- pid=1208806, title=Murder Made Me Famous, score=-1.90
+- pid=492411, title=S-Town, score=-1.89
+- pid=1139548, title=Casefile True Crime, score=-1.89
+- pid=1153491, title=Conspiracy Theories, score=-1.89
+- pid=1159722, title=Empty Frames, score=-1.89
+- pid=1241251, title=Southern Nightmare: The Hunt for the South Side Strangler, score=-1.89
+- pid=407665, title=Crimetown, score=-1.88
+- pid=1199139, title=Serial Killers, score=-1.88
+- pid=1101773, title=Southern Fried True Crime, score=-1.88
+- pid=1186231, title=Unmasking A Killer, score=-1.87
+- pid=1093694, title=Slow Burn: A Podcast About Watergate, score=-1.87
+- pid=1014806, title=Not Perfect or Functional Podcast | True Crime | Sports | Pop Culture, score=-1.86
+- pid=1087702, title=Swindled, score=-1.85
+- pid=1181128, title=Small Town Murder, score=-1.85
+- pid=1211206, title=Marcia Clark Investigates The First 48, score=-1.85
+- pid=1300973, title=12-26-75, score=-1.85
+- pid=1267218, title=Missing Alissa, score=-1.84
+- pid=1086308, title=Transmissions From Jonestown, score=-1.84
+- pid=1150439, title=Already Gone, score=-1.83
+- pid=1084986, title=Cold Blooded Podcast, score=-1.82
+
+* ALS Model
+
+#+BEGIN_SRC Python
+np.random.seed(42)
+als_model = implicit.als.AlternatingLeastSquares(
+    factors= 100,
+    regularization = 0.01,
+    iterations = 10)
+#+END_SRC
+
+- everest 50s per epoch
+- devices 80s per epoch
+
+* ALS Model Everest
+
+-----
+- pid=486852, title=Deep Learning: Zero to One, score=1.00
+- pid=2348, title=Learning Machines 101, score=0.99
+- pid=650841, title=Machine Learning Guide, score=0.99
+- pid=402010, title=This Week in Machine Learning & Artificial Intelligence (AI) Podcast, score=0.99
+- pid=378094, title=The O'Reilly Data Show Podcast, score=0.99
+- pid=934188, title=Data Science Imposters Podcast, score=0.99
+- pid=1136953, title=Data Science at Home, score=0.99
+- pid=933690, title=Data Science, score=0.99
+- pid=571199, title=NLP Highlights, score=0.99
+- pid=1516, title=O'Reilly Data Show - O'Reilly Media Podcast, score=0.99
+- pid=430829, title=Machine Learning, score=0.99
+- pid=650739, title=Talking Machines, score=0.99
+- pid=1062110, title=Brightest Singularity - Blockchain and Machine Learning, score=0.99
+- pid=396480, title=SuperDataScience, score=0.99
+- pid=26120, title=Linear Digressions, score=0.99
+- pid=3725, title=Data Stories, score=0.99
+- pid=934168, title=Startup Data Science, score=0.99
+- pid=1152077, title=Data Crunch | Artificial Intelligence | AI | Machine Learning | Big Data | Data Science, score=0.99
+- pid=25629, title=Artificial Intelligence in Industry with Dan Faggella, score=0.99
+- pid=6849, title=Partially Derivative, score=0.99
+- pid=433488, title=The AI Podcast, score=0.99
+- pid=1093155, title=Power Generation and Storage, score=0.98
+- pid=524005, title=R Weekly, score=0.98
+- pid=635, title=Data Skeptic, score=0.98
+- pid=494706, title=RARE PERSPECTIVES: The AI and Machine Learning Podcast, score=0.98
+- pid=1047575, title=Data Skeptic Bonus Feed, score=0.98
+- pid=538016, title=Machine Learning – Software Engineering Daily, score=0.98
+- pid=104511, title=Becoming A Data Scientist Podcast, score=0.98
+- pid=421762, title=Data Science Storytime, score=0.98
+- pid=578031, title=Data Driven, score=0.98
+- pid=312661, title=Concerning AI | Existential Risk From Artificial Intelligence, score=0.98
+- pid=1031182, title=Machine Learning for Physicists 2017 (Audio), score=0.98
+- pid=140809, title=Data Science Curation, score=0.98
+- pid=430952, title=Adversarial Learning, score=0.98
+- pid=1104514, title=AI with AI, score=0.98
+- pid=530326, title=Artificial Intelligence News, score=0.98
+- pid=371508, title=O'Reilly Bots Podcast - O'Reilly Media Podcast, score=0.98
+- pid=1246583, title=DataFramed, score=0.97
+- pid=274775, title=Zend Framework Quick Bites, score=0.97
+- pid=1210816, title=The R-Podcast, score=0.97
+- pid=346332, title=Linear Digressions, score=0.97
+- pid=579954, title=Concerning AI, score=0.97
+- pid=1103377, title=Self Help for Robots Podcast, score=0.97
+- pid=966276, title=Not So Standard Deviations, score=0.97
+- pid=446814, title=Data Engineering Podcast, score=0.97
+- pid=530301, title=AI Business Podcast, score=0.97
+- pid=1108151, title=Machine Learning, score=0.97
+- pid=524085, title=Artificially Intelligent, score=0.97
+- pid=410810, title=Python Bytes, score=0.97
+- pid=39371, title=The  Talking  Machine, score=0.97
+
+-----
+- pid=1241617, title=Blockchain Inside, score=1.00
+- pid=1240826, title=TFECON 2018: Blockchain Technology and Future Economy, score=0.97
+- pid=1174008, title=Humans of Bitcoin, score=0.92
+- pid=1195023, title=The Doug Polk Podcast, score=0.91
+- pid=1023515, title=Future Tech: Almost Here, Round-the-Corner Future Technology Podcast, score=0.90
+- pid=573252, title=Blockchain Innovation: Interviewing The Brightest Minds In Blockchain, score=0.89
+- pid=954020, title=The Let's Talk Bitcoin Network, score=0.89
+- pid=579470, title=WTF is CryptoSpace, score=0.89
+- pid=1209713, title=Blockchain, score=0.89
+- pid=1247747, title=B21 Block: Cryptocurrency & Blockchain School, score=0.89
+- pid=1021297, title=FINANCIAL SENSE, score=0.88
+- pid=1144826, title=Crypto Basic Podcast: Teaching You The Basics of Bitcoin and the World of Cryptocurrency. CryptoBasic, score=0.88
+- pid=315800, title=The Blockchain Show, score=0.88
+- pid=1045648, title=Block That Chain - Bitcoin & Blockchain, score=0.88
+- pid=1076089, title=Blockchain Curated - Learn Bitcoin & Cryptocurrency From Investors + Experts, score=0.88
+- pid=376928, title=EntHead: Crypto Currency Trends and Insights| For Investors, Traders, and Fanatics| To Make Financial Decisions in Search of Portfolio Growth, score=0.88
+- pid=466317, title=CryptoScam, score=0.87
+- pid=208794, title=Community Broadband Bits, score=0.87
+- pid=1162122, title=Cryptos Weekly, score=0.87
+- pid=1143048, title=COIN TALK, score=0.87
+- pid=1175559, title=Bottomshelf Bitcoin, score=0.87
+- pid=389896, title=Untitled – Bitcoin.com, score=0.87
+- pid=1103658, title=Let's Talk ETC! (Ethereum Classic), score=0.87
+- pid=1170123, title=Crypto Koala, score=0.87
+- pid=943664, title=Creating a Humanist Blockchain Future: a Systems Podcast, score=0.87
+- pid=406496, title=The Bitcoin Knowledge Podcast, score=0.87
+- pid=1145209, title=Bitcoin, Blockchain, and the Technologies of Our Future, score=0.87
+- pid=42662, title=Epicenter – Podcast on Blockchain, Ethereum, Bitcoin and Distributed Technologies, score=0.87
+- pid=1117796, title=Crypto Radio, score=0.87
+- pid=1152645, title=Analysis in Chains - News and Views on Blockchain, score=0.87
+- pid=327883, title=Blockchain Dynamics, score=0.87
+- pid=1108601, title=The Cryptoshow - bringing cryptocurrencies and blockchain to the masses, score=0.87
+- pid=581064, title=BlockChannel, score=0.87
+- pid=1153724, title=Blockchain & Crypto Revolution, score=0.87
+- pid=79019, title=Beyond Bitcoin Community, score=0.87
+- pid=507005, title=The Monero Monitor Podcast, score=0.86
+- pid=586993, title=The Let's Talk Bitcoin! Show, score=0.86
+- pid=544, title=The Let's Talk Bitcoin Network, score=0.86
+- pid=1200930, title=The Blockchain Report, score=0.86
+- pid=442885, title=Blockchain Billions Podcast, score=0.86
+- pid=1098038, title=Let's Talk Crypto - Bitcoin, Blockchain and Cryptocurrency: Sponsored by SchoolOfCrypto.com, score=0.86
+- pid=1019668, title=Cryptocurrently: A Cryptocurrency Podcast, score=0.86
+- pid=650717, title=The ICO Alert Podcast: Cryptocurrency, blockchain, and ICO interviews. Bitcoin, Ethereum, Lisk, and more., score=0.86
+- pid=125712, title=IFTF Blockchain Futures Lab, score=0.86
+- pid=1102448, title=The Bitcoin Lecture Series, score=0.86
+- pid=1108174, title=Unchained: Big Ideas From The Worlds Of Blockchain And Cryptocurrency, score=0.86
+- pid=1043341, title=Daily Crypto - Bitcoin, Blockchain, Ethereum, Altcoin & Digital Cryptocurrency World News, score=0.86
+- pid=1132815, title=Cup of Crypto - Blockchain, Bitcoin, Litecoin, Ethereum, score=0.86
+- pid=57113, title=Bitcoin News Weekly, score=0.86
+- pid=1238708, title=Bitcoin, score=0.86
+
+-----
+- pid=285553, title=罗辑思维, score=1.00
+- pid=933411, title=袁腾飞精华学校集锦, score=1.00
+- pid=17136, title=名人演讲, score=1.00
+- pid=476179, title=冬吴相对论, score=1.00
+- pid=502, title=禁书选读, score=1.00
+- pid=400137, title=汪诘：时间的形状, score=1.00
+- pid=15418, title=极客公园【科技 互联网 新知识 奇酷探秘】, score=1.00
+- pid=1041966, title=冬吴相对论, score=1.00
+- pid=1220635, title=蒋勋细说红楼梦, score=1.00
+- pid=18808, title=大飞史话, score=1.00
+- pid=384177, title=袁腾飞讲课集锦, score=1.00
+- pid=428880, title=【静雅思听】品质美文, score=0.99
+- pid=130188, title=张赟慧说风水, score=0.99
+- pid=334635, title=罗辑思维推荐书解读, score=0.99
+- pid=19707, title=卓老板聊科技, score=0.99
+- pid=400752, title=青曲-苗阜王声相声集《一》, score=0.99
+- pid=18826, title=“大力”史, score=0.99
+- pid=486800, title=汉魏六朝诗鉴赏辞典, score=0.99
+- pid=1077053, title=每日全球互联网新闻, score=0.99
+- pid=984508, title=旭岽叨科学, score=0.99
+- pid=346752, title=王自如 科技相对论【S01~S03】, score=0.99
+- pid=16881, title=极客方式, score=0.99
+- pid=521631, title=袁腾飞讲改革-民主-战争-人物, score=0.99
+- pid=18824, title=大人物·小声音, score=0.99
+- pid=444652, title=历史回声, score=0.99
+- pid=476190, title=品味书香, score=0.99
+- pid=283519, title=极速评, score=0.99
+- pid=476174, title=财经夜读, score=0.99
+- pid=15609, title=原来是这样？！, score=0.99
+- pid=102170, title=净空法师讲《了凡四训》, score=0.99
+- pid=19472, title=军史揭秘, score=0.99
+- pid=1003133, title=静观, score=0.99
+- pid=373534, title=软件那些事儿, score=0.99
+- pid=521630, title=腾飞五千年之塞北三朝, score=0.99
+- pid=443275, title=公司法大爆炸, score=0.99
+- pid=1026137, title=袁腾飞历史课程, score=0.99
+- pid=1086962, title=深呼锡, score=0.99
+- pid=223527, title=欢乐喜剧【郭德纲 单田芳 王玥波 岳云鹏 德云社 评书相声小品】, score=0.99
+- pid=486436, title=天方烨谈, score=0.99
+- pid=400751, title=青曲-苗阜王声相声集《二》, score=0.99
+- pid=13830, title=随口说美国, score=0.99
+- pid=1073415, title=德云社清晰相声--睡眠专用, score=0.99
+- pid=17517, title=品途商业评论, score=0.99
+- pid=344128, title=罗胖的《必然》读书笔记, score=0.99
+- pid=438185, title=大新闻大历史, score=0.99
+- pid=351776, title=消灭无聊, score=0.99
+- pid=983651, title=推理悬疑, score=0.99
+- pid=422598, title=一诗一信, score=0.99
+- pid=583491, title=穿越火线：第一次世界大战, score=0.99
+- pid=570901, title=经典咏流传/朗读者, score=0.99
+
+-----
+- pid=1215926, title=Atlanta Monster, score=1.00
+- pid=1076263, title=13: The Search For Leigh Occhi, score=0.83
+- pid=107227, title=2 Peas on a Pod, score=0.82
+- pid=580922, title=Sworn, score=0.78
+- pid=49934, title=FDS Review, score=0.77
+- pid=491828, title=Expensive Science Baby, score=0.77
+- pid=1114802, title=Up and Vanished, score=0.77
+- pid=35688, title=The Jinx Podcast, score=0.75
+- pid=1159009, title=Repeat, score=0.75
+- pid=583614, title=Accused, score=0.74
+- pid=206912, title=Someone Knows Something, score=0.73
+- pid=399161, title=Missing & Murdered: Finding Cleo, score=0.73
+- pid=483334, title=Alibi - radio series, score=0.73
+- pid=127149, title=TRUNEWS HEADLINES, score=0.72
+- pid=1146450, title=A Very Fatal Murder, score=0.70
+- pid=1020948, title=Best Podcasts Similar To Up and Vanished - 3 a week, score=0.70
+- pid=1262805, title=Up and Vanished., score=0.70
+- pid=1111461, title=Ambushed, score=0.69
+- pid=359460, title=Murder On The Space Coast, score=0.69
+- pid=430945, title=So This Is Love, score=0.69
+- pid=1175924, title=Dear Franklin Jones, score=0.69
+- pid=1115107, title=Patty Has a Gun: The Life and Crimes of Patricia Hearst, score=0.69
+- pid=1145771, title=Somebody Somewhere, score=0.68
+- pid=283206, title=Littler Labor & Employment Podcast, score=0.68
+- pid=1206821, title=Up and Vanished, score=0.68
+- pid=1161869, title=Kinkyboys Podcast, score=0.68
+- pid=1250650, title=RUF at the University of Tennessee, score=0.67
+- pid=974200, title=Trial By Stone: The Dark Crystal Podcast, score=0.66
+- pid=1268145, title=Breakdown, score=0.66
+- pid=1068801, title=The Shot, score=0.65
+- pid=35048, title=What Happened To Vishal?, score=0.65
+- pid=10184, title=Undisclosed, score=0.65
+- pid=519819, title=#UncensoredPod, score=0.65
+- pid=286945, title=Finding Tammy Jo, score=0.64
+- pid=421203, title=Shadow of a Sin by  Charlotte M Brame, score=0.64
+- pid=1181357, title=DJ BENJI, score=0.64
+- pid=1071877, title=Best Podcasts Similar To Up and Vanished - 3 Episodes a week, score=0.64
+- pid=1187993, title=Caught, score=0.64
+- pid=145750, title=My Mother's Secrets, score=0.64
+- pid=1174828, title=Order 9066, score=0.63
+- pid=1195768, title=Empire on Blood, score=0.63
+- pid=580138, title=Unconcluded: Jennifer Kesse, score=0.63
+- pid=441946, title=Gone At 21, score=0.62
+- pid=113245, title=Cut Down, score=0.62
+- pid=1184664, title=Happy Valley Podcast, score=0.62
+- pid=295455, title=That's Classical?, score=0.62
+- pid=402980, title=INDIANA ADOPTEE NETWORK NEWS, score=0.62
+- pid=165486, title=Inthe Casa, score=0.62
+- pid=1104979, title=Left Behind, score=0.62
+- pid=1050445, title=Buried, score=0.61
+
+* ALS Model Devices
+-----
+- pid=486852, title=Deep Learning: Zero to One, score=1.00
+- pid=430829, title=Machine Learning, score=1.00
+- pid=2348, title=Learning Machines 101, score=0.99
+- pid=538016, title=Machine Learning – Software Engineering Daily, score=0.99
+- pid=650841, title=Machine Learning Guide, score=0.99
+- pid=485455, title=This Week in Machine Learning & AI, score=0.99
+- pid=421762, title=Data Science Storytime, score=0.99
+- pid=402010, title=This Week in Machine Learning & Artificial Intelligence (AI) Podcast, score=0.99
+- pid=378094, title=The O'Reilly Data Show Podcast, score=0.99
+- pid=933690, title=Data Science, score=0.99
+- pid=934188, title=Data Science Imposters Podcast, score=0.99
+- pid=532150, title="Data Science" - Google News, score=0.99
+- pid=1136953, title=Data Science at Home, score=0.99
+- pid=571199, title=NLP Highlights, score=0.99
+- pid=1093155, title=Power Generation and Storage, score=0.99
+- pid=1062110, title=Brightest Singularity - Blockchain and Machine Learning, score=0.99
+- pid=650739, title=Talking Machines, score=0.99
+- pid=1152077, title=Data Crunch | Artificial Intelligence | AI | Machine Learning | Big Data | Data Science, score=0.99
+- pid=1516, title=O'Reilly Data Show - O'Reilly Media Podcast, score=0.99
+- pid=494706, title=RARE PERSPECTIVES: The AI and Machine Learning Podcast, score=0.99
+- pid=1031182, title=Machine Learning for Physicists 2017 (Audio), score=0.99
+- pid=26120, title=Linear Digressions, score=0.99
+- pid=396480, title=SuperDataScience, score=0.99
+- pid=579188, title=Creative AI Podcast, score=0.99
+- pid=934168, title=Startup Data Science, score=0.99
+- pid=371508, title=O'Reilly Bots Podcast - O'Reilly Media Podcast, score=0.98
+- pid=6849, title=Partially Derivative, score=0.98
+- pid=3725, title=Data Stories, score=0.98
+- pid=25629, title=Artificial Intelligence in Industry with Dan Faggella, score=0.98
+- pid=975612, title=Data Skeptic, score=0.98
+- pid=530326, title=Artificial Intelligence News, score=0.98
+- pid=578031, title=Data Driven, score=0.98
+- pid=430952, title=Adversarial Learning, score=0.98
+- pid=433488, title=The AI Podcast, score=0.98
+- pid=1163955, title=Learning Data Science, score=0.98
+- pid=346332, title=Linear Digressions, score=0.98
+- pid=1030741, title=Machine Learning for Physicists 2017 (SD 640), score=0.98
+- pid=1281105, title=Algorithm Design and Analysis, score=0.98
+- pid=304909, title=Becoming A Data Scientist Podcast, score=0.98
+- pid=1193894, title=The Data Binge, score=0.98
+- pid=579954, title=Concerning AI, score=0.98
+- pid=1108151, title=Machine Learning, score=0.98
+- pid=410810, title=Python Bytes, score=0.98
+- pid=431049, title=Linear Digressions, score=0.98
+- pid=446814, title=Data Engineering Podcast, score=0.98
+- pid=1047575, title=Data Skeptic Bonus Feed, score=0.97
+- pid=312661, title=Concerning AI | Existential Risk From Artificial Intelligence, score=0.97
+- pid=68444, title=Big Data Gang Podcast, score=0.97
+- pid=966276, title=Not So Standard Deviations, score=0.97
+- pid=540927, title=Data – Software Engineering Daily, score=0.97
+
+-----
+- pid=1241617, title=Blockchain Inside, score=1.00
+- pid=1240826, title=TFECON 2018: Blockchain Technology and Future Economy, score=0.98
+- pid=1195023, title=The Doug Polk Podcast, score=0.93
+- pid=1174008, title=Humans of Bitcoin, score=0.91
+- pid=1209713, title=Blockchain, score=0.89
+- pid=1187163, title=The Trader Cobb Crypto Podcast, score=0.89
+- pid=1045648, title=Block That Chain - Bitcoin & Blockchain, score=0.88
+- pid=1142578, title=This Week in Bitcoin, score=0.87
+- pid=1076089, title=Blockchain Curated - Learn Bitcoin & Cryptocurrency From Investors + Experts, score=0.87
+- pid=579470, title=WTF is CryptoSpace, score=0.87
+- pid=1223753, title=Bitcoin Digital Money, score=0.87
+- pid=1175559, title=Bottomshelf Bitcoin, score=0.87
+- pid=573252, title=Blockchain Innovation: Interviewing The Brightest Minds In Blockchain, score=0.86
+- pid=1234847, title=TechBuzz China by Pandaily, score=0.86
+- pid=1238708, title=Bitcoin, score=0.86
+- pid=954020, title=The Let's Talk Bitcoin Network, score=0.86
+- pid=507005, title=The Monero Monitor Podcast, score=0.86
+- pid=327883, title=Blockchain Dynamics, score=0.86
+- pid=1145209, title=Bitcoin, Blockchain, and the Technologies of Our Future, score=0.86
+- pid=1196913, title=A Talk Around The Block - The Cryptocurrency & Blockchain Podcast, score=0.86
+- pid=1241837, title=Daily Posthuman, score=0.86
+- pid=1153724, title=Blockchain & Crypto Revolution, score=0.86
+- pid=1297079, title=The Crux of Crypto, score=0.86
+- pid=57113, title=Bitcoin News Weekly, score=0.86
+- pid=1078061, title=CryptoCast: Culture, Cryptos, and Blockchain. Presented by Digital Lawrence, score=0.86
+- pid=1019668, title=Cryptocurrently: A Cryptocurrency Podcast, score=0.86
+- pid=376928, title=EntHead: Crypto Currency Trends and Insights| For Investors, Traders, and Fanatics| To Make Financial Decisions in Search of Portfolio Growth, score=0.86
+- pid=1179486, title=Cryptocurrency Podcast by Coin.FM - Bitcoin, Crypto and Blockchain News, score=0.86
+- pid=1135492, title=Daily Bitcoin Podcast, score=0.86
+- pid=315800, title=The Blockchain Show, score=0.86
+- pid=1168476, title=Blue Alpine Cast - Cryptocurrency News and Research (Bitcoin (BTC), Ethereum (ETH) and more), score=0.85
+- pid=1103658, title=Let's Talk ETC! (Ethereum Classic), score=0.85
+- pid=943664, title=Creating a Humanist Blockchain Future: a Systems Podcast, score=0.85
+- pid=1162122, title=Cryptos Weekly, score=0.85
+- pid=1143048, title=COIN TALK, score=0.85
+- pid=1002665, title=CRYPTO.decrypted, score=0.85
+- pid=581064, title=BlockChannel, score=0.85
+- pid=496462, title=The Bitcoin Knowledge Podcast, score=0.85
+- pid=1081387, title=Bitcoin Uncensored, score=0.85
+- pid=1144826, title=Crypto Basic Podcast: Teaching You The Basics of Bitcoin and the World of Cryptocurrency. CryptoBasic, score=0.85
+- pid=472677, title=Hidden Forces, score=0.85
+- pid=479653, title=Epicenter – Podcast on Blockchain, Ethereum, Bitcoin and Distributed Technologies, score=0.85
+- pid=1170299, title=Breaking Down The Blockchain, score=0.85
+- pid=463030, title=Hacking the System: Blueprint to Making $100,000, score=0.85
+- pid=413163, title=Let's Talk ETC! - Ethereum Classic, score=0.85
+- pid=1132815, title=Cup of Crypto - Blockchain, Bitcoin, Litecoin, Ethereum, score=0.84
+- pid=496126, title=CryptoTech Solutions, score=0.84
+- pid=1243915, title=Cryptobud, score=0.84
+- pid=1003285, title=Bitcoin, Blockchain and Crypto Podcast, score=0.84
+- pid=1080143, title=The Blockcast Show: Everything about Blockchain, Bitcoin, Ethereum, and Cryptocurrency, score=0.84
+
+-----
+- pid=285553, title=罗辑思维, score=1.00
+- pid=1041966, title=冬吴相对论, score=1.00
+- pid=14580, title=不同樊响·樊登读书会, score=1.00
+- pid=476179, title=冬吴相对论, score=1.00
+- pid=246462, title=创业家说, score=1.00
+- pid=984707, title=一席, score=1.00
+- pid=972927, title=百家讲坛【2017】, score=1.00
+- pid=527356, title=罗辑思维 2017, score=1.00
+- pid=16303, title=吴晓波频道, score=1.00
+- pid=17984, title=Geek实验室, score=1.00
+- pid=325713, title=锵锵三人行, score=1.00
+- pid=476190, title=品味书香, score=1.00
+- pid=428880, title=【静雅思听】品质美文, score=1.00
+- pid=13830, title=随口说美国, score=1.00
+- pid=18808, title=大飞史话, score=1.00
+- pid=19427, title=环球故事会, score=1.00
+- pid=17136, title=名人演讲, score=1.00
+- pid=12984, title=三国演义-原文朗读【四大名著】, score=1.00
+- pid=18807, title=探索发现【 Discovery 】, score=1.00
+- pid=334635, title=罗辑思维推荐书解读, score=1.00
+- pid=19426, title=档案揭秘, score=1.00
+- pid=324235, title=静说日本 · 徐静波, score=1.00
+- pid=276305, title=一思情商提升沟通逻辑思维课堂, score=1.00
+- pid=19707, title=卓老板聊科技, score=1.00
+- pid=983170, title=小付大智, score=1.00
+- pid=1220635, title=蒋勋细说红楼梦, score=1.00
+- pid=20239, title=一席, score=1.00
+- pid=180699, title=张召忠开讲, score=1.00
+- pid=570901, title=经典咏流传/朗读者, score=1.00
+- pid=127077, title=音悦人生, score=1.00
+- pid=400959, title=老梁脱口秀大全, score=1.00
+- pid=19705, title=万有引力, score=1.00
+- pid=412962, title=这个历史挺靠谱, score=1.00
+- pid=361664, title=晓松奇谈, score=1.00
+- pid=433700, title=上官文露读书会, score=1.00
+- pid=441088, title=雷音寺 梁宏达, score=1.00
+- pid=15418, title=极客公园【科技 互联网 新知识 奇酷探秘】, score=1.00
+- pid=284845, title=民国那些事儿, score=1.00
+- pid=356441, title=良药：碎片时间听知识，读点干货也有趣。, score=1.00
+- pid=476170, title=中国相声榜, score=1.00
+- pid=351776, title=消灭无聊, score=1.00
+- pid=1154420, title=过三情感脱口秀, score=1.00
+- pid=386646, title=罗辑思维微信每日文章, score=1.00
+- pid=19416, title=轻阅读, score=1.00
+- pid=400137, title=汪诘：时间的形状, score=1.00
+- pid=936440, title=知乎每日精选, score=1.00
+- pid=224450, title=知乎者也【得到新知识】, score=1.00
+- pid=14713, title=大手牵小手, score=1.00
+- pid=2980, title=佛经, score=1.00
+- pid=130188, title=张赟慧说风水, score=1.00
+
+-----
+- pid=1215926, title=Atlanta Monster, score=1.00
+- pid=107227, title=2 Peas on a Pod, score=0.95
+- pid=180516, title=Over the Bars, score=0.89
+- pid=1115107, title=Patty Has a Gun: The Life and Crimes of Patricia Hearst, score=0.87
+- pid=1076263, title=13: The Search For Leigh Occhi, score=0.87
+- pid=1159009, title=Repeat, score=0.84
+- pid=1262805, title=Up and Vanished., score=0.84
+- pid=1206821, title=Up and Vanished, score=0.84
+- pid=1145771, title=Somebody Somewhere, score=0.84
+- pid=1175924, title=Dear Franklin Jones, score=0.82
+- pid=1146450, title=A Very Fatal Murder, score=0.82
+- pid=1195768, title=Empire on Blood, score=0.78
+- pid=580922, title=Sworn, score=0.78
+- pid=1159722, title=Empty Frames, score=0.77
+- pid=477215, title=Somebody Somewhere, score=0.77
+- pid=1114802, title=Up and Vanished, score=0.76
+- pid=1101113, title=The Pope's Long Con, score=0.76
+- pid=35688, title=The Jinx Podcast, score=0.76
+- pid=240557, title=St. Petersburg Times: Inside the Jennifer Porter case, score=0.75
+- pid=1136450, title=The Promise, score=0.75
+- pid=1108165, title=Best Podcasts Similar To Up and Vanished - 3 Episodes a week, score=0.75
+- pid=1104557, title=What Happened to Jodi?, score=0.74
+- pid=1022262, title=Eyniith's Podcasts, score=0.74
+- pid=1241251, title=Southern Nightmare: The Hunt for the South Side Strangler, score=0.74
+- pid=1117787, title=Under Oath with Rich Lomurro, score=0.73
+- pid=1187993, title=Caught, score=0.73
+- pid=1020948, title=Best Podcasts Similar To Up and Vanished - 3 a week, score=0.72
+- pid=1171023, title=DISGRACELAND, score=0.72
+- pid=1209943, title=18 Days, score=0.72
+- pid=220209, title=My So Called Podcast, score=0.72
+- pid=1084986, title=Cold Blooded Podcast, score=0.72
+- pid=1174828, title=Order 9066, score=0.72
+- pid=1104979, title=Left Behind, score=0.72
+- pid=399161, title=Missing & Murdered: Finding Cleo, score=0.72
+- pid=1050445, title=Buried, score=0.71
+- pid=1071877, title=Best Podcasts Similar To Up and Vanished - 3 Episodes a week, score=0.71
+- pid=1236890, title=Buried Alive, score=0.71
+- pid=445132, title=La Vampire by Féval, Paul Henry Corentin, score=0.71
+- pid=1062161, title=Heaven's Gate, score=0.71
+- pid=399760, title=Corrupt Clearfield, score=0.70
+- pid=1186231, title=Unmasking A Killer, score=0.70
+- pid=359460, title=Murder On The Space Coast, score=0.70
+- pid=1207492, title=Felonious Florida, score=0.70
+- pid=1148225, title=Buried Truths, score=0.70
+- pid=1024142, title=No Weeks Notice, score=0.70
+- pid=1226982, title=Genocide, score=0.69
+- pid=583921, title=VANISHED: The Tara Calico Investigation, score=0.69
+- pid=944123, title=WCOL Birthday Bust, score=0.69
+- pid=1093694, title=Slow Burn: A Podcast About Watergate, score=0.69
+- pid=465663, title=KnowNothing Podcast, score=0.69
+
+* BPR Model
+#+BEGIN_SRC Python
+np.random.seed(42)
+bpr_model = implicit.bpr.BayesianPersonalizedRanking(factors = 100, iterations = 30)
+#+END_SRC
+
+* BPR Model Everest
+-----
+- pid=486852, title=Deep Learning: Zero to One, score=1.00
+- pid=650739, title=Talking Machines, score=0.79
+- pid=635, title=Data Skeptic, score=0.78
+- pid=650841, title=Machine Learning Guide, score=0.77
+- pid=402010, title=This Week in Machine Learning & Artificial Intelligence (AI) Podcast, score=0.77
+- pid=2348, title=Learning Machines 101, score=0.76
+- pid=396480, title=SuperDataScience, score=0.75
+- pid=1516, title=O'Reilly Data Show - O'Reilly Media Podcast, score=0.75
+- pid=2315, title=Talk Python To Me - Python conversations for passionate developers, score=0.75
+- pid=26120, title=Linear Digressions, score=0.74
+- pid=25629, title=Artificial Intelligence in Industry with Dan Faggella, score=0.74
+- pid=538016, title=Machine Learning – Software Engineering Daily, score=0.74
+- pid=430829, title=Machine Learning, score=0.74
+- pid=104511, title=Becoming A Data Scientist Podcast, score=0.73
+- pid=433488, title=The AI Podcast, score=0.73
+- pid=6849, title=Partially Derivative, score=0.73
+- pid=1056455, title=Software Engineering Daily, score=0.72
+- pid=2354, title=Software Engineering Radio - The Podcast for Professional Software Developers, score=0.72
+- pid=2347, title=Programming Throwdown, score=0.71
+- pid=1246583, title=DataFramed, score=0.71
+- pid=3725, title=Data Stories, score=0.70
+- pid=410810, title=Python Bytes, score=0.70
+- pid=933690, title=Data Science, score=0.70
+- pid=1152077, title=Data Crunch | Artificial Intelligence | AI | Machine Learning | Big Data | Data Science, score=0.70
+- pid=1105224, title=Command Line Heroes, score=0.70
+- pid=938004, title=Syntax - Tasty Web Development Treats, score=0.70
+- pid=1052039, title=Coding Blocks Podcast, score=0.69
+- pid=15511, title=Google Cloud Platform Podcast, score=0.69
+- pid=1136953, title=Data Science at Home, score=0.69
+- pid=231452, title=Soft Skills Engineering, score=0.69
+- pid=312661, title=Concerning AI | Existential Risk From Artificial Intelligence, score=0.69
+- pid=572244, title=JavaScript Jabber, score=0.69
+- pid=43149, title=Agile for Humans with Ryan Ripley, score=0.68
+- pid=378094, title=The O'Reilly Data Show Podcast, score=0.68
+- pid=294157, title=The InfoQ Podcast, score=0.68
+- pid=543003, title=O'Reilly Programming Podcast - O'Reilly Media Podcast, score=0.68
+- pid=1093310, title=The freeCodeCamp Podcast, score=0.68
+- pid=289256, title=Learn to Code With Me, score=0.68
+- pid=558192, title=Developer Tea, score=0.68
+- pid=423998, title=Coding Blocks - Patterns, Architecture, Best Practices, Tips and Tricks for Software, Database, and Web Developers / Engineers, score=0.67
+- pid=578031, title=Data Driven, score=0.67
+- pid=375912, title=CodeNewbie, score=0.67
+- pid=406573, title=How to Program with Java Podcast, score=0.67
+- pid=1505, title=a16z, score=0.67
+- pid=1545, title=Startup School Radio, score=0.67
+- pid=325284, title=All JavaScript Podcasts by Devchat.tv, score=0.67
+- pid=540926, title=JavaScript – Software Engineering Daily, score=0.66
+- pid=1197647, title=Hanselminutes - Fresh Talk and Tech for Developers, score=0.66
+- pid=406827, title=Podcast.__init__('Python'), score=0.66
+- pid=28527, title=The Agile Revolution, score=0.66
+
+-----
+- pid=1241617, title=Blockchain Inside, score=1.00
+- pid=1240826, title=TFECON 2018: Blockchain Technology and Future Economy, score=0.79
+- pid=431970, title=How I Built This with Guy Raz, score=0.77
+- pid=1195023, title=The Doug Polk Podcast, score=0.76
+- pid=431972, title=TED Radio Hour, score=0.75
+- pid=431962, title=Planet Money, score=0.74
+- pid=4052, title=Freakonomics Radio, score=0.74
+- pid=1108208, title=Bitcoin Crypto Mastermind, score=0.74
+- pid=1234388, title=The Bad Crypto Podcast - Bitcoin, Blockchain, Ethereum, Altcoins, Fintech and Cryptocurrency for Newbies, score=0.73
+- pid=1108174, title=Unchained: Big Ideas From The Worlds Of Blockchain And Cryptocurrency, score=0.73
+- pid=1168806, title=The Jordan Harbinger Show, score=0.73
+- pid=426586, title=Something You Should Know, score=0.73
+- pid=2245, title=The Dave Ramsey Show, score=0.73
+- pid=1059468, title=The Tim Ferriss Show, score=0.72
+- pid=1216928, title=Stuff You Should Know, score=0.72
+- pid=431967, title=Hidden Brain, score=0.72
+- pid=42662, title=Epicenter – Podcast on Blockchain, Ethereum, Bitcoin and Distributed Technologies, score=0.72
+- pid=1016555, title=The Kevin Rose Show, score=0.72
+- pid=1052680, title=High Performance Habits with Brendon Burchard, score=0.72
+- pid=269471, title=The Champion Builder Podcast, score=0.72
+- pid=1101800, title=The Indicator from Planet Money, score=0.72
+- pid=1081901, title=Oprah’s SuperSoul Conversations, score=0.71
+- pid=1187163, title=The Trader Cobb Crypto Podcast, score=0.71
+- pid=1168960, title=Akimbo: A Podcast from Seth Godin, score=0.71
+- pid=4541, title=TED Talks Daily, score=0.71
+- pid=1099992, title=Duolingo Spanish Podcast, score=0.71
+- pid=1155081, title=Business Wars, score=0.71
+- pid=1179764, title=Blockchain 2025, score=0.71
+- pid=1170319, title=WorkLife with Adam Grant, score=0.71
+- pid=935781, title=Coin Mastery - Building Your Cryptocurrency Empire, score=0.71
+- pid=129730, title=Radiolab, score=0.71
+- pid=429569, title=The Jordan B. Peterson Podcast, score=0.71
+- pid=1256781, title=Crazy/Genius, score=0.71
+- pid=257325, title=The GaryVee Audio Experience, score=0.71
+- pid=551389, title=WSJ The Future of Everything, score=0.70
+- pid=1137692, title=Crypto Bobby - Talking Investing in Cryptocurrencies, score=0.70
+- pid=1505, title=a16z, score=0.70
+- pid=1188343, title=Marketing Masters, score=0.70
+- pid=1168820, title=The Internet of Things Podcast - Stacey On IoT, score=0.70
+- pid=1297085, title=The Art of Manliness, score=0.70
+- pid=1169524, title=Skimm'd from The Couch, score=0.70
+- pid=1172008, title=Unconfirmed: Insights and Analysis From the Top Minds in Crypto, score=0.69
+- pid=1159813, title=Westworld, score=0.69
+- pid=1267924, title=Side Hustle School, score=0.69
+- pid=483, title=Order of Man: Protect | Provide | Preside, score=0.69
+- pid=1155973, title=Choiceology with Dan Heath, score=0.69
+- pid=2273, title=Motley Fool Money, score=0.69
+- pid=532469, title=Masters of Scale with Reid Hoffman, score=0.69
+- pid=1221476, title=Spellbound, score=0.69
+- pid=447824, title=Forbes Under 30, score=0.69
+
+-----
+- pid=285553, title=罗辑思维, score=1.00
+- pid=20239, title=一席, score=0.93
+- pid=935281, title=罗辑思维/得到App, score=0.92
+- pid=20240, title=美文阅读, score=0.91
+- pid=441712, title=果壳频道, score=0.91
+- pid=570881, title=晓说2018, score=0.91
+- pid=373349, title=科学脱口秀, score=0.91
+- pid=973830, title=十点读书官方播客, score=0.90
+- pid=319292, title=郭德纲相声十年经典, score=0.90
+- pid=131574, title=3D催眠【睡前精神按摩】, score=0.90
+- pid=1013607, title=英语口语每天学, score=0.90
+- pid=19416, title=轻阅读, score=0.90
+- pid=1041168, title=太医来了, score=0.90
+- pid=12947, title=阅读经典, score=0.90
+- pid=1086228, title=潘吉Jenny告诉你|学英语聊美国|开言英语 · Podcast, score=0.90
+- pid=16303, title=吴晓波频道, score=0.90
+- pid=15573, title=喜马拉雅FM, score=0.90
+- pid=104343, title=环球地理Global Geography, score=0.90
+- pid=15561, title=二货一箩筐（微信USBJQK）, score=0.90
+- pid=15554, title=段子来了, score=0.90
+- pid=574416, title=Learning English for China, score=0.90
+- pid=1000546, title=博物志, score=0.90
+- pid=356441, title=良药：碎片时间听知识，读点干货也有趣。, score=0.90
+- pid=18813, title=凤凰FM, score=0.90
+- pid=20048, title=电影不无聊, score=0.90
+- pid=1179004, title=每日5分钟英语, score=0.90
+- pid=12954, title=一个人的书房, score=0.90
+- pid=412948, title=黑水公园, score=0.89
+- pid=102150, title=365读书, score=0.89
+- pid=1113182, title=睡前冥想, score=0.89
+- pid=13150, title=心理FM, score=0.89
+- pid=476170, title=中国相声榜, score=0.89
+- pid=1220635, title=蒋勋细说红楼梦, score=0.89
+- pid=224967, title=一个人睡前听【一个人听的晚安电台】, score=0.89
+- pid=16631, title=学英语环游世界, score=0.89
+- pid=1040237, title=一天世界, score=0.89
+- pid=12955, title=蕊希电台, score=0.89
+- pid=14977, title=怀旧金曲, score=0.88
+- pid=16294, title=每天学点经济学, score=0.88
+- pid=13818, title=机核网 GADIO 游戏广播, score=0.88
+- pid=476174, title=财经夜读, score=0.88
+- pid=19415, title=Round Table 圆桌会议, score=0.88
+- pid=984354, title=夜听, score=0.88
+- pid=308006, title=反派影评, score=0.88
+- pid=1072748, title=郭德纲历年相声整理2004~2018(持续更新), score=0.88
+- pid=973839, title=大内密谈, score=0.88
+- pid=973334, title=看电影，听音乐, score=0.88
+- pid=499504, title=新闻酸菜馆, score=0.88
+- pid=114833, title=听佛 · 佛教故事, score=0.88
+- pid=14973, title=国家大剧院-聆听古典, score=0.88
+
+-----
+- pid=1215926, title=Atlanta Monster, score=1.00
+- pid=1114802, title=Up and Vanished, score=0.97
+- pid=206912, title=Someone Knows Something, score=0.97
+- pid=425154, title=Criminal, score=0.96
+- pid=399161, title=Missing & Murdered: Finding Cleo, score=0.96
+- pid=362937, title=Sword and Scale, score=0.96
+- pid=1207492, title=Felonious Florida, score=0.95
+- pid=1171023, title=DISGRACELAND, score=0.95
+- pid=407665, title=Crimetown, score=0.95
+- pid=1195768, title=Empire on Blood, score=0.94
+- pid=1041944, title=Dirty John, score=0.94
+- pid=1227896, title=GONE, score=0.94
+- pid=583614, title=Accused, score=0.94
+- pid=1197694, title=Female Criminals, score=0.94
+- pid=1189174, title=My Favorite Murder with Karen Kilgariff and Georgia Hardstark, score=0.93
+- pid=1269147, title=Family Ghosts, score=0.93
+- pid=1187993, title=Caught, score=0.93
+- pid=576815, title=Ear Hustle, score=0.93
+- pid=1221545, title=This Sounds Serious, score=0.93
+- pid=1161363, title=Death by Misadventure: True Paranormal Mystery, score=0.93
+- pid=224007, title=Unexplained, score=0.93
+- pid=1211206, title=Marcia Clark Investigates The First 48, score=0.93
+- pid=10184, title=Undisclosed, score=0.93
+- pid=580922, title=Sworn, score=0.92
+- pid=1146450, title=A Very Fatal Murder, score=0.92
+- pid=3661, title=Lore, score=0.92
+- pid=1181429, title=I’ll Be Gone In The Dark – The Podcast, score=0.92
+- pid=305058, title=True Crime Garage, score=0.92
+- pid=1186231, title=Unmasking A Killer, score=0.92
+- pid=1153459, title=This is Love, score=0.92
+- pid=1199139, title=Serial Killers, score=0.92
+- pid=1139548, title=Casefile True Crime, score=0.92
+- pid=1148225, title=Buried Truths, score=0.92
+- pid=3175, title=Serial, score=0.92
+- pid=1199103, title=Unsolved Murders: True Crime Stories, score=0.91
+- pid=1082010, title=Young Charlie by Hollywood & Crime, score=0.91
+- pid=1185246, title=The Box Of Oddities, score=0.91
+- pid=1073530, title=A Killing On the Cape, score=0.91
+- pid=6994, title=Last Podcast On The Left, score=0.91
+- pid=478030, title=Wrongful Conviction with Jason Flom, score=0.91
+- pid=492411, title=S-Town, score=0.91
+- pid=979044, title=Criminology, score=0.91
+- pid=1175924, title=Dear Franklin Jones, score=0.90
+- pid=1049402, title=A Murder On Orchard Street, score=0.90
+- pid=1062161, title=Heaven's Gate, score=0.90
+- pid=1050506, title=Cults, score=0.90
+- pid=1238764, title=The Generation Why Podcast, score=0.90
+- pid=1153491, title=Conspiracy Theories, score=0.90
+- pid=1236890, title=Buried Alive, score=0.90
+- pid=1181128, title=Small Town Murder, score=0.90
+
+* BPR Model Devices
+-----
+- pid=486852, title=Deep Learning: Zero to One, score=1.00
+- pid=2348, title=Learning Machines 101, score=0.85
+- pid=538016, title=Machine Learning – Software Engineering Daily, score=0.84
+- pid=402010, title=This Week in Machine Learning & Artificial Intelligence (AI) Podcast, score=0.82
+- pid=650841, title=Machine Learning Guide, score=0.82
+- pid=1516, title=O'Reilly Data Show - O'Reilly Media Podcast, score=0.81
+- pid=25629, title=Artificial Intelligence in Industry with Dan Faggella, score=0.80
+- pid=26120, title=Linear Digressions, score=0.80
+- pid=430829, title=Machine Learning, score=0.80
+- pid=396480, title=SuperDataScience, score=0.79
+- pid=433488, title=The AI Podcast, score=0.78
+- pid=650739, title=Talking Machines, score=0.78
+- pid=1152077, title=Data Crunch | Artificial Intelligence | AI | Machine Learning | Big Data | Data Science, score=0.76
+- pid=104511, title=Becoming A Data Scientist Podcast, score=0.76
+- pid=1136953, title=Data Science at Home, score=0.76
+- pid=2315, title=Talk Python To Me - Python conversations for passionate developers, score=0.75
+- pid=3725, title=Data Stories, score=0.74
+- pid=635, title=Data Skeptic, score=0.74
+- pid=6849, title=Partially Derivative, score=0.74
+- pid=410810, title=Python Bytes, score=0.74
+- pid=1003256, title=AWS Podcast, score=0.74
+- pid=934188, title=Data Science Imposters Podcast, score=0.73
+- pid=312661, title=Concerning AI | Existential Risk From Artificial Intelligence, score=0.73
+- pid=2934, title=IBM Analytics Insights Podcasts, score=0.73
+- pid=378094, title=The O'Reilly Data Show Podcast, score=0.72
+- pid=966276, title=Not So Standard Deviations, score=0.72
+- pid=777, title=Lean Startup, score=0.72
+- pid=2354, title=Software Engineering Radio - The Podcast for Professional Software Developers, score=0.71
+- pid=1056455, title=Software Engineering Daily, score=0.71
+- pid=577755, title=The 10 Minute Business Analytics Podcast | Data Analytics, Big Data, Data Visualization, Data Warehousing, score=0.71
+- pid=1027608, title=Computer Science, score=0.71
+- pid=231452, title=Soft Skills Engineering, score=0.71
+- pid=423998, title=Coding Blocks - Patterns, Architecture, Best Practices, Tips and Tricks for Software, Database, and Web Developers / Engineers, score=0.70
+- pid=543003, title=O'Reilly Programming Podcast - O'Reilly Media Podcast, score=0.70
+- pid=1024101, title=AI Today Podcast: Artificial Intelligence Insights, Experts, and Opinion, score=0.70
+- pid=1545, title=Startup School Radio, score=0.69
+- pid=1025326, title=Computer Science Channel (Video), score=0.69
+- pid=538018, title=Blockchain – Software Engineering Daily, score=0.69
+- pid=1093310, title=The freeCodeCamp Podcast, score=0.69
+- pid=2347, title=Programming Throwdown, score=0.69
+- pid=371508, title=O'Reilly Bots Podcast - O'Reilly Media Podcast, score=0.68
+- pid=491638, title=Full Stack Radio, score=0.68
+- pid=15511, title=Google Cloud Platform Podcast, score=0.68
+- pid=375912, title=CodeNewbie, score=0.68
+- pid=336264, title=React Native Radio, score=0.68
+- pid=1052039, title=Coding Blocks Podcast, score=0.68
+- pid=325284, title=All JavaScript Podcasts by Devchat.tv, score=0.68
+- pid=485307, title=Test and Code, score=0.68
+- pid=406827, title=Podcast.__init__('Python'), score=0.68
+- pid=482611, title=The Stack Overflow Podcast, score=0.67
+
+-----
+- pid=1241617, title=Blockchain Inside, score=1.00
+- pid=1240826, title=TFECON 2018: Blockchain Technology and Future Economy, score=0.76
+- pid=551389, title=WSJ The Future of Everything, score=0.67
+- pid=1108208, title=Bitcoin Crypto Mastermind, score=0.67
+- pid=1195023, title=The Doug Polk Podcast, score=0.66
+- pid=1155081, title=Business Wars, score=0.65
+- pid=1186021, title=Cryptoconomy, score=0.65
+- pid=1108448, title=ARCHIVED, score=0.65
+- pid=1038638, title=AMsecrets.com Amsecrets.net Podcast, score=0.64
+- pid=1043978, title=Rebel Traders™ Podcast - Stock Market Trading Strategies, Insights & Analysis with Sean Donahoe & Phil Newton, score=0.63
+- pid=1101800, title=The Indicator from Planet Money, score=0.63
+- pid=1108174, title=Unchained: Big Ideas From The Worlds Of Blockchain And Cryptocurrency, score=0.62
+- pid=1064708, title=WSJ Secrets of Wealthy Women, score=0.62
+- pid=444304, title=Future Break Podcast, score=0.62
+- pid=1168806, title=The Jordan Harbinger Show, score=0.62
+- pid=431962, title=Planet Money, score=0.62
+- pid=431970, title=How I Built This with Guy Raz, score=0.62
+- pid=1179764, title=Blockchain 2025, score=0.61
+- pid=426586, title=Something You Should Know, score=0.61
+- pid=1138510, title=The No Limits Selling Podcast, score=0.61
+- pid=1167276, title=Build An Online Business, score=0.61
+- pid=1216344, title=CLOSED, score=0.61
+- pid=539017, title=More Than Money, score=0.60
+- pid=1165070, title=Technology For Mindfulness, score=0.60
+- pid=1240125, title=The Trevor Chapman Show, score=0.60
+- pid=1075608, title=Confessions of a Marketer, score=0.60
+- pid=1267924, title=Side Hustle School, score=0.59
+- pid=1164032, title=Crypto the WonderDog show, score=0.59
+- pid=1092219, title=The Cryptocurrency Investing Podcast, score=0.59
+- pid=1179486, title=Cryptocurrency Podcast by Coin.FM - Bitcoin, Crypto and Blockchain News, score=0.59
+- pid=973054, title=CRYPTO 101: the average consumers guide to cryptocurrency, score=0.59
+- pid=1170319, title=WorkLife with Adam Grant, score=0.59
+- pid=1234388, title=The Bad Crypto Podcast - Bitcoin, Blockchain, Ethereum, Altcoins, Fintech and Cryptocurrency for Newbies, score=0.59
+- pid=1284519, title=The Science of Success, score=0.59
+- pid=532050, title=B2B Sales Questions Show - Brutally Honest Answers - Sales Hackers Ideas, score=0.59
+- pid=970566, title=Hackable?, score=0.58
+- pid=1095671, title=Tribe of Mentors, score=0.58
+- pid=1160060, title=Dear HBR:, score=0.58
+- pid=935781, title=Coin Mastery - Building Your Cryptocurrency Empire, score=0.58
+- pid=1172008, title=Unconfirmed: Insights and Analysis From the Top Minds in Crypto, score=0.58
+- pid=1208707, title=Residual Income Report, score=0.58
+- pid=1143048, title=COIN TALK, score=0.58
+- pid=1137198, title=The Crypto Street Podcast, score=0.58
+- pid=1254915, title=The Art of Charm | High Performance Techniques| Cognitive Development | Relationship Advice | Mastery of Human Dynamics, score=0.58
+- pid=431967, title=Hidden Brain, score=0.57
+- pid=1224549, title=Residual Income Podcast, score=0.57
+- pid=2286, title=Stacking Benjamins: Your Gateway to Money and Personal Finance, score=0.57
+- pid=446733, title=Don't Keep Your Day Job, score=0.57
+- pid=1208144, title=Money For the Rest of Us, score=0.57
+- pid=583620, title=The Pitch, score=0.57
+
+-----
+- pid=285553, title=罗辑思维, score=1.00
+- pid=570881, title=晓说2018, score=0.96
+- pid=441712, title=果壳频道, score=0.96
+- pid=16303, title=吴晓波频道, score=0.96
+- pid=20239, title=一席, score=0.96
+- pid=15554, title=段子来了, score=0.95
+- pid=943367, title=锵锵三人行, score=0.95
+- pid=19416, title=轻阅读, score=0.95
+- pid=258168, title=观复嘟嘟, score=0.95
+- pid=104343, title=环球地理Global Geography, score=0.95
+- pid=1013607, title=英语口语每天学, score=0.95
+- pid=15573, title=喜马拉雅FM, score=0.95
+- pid=1086228, title=潘吉Jenny告诉你|学英语聊美国|开言英语 · Podcast, score=0.95
+- pid=18813, title=凤凰FM, score=0.95
+- pid=20240, title=美文阅读, score=0.95
+- pid=935281, title=罗辑思维/得到App, score=0.95
+- pid=980738, title=锵锵三人行🎬, score=0.95
+- pid=373349, title=科学脱口秀, score=0.95
+- pid=412948, title=黑水公园, score=0.95
+- pid=20048, title=电影不无聊, score=0.94
+- pid=1209609, title=36氪·硅谷早知道 第二季, score=0.94
+- pid=224967, title=一个人睡前听【一个人听的晚安电台】, score=0.94
+- pid=16294, title=每天学点经济学, score=0.94
+- pid=1179004, title=每日5分钟英语, score=0.94
+- pid=12955, title=蕊希电台, score=0.94
+- pid=12954, title=一个人的书房, score=0.94
+- pid=1094929, title=简单心理, score=0.94
+- pid=12947, title=阅读经典, score=0.94
+- pid=1136472, title=三十早报, score=0.94
+- pid=131574, title=3D催眠【睡前精神按摩】, score=0.94
+- pid=984508, title=旭岽叨科学, score=0.94
+- pid=346669, title=零基础说英语, score=0.94
+- pid=1000546, title=博物志, score=0.94
+- pid=466658, title=科技聚变, score=0.94
+- pid=16297, title=虎嗅·商业有味道, score=0.93
+- pid=963249, title=故事 FM, score=0.93
+- pid=973839, title=大内密谈, score=0.93
+- pid=13150, title=心理FM, score=0.93
+- pid=320484, title=听力密码：100天练成超级英语耳, score=0.93
+- pid=308006, title=反派影评, score=0.93
+- pid=17136, title=名人演讲, score=0.93
+- pid=1075411, title=声东击西, score=0.93
+- pid=12951, title=鬼影人间, score=0.93
+- pid=476174, title=财经夜读, score=0.93
+- pid=1220635, title=蒋勋细说红楼梦, score=0.93
+- pid=1041168, title=太医来了, score=0.93
+- pid=356441, title=良药：碎片时间听知识，读点干货也有趣。, score=0.93
+- pid=15558, title=绝对内涵, score=0.93
+- pid=936373, title=文化土豆 Culture Potato, score=0.93
+- pid=476170, title=中国相声榜, score=0.93
+
+-----
+- pid=1215926, title=Atlanta Monster, score=1.00
+- pid=1189174, title=My Favorite Murder with Karen Kilgariff and Georgia Hardstark, score=0.95
+- pid=1181429, title=I’ll Be Gone In The Dark – The Podcast, score=0.95
+- pid=1207492, title=Felonious Florida, score=0.95
+- pid=1041944, title=Dirty John, score=0.95
+- pid=1114802, title=Up and Vanished, score=0.95
+- pid=206912, title=Someone Knows Something, score=0.94
+- pid=1171023, title=DISGRACELAND, score=0.94
+- pid=1227896, title=GONE, score=0.93
+- pid=399161, title=Missing & Murdered: Finding Cleo, score=0.93
+- pid=423933, title=In the Dark, score=0.93
+- pid=1073530, title=A Killing On the Cape, score=0.93
+- pid=362937, title=Sword and Scale, score=0.92
+- pid=1062161, title=Heaven's Gate, score=0.92
+- pid=1186231, title=Unmasking A Killer, score=0.92
+- pid=1195768, title=Empire on Blood, score=0.92
+- pid=425154, title=Criminal, score=0.92
+- pid=1146450, title=A Very Fatal Murder, score=0.92
+- pid=1197694, title=Female Criminals, score=0.92
+- pid=1221545, title=This Sounds Serious, score=0.92
+- pid=407665, title=Crimetown, score=0.92
+- pid=979044, title=Criminology, score=0.91
+- pid=1082010, title=Young Charlie by Hollywood & Crime, score=0.91
+- pid=1175924, title=Dear Franklin Jones, score=0.91
+- pid=1049402, title=A Murder On Orchard Street, score=0.91
+- pid=1187993, title=Caught, score=0.91
+- pid=650822, title=Zealot, score=0.91
+- pid=1050506, title=Cults, score=0.90
+- pid=583614, title=Accused, score=0.90
+- pid=1161363, title=Death by Misadventure: True Paranormal Mystery, score=0.90
+- pid=1148225, title=Buried Truths, score=0.90
+- pid=1199139, title=Serial Killers, score=0.90
+- pid=580922, title=Sworn, score=0.90
+- pid=1211206, title=Marcia Clark Investigates The First 48, score=0.89
+- pid=1139548, title=Casefile True Crime, score=0.89
+- pid=1181128, title=Small Town Murder, score=0.89
+- pid=1153491, title=Conspiracy Theories, score=0.89
+- pid=478030, title=Wrongful Conviction with Jason Flom, score=0.89
+- pid=1185246, title=The Box Of Oddities, score=0.89
+- pid=1269147, title=Family Ghosts, score=0.89
+- pid=576815, title=Ear Hustle, score=0.89
+- pid=1145771, title=Somebody Somewhere, score=0.89
+- pid=3175, title=Serial, score=0.89
+- pid=1153459, title=This is Love, score=0.88
+- pid=1181492, title=Unexplained Mysteries, score=0.88
+- pid=1238764, title=The Generation Why Podcast, score=0.88
+- pid=1169522, title=Tales, score=0.88
+- pid=6994, title=Last Podcast On The Left, score=0.88
+- pid=1275406, title=Crime Junkie, score=0.88
+- pid=305058, title=True Crime Garage, score=0.88
